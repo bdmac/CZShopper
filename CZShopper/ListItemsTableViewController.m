@@ -38,8 +38,10 @@
 
     // Create and configure our RKFetchedResultsTableController
     self.tableController = [[RKObjectManager sharedManager] fetchedResultsTableControllerForTableViewController:self];
+    self.tableController.delegate = self;
     self.tableController.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     self.tableController.heightForHeaderInSection = 30;
+    self.tableController.canEditRows = YES;
     self.tableController.pullToRefreshEnabled = YES;
     self.tableController.autoRefreshFromNetwork = YES;
     self.tableController.resourcePath = @"/items.json";
@@ -60,6 +62,12 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    [self.tableController loadTable];
+}
+
+// Swipe to delete
+- (void)tableController:(RKAbstractTableController *)tableController didDeleteObject:(id)object atIndexPath:(NSIndexPath *)indexPath {
+    RKLogTrace(@"SWIPED TO DELETE");
     [self.tableController loadTable];
 }
 

@@ -25,6 +25,7 @@
         
         [[RKObjectManager sharedManager].router routeClass:[ShoppingListItem class] toResourcePath:@"/items/:identifier"];
         [[RKObjectManager sharedManager].router routeClass:[ShoppingListItem class] toResourcePath:@"/items.json" forMethod:RKRequestMethodPOST];
+        [self addObjectMapping:[self shoppingListItemObjectMapping]];
         [self setObjectMapping:[self shoppingListItemObjectMapping] forResourcePathPattern:@"/items.json" withFetchRequestBlock:^NSFetchRequest *(NSString *resourcePath) {
             NSFetchRequest *fetchRequest = [ShoppingListItem fetchRequest];
             fetchRequest.sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]];
