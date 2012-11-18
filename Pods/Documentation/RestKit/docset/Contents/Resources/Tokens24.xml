@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKObjectDynamicMapping.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKObjectDynamicMapping</TokenIdentifier>
+			<Abstract type="html">Define an alias for the old class name for compatibility</Abstract>
+			<DeclaredIn>RKDynamicObjectMapping.h</DeclaredIn>
+			
+			<NodeRef refid="24"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

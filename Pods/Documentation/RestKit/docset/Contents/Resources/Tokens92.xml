@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RKSearchable.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RKSearchable</TokenIdentifier>
+			<Abstract type="html">The RKSearchable protocol declares a method for providing a searchable
+textual representation of content contained within the receiver. Searchable
+objects can be searched via instances of RKSearchEngine.</Abstract>
+			<DeclaredIn>RKSearchEngine.h</DeclaredIn>
+			
+			<NodeRef refid="92"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKSearchable/searchableText</TokenIdentifier>
+			<Abstract type="html">Returns a string representation of searchable text contained within the receiver.</Abstract>
+			<DeclaredIn>RKSearchEngine.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)searchableText</Declaration>
+			
+			<ReturnValue><Abstract type="html">A string of searchable text.</Abstract></ReturnValue>
+			<Anchor>//api/name/searchableText</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

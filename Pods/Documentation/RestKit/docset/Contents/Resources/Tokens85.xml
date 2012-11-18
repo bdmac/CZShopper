@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RKObjectPaginatorDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RKObjectPaginatorDelegate</TokenIdentifier>
+			<Abstract type="html">The RKObjectPaginatorDelegate formal protocol defines
+RKObjectPaginator delegate methods that can be implemented by
+objects to receive informational callbacks about paginated loading
+of mapping objects through RestKit.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>
+			
+			<NodeRef refid="85"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectPaginatorDelegate/paginator:didLoadObjects:forPage:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate the paginator has loaded a page of objects from the collection.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>- (void)paginator:(RKObjectPaginator *)paginator didLoadObjects:(NSArray *)objects forPage:(NSUInteger)page</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>paginator</Name>
+					<Abstract type="html">The paginator that loaded the objects.</Abstract>
+				</Parameter><Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">An array of objects mapped from the remote JSON/XML representation.</Abstract>
+				</Parameter><Parameter>
+					<Name>page</Name>
+					<Abstract type="html">The page number that was loaded.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/paginator:didLoadObjects:forPage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectPaginatorDelegate/paginator:didFailWithError:objectLoader:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate the paginator has failed loading due to an error.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>- (void)paginator:(RKObjectPaginator *)paginator didFailWithError:(NSError *)error objectLoader:(RKObjectLoader *)loader</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>paginator</Name>
+					<Abstract type="html">The paginator that failed loading due to an error.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">An NSError indicating the cause of the failure.</Abstract>
+				</Parameter><Parameter>
+					<Name>loader</Name>
+					<Abstract type="html">The loader request that resulted in the failure.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/paginator:didFailWithError:objectLoader:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectPaginatorDelegate/paginator:willLoadPage:objectLoader:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the paginator is about to begin loading a page of objects.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>- (void)paginator:(RKObjectPaginator *)paginator willLoadPage:(NSUInteger)page objectLoader:(RKObjectLoader *)loader</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>paginator</Name>
+					<Abstract type="html">The paginator performing the load.</Abstract>
+				</Parameter><Parameter>
+					<Name>page</Name>
+					<Abstract type="html">The numeric page number being loaded.</Abstract>
+				</Parameter><Parameter>
+					<Name>loader</Name>
+					<Abstract type="html">The object loader request used to load the page.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/paginator:willLoadPage:objectLoader:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectPaginatorDelegate/paginatorDidLoadFirstPage:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate the paginator has loaded the first page of objects in the collection.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>- (void)paginatorDidLoadFirstPage:(RKObjectPaginator *)paginator</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>paginator</Name>
+					<Abstract type="html">The paginator instance that has loaded the first page.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/paginatorDidLoadFirstPage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectPaginatorDelegate/paginatorDidLoadLastPage:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate the paginator has loaded the last page of objects in the collection.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>- (void)paginatorDidLoadLastPage:(RKObjectPaginator *)paginator</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>paginator</Name>
+					<Abstract type="html">The paginator instance that has loaded the last page.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/paginatorDidLoadLastPage:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

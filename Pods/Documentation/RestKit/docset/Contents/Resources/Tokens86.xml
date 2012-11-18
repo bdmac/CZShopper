@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RKParser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RKParser</TokenIdentifier>
+			<Abstract type="html">The RKParser protocol declares two methods that a class must implement
+so that it can provide support for parsing and serializing object
+representations to the RestKit framework. Parsers are required to transform
+data to and from string representations and are configured via the
+RKParserRegistry shared instance.</Abstract>
+			<DeclaredIn>RKParser.h</DeclaredIn>
+			
+			<NodeRef refid="86"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKParser/objectFromString:error:</TokenIdentifier>
+			<Abstract type="html">Returns an object representation of the source string encoded in the
+format provided by the parser (i.e. JSON, XML, etc).</Abstract>
+			<DeclaredIn>RKParser.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectFromString:(NSString *)string error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>string</Name>
+					<Abstract type="html">The string representation of the object to be parsed.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">A pointer to an NSError object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The parsed object or nil if an error occurred during parsing.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectFromString:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKParser/stringFromObject:error:</TokenIdentifier>
+			<Abstract type="html">Returns a string representation encoded in the format
+provided by the parser (i.e. JSON, XML, etc) for the given object.</Abstract>
+			<DeclaredIn>RKParser.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)stringFromObject:(id)object error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object to be serialized.</Abstract>
+				</Parameter><Parameter>
+					<Name>A</Name>
+					<Abstract type="html">pointer to an NSError object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A string representation of the serialized object or nil if an error occurred.</Abstract></ReturnValue>
+			<Anchor>//api/name/stringFromObject:error:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

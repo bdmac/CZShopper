@@ -1,0 +1,1719 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>RKTableViewCellMapping Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">RestKit 0.10.3 </a></h1>
+				<a id="developerHome" href="../index.html">Blake Watters</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">RKTableViewCellMapping Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/accessoryType">&nbsp;&nbsp;&nbsp;&nbsp;accessoryType</option>
+	
+	<option value="//api/name/cellClass">&nbsp;&nbsp;&nbsp;&nbsp;cellClass</option>
+	
+	<option value="//api/name/cellClassName">&nbsp;&nbsp;&nbsp;&nbsp;cellClassName</option>
+	
+	<option value="//api/name/deselectsRowOnSelection">&nbsp;&nbsp;&nbsp;&nbsp;deselectsRowOnSelection</option>
+	
+	<option value="//api/name/editingStyleForObjectAtIndexPath">&nbsp;&nbsp;&nbsp;&nbsp;editingStyleForObjectAtIndexPath</option>
+	
+	<option value="//api/name/heightOfCellForObjectAtIndexPath">&nbsp;&nbsp;&nbsp;&nbsp;heightOfCellForObjectAtIndexPath</option>
+	
+	<option value="//api/name/managesCellAttributes">&nbsp;&nbsp;&nbsp;&nbsp;managesCellAttributes</option>
+	
+	<option value="//api/name/onCellWillAppearForObjectAtIndexPath">&nbsp;&nbsp;&nbsp;&nbsp;onCellWillAppearForObjectAtIndexPath</option>
+	
+	<option value="//api/name/onSelectCell">&nbsp;&nbsp;&nbsp;&nbsp;onSelectCell</option>
+	
+	<option value="//api/name/onSelectCellForObjectAtIndexPath">&nbsp;&nbsp;&nbsp;&nbsp;onSelectCellForObjectAtIndexPath</option>
+	
+	<option value="//api/name/onTapAccessoryButtonForObjectAtIndexPath">&nbsp;&nbsp;&nbsp;&nbsp;onTapAccessoryButtonForObjectAtIndexPath</option>
+	
+	<option value="//api/name/reuseIdentifier">&nbsp;&nbsp;&nbsp;&nbsp;reuseIdentifier</option>
+	
+	<option value="//api/name/rowHeight">&nbsp;&nbsp;&nbsp;&nbsp;rowHeight</option>
+	
+	<option value="//api/name/selectionStyle">&nbsp;&nbsp;&nbsp;&nbsp;selectionStyle</option>
+	
+	<option value="//api/name/style">&nbsp;&nbsp;&nbsp;&nbsp;style</option>
+	
+	<option value="//api/name/targetIndexPathForMove">&nbsp;&nbsp;&nbsp;&nbsp;targetIndexPathForMove</option>
+	
+	<option value="//api/name/titleForDeleteButtonForObjectAtIndexPath">&nbsp;&nbsp;&nbsp;&nbsp;titleForDeleteButtonForObjectAtIndexPath</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/cellMapping">&nbsp;&nbsp;&nbsp;&nbsp;+ cellMapping</option>
+	
+	<option value="//api/name/cellMappingForReuseIdentifier:">&nbsp;&nbsp;&nbsp;&nbsp;+ cellMappingForReuseIdentifier:</option>
+	
+	<option value="//api/name/cellMappingUsingBlock:">&nbsp;&nbsp;&nbsp;&nbsp;+ cellMappingUsingBlock:</option>
+	
+	<option value="//api/name/defaultCellMapping">&nbsp;&nbsp;&nbsp;&nbsp;+ defaultCellMapping</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addBlockAction:forControlEvents:toControlAtKeyPath:">&nbsp;&nbsp;&nbsp;&nbsp;- addBlockAction:forControlEvents:toControlAtKeyPath:</option>
+	
+	<option value="//api/name/addBlockAction:forTouchEventToControlAtKeyPath:">&nbsp;&nbsp;&nbsp;&nbsp;- addBlockAction:forTouchEventToControlAtKeyPath:</option>
+	
+	<option value="//api/name/addDefaultMappings">&nbsp;&nbsp;&nbsp;&nbsp;- addDefaultMappings</option>
+	
+	<option value="//api/name/addPrepareCellBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- addPrepareCellBlock:</option>
+	
+	<option value="//api/name/addTarget:action:forControlEvents:toControlAtKeyPath:">&nbsp;&nbsp;&nbsp;&nbsp;- addTarget:action:forControlEvents:toControlAtKeyPath:</option>
+	
+	<option value="//api/name/addTarget:action:forTouchEventToControlAtKeyPath:">&nbsp;&nbsp;&nbsp;&nbsp;- addTarget:action:forTouchEventToControlAtKeyPath:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Cell Events *">Cell Events *</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuring Control Actions">Configuring Control Actions</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/accessoryType">accessoryType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cellClass">cellClass</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cellClassName">cellClassName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deselectsRowOnSelection">deselectsRowOnSelection</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editingStyleForObjectAtIndexPath">editingStyleForObjectAtIndexPath</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/heightOfCellForObjectAtIndexPath">heightOfCellForObjectAtIndexPath</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/managesCellAttributes">managesCellAttributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onCellWillAppearForObjectAtIndexPath">onCellWillAppearForObjectAtIndexPath</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onSelectCell">onSelectCell</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onSelectCellForObjectAtIndexPath">onSelectCellForObjectAtIndexPath</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onTapAccessoryButtonForObjectAtIndexPath">onTapAccessoryButtonForObjectAtIndexPath</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reuseIdentifier">reuseIdentifier</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowHeight">rowHeight</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectionStyle">selectionStyle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/style">style</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/targetIndexPathForMove">targetIndexPathForMove</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/titleForDeleteButtonForObjectAtIndexPath">titleForDeleteButtonForObjectAtIndexPath</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cellMapping">cellMapping</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cellMappingForReuseIdentifier:">cellMappingForReuseIdentifier:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cellMappingUsingBlock:">cellMappingUsingBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultCellMapping">defaultCellMapping</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addBlockAction:forControlEvents:toControlAtKeyPath:">addBlockAction:forControlEvents:toControlAtKeyPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addBlockAction:forTouchEventToControlAtKeyPath:">addBlockAction:forTouchEventToControlAtKeyPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addDefaultMappings">addDefaultMappings</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addPrepareCellBlock:">addPrepareCellBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addTarget:action:forControlEvents:toControlAtKeyPath:">addTarget:action:forControlEvents:toControlAtKeyPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addTarget:action:forTouchEventToControlAtKeyPath:">addTarget:action:forTouchEventToControlAtKeyPath:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="RKTableViewCellMapping Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">RKTableViewCellMapping Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/RKObjectMapping.html">RKObjectMapping</a> : <a href="../Classes/RKObjectMappingDefinition.html">RKObjectMappingDefinition</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">RKTableViewCellMapping.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Defines a RestKit object mapping suitable for mapping generic
+objects into UITableViewCell derived classes or cells loaded from
+NIBs. The cell mapping leverages RestKit&rsquo;s object mapping engine to
+dynamically map keyPaths in your object model into properties on the
+table cell view.</p>
+
+<p>Cell mappings are used to drive table view cells within an <a href="../Classes/RKTableController.html">RKTableController</a>
+derived class. The cell mapping does not require any specific implementation
+on the target cell classes beyond exposure of the configurable UIView&rsquo;s via
+KVC properties.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellClass">&nbsp;&nbsp;cellClass</a></code>
+		<span class="tooltip"><p>The UITableViewCell subclass that this mapping will target. This
+is an alias for the objectClass property defined on the base mapping
+provided here to make things more explicit.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellClassName">&nbsp;&nbsp;cellClassName</a></code>
+		<span class="tooltip"><p>Convenience accessor for setting the <a href="#//api/name/cellClass">cellClass</a> attribute via a string
+rather than a class instance. This will typically save you from having
+to #import the header file for your target cells in your table view controller</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reuseIdentifier">&nbsp;&nbsp;reuseIdentifier</a></code>
+		<span class="tooltip"><p>A reuse identifier for cells created using this mapping. These cells will be
+dequeued and reused within the table view for optimal performance. By default,
+a reuseIdentifier is set for you when you assign an object class to the mapping.
+You can override this behavior if you have multiple cells representing the same types
+of objects within the table view and need to pool the cells differently.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/managesCellAttributes">&nbsp;&nbsp;managesCellAttributes</a></code>
+		<span class="tooltip"><p>A Boolean value that determines whether the cell mapping manages basic cell
+attributes (<a href="#//api/name/accessoryType">accessoryType</a>, <a href="#//api/name/selectionStyle">selectionStyle</a>, etc.) or defers to a Storyboard/XIB
+for defining basic cell attributes.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/style">&nbsp;&nbsp;style</a></code>
+		<span class="tooltip"><p>The cell style to use for cells created with this mapping</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/accessoryType">&nbsp;&nbsp;accessoryType</a></code>
+		<span class="tooltip"><p>The cell accessory type to use for cells created with this mapping</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectionStyle">&nbsp;&nbsp;selectionStyle</a></code>
+		<span class="tooltip"><p>The cell selection <a href="#//api/name/style">style</a> to use for cells created with this mapping</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deselectsRowOnSelection">&nbsp;&nbsp;deselectsRowOnSelection</a></code>
+		<span class="tooltip"><p>Whether the tableController should call deselectRowAtIndexPath:animated:
+on the tableView when a cell is selected.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rowHeight">&nbsp;&nbsp;rowHeight</a></code>
+		<span class="tooltip"><p>The row height to use for cells created with this mapping.
+Use of this property requires that <a href="../Classes/RKTableController.html">RKTableController</a> instance you are
+using the mapping to build cells for has been configured with variableHeightRows = YES</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Cell Events *" name="task_Cell Events *"></a>
+						<h3 class="subsubtitle task-title">Cell Events *</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/onSelectCellForObjectAtIndexPath">&nbsp;&nbsp;onSelectCellForObjectAtIndexPath</a></code>
+		<span class="tooltip"><p>Invoked when the user has touched a cell corresponding to an object. The block
+is invoked with a reference to both the UITableViewCell that was touched and the
+object the cell is representing.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/onSelectCell">&nbsp;&nbsp;onSelectCell</a></code>
+		<span class="tooltip"><p>Invoked when the user has touched a cell configured with this mapping. The block is invoked
+without any arguments. This is useful for one-off touch events where you do not care about
+the content in which the selection took place.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/onCellWillAppearForObjectAtIndexPath">&nbsp;&nbsp;onCellWillAppearForObjectAtIndexPath</a></code>
+		<span class="tooltip"><p>A block to invoke when a table view cell created with this mapping is going to appear in the table.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/heightOfCellForObjectAtIndexPath">&nbsp;&nbsp;heightOfCellForObjectAtIndexPath</a></code>
+		<span class="tooltip"><p>A block to invoke when the table view is measuring the height of the UITableViewCell.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/onTapAccessoryButtonForObjectAtIndexPath">&nbsp;&nbsp;onTapAccessoryButtonForObjectAtIndexPath</a></code>
+		<span class="tooltip"><p>A block to invoke when the accessory button for a given cell is tapped by the user.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/titleForDeleteButtonForObjectAtIndexPath">&nbsp;&nbsp;titleForDeleteButtonForObjectAtIndexPath</a></code>
+		<span class="tooltip"><p>A block to invoke when the table view is determining the title for the delete confirmation button.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/editingStyleForObjectAtIndexPath">&nbsp;&nbsp;editingStyleForObjectAtIndexPath</a></code>
+		<span class="tooltip"><p>A block to invoke when the table view is determining the editing <a href="#//api/name/style">style</a> for a given row.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/targetIndexPathForMove">&nbsp;&nbsp;targetIndexPathForMove</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellMapping">+&nbsp;cellMapping</a></code>
+		<span class="tooltip"><p>Returns a new auto-released mapping targeting UITableViewCell</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellMappingForReuseIdentifier:">+&nbsp;cellMappingForReuseIdentifier:</a></code>
+		<span class="tooltip"><p>Returns a new auto-released mapping targeting UITableViewCell with the specified <a href="#//api/name/reuseIdentifier">reuseIdentifier</a></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultCellMapping">+&nbsp;defaultCellMapping</a></code>
+		<span class="tooltip"><p>Creates and returns an RKTableCellMapping instance configured with the default cell mappings.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellMappingUsingBlock:">+&nbsp;cellMappingUsingBlock:</a></code>
+		<span class="tooltip"><p>Returns a new auto-released object mapping targeting UITableViewCell. The mapping
+will be yielded to the block for configuration.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addDefaultMappings">&ndash;&nbsp;addDefaultMappings</a></code>
+		<span class="tooltip"><p>Sets up default mappings connecting common properties to their UITableViewCell counterparts as follows:</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addPrepareCellBlock:">&ndash;&nbsp;addPrepareCellBlock:</a></code>
+		<span class="tooltip"><p>Configure a block to be invoked whenever a cell is prepared for use with this mapping.
+The block will be invoked each time a cell is either initialized or dequeued for reuse.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Configuring Control Actions" name="task_Configuring Control Actions"></a>
+						<h3 class="subsubtitle task-title">Configuring Control Actions</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addTarget:action:forControlEvents:toControlAtKeyPath:">&ndash;&nbsp;addTarget:action:forControlEvents:toControlAtKeyPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addTarget:action:forTouchEventToControlAtKeyPath:">&ndash;&nbsp;addTarget:action:forTouchEventToControlAtKeyPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addBlockAction:forControlEvents:toControlAtKeyPath:">&ndash;&nbsp;addBlockAction:forControlEvents:toControlAtKeyPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addBlockAction:forTouchEventToControlAtKeyPath:">&ndash;&nbsp;addBlockAction:forTouchEventToControlAtKeyPath:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/accessoryType" title="accessoryType"></a>
+	<h3 class="subsubtitle method-title">accessoryType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The cell accessory type to use for cells created with this mapping</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) UITableViewCellAccessoryType accessoryType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The cell accessory type to use for cells created with this mapping</p>
+
+<p>@default UITableViewCellAccessoryNone</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cellClass" title="cellClass"></a>
+	<h3 class="subsubtitle method-title">cellClass</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The UITableViewCell subclass that this mapping will target. This
+is an alias for the objectClass property defined on the base mapping
+provided here to make things more explicit.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) Class cellClass</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The UITableViewCell subclass that this mapping will target. This
+is an alias for the objectClass property defined on the base mapping
+provided here to make things more explicit.</p>
+
+<p>@default [GGImageButtonTableViewCell class]</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cellClassName" title="cellClassName"></a>
+	<h3 class="subsubtitle method-title">cellClassName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Convenience accessor for setting the <a href="#//api/name/cellClass">cellClass</a> attribute via a string
+rather than a class instance. This will typically save you from having
+to #import the header file for your target cells in your table view controller</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSString *cellClassName</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Convenience accessor for setting the <a href="#//api/name/cellClass">cellClass</a> attribute via a string
+rather than a class instance. This will typically save you from having
+to #import the header file for your target cells in your table view controller</p>
+
+<p>@default @&ldquo;GGImageButtonTableViewCell&rdquo;</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/cellClass">@property cellClass</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deselectsRowOnSelection" title="deselectsRowOnSelection"></a>
+	<h3 class="subsubtitle method-title">deselectsRowOnSelection</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether the tableController should call deselectRowAtIndexPath:animated:
+on the tableView when a cell is selected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL deselectsRowOnSelection</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Whether the tableController should call deselectRowAtIndexPath:animated:
+on the tableView when a cell is selected.</p>
+
+<p>@default YES</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/editingStyleForObjectAtIndexPath" title="editingStyleForObjectAtIndexPath"></a>
+	<h3 class="subsubtitle method-title">editingStyleForObjectAtIndexPath</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A block to invoke when the table view is determining the editing <a href="#//api/name/style">style</a> for a given row.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) RKTableViewEditingStyleForObjectAtIndexPathBlock editingStyleForObjectAtIndexPath</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A block to invoke when the table view is determining the editing <a href="#//api/name/style">style</a> for a given row.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/heightOfCellForObjectAtIndexPath" title="heightOfCellForObjectAtIndexPath"></a>
+	<h3 class="subsubtitle method-title">heightOfCellForObjectAtIndexPath</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A block to invoke when the table view is measuring the height of the UITableViewCell.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) RKTableViewHeightOfCellForObjectAtIndexPathBlock heightOfCellForObjectAtIndexPath</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A block to invoke when the table view is measuring the height of the UITableViewCell.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/managesCellAttributes" title="managesCellAttributes"></a>
+	<h3 class="subsubtitle method-title">managesCellAttributes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A Boolean value that determines whether the cell mapping manages basic cell
+attributes (<a href="#//api/name/accessoryType">accessoryType</a>, <a href="#//api/name/selectionStyle">selectionStyle</a>, etc.) or defers to a Storyboard/XIB
+for defining basic cell attributes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL managesCellAttributes</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A Boolean value that determines whether the cell mapping manages basic cell
+attributes (<a href="#//api/name/accessoryType">accessoryType</a>, <a href="#//api/name/selectionStyle">selectionStyle</a>, etc.) or defers to a Storyboard/XIB
+for defining basic cell attributes.</p>
+
+<p>Setting the <a href="#//api/name/accessoryType">accessoryType</a> or <a href="#//api/name/selectionStyle">selectionStyle</a> will set the value to YES.</p>
+
+<p><strong>Default</strong>: NO</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/onCellWillAppearForObjectAtIndexPath" title="onCellWillAppearForObjectAtIndexPath"></a>
+	<h3 class="subsubtitle method-title">onCellWillAppearForObjectAtIndexPath</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A block to invoke when a table view cell created with this mapping is going to appear in the table.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) RKTableViewCellForObjectAtIndexPathBlock onCellWillAppearForObjectAtIndexPath</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A block to invoke when a table view cell created with this mapping is going to appear in the table.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</p>
+
+<p>This is a good moment to perform any customization to the cell before it becomes visible in the table view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/onSelectCell" title="onSelectCell"></a>
+	<h3 class="subsubtitle method-title">onSelectCell</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Invoked when the user has touched a cell configured with this mapping. The block is invoked
+without any arguments. This is useful for one-off touch events where you do not care about
+the content in which the selection took place.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) RKTableViewAnonymousBlock onSelectCell</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Invoked when the user has touched a cell configured with this mapping. The block is invoked
+without any arguments. This is useful for one-off touch events where you do not care about
+the content in which the selection took place.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/onSelectCellForObjectAtIndexPath">@property onSelectCellForObjectAtIndexPath</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/onSelectCellForObjectAtIndexPath" title="onSelectCellForObjectAtIndexPath"></a>
+	<h3 class="subsubtitle method-title">onSelectCellForObjectAtIndexPath</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Invoked when the user has touched a cell corresponding to an object. The block
+is invoked with a reference to both the UITableViewCell that was touched and the
+object the cell is representing.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) RKTableViewCellForObjectAtIndexPathBlock onSelectCellForObjectAtIndexPath</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Invoked when the user has touched a cell corresponding to an object. The block
+is invoked with a reference to both the UITableViewCell that was touched and the
+object the cell is representing.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/onTapAccessoryButtonForObjectAtIndexPath" title="onTapAccessoryButtonForObjectAtIndexPath"></a>
+	<h3 class="subsubtitle method-title">onTapAccessoryButtonForObjectAtIndexPath</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A block to invoke when the accessory button for a given cell is tapped by the user.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) RKTableViewAccessoryButtonTappedForObjectAtIndexPathBlock onTapAccessoryButtonForObjectAtIndexPath</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A block to invoke when the accessory button for a given cell is tapped by the user.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reuseIdentifier" title="reuseIdentifier"></a>
+	<h3 class="subsubtitle method-title">reuseIdentifier</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A reuse identifier for cells created using this mapping. These cells will be
+dequeued and reused within the table view for optimal performance. By default,
+a reuseIdentifier is set for you when you assign an object class to the mapping.
+You can override this behavior if you have multiple cells representing the same types
+of objects within the table view and need to pool the cells differently.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *reuseIdentifier</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A reuse identifier for cells created using this mapping. These cells will be
+dequeued and reused within the table view for optimal performance. By default,
+a reuseIdentifier is set for you when you assign an object class to the mapping.
+You can override this behavior if you have multiple cells representing the same types
+of objects within the table view and need to pool the cells differently.</p>
+
+<p>@default NSStringFromClass(self.objectClass)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rowHeight" title="rowHeight"></a>
+	<h3 class="subsubtitle method-title">rowHeight</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The row height to use for cells created with this mapping.
+Use of this property requires that <a href="../Classes/RKTableController.html">RKTableController</a> instance you are
+using the mapping to build cells for has been configured with variableHeightRows = YES</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat rowHeight</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The row height to use for cells created with this mapping.
+Use of this property requires that <a href="../Classes/RKTableController.html">RKTableController</a> instance you are
+using the mapping to build cells for has been configured with variableHeightRows = YES</p>
+
+<p>This value is mutually exclusive of the <a href="#//api/name/heightOfCellForObjectAtIndexPath">heightOfCellForObjectAtIndexPath</a> property
+and will be ignored if you assign a block to perform dynamic row height calculations.</p>
+
+<p><strong>Default</strong>: 44</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectionStyle" title="selectionStyle"></a>
+	<h3 class="subsubtitle method-title">selectionStyle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The cell selection <a href="#//api/name/style">style</a> to use for cells created with this mapping</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) UITableViewCellSelectionStyle selectionStyle</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The cell selection <a href="#//api/name/style">style</a> to use for cells created with this mapping</p>
+
+<p>@default UITableViewCellSelectionStyleBlue</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/style" title="style"></a>
+	<h3 class="subsubtitle method-title">style</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The cell style to use for cells created with this mapping</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) UITableViewCellStyle style</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The cell style to use for cells created with this mapping</p>
+
+<p>@default UITableViewCellStyleDefault</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/targetIndexPathForMove" title="targetIndexPathForMove"></a>
+	<h3 class="subsubtitle method-title">targetIndexPathForMove</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) RKTableViewTargetIndexPathForMoveBlock targetIndexPathForMove</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/titleForDeleteButtonForObjectAtIndexPath" title="titleForDeleteButtonForObjectAtIndexPath"></a>
+	<h3 class="subsubtitle method-title">titleForDeleteButtonForObjectAtIndexPath</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A block to invoke when the table view is determining the title for the delete confirmation button.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) RKTableViewTitleForDeleteButtonForObjectAtIndexPathBlock titleForDeleteButtonForObjectAtIndexPath</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A block to invoke when the table view is determining the title for the delete confirmation button.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cellMapping" title="cellMapping"></a>
+	<h3 class="subsubtitle method-title">cellMapping</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a new auto-released mapping targeting UITableViewCell</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)cellMapping</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a new auto-released mapping targeting UITableViewCell</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cellMappingForReuseIdentifier:" title="cellMappingForReuseIdentifier:"></a>
+	<h3 class="subsubtitle method-title">cellMappingForReuseIdentifier:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a new auto-released mapping targeting UITableViewCell with the specified <a href="#//api/name/reuseIdentifier">reuseIdentifier</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)cellMappingForReuseIdentifier:(NSString *)<em>reuseIdentifier</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a new auto-released mapping targeting UITableViewCell with the specified <a href="#//api/name/reuseIdentifier">reuseIdentifier</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cellMappingUsingBlock:" title="cellMappingUsingBlock:"></a>
+	<h3 class="subsubtitle method-title">cellMappingUsingBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a new auto-released object mapping targeting UITableViewCell. The mapping
+will be yielded to the block for configuration.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)cellMappingUsingBlock:(void ( ^ ) ( RKTableViewCellMapping *cellMapping ))<em>block</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a new auto-released object mapping targeting UITableViewCell. The mapping
+will be yielded to the block for configuration.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultCellMapping" title="defaultCellMapping"></a>
+	<h3 class="subsubtitle method-title">defaultCellMapping</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns an RKTableCellMapping instance configured with the default cell mappings.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)defaultCellMapping</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An RKTableCellMapping instance with default mappings applied.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates and returns an RKTableCellMapping instance configured with the default cell mappings.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addBlockAction:forControlEvents:toControlAtKeyPath:" title="addBlockAction:forControlEvents:toControlAtKeyPath:"></a>
+	<h3 class="subsubtitle method-title">addBlockAction:forControlEvents:toControlAtKeyPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addBlockAction:(void ( ^ ) ( id sender ))<em>block</em> forControlEvents:(UIControlEvents)<em>controlEvents</em> toControlAtKeyPath:(NSString *)<em>keyPath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addBlockAction:forTouchEventToControlAtKeyPath:" title="addBlockAction:forTouchEventToControlAtKeyPath:"></a>
+	<h3 class="subsubtitle method-title">addBlockAction:forTouchEventToControlAtKeyPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addBlockAction:(void ( ^ ) ( id sender ))<em>block</em> forTouchEventToControlAtKeyPath:(NSString *)<em>keyPath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addDefaultMappings" title="addDefaultMappings"></a>
+	<h3 class="subsubtitle method-title">addDefaultMappings</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets up default mappings connecting common properties to their UITableViewCell counterparts as follows:</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addDefaultMappings</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets up default mappings connecting common properties to their UITableViewCell counterparts as follows:</p>
+
+<pre><code> [self mapKeyPath:@"text" toAttribute:@"textLabel.text"];
+ [self mapKeyPath:@"detailText" toAttribute:@"detailTextLabel.text"];
+ [self mapKeyPath:@"image" toAttribute:@"imageView.image"];
+</code></pre>
+
+<p>These properties are exposed on the <a href="../Classes/RKTableItem.html">RKTableItem</a> class for convenience in quickly building static
+table views/</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/RKTableItem.html">RKTableItem</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addPrepareCellBlock:" title="addPrepareCellBlock:"></a>
+	<h3 class="subsubtitle method-title">addPrepareCellBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Configure a block to be invoked whenever a cell is prepared for use with this mapping.
+The block will be invoked each time a cell is either initialized or dequeued for reuse.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addPrepareCellBlock:(void ( ^ ) ( UITableViewCell *cell ))<em>block</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Configure a block to be invoked whenever a cell is prepared for use with this mapping.
+The block will be invoked each time a cell is either initialized or dequeued for reuse.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKTableViewCellMapping.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addTarget:action:forControlEvents:toControlAtKeyPath:" title="addTarget:action:forControlEvents:toControlAtKeyPath:"></a>
+	<h3 class="subsubtitle method-title">addTarget:action:forControlEvents:toControlAtKeyPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addTarget:(id)<em>target</em> action:(SEL)<em>action</em> forControlEvents:(UIControlEvents)<em>controlEvents</em> toControlAtKeyPath:(NSString *)<em>keyPath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addTarget:action:forTouchEventToControlAtKeyPath:" title="addTarget:action:forTouchEventToControlAtKeyPath:"></a>
+	<h3 class="subsubtitle method-title">addTarget:action:forTouchEventToControlAtKeyPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addTarget:(id)<em>target</em> action:(SEL)<em>action</em> forTouchEventToControlAtKeyPath:(NSString *)<em>keyPath</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Blake Watters. All rights reserved. (Last updated: 2012-11-16)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

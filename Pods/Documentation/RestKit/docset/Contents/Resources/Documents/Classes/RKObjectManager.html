@@ -1,0 +1,2954 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>RKObjectManager Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">RestKit 0.10.3 </a></h1>
+				<a id="developerHome" href="../index.html">Blake Watters</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">RKObjectManager Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/acceptMIMEType">&nbsp;&nbsp;&nbsp;&nbsp;acceptMIMEType</option>
+	
+	<option value="//api/name/baseURL">&nbsp;&nbsp;&nbsp;&nbsp;baseURL</option>
+	
+	<option value="//api/name/client">&nbsp;&nbsp;&nbsp;&nbsp;client</option>
+	
+	<option value="//api/name/isOffline">&nbsp;&nbsp;&nbsp;&nbsp;isOffline</option>
+	
+	<option value="//api/name/isOnline">&nbsp;&nbsp;&nbsp;&nbsp;isOnline</option>
+	
+	<option value="//api/name/mappingProvider">&nbsp;&nbsp;&nbsp;&nbsp;mappingProvider</option>
+	
+	<option value="//api/name/mappingQueue">&nbsp;&nbsp;&nbsp;&nbsp;mappingQueue</option>
+	
+	<option value="//api/name/networkStatus">&nbsp;&nbsp;&nbsp;&nbsp;networkStatus</option>
+	
+	<option value="//api/name/objectStore">&nbsp;&nbsp;&nbsp;&nbsp;objectStore</option>
+	
+	<option value="//api/name/requestCache">&nbsp;&nbsp;&nbsp;&nbsp;requestCache</option>
+	
+	<option value="//api/name/requestQueue">&nbsp;&nbsp;&nbsp;&nbsp;requestQueue</option>
+	
+	<option value="//api/name/router">&nbsp;&nbsp;&nbsp;&nbsp;router</option>
+	
+	<option value="//api/name/serializationMIMEType">&nbsp;&nbsp;&nbsp;&nbsp;serializationMIMEType</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/defaultMappingQueue">&nbsp;&nbsp;&nbsp;&nbsp;+ defaultMappingQueue</option>
+	
+	<option value="//api/name/managerWithBaseURL:">&nbsp;&nbsp;&nbsp;&nbsp;+ managerWithBaseURL:</option>
+	
+	<option value="//api/name/managerWithBaseURLString:">&nbsp;&nbsp;&nbsp;&nbsp;+ managerWithBaseURLString:</option>
+	
+	<option value="//api/name/objectManagerWithBaseURL:">&nbsp;&nbsp;&nbsp;&nbsp;+ objectManagerWithBaseURL:</option>
+	
+	<option value="//api/name/objectManagerWithBaseURLString:">&nbsp;&nbsp;&nbsp;&nbsp;+ objectManagerWithBaseURLString:</option>
+	
+	<option value="//api/name/setDefaultMappingQueue:">&nbsp;&nbsp;&nbsp;&nbsp;+ setDefaultMappingQueue:</option>
+	
+	<option value="//api/name/setSharedManager:">&nbsp;&nbsp;&nbsp;&nbsp;+ setSharedManager:</option>
+	
+	<option value="//api/name/sharedManager">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedManager</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/deleteObject:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteObject:delegate:</option>
+	
+	<option value="//api/name/deleteObject:mapResponseWith:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteObject:mapResponseWith:delegate:</option>
+	
+	<option value="//api/name/deleteObject:usingBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteObject:usingBlock:</option>
+	
+	<option value="//api/name/fetchedResultsTableControllerForTableViewController:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchedResultsTableControllerForTableViewController:</option>
+	
+	<option value="//api/name/fetchedResultsTableControllerWithTableView:forViewController:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchedResultsTableControllerWithTableView:forViewController:</option>
+	
+	<option value="//api/name/getObject:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- getObject:delegate:</option>
+	
+	<option value="//api/name/getObject:mapResponseWith:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- getObject:mapResponseWith:delegate:</option>
+	
+	<option value="//api/name/getObject:usingBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- getObject:usingBlock:</option>
+	
+	<option value="//api/name/initWithBaseURL:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithBaseURL:</option>
+	
+	<option value="//api/name/loadObjectsAtResourcePath:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- loadObjectsAtResourcePath:delegate:</option>
+	
+	<option value="//api/name/loadObjectsAtResourcePath:objectMapping:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- loadObjectsAtResourcePath:objectMapping:delegate:</option>
+	
+	<option value="//api/name/loadObjectsAtResourcePath:usingBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- loadObjectsAtResourcePath:usingBlock:</option>
+	
+	<option value="//api/name/loaderForObject:method:">&nbsp;&nbsp;&nbsp;&nbsp;- loaderForObject:method:</option>
+	
+	<option value="//api/name/loaderWithResourcePath:">&nbsp;&nbsp;&nbsp;&nbsp;- loaderWithResourcePath:</option>
+	
+	<option value="//api/name/loaderWithURL:">&nbsp;&nbsp;&nbsp;&nbsp;- loaderWithURL:</option>
+	
+	<option value="//api/name/objectLoaderClass">&nbsp;&nbsp;&nbsp;&nbsp;- objectLoaderClass</option>
+	
+	<option value="//api/name/objectLoaderForObject:method:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- objectLoaderForObject:method:delegate:</option>
+	
+	<option value="//api/name/objectLoaderWithResourcePath:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- objectLoaderWithResourcePath:delegate:</option>
+	
+	<option value="//api/name/paginatorWithResourcePathPattern:">&nbsp;&nbsp;&nbsp;&nbsp;- paginatorWithResourcePathPattern:</option>
+	
+	<option value="//api/name/postObject:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- postObject:delegate:</option>
+	
+	<option value="//api/name/postObject:mapResponseWith:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- postObject:mapResponseWith:delegate:</option>
+	
+	<option value="//api/name/postObject:usingBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- postObject:usingBlock:</option>
+	
+	<option value="//api/name/putObject:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- putObject:delegate:</option>
+	
+	<option value="//api/name/putObject:mapResponseWith:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- putObject:mapResponseWith:delegate:</option>
+	
+	<option value="//api/name/putObject:usingBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- putObject:usingBlock:</option>
+	
+	<option value="//api/name/sendObject:toResourcePath:usingBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- sendObject:toResourcePath:usingBlock:</option>
+	
+	<option value="//api/name/tableControllerForTableViewController:">&nbsp;&nbsp;&nbsp;&nbsp;- tableControllerForTableViewController:</option>
+	
+	<option value="//api/name/tableControllerWithTableView:forViewController:">&nbsp;&nbsp;&nbsp;&nbsp;- tableControllerWithTableView:forViewController:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuring the Shared Manager Instance">Configuring the Shared Manager Instance</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Object Mapping Dispatch Queue">Object Mapping Dispatch Queue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initializing an Object Manager">Initializing an Object Manager</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Network Integration">Network Integration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuring Object Mapping">Configuring Object Mapping</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Building Object Loaders">Building Object Loaders</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Mappable Object Loaders">Mappable Object Loaders</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_RKTableController Methods">RKTableController Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/acceptMIMEType">acceptMIMEType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/baseURL">baseURL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/client">client</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isOffline">isOffline</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isOnline">isOnline</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mappingProvider">mappingProvider</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mappingQueue">mappingQueue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/networkStatus">networkStatus</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectStore">objectStore</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestCache">requestCache</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestQueue">requestQueue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/router">router</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/serializationMIMEType">serializationMIMEType</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultMappingQueue">defaultMappingQueue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/managerWithBaseURL:">managerWithBaseURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/managerWithBaseURLString:">managerWithBaseURLString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectManagerWithBaseURL:">objectManagerWithBaseURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectManagerWithBaseURLString:">objectManagerWithBaseURLString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDefaultMappingQueue:">setDefaultMappingQueue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSharedManager:">setSharedManager:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedManager">sharedManager</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteObject:delegate:">deleteObject:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteObject:mapResponseWith:delegate:">deleteObject:mapResponseWith:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteObject:usingBlock:">deleteObject:usingBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchedResultsTableControllerForTableViewController:">fetchedResultsTableControllerForTableViewController:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchedResultsTableControllerWithTableView:forViewController:">fetchedResultsTableControllerWithTableView:forViewController:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getObject:delegate:">getObject:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getObject:mapResponseWith:delegate:">getObject:mapResponseWith:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getObject:usingBlock:">getObject:usingBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithBaseURL:">initWithBaseURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadObjectsAtResourcePath:delegate:">loadObjectsAtResourcePath:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadObjectsAtResourcePath:objectMapping:delegate:">loadObjectsAtResourcePath:objectMapping:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadObjectsAtResourcePath:usingBlock:">loadObjectsAtResourcePath:usingBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loaderForObject:method:">loaderForObject:method:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loaderWithResourcePath:">loaderWithResourcePath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loaderWithURL:">loaderWithURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectLoaderClass">objectLoaderClass</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectLoaderForObject:method:delegate:">objectLoaderForObject:method:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectLoaderWithResourcePath:delegate:">objectLoaderWithResourcePath:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/paginatorWithResourcePathPattern:">paginatorWithResourcePathPattern:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postObject:delegate:">postObject:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postObject:mapResponseWith:delegate:">postObject:mapResponseWith:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postObject:usingBlock:">postObject:usingBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/putObject:delegate:">putObject:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/putObject:mapResponseWith:delegate:">putObject:mapResponseWith:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/putObject:usingBlock:">putObject:usingBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendObject:toResourcePath:usingBlock:">sendObject:toResourcePath:usingBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableControllerForTableViewController:">tableControllerForTableViewController:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableControllerWithTableView:forViewController:">tableControllerWithTableView:forViewController:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="RKObjectManager Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">RKObjectManager Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/RKConfigurationDelegate.html">RKConfigurationDelegate</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">RKObjectManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The object manager is the primary interface for interacting with RESTful resources via HTTP. It is
+responsible for retrieving remote object representations via HTTP and transforming them into local
+domain objects via the RKObjectMapper. It is also capable of serializing local objects and sending them
+to a remote system for processing. The object manager strives to hide the developer from the details of
+configuring an RKRequest, processing an RKResponse, parsing any data returned by the remote system, and
+running the parsed data through the object mapper.</p>
+
+<h3>Shared Manager Instance</h3>
+
+
+<p>Multiple instances of RKObjectManager may be used in parallel, but the first instance initialized
+is automatically configured as the sharedManager instance. The shared instance can be changed at runtime
+if so desired. See sharedManager and setSharedManager for details.</p>
+
+<h3>Configuring the Object Manager</h3>
+
+
+<p>The object mapper must be configured before object can be loaded from or transmitted to your remote backend
+system. Configuration consists of specifying the desired MIME types to be used during loads and serialization,
+registering object mappings to use for mapping and serialization, registering routes, and optionally configuring
+an instance of the managed object store (for Core Data).</p>
+
+<h4>MIME Types</h4>
+
+
+<p>MIME Types are used for two purposes within RestKit:</p>
+
+<ol>
+<li>Content Negotiation. RestKit leverages the HTTP Accept header to specify the desired representation of content
+when contacting a remote web service. You can specify the MIME Type to use via the acceptMIMEType method. The default
+MIME Type is RKMIMETypeJSON (application/json). If the remote web service responds with content in a different MIME Type
+than specified, RestKit will attempt to parse it by consulting the [parser registry]<a href="../Classes/RKParserRegistry.html#//api/name/parserForMIMEType:">[RKParserRegistry parserForMIMEType:]</a>.
+Failure to find a parser for the returned content will result in an unexpected response invocation of
+[RKObjectLoaderDelegate objectLoaderDidLoadUnexpectedResponse].</li>
+<li>Serialization. RestKit can be used to transport local object representation back to the remote web server for processing
+by serializing them into an <a href="../Protocols/RKRequestSerializable.html">RKRequestSerializable</a> representation. The desired serialization format is configured by setting
+the <a href="#//api/name/serializationMIMEType">serializationMIMEType</a> property. RestKit currently supports serialization to RKMIMETypeFormURLEncoded and RKMIMETypeJSON.
+The serialization rules themselves are expressed via an instance of <a href="../Classes/RKObjectMapping.html">RKObjectMapping</a>.</li>
+</ol>
+
+
+<h4>The Mapping Provider</h4>
+
+
+<p>RestKit determines how to map and serialize objects by consulting the <a href="#//api/name/mappingProvider">mappingProvider</a>. The mapping provider is responsible
+for providing instances of <a href="../Classes/RKObjectMapper.html">RKObjectMapper</a> with object mappings that should be used for transforming mappable data into object
+representations. When you ask the object manager to load or send objects for you, the <a href="#//api/name/mappingProvider">mappingProvider</a> instance will be used
+for the object mapping operations constructed for you. In this way, the <a href="#//api/name/mappingProvider">mappingProvider</a> is the central registry for the knowledge
+about how objects in your application are mapped.</p>
+
+<p>Mappings are registered by constructing instances of <a href="../Classes/RKObjectMapping.html">RKObjectMapping</a> and registering them with the provider:
+`</p>
+
+<pre><code>RKObjectManager *manager = [RKObjectManager managerWithBaseURL:myBaseURL];
+`RKObjectMapping` *articleMapping = [RKObjectMapping mappingForClass:[Article class]];
+[mapping mapAttributes:@"title", @"body", @"publishedAt", nil];
+[manager.mappingProvider setObjectMapping:articleMapping forKeyPath:@"article"];
+
+// Generate an inverse mapping for transforming Article -&gt; NSMutableDictionary.
+[manager.mappingProvider setSerializationMapping:[articleMapping inverseMapping] forClass:[Article class]];`
+</code></pre>
+
+<h4>Configuring Routes</h4>
+
+
+<p>Routing is the process of transforming objects and actions (as defined by HTTP verbs) into resource paths. RestKit ships</p>
+
+<h4>Initializing a Core Data Object Store</h4>
+
+
+<h3>Loading Remote Objects</h3>
+
+
+
+
+<h3>Routing &amp; Object Serialization</h3>
+
+
+
+
+<h3>Default Error Mapping</h3>
+
+
+<p>When an instance of RKObjectManager is configured, the <a href="../Classes/RKObjectMappingProvider.html">RKObjectMappingProvider</a>
+instance configured</p>
+
+<p>Provides extensions to RKObjectManager for instantiating <a href="../Classes/RKTableController.html">RKTableController</a> instances</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Configuring the Shared Manager Instance" name="task_Configuring the Shared Manager Instance"></a>
+						<h3 class="subsubtitle task-title">Configuring the Shared Manager Instance</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharedManager">+&nbsp;sharedManager</a></code>
+		<span class="tooltip"><p>Return the shared instance of the object manager</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSharedManager:">+&nbsp;setSharedManager:</a></code>
+		<span class="tooltip"><p>Set the shared instance of the object manager</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Object Mapping Dispatch Queue" name="task_Object Mapping Dispatch Queue"></a>
+						<h3 class="subsubtitle task-title">Object Mapping Dispatch Queue</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultMappingQueue">+&nbsp;defaultMappingQueue</a></code>
+		<span class="tooltip"><p>Returns the global default Grand Central Dispatch queue used for object mapping
+operations executed by RKObjectLoaders.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setDefaultMappingQueue:">+&nbsp;setDefaultMappingQueue:</a></code>
+		<span class="tooltip"><p>Sets a new global default Grand Central Dispatch queue for use in object mapping
+operations executed by RKObjectLoaders.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Initializing an Object Manager" name="task_Initializing an Object Manager"></a>
+						<h3 class="subsubtitle task-title">Initializing an Object Manager</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/managerWithBaseURLString:">+&nbsp;managerWithBaseURLString:</a></code>
+		<span class="tooltip"><p>Create and initialize a new object manager. If this is the first instance created
+it will be set as the shared instance</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/managerWithBaseURL:">+&nbsp;managerWithBaseURL:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithBaseURL:">&ndash;&nbsp;initWithBaseURL:</a></code>
+		<span class="tooltip"><p>Initializes a newly created object manager with a specified <a href="#//api/name/baseURL">baseURL</a>.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Network Integration" name="task_Network Integration"></a>
+						<h3 class="subsubtitle task-title">Network Integration</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/client">&nbsp;&nbsp;client</a></code>
+		<span class="tooltip"><p>The underlying HTTP client for this manager</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/baseURL">&nbsp;&nbsp;baseURL</a></code>
+		<span class="tooltip"><p>The base URL of the underlying <a href="../Classes/RKClient.html">RKClient</a> instance. Object loader
+and paginator instances built through the object manager are
+relative to this URL.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestCache">&nbsp;&nbsp;requestCache</a></code>
+		<span class="tooltip"><p>The request cache used to store and load responses for requests sent
+through this object manager&rsquo;s underlying <a href="#//api/name/client">client</a> object</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestQueue">&nbsp;&nbsp;requestQueue</a></code>
+		<span class="tooltip"><p>The request queue used to dispatch asynchronous requests sent
+through this object manager&rsquo;s underlying <a href="#//api/name/client">client</a> object</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/networkStatus">&nbsp;&nbsp;networkStatus</a></code>
+		<span class="tooltip"><p>  Returns the current network status for this object manager as determined
+  by connectivity to the remote backend system</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isOnline">&nbsp;&nbsp;isOnline</a></code>
+		<span class="tooltip"><p>Returns YES when we are in online mode</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isOffline">&nbsp;&nbsp;isOffline</a></code>
+		<span class="tooltip"><p>Returns YES when we are in offline mode</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Configuring Object Mapping" name="task_Configuring Object Mapping"></a>
+						<h3 class="subsubtitle task-title">Configuring Object Mapping</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mappingProvider">&nbsp;&nbsp;mappingProvider</a></code>
+		<span class="tooltip"><p>The Mapping Provider responsible for returning mappings for various keyPaths.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/router">&nbsp;&nbsp;router</a></code>
+		<span class="tooltip"><p>Router object responsible for generating resource paths for
+HTTP requests</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectStore">&nbsp;&nbsp;objectStore</a></code>
+		<span class="tooltip"><p>A Core Data backed object store for persisting objects that have been fetched from the Web</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mappingQueue">&nbsp;&nbsp;mappingQueue</a></code>
+		<span class="tooltip"><p>The Grand Dispatch Queue to use when performing expensive object mapping operations
+within <a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> instances created through this object manager</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/serializationMIMEType">&nbsp;&nbsp;serializationMIMEType</a></code>
+		<span class="tooltip"><p>The Default MIME Type to be used in object serialization.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/acceptMIMEType">&nbsp;&nbsp;acceptMIMEType</a></code>
+		<span class="tooltip"><p>The value for the HTTP Accept header to specify the preferred format for retrieved data</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Building Object Loaders" name="task_Building Object Loaders"></a>
+						<h3 class="subsubtitle task-title">Building Object Loaders</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectLoaderClass">&ndash;&nbsp;objectLoaderClass</a></code>
+		<span class="tooltip"><p>Returns the class of object loader instances built through the manager. When Core Data has
+been configured, instances of RKManagedObjectLoader will be emitted by the manager. Otherwise
+<a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> is used.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loaderWithResourcePath:">&ndash;&nbsp;loaderWithResourcePath:</a></code>
+		<span class="tooltip"><p>Creates and returns an <a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> or RKManagedObjectLoader instance targeting the specified resourcePath.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loaderWithURL:">&ndash;&nbsp;loaderWithURL:</a></code>
+		<span class="tooltip"><p>Creates and returns an <a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> or RKManagedObjectLoader instance targeting the specified URL.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loaderForObject:method:">&ndash;&nbsp;loaderForObject:method:</a></code>
+		<span class="tooltip"><p>Creates and returns an <a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> or RKManagedObjectLoader instance for an object instance.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/paginatorWithResourcePathPattern:">&ndash;&nbsp;paginatorWithResourcePathPattern:</a></code>
+		<span class="tooltip"><p>Creates and returns an <a href="../Classes/RKObjectPaginator.html">RKObjectPaginator</a> instance targeting the specified resource path pattern.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadObjectsAtResourcePath:delegate:">&ndash;&nbsp;loadObjectsAtResourcePath:delegate:</a></code>
+		<span class="tooltip"><p>Create and send an asynchronous GET request to load the objects at the resource path and call back the delegate
+with the loaded objects. Remote objects will be mapped to local objects by consulting the keyPath registrations
+set on the mapping provider.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Mappable Object Loaders" name="task_Mappable Object Loaders"></a>
+						<h3 class="subsubtitle task-title">Mappable Object Loaders</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getObject:delegate:">&ndash;&nbsp;getObject:delegate:</a></code>
+		<span class="tooltip"><p>Fetch the data for a mappable object by performing an HTTP GET.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postObject:delegate:">&ndash;&nbsp;postObject:delegate:</a></code>
+		<span class="tooltip"><p>Create a remote mappable model by POSTing the attributes to the remote resource and loading the resulting objects from the payload</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/putObject:delegate:">&ndash;&nbsp;putObject:delegate:</a></code>
+		<span class="tooltip"><p>Update a remote mappable model by PUTing the attributes to the remote resource and loading the resulting objects from the payload</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteObject:delegate:">&ndash;&nbsp;deleteObject:delegate:</a></code>
+		<span class="tooltip"><p>Delete the remote instance of a mappable model by performing an HTTP DELETE on the remote resource</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadObjectsAtResourcePath:usingBlock:">&ndash;&nbsp;loadObjectsAtResourcePath:usingBlock:</a></code>
+		<span class="tooltip"><p>Load the objects at the specified resource path and perform object mapping on the response payload. Prior to sending the object loader, the
+block will be invoked to allow you to configure the object loader as you see fit. This can be used to change the response type, set custom
+parameters, choose an object mapping, etc.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendObject:toResourcePath:usingBlock:">&ndash;&nbsp;sendObject:toResourcePath:usingBlock:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getObject:usingBlock:">&ndash;&nbsp;getObject:usingBlock:</a></code>
+		<span class="tooltip"><p>GET a remote object instance and yield the object loader to the block before sending</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postObject:usingBlock:">&ndash;&nbsp;postObject:usingBlock:</a></code>
+		<span class="tooltip"><p>POST a remote object instance and yield the object loader to the block before sending</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/putObject:usingBlock:">&ndash;&nbsp;putObject:usingBlock:</a></code>
+		<span class="tooltip"><p>PUT a remote object instance and yield the object loader to the block before sending</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteObject:usingBlock:">&ndash;&nbsp;deleteObject:usingBlock:</a></code>
+		<span class="tooltip"><p>DELETE a remote object instance and yield the object loader to the block before sending</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectManagerWithBaseURLString:">+&nbsp;objectManagerWithBaseURLString:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectManagerWithBaseURL:">+&nbsp;objectManagerWithBaseURL:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadObjectsAtResourcePath:objectMapping:delegate:">&ndash;&nbsp;loadObjectsAtResourcePath:objectMapping:delegate:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectLoaderWithResourcePath:delegate:">&ndash;&nbsp;objectLoaderWithResourcePath:delegate:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectLoaderForObject:method:delegate:">&ndash;&nbsp;objectLoaderForObject:method:delegate:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getObject:mapResponseWith:delegate:">&ndash;&nbsp;getObject:mapResponseWith:delegate:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postObject:mapResponseWith:delegate:">&ndash;&nbsp;postObject:mapResponseWith:delegate:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/putObject:mapResponseWith:delegate:">&ndash;&nbsp;putObject:mapResponseWith:delegate:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteObject:mapResponseWith:delegate:">&ndash;&nbsp;deleteObject:mapResponseWith:delegate:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="RKTableController Methods" name="task_RKTableController Methods"></a>
+						<h3 class="subsubtitle task-title">RKTableController Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableControllerForTableViewController:">&ndash;&nbsp;tableControllerForTableViewController:</a></code>
+		<span class="tooltip"><p>Creates and returns a table controller object capable of loading remote object representations
+into a UITableView using the RestKit object mapping engine for a given table view controller.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableControllerWithTableView:forViewController:">&ndash;&nbsp;tableControllerWithTableView:forViewController:</a></code>
+		<span class="tooltip"><p>Creates and returns a table controller object capable of loading remote object representations
+into a UITableView using the RestKit object mapping engine for a given table view and view controller.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchedResultsTableControllerForTableViewController:">&ndash;&nbsp;fetchedResultsTableControllerForTableViewController:</a></code>
+		<span class="tooltip"><p>Creates and returns a fetched results table controller object capable of loading remote object representations
+stored in Core Data into a UITableView using the RestKit object mapping engine for a given table view controller.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchedResultsTableControllerWithTableView:forViewController:">&ndash;&nbsp;fetchedResultsTableControllerWithTableView:forViewController:</a></code>
+		<span class="tooltip"><p>Creates and returns a table controller object capable of loading remote object representations
+stored in Core Data into a UITableView using the RestKit object mapping engine for a given table view and view controller.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/acceptMIMEType" title="acceptMIMEType"></a>
+	<h3 class="subsubtitle method-title">acceptMIMEType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The value for the HTTP Accept header to specify the preferred format for retrieved data</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSString *acceptMIMEType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The value for the HTTP Accept header to specify the preferred format for retrieved data</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/baseURL" title="baseURL"></a>
+	<h3 class="subsubtitle method-title">baseURL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The base URL of the underlying <a href="../Classes/RKClient.html">RKClient</a> instance. Object loader
+and paginator instances built through the object manager are
+relative to this URL.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) RKURL *baseURL</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The baseURL of the <a href="#//api/name/client">client</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The base URL of the underlying <a href="../Classes/RKClient.html">RKClient</a> instance. Object loader
+and paginator instances built through the object manager are
+relative to this URL.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/RKClient.html">RKClient</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/client" title="client"></a>
+	<h3 class="subsubtitle method-title">client</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The underlying HTTP client for this manager</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) RKClient *client</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The underlying HTTP client for this manager</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isOffline" title="isOffline"></a>
+	<h3 class="subsubtitle method-title">isOffline</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES when we are in offline mode</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL isOffline</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES when we are in offline mode</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isOnline" title="isOnline"></a>
+	<h3 class="subsubtitle method-title">isOnline</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES when we are in online mode</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL isOnline</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES when we are in online mode</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mappingProvider" title="mappingProvider"></a>
+	<h3 class="subsubtitle method-title">mappingProvider</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The Mapping Provider responsible for returning mappings for various keyPaths.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) RKObjectMappingProvider *mappingProvider</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The Mapping Provider responsible for returning mappings for various keyPaths.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mappingQueue" title="mappingQueue"></a>
+	<h3 class="subsubtitle method-title">mappingQueue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The Grand Dispatch Queue to use when performing expensive object mapping operations
+within <a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> instances created through this object manager</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) dispatch_queue_t mappingQueue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The Grand Dispatch Queue to use when performing expensive object mapping operations
+within <a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> instances created through this object manager</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/networkStatus" title="networkStatus"></a>
+	<h3 class="subsubtitle method-title">networkStatus</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>  Returns the current network status for this object manager as determined
+  by connectivity to the remote backend system</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) RKObjectManagerNetworkStatus networkStatus</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  Returns the current network status for this object manager as determined
+  by connectivity to the remote backend system</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectStore" title="objectStore"></a>
+	<h3 class="subsubtitle method-title">objectStore</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A Core Data backed object store for persisting objects that have been fetched from the Web</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) RKManagedObjectStore *objectStore</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A Core Data backed object store for persisting objects that have been fetched from the Web</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestCache" title="requestCache"></a>
+	<h3 class="subsubtitle method-title">requestCache</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The request cache used to store and load responses for requests sent
+through this object manager&rsquo;s underlying <a href="#//api/name/client">client</a> object</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) RKRequestCache *requestCache</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The request cache used to store and load responses for requests sent
+through this object manager&rsquo;s underlying <a href="#//api/name/client">client</a> object</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestQueue" title="requestQueue"></a>
+	<h3 class="subsubtitle method-title">requestQueue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The request queue used to dispatch asynchronous requests sent
+through this object manager&rsquo;s underlying <a href="#//api/name/client">client</a> object</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) RKRequestQueue *requestQueue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The request queue used to dispatch asynchronous requests sent
+through this object manager&rsquo;s underlying <a href="#//api/name/client">client</a> object</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/router" title="router"></a>
+	<h3 class="subsubtitle method-title">router</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Router object responsible for generating resource paths for
+HTTP requests</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) RKObjectRouter *router</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Router object responsible for generating resource paths for
+HTTP requests</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/serializationMIMEType" title="serializationMIMEType"></a>
+	<h3 class="subsubtitle method-title">serializationMIMEType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The Default MIME Type to be used in object serialization.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *serializationMIMEType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The Default MIME Type to be used in object serialization.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultMappingQueue" title="defaultMappingQueue"></a>
+	<h3 class="subsubtitle method-title">defaultMappingQueue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the global default Grand Central Dispatch queue used for object mapping
+operations executed by RKObjectLoaders.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (dispatch_queue_t)defaultMappingQueue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the global default Grand Central Dispatch queue used for object mapping
+operations executed by RKObjectLoaders.</p>
+
+<p>All object loaders perform their loading within a Grand Central Dispatch
+queue. This provides control over the number of loaders that are performing
+expensive operations such as JSON parsing, object mapping, and accessing Core
+Data concurrently. The defaultMappingQueue is configured as the <a href="#//api/name/mappingQueue">mappingQueue</a>
+for all RKObjectManager&rsquo;s created by RestKit, but can be overridden on a per
+manager and per object loader basis.</p>
+
+<p>By default, the defaultMappingQueue is configured as serial GCD queue.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/managerWithBaseURL:" title="managerWithBaseURL:"></a>
+	<h3 class="subsubtitle method-title">managerWithBaseURL:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)managerWithBaseURL:(NSURL *)<em>baseURL</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/managerWithBaseURLString:" title="managerWithBaseURLString:"></a>
+	<h3 class="subsubtitle method-title">managerWithBaseURLString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create and initialize a new object manager. If this is the first instance created
+it will be set as the shared instance</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)managerWithBaseURLString:(NSString *)<em>baseURLString</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create and initialize a new object manager. If this is the first instance created
+it will be set as the shared instance</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectManagerWithBaseURL:" title="objectManagerWithBaseURL:"></a>
+	<h3 class="subsubtitle method-title">objectManagerWithBaseURL:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (RKObjectManager *)objectManagerWithBaseURL:(NSURL *)<em>baseURL</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectManagerWithBaseURLString:" title="objectManagerWithBaseURLString:"></a>
+	<h3 class="subsubtitle method-title">objectManagerWithBaseURLString:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (RKObjectManager *)objectManagerWithBaseURLString:(NSString *)<em>baseURLString</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setDefaultMappingQueue:" title="setDefaultMappingQueue:"></a>
+	<h3 class="subsubtitle method-title">setDefaultMappingQueue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets a new global default Grand Central Dispatch queue for use in object mapping
+operations executed by RKObjectLoaders.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setDefaultMappingQueue:(dispatch_queue_t)<em>defaultMappingQueue</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets a new global default Grand Central Dispatch queue for use in object mapping
+operations executed by RKObjectLoaders.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSharedManager:" title="setSharedManager:"></a>
+	<h3 class="subsubtitle method-title">setSharedManager:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the shared instance of the object manager</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setSharedManager:(RKObjectManager *)<em>manager</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set the shared instance of the object manager</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sharedManager" title="sharedManager"></a>
+	<h3 class="subsubtitle method-title">sharedManager</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Return the shared instance of the object manager</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (RKObjectManager *)sharedManager</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Return the shared instance of the object manager</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteObject:delegate:" title="deleteObject:delegate:"></a>
+	<h3 class="subsubtitle method-title">deleteObject:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Delete the remote instance of a mappable model by performing an HTTP DELETE on the remote resource</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)deleteObject:(id&lt;NSObject&gt;)<em>object</em> delegate:(id&lt;RKObjectLoaderDelegate&gt;)<em>delegate</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Delete the remote instance of a mappable model by performing an HTTP DELETE on the remote resource</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteObject:mapResponseWith:delegate:" title="deleteObject:mapResponseWith:delegate:"></a>
+	<h3 class="subsubtitle method-title">deleteObject:mapResponseWith:delegate:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)deleteObject:(id&lt;NSObject&gt;)<em>object</em> mapResponseWith:(RKObjectMapping *)<em>objectMapping</em> delegate:(id&lt;RKObjectLoaderDelegate&gt;)<em>delegate</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteObject:usingBlock:" title="deleteObject:usingBlock:"></a>
+	<h3 class="subsubtitle method-title">deleteObject:usingBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DELETE a remote object instance and yield the object loader to the block before sending</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)deleteObject:(id&lt;NSObject&gt;)<em>object</em> usingBlock:(RKObjectLoaderBlock)<em>block</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>DELETE a remote object instance and yield the object loader to the block before sending</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchedResultsTableControllerForTableViewController:" title="fetchedResultsTableControllerForTableViewController:"></a>
+	<h3 class="subsubtitle method-title">fetchedResultsTableControllerForTableViewController:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a fetched results table controller object capable of loading remote object representations
+stored in Core Data into a UITableView using the RestKit object mapping engine for a given table view controller.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RKFetchedResultsTableController *)fetchedResultsTableControllerForTableViewController:(UITableViewController *)<em>tableViewController</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tableViewController</em></dt>
+			<dd><p>A UITableViewController to instantiate a table controller for</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <a href="../Classes/RKFetchedResultsTableController.html">RKFetchedResultsTableController</a> instance ready to drive the table view for the provided tableViewController.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates and returns a fetched results table controller object capable of loading remote object representations
+stored in Core Data into a UITableView using the RestKit object mapping engine for a given table view controller.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager+RKTableController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchedResultsTableControllerWithTableView:forViewController:" title="fetchedResultsTableControllerWithTableView:forViewController:"></a>
+	<h3 class="subsubtitle method-title">fetchedResultsTableControllerWithTableView:forViewController:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a table controller object capable of loading remote object representations
+stored in Core Data into a UITableView using the RestKit object mapping engine for a given table view and view controller.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RKFetchedResultsTableController *)fetchedResultsTableControllerWithTableView:(UITableView *)<em>tableView</em> forViewController:(UIViewController *)<em>viewController</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tableView</em></dt>
+			<dd><p>The UITableView object that table controller with acts as the delegate and data source for.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>viewController</em></dt>
+			<dd><p>The UIViewController that owns the specified tableView.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <a href="../Classes/RKFetchedResultsTableController.html">RKFetchedResultsTableController</a> instance ready to drive the table view for the provided tableViewController.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates and returns a table controller object capable of loading remote object representations
+stored in Core Data into a UITableView using the RestKit object mapping engine for a given table view and view controller.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager+RKTableController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getObject:delegate:" title="getObject:delegate:"></a>
+	<h3 class="subsubtitle method-title">getObject:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Fetch the data for a mappable object by performing an HTTP GET.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)getObject:(id&lt;NSObject&gt;)<em>object</em> delegate:(id&lt;RKObjectLoaderDelegate&gt;)<em>delegate</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Fetch the data for a mappable object by performing an HTTP GET.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getObject:mapResponseWith:delegate:" title="getObject:mapResponseWith:delegate:"></a>
+	<h3 class="subsubtitle method-title">getObject:mapResponseWith:delegate:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)getObject:(id&lt;NSObject&gt;)<em>object</em> mapResponseWith:(RKObjectMapping *)<em>objectMapping</em> delegate:(id&lt;RKObjectLoaderDelegate&gt;)<em>delegate</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getObject:usingBlock:" title="getObject:usingBlock:"></a>
+	<h3 class="subsubtitle method-title">getObject:usingBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>GET a remote object instance and yield the object loader to the block before sending</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)getObject:(id&lt;NSObject&gt;)<em>object</em> usingBlock:(RKObjectLoaderBlock)<em>block</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>GET a remote object instance and yield the object loader to the block before sending</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithBaseURL:" title="initWithBaseURL:"></a>
+	<h3 class="subsubtitle method-title">initWithBaseURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes a newly created object manager with a specified <a href="#//api/name/baseURL">baseURL</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithBaseURL:(RKURL *)<em>baseURL</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>baseURL</em></dt>
+			<dd><p>A <a href="#//api/name/baseURL">baseURL</a> to initialize the underlying <a href="#//api/name/client">client</a> instance with</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly initialized RKObjectManager object</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initializes a newly created object manager with a specified <a href="#//api/name/baseURL">baseURL</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadObjectsAtResourcePath:delegate:" title="loadObjectsAtResourcePath:delegate:"></a>
+	<h3 class="subsubtitle method-title">loadObjectsAtResourcePath:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create and send an asynchronous GET request to load the objects at the resource path and call back the delegate
+with the loaded objects. Remote objects will be mapped to local objects by consulting the keyPath registrations
+set on the mapping provider.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)loadObjectsAtResourcePath:(NSString *)<em>resourcePath</em> delegate:(id&lt;RKObjectLoaderDelegate&gt;)<em>delegate</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create and send an asynchronous GET request to load the objects at the resource path and call back the delegate
+with the loaded objects. Remote objects will be mapped to local objects by consulting the keyPath registrations
+set on the mapping provider.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadObjectsAtResourcePath:objectMapping:delegate:" title="loadObjectsAtResourcePath:objectMapping:delegate:"></a>
+	<h3 class="subsubtitle method-title">loadObjectsAtResourcePath:objectMapping:delegate:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)loadObjectsAtResourcePath:(NSString *)<em>resourcePath</em> objectMapping:(RKObjectMapping *)<em>objectMapping</em> delegate:(id&lt;RKObjectLoaderDelegate&gt;)<em>delegate</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadObjectsAtResourcePath:usingBlock:" title="loadObjectsAtResourcePath:usingBlock:"></a>
+	<h3 class="subsubtitle method-title">loadObjectsAtResourcePath:usingBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Load the objects at the specified resource path and perform object mapping on the response payload. Prior to sending the object loader, the
+block will be invoked to allow you to configure the object loader as you see fit. This can be used to change the response type, set custom
+parameters, choose an object mapping, etc.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)loadObjectsAtResourcePath:(NSString *)<em>resourcePath</em> usingBlock:(RKObjectLoaderBlock)<em>block</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Load the objects at the specified resource path and perform object mapping on the response payload. Prior to sending the object loader, the
+block will be invoked to allow you to configure the object loader as you see fit. This can be used to change the response type, set custom
+parameters, choose an object mapping, etc.</p>
+
+<p>For example:</p>
+
+<pre><code>- (void)loadObjectUsingBlockExample {
+    [[RKObjectManager sharedManager] loadObjectsAtResourcePath:@"/monkeys.json" usingBlock:^(RKObjectLoader *loader) {
+        loader.objectMapping = [[RKObjectManager sharedManager].mappingProvider objectMappingForClass:[Monkey class]];
+    }];
+}
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loaderForObject:method:" title="loaderForObject:method:"></a>
+	<h3 class="subsubtitle method-title">loaderForObject:method:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns an <a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> or RKManagedObjectLoader instance for an object instance.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)loaderForObject:(id&lt;NSObject&gt;)<em>object</em> method:(RKRequestMethod)<em>method</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>object</em></dt>
+			<dd><p>The object with which to initialize the object loader.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly created object loader instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates and returns an <a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> or RKManagedObjectLoader instance for an object instance.</p>
+
+<p>The object loader instantiated will be initialized with a URL built by evaluating the object with the
+<a href="#//api/name/router">router</a> to construct a resource path and then appending that resource path to the <a href="#//api/name/baseURL">baseURL</a> of the <a href="#//api/name/client">client</a>.
+The loader will then be configured with object mapping configuration from the manager and request
+configuration from the <a href="#//api/name/client">client</a>. The specified object will be the target of the object loader and will
+have any returned content mapped back onto the instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/RKObjectLoader.html">RKObjectLoader</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/RKObjectRouter.html">RKObjectRouter</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loaderWithResourcePath:" title="loaderWithResourcePath:"></a>
+	<h3 class="subsubtitle method-title">loaderWithResourcePath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns an <a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> or RKManagedObjectLoader instance targeting the specified resourcePath.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)loaderWithResourcePath:(NSString *)<em>resourcePath</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resourcePath</em></dt>
+			<dd><p>A resource to use when building the URL to initialize the object loader instance.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly created object loader instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates and returns an <a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> or RKManagedObjectLoader instance targeting the specified resourcePath.</p>
+
+<p>The object loader instantiated will be initialized with an <a href="../Classes/RKURL.html">RKURL</a> built by appending the resourcePath to the <a href="#//api/name/baseURL">baseURL</a> of the <a href="#//api/name/client">client</a>. The loader will then
+be configured with object mapping configuration from the manager and request configuration from the <a href="#//api/name/client">client</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/RKURL.html">RKURL</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/RKClient.html">RKClient</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loaderWithURL:" title="loaderWithURL:"></a>
+	<h3 class="subsubtitle method-title">loaderWithURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns an <a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> or RKManagedObjectLoader instance targeting the specified URL.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)loaderWithURL:(NSURL *)<em>URL</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The URL with which to initialize the object loader.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly created object loader instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates and returns an <a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> or RKManagedObjectLoader instance targeting the specified URL.</p>
+
+<p>The object loader instantiated will be initialized with URL and will then
+be configured with object mapping configuration from the manager and request configuration from the <a href="#//api/name/client">client</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/RKURL.html">RKURL</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/RKClient.html">RKClient</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectLoaderClass" title="objectLoaderClass"></a>
+	<h3 class="subsubtitle method-title">objectLoaderClass</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the class of object loader instances built through the manager. When Core Data has
+been configured, instances of RKManagedObjectLoader will be emitted by the manager. Otherwise
+<a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> is used.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (Class)objectLoaderClass</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> OR RKManagedObjectLoader</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the class of object loader instances built through the manager. When Core Data has
+been configured, instances of RKManagedObjectLoader will be emitted by the manager. Otherwise
+<a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> is used.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectLoaderForObject:method:delegate:" title="objectLoaderForObject:method:delegate:"></a>
+	<h3 class="subsubtitle method-title">objectLoaderForObject:method:delegate:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RKObjectLoader *)objectLoaderForObject:(id&lt;NSObject&gt;)<em>object</em> method:(RKRequestMethod)<em>method</em> delegate:(id&lt;RKObjectLoaderDelegate&gt;)<em>delegate</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectLoaderWithResourcePath:delegate:" title="objectLoaderWithResourcePath:delegate:"></a>
+	<h3 class="subsubtitle method-title">objectLoaderWithResourcePath:delegate:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RKObjectLoader *)objectLoaderWithResourcePath:(NSString *)<em>resourcePath</em> delegate:(id&lt;RKObjectLoaderDelegate&gt;)<em>delegate</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/paginatorWithResourcePathPattern:" title="paginatorWithResourcePathPattern:"></a>
+	<h3 class="subsubtitle method-title">paginatorWithResourcePathPattern:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns an <a href="../Classes/RKObjectPaginator.html">RKObjectPaginator</a> instance targeting the specified resource path pattern.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RKObjectPaginator *)paginatorWithResourcePathPattern:(NSString *)<em>resourcePathPattern</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly created paginator instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates and returns an <a href="../Classes/RKObjectPaginator.html">RKObjectPaginator</a> instance targeting the specified resource path pattern.</p>
+
+<p>The paginator instantiated will be initialized with an <a href="../Classes/RKURL.html">RKURL</a> built by appending the resourcePathPattern to the
+<a href="#//api/name/baseURL">baseURL</a> of the <a href="#//api/name/client">client</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/RKObjectMappingProvider.html">RKObjectMappingProvider</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/RKObjectPaginator.html">RKObjectPaginator</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postObject:delegate:" title="postObject:delegate:"></a>
+	<h3 class="subsubtitle method-title">postObject:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a remote mappable model by POSTing the attributes to the remote resource and loading the resulting objects from the payload</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)postObject:(id&lt;NSObject&gt;)<em>object</em> delegate:(id&lt;RKObjectLoaderDelegate&gt;)<em>delegate</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create a remote mappable model by POSTing the attributes to the remote resource and loading the resulting objects from the payload</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postObject:mapResponseWith:delegate:" title="postObject:mapResponseWith:delegate:"></a>
+	<h3 class="subsubtitle method-title">postObject:mapResponseWith:delegate:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)postObject:(id&lt;NSObject&gt;)<em>object</em> mapResponseWith:(RKObjectMapping *)<em>objectMapping</em> delegate:(id&lt;RKObjectLoaderDelegate&gt;)<em>delegate</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postObject:usingBlock:" title="postObject:usingBlock:"></a>
+	<h3 class="subsubtitle method-title">postObject:usingBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>POST a remote object instance and yield the object loader to the block before sending</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)postObject:(id&lt;NSObject&gt;)<em>object</em> usingBlock:(RKObjectLoaderBlock)<em>block</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>POST a remote object instance and yield the object loader to the block before sending</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/putObject:delegate:" title="putObject:delegate:"></a>
+	<h3 class="subsubtitle method-title">putObject:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Update a remote mappable model by PUTing the attributes to the remote resource and loading the resulting objects from the payload</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)putObject:(id&lt;NSObject&gt;)<em>object</em> delegate:(id&lt;RKObjectLoaderDelegate&gt;)<em>delegate</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Update a remote mappable model by PUTing the attributes to the remote resource and loading the resulting objects from the payload</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/putObject:mapResponseWith:delegate:" title="putObject:mapResponseWith:delegate:"></a>
+	<h3 class="subsubtitle method-title">putObject:mapResponseWith:delegate:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)putObject:(id&lt;NSObject&gt;)<em>object</em> mapResponseWith:(RKObjectMapping *)<em>objectMapping</em> delegate:(id&lt;RKObjectLoaderDelegate&gt;)<em>delegate</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/putObject:usingBlock:" title="putObject:usingBlock:"></a>
+	<h3 class="subsubtitle method-title">putObject:usingBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>PUT a remote object instance and yield the object loader to the block before sending</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)putObject:(id&lt;NSObject&gt;)<em>object</em> usingBlock:(RKObjectLoaderBlock)<em>block</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>PUT a remote object instance and yield the object loader to the block before sending</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendObject:toResourcePath:usingBlock:" title="sendObject:toResourcePath:usingBlock:"></a>
+	<h3 class="subsubtitle method-title">sendObject:toResourcePath:usingBlock:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)sendObject:(id&lt;NSObject&gt;)<em>object</em> toResourcePath:(NSString *)<em>resourcePath</em> usingBlock:(RKObjectLoaderBlock)<em>block</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableControllerForTableViewController:" title="tableControllerForTableViewController:"></a>
+	<h3 class="subsubtitle method-title">tableControllerForTableViewController:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a table controller object capable of loading remote object representations
+into a UITableView using the RestKit object mapping engine for a given table view controller.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RKTableController *)tableControllerForTableViewController:(UITableViewController *)<em>tableViewController</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tableViewController</em></dt>
+			<dd><p>A UITableViewController to instantiate a table controller for</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <a href="../Classes/RKTableController.html">RKTableController</a> instance ready to drive the table view for the provided tableViewController.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates and returns a table controller object capable of loading remote object representations
+into a UITableView using the RestKit object mapping engine for a given table view controller.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager+RKTableController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableControllerWithTableView:forViewController:" title="tableControllerWithTableView:forViewController:"></a>
+	<h3 class="subsubtitle method-title">tableControllerWithTableView:forViewController:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a table controller object capable of loading remote object representations
+into a UITableView using the RestKit object mapping engine for a given table view and view controller.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RKTableController *)tableControllerWithTableView:(UITableView *)<em>tableView</em> forViewController:(UIViewController *)<em>viewController</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tableView</em></dt>
+			<dd><p>The UITableView object that table controller with acts as the delegate and data source for.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>viewController</em></dt>
+			<dd><p>The UIViewController that owns the specified tableView.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <a href="../Classes/RKTableController.html">RKTableController</a> instance ready to drive the table view for the provided tableViewController.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates and returns a table controller object capable of loading remote object representations
+into a UITableView using the RestKit object mapping engine for a given table view and view controller.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectManager+RKTableController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Blake Watters. All rights reserved. (Last updated: 2012-11-16)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

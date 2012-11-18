@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKTableController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKTableController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>
+			
+			<NodeRef refid="54"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableController/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/loadObjects:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadObjects:(NSArray *)objects</Declaration>
+			
+			
+			<Anchor>//api/name/loadObjects:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/loadObjects:inSection:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadObjects:(NSArray *)objects inSection:(NSUInteger)sectionIndex</Declaration>
+			
+			
+			<Anchor>//api/name/loadObjects:inSection:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/loadEmpty</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadEmpty</Declaration>
+			
+			
+			<Anchor>//api/name/loadEmpty</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/loadTableItems:withMapping:</TokenIdentifier>
+			<Abstract type="html">Load an array of RKTableItems into table cells of the specified class. A table cell
+mapping will be constructed on your behalf and yielded to the block for configuration.
+After the block is invoked, the objects will be loaded into the specified section.</Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadTableItems:(NSArray *)tableItems withMapping:(RKTableViewCellMapping *)cellMapping</Declaration>
+			
+			
+			<Anchor>//api/name/loadTableItems:withMapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/loadTableItems:inSection:withMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadTableItems:(NSArray *)tableItems inSection:(NSUInteger)sectionIndex withMapping:(RKTableViewCellMapping *)cellMapping</Declaration>
+			
+			
+			<Anchor>//api/name/loadTableItems:inSection:withMapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/loadTableItems:</TokenIdentifier>
+			<Abstract type="html">Load an array of RKTableItem objects into the table using the default
+RKTableViewCellMapping. An instance of the cell mapping will be created on your
+behalf and configured with the default table view cell attribute mappings.</Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKTableItem</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/addDefaultMappings</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)loadTableItems:(NSArray *)tableItems</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableItems</Name>
+					<Abstract type="html">An array of RKTableItem instances to load into the table</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadTableItems:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/loadTableItems:inSection:</TokenIdentifier>
+			<Abstract type="html">Load an array of RKTableItem objects into the specified section with the table using the default
+RKTableViewCellMapping. An instance of the cell mapping will be created on your
+behalf and configured with the default table view cell attribute mappings.</Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKTableItem</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/addDefaultMappings</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)loadTableItems:(NSArray *)tableItems inSection:(NSUInteger)sectionIndex</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableItems</Name>
+					<Abstract type="html">An array of RKTableItem instances to load into the table</Abstract>
+				</Parameter><Parameter>
+					<Name>sectionIndex</Name>
+					<Abstract type="html">The section to load the table items into. Must be less than sectionCount.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadTableItems:inSection:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/loadTableFromResourcePath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadTableFromResourcePath:(NSString *)resourcePath</Declaration>
+			
+			
+			<Anchor>//api/name/loadTableFromResourcePath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/loadTableFromResourcePath:usingBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadTableFromResourcePath:(NSString *)resourcePath usingBlock:(void ( ^ ) ( RKObjectLoader *objectLoader ))block</Declaration>
+			
+			
+			<Anchor>//api/name/loadTableFromResourcePath:usingBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/setForm:</TokenIdentifier>
+			<Abstract type="html">The form that the table has been loaded with (if any)</Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) RKForm *form</Declaration>
+			
+			
+			<Anchor>//api/name/form</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableController/form</TokenIdentifier>
+			<Abstract type="html">The form that the table has been loaded with (if any)</Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) RKForm *form</Declaration>
+			
+			
+			<Anchor>//api/name/form</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/loadForm:</TokenIdentifier>
+			<Abstract type="html">Loads the table with the contents of the specified form object.
+Forms are used to build content entry and editing interfaces for objects.</Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKForm</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)loadForm:(RKForm *)form</Declaration>
+			
+			
+			<Anchor>//api/name/loadForm:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/setSections:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSMutableArray *sections</Declaration>
+			
+			
+			<Anchor>//api/name/sections</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableController/sections</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSMutableArray *sections</Declaration>
+			
+			
+			<Anchor>//api/name/sections</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/setSectionNameKeyPath:</TokenIdentifier>
+			<Abstract type="html">The key path on the loaded objects used to determine the section they belong to.</Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *sectionNameKeyPath</Declaration>
+			
+			
+			<Anchor>//api/name/sectionNameKeyPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableController/sectionNameKeyPath</TokenIdentifier>
+			<Abstract type="html">The key path on the loaded objects used to determine the section they belong to.</Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *sectionNameKeyPath</Declaration>
+			
+			
+			<Anchor>//api/name/sectionNameKeyPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/sectionAtIndex:</TokenIdentifier>
+			<Abstract type="html">Returns the section at the specified index.</Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>- (RKTableSection *)sectionAtIndex:(NSUInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">Must be less than the total number of sections.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sectionAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/sectionWithHeaderTitle:</TokenIdentifier>
+			<Abstract type="html">Returns the first section with the specified header title.</Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>- (RKTableSection *)sectionWithHeaderTitle:(NSString *)title</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">The header title.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sectionWithHeaderTitle:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/indexForSection:</TokenIdentifier>
+			<Abstract type="html">Returns the index of the specified section.</Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)indexForSection:(RKTableSection *)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>section</Name>
+					<Abstract type="html">Must be a valid non nil RKTableViewSection.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The index of the given section if contained within the receiver, otherwise NSNotFound.</Abstract></ReturnValue>
+			<Anchor>//api/name/indexForSection:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/updateTableViewUsingBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)updateTableViewUsingBlock:(void ( ^ ) ( ))block</Declaration>
+			
+			
+			<Anchor>//api/name/updateTableViewUsingBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/addSection:</TokenIdentifier>
+			<Abstract type="html">Adds a new section to the model.</Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)addSection:(RKTableSection *)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>section</Name>
+					<Abstract type="html">Must be a valid non nil RKTableViewSection.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addSection:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/insertSection:atIndex:</TokenIdentifier>
+			<Abstract type="html">Inserts a new section at the specified index.</Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)insertSection:(RKTableSection *)section atIndex:(NSUInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>section</Name>
+					<Abstract type="html">Must be a valid non nil RKTableViewSection.</Abstract>
+				</Parameter><Parameter>
+					<Name>index</Name>
+					<Abstract type="html">Must be less than the total number of sections.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/insertSection:atIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/removeSection:</TokenIdentifier>
+			<Abstract type="html">Removes the specified section from the model.</Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeSection:(RKTableSection *)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>section</Name>
+					<Abstract type="html">The section to remove.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeSection:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/removeSectionAtIndex:</TokenIdentifier>
+			<Abstract type="html">Removes the section at the specified index from the model.</Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeSectionAtIndex:(NSUInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">Must be less than the total number of section.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeSectionAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/removeAllSections</TokenIdentifier>
+			<Abstract type="html">Removes all sections from the model.</Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeAllSections</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllSections</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableController/removeAllSections:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeAllSections:(BOOL)recreateFirstSection</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllSections:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

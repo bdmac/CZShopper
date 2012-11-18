@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKObjectRouter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKObjectRouter</TokenIdentifier>
+			<Abstract type="html">An implementation of the RKRouter protocol that is suitable for use in either
+static or dynamic route generation. Static routes are added by simply encoding
+the resourcePath that the mappable object should be sent to when a GET, POST, PUT
+or DELETE action is invoked. Dynamic routes are available by encoding key paths into
+the resourcePath using a single colon delimiter, such as /users/:userID</Abstract>
+			<DeclaredIn>RKObjectRouter.h</DeclaredIn>
+			
+			<NodeRef refid="37"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectRouter/routeClass:toResourcePathPattern:</TokenIdentifier>
+			<Abstract type="html">Register a mapping from an object class to a resource path. This resourcePath can be static
+(i.e. /this/is/the/path) or dynamic (i.e. /users/:userID/:username). Dynamic routes are
+evaluated against the object being routed using Key-Value coding and coerced into a string.
+NOTE - The pattern matcher fully supports KVM, so /:key1.otherKey normally resolves as it
+would in any other KVM situation, ... otherKey is a sub-key on a the object represented by
+key1.  This presents a problem in situations where you might want to build a pattern like
+/:filename.json, where the dot isn&apos;t intended as a sub-key on the dynamic &quot;filename&quot;, but
+rather it is part of the &quot;json&quot; static string.  In these instances, you need to escape the
+dot with two backslashes, like so: /:filename\\.json</Abstract>
+			<DeclaredIn>RKObjectRouter.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKPathMatcher</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)routeClass:(Class)objectClass toResourcePathPattern:(NSString *)resourcePathPattern</Declaration>
+			
+			
+			<Anchor>//api/name/routeClass:toResourcePathPattern:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectRouter/routeClass:toResourcePathPattern:forMethod:</TokenIdentifier>
+			<Abstract type="html">Register a mapping from an object class to a resource path for a specific HTTP method.</Abstract>
+			<DeclaredIn>RKObjectRouter.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKPathMatcher</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)routeClass:(Class)objectClass toResourcePathPattern:(NSString *)resourcePathPattern forMethod:(RKRequestMethod)method</Declaration>
+			
+			
+			<Anchor>//api/name/routeClass:toResourcePathPattern:forMethod:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectRouter/routeClass:toResourcePathPattern:forMethod:escapeRoutedPath:</TokenIdentifier>
+			<Abstract type="html">Register a mapping from an object class to a resource path for a specific HTTP method,
+optionally adding url escapes to the path.  This urlEscape flag comes in handy when you want to provide
+your own fully escaped dynamic resource path via a method/attribute on the object model.
+For example, if your Person model has a string attribute titled &quot;polymorphicResourcePath&quot; that returns
+@&quot;/this/is/the/path&quot;, you should configure the route with url escapes &apos;off&apos;, otherwise the router will return
+@&quot;%2Fthis%2Fis%2Fthe%2Fpath&quot;.</Abstract>
+			<DeclaredIn>RKObjectRouter.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKPathMatcher</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)routeClass:(Class)objectClass toResourcePathPattern:(NSString *)resourcePathPattern forMethod:(RKRequestMethod)method escapeRoutedPath:(BOOL)addEscapes</Declaration>
+			
+			
+			<Anchor>//api/name/routeClass:toResourcePathPattern:forMethod:escapeRoutedPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectRouter/routeClass:toResourcePath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectRouter.h</DeclaredIn>			
+			
+			<Declaration>- (void)routeClass:(Class)objectClass toResourcePath:(NSString *)resourcePath</Declaration>
+			
+			
+			<Anchor>//api/name/routeClass:toResourcePath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectRouter/routeClass:toResourcePath:forMethod:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectRouter.h</DeclaredIn>			
+			
+			<Declaration>- (void)routeClass:(Class)objectClass toResourcePath:(NSString *)resourcePath forMethod:(RKRequestMethod)method</Declaration>
+			
+			
+			<Anchor>//api/name/routeClass:toResourcePath:forMethod:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectRouter/routeClass:toResourcePath:forMethod:escapeRoutedPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectRouter.h</DeclaredIn>			
+			
+			<Declaration>- (void)routeClass:(Class)objectClass toResourcePath:(NSString *)resourcePath forMethod:(RKRequestMethod)method escapeRoutedPath:(BOOL)addEscapes</Declaration>
+			
+			
+			<Anchor>//api/name/routeClass:toResourcePath:forMethod:escapeRoutedPath:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

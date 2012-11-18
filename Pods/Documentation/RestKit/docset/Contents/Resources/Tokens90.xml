@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RKRequestSerializable.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RKRequestSerializable</TokenIdentifier>
+			<Abstract type="html">This protocol is implemented by objects that can be serialized into a
+representation suitable for transmission over a REST request. Suitable
+serializations are x-www-form-urlencoded and multipart/form-data.</Abstract>
+			<DeclaredIn>RKRequestSerializable.h</DeclaredIn>
+			
+			<NodeRef refid="90"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestSerializable/HTTPHeaderValueForContentType</TokenIdentifier>
+			<Abstract type="html">The value of the Content-Type header for the HTTP Body representation of the
+serialization.</Abstract>
+			<DeclaredIn>RKRequestSerializable.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)HTTPHeaderValueForContentType</Declaration>
+			
+			<ReturnValue><Abstract type="html">A string value of the Content-Type header for the HTTP body.</Abstract></ReturnValue>
+			<Anchor>//api/name/HTTPHeaderValueForContentType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestSerializable/HTTPBody</TokenIdentifier>
+			<Abstract type="html">An NSData representing the HTTP Body serialization of the object implementing
+the protocol.</Abstract>
+			<DeclaredIn>RKRequestSerializable.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)HTTPBody</Declaration>
+			
+			<ReturnValue><Abstract type="html">An NSData object respresenting the HTTP body serialization.</Abstract></ReturnValue>
+			<Anchor>//api/name/HTTPBody</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestSerializable/HTTPBodyStream</TokenIdentifier>
+			<Abstract type="html">Returns an input stream for reading the serialization as a stream used to
+provide support for handling large HTTP payloads.</Abstract>
+			<DeclaredIn>RKRequestSerializable.h</DeclaredIn>			
+			
+			<Declaration>- (NSInputStream *)HTTPBodyStream</Declaration>
+			
+			<ReturnValue><Abstract type="html">An input stream for reading the serialization as a stream.</Abstract></ReturnValue>
+			<Anchor>//api/name/HTTPBodyStream</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestSerializable/HTTPHeaderValueForContentLength</TokenIdentifier>
+			<Abstract type="html">Returns the length of the HTTP Content-Length header.</Abstract>
+			<DeclaredIn>RKRequestSerializable.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)HTTPHeaderValueForContentLength</Declaration>
+			
+			<ReturnValue><Abstract type="html">Unsigned integer length of the HTTP Content-Length header.</Abstract></ReturnValue>
+			<Anchor>//api/name/HTTPHeaderValueForContentLength</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestSerializable/ContentTypeHTTPHeader</TokenIdentifier>
+			<Abstract type="html">The value of the Content-Type header for the HTTP Body representation of the
+serialization.</Abstract>
+			<DeclaredIn>RKRequestSerializable.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)ContentTypeHTTPHeader</Declaration>
+			
+			<ReturnValue><Abstract type="html">A string value of the Content-Type header for the HTTP body.</Abstract></ReturnValue>
+			<Anchor>//api/name/ContentTypeHTTPHeader</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

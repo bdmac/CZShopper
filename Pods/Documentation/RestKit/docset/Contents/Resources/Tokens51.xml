@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKRequestSerialization.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKRequestSerialization</TokenIdentifier>
+			<Abstract type="html">A simple implementation of the RKRequestSerializable protocol suitable for
+wrapping a MIME Type string and HTTP Body into a format that can be sent as the
+params of an RKRequest.</Abstract>
+			<DeclaredIn>RKRequestSerialization.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/RKRequestSerializable</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="51"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKRequestSerialization/serializationWithData:MIMEType:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a new serialization enclosing an NSData object with the
+specified MIME type.</Abstract>
+			<DeclaredIn>RKRequestSerialization.h</DeclaredIn>			
+			
+			<Declaration>+ (id)serializationWithData:(NSData *)data MIMEType:(NSString *)MIMEType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">An NSData object to initialize the serialization with.</Abstract>
+				</Parameter><Parameter>
+					<Name>MIMEType</Name>
+					<Abstract type="html">A string of the MIME type of the provided data.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An autoreleased RKRequestSerialization object with the data and MIME
+type set.</Abstract></ReturnValue>
+			<Anchor>//api/name/serializationWithData:MIMEType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestSerialization/initWithData:MIMEType:</TokenIdentifier>
+			<Abstract type="html">Returns a new serialization enclosing an NSData object with the specified MIME
+type.</Abstract>
+			<DeclaredIn>RKRequestSerialization.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithData:(NSData *)data MIMEType:(NSString *)MIMEType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">An NSData object to initialize the serialization with.</Abstract>
+				</Parameter><Parameter>
+					<Name>MIMEType</Name>
+					<Abstract type="html">A string of the MIME type of the provided data.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKRequestSerialization object with the data and MIME type set.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:MIMEType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestSerialization/setData:</TokenIdentifier>
+			<Abstract type="html">Returns the data enclosed in this serialization.</Abstract>
+			<DeclaredIn>RKRequestSerialization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequestSerialization/data</TokenIdentifier>
+			<Abstract type="html">Returns the data enclosed in this serialization.</Abstract>
+			<DeclaredIn>RKRequestSerialization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestSerialization/setMIMEType:</TokenIdentifier>
+			<Abstract type="html">Returns the MIME type of the data in this serialization.</Abstract>
+			<DeclaredIn>RKRequestSerialization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *MIMEType</Declaration>
+			
+			
+			<Anchor>//api/name/MIMEType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequestSerialization/MIMEType</TokenIdentifier>
+			<Abstract type="html">Returns the MIME type of the data in this serialization.</Abstract>
+			<DeclaredIn>RKRequestSerialization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *MIMEType</Declaration>
+			
+			
+			<Anchor>//api/name/MIMEType</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

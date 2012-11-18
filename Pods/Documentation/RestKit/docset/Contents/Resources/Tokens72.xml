@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSString+RKAdditions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(RKAdditions)</TokenIdentifier>
+			<Abstract type="html">A library of helpful additions to the NSString class to simplify
+common tasks within RestKit</Abstract>
+			<DeclaredIn>NSString+RKAdditions.h</DeclaredIn>
+			
+			<NodeRef refid="72"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(RKAdditions)/stringByAppendingQueryParameters:</TokenIdentifier>
+			<Abstract type="html">Returns a resource path from a dictionary of query parameters URL encoded and appended
+This is a convenience method for constructing a new resource path that includes a query. For example,
+when given a resourcePath of /contacts and a dictionary of parameters containing foo=bar and color=red,
+will return /contacts?foo=bar&amp;amp;amp;color=red</Abstract>
+			<DeclaredIn>NSString+RKAdditions.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)stringByAppendingQueryParameters:(NSDictionary *)queryParameters</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queryParameters</Name>
+					<Abstract type="html">A dictionary of query parameters to be URL encoded and appended to the resource path</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new resource path with the query parameters appended</Abstract></ReturnValue>
+			<Anchor>//api/name/stringByAppendingQueryParameters:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(RKAdditions)/appendQueryParams:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSString+RKAdditions.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)appendQueryParams:(NSDictionary *)queryParams</Declaration>
+			
+			
+			<Anchor>//api/name/appendQueryParams:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(RKAdditions)/interpolateWithObject:</TokenIdentifier>
+			<Abstract type="html">Convenience method for generating a path against the properties of an object. Takes
+a string with property names prefixed with a colon and interpolates the values of
+the properties specified and returns the generated path.</Abstract>
+			<DeclaredIn>NSString+RKAdditions.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKPathMatcher</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSString *)interpolateWithObject:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object to interpolate the properties against</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/interpolateWithObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(RKAdditions)/queryParameters</TokenIdentifier>
+			<Abstract type="html">Returns a dictionary of parameter keys and values using UTF-8 encoding given a URL-style query string
+on the receiving object. For example, when given the string /contacts?foo=bar&amp;amp;amp;color=red,
+this will return a dictionary of parameters containing foo=bar and color=red, excluding the path &quot;/contacts?&quot;</Abstract>
+			<DeclaredIn>NSString+RKAdditions.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)queryParameters</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>receiver</Name>
+					<Abstract type="html">A string in the form of @&quot;/object/?sortBy=name&quot;, or @&quot;/object/?sortBy=name&amp;amp;amp;color=red&quot;</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new dictionary of query parameters, with keys like &apos;sortBy&apos; and values like &apos;name&apos;.</Abstract></ReturnValue>
+			<Anchor>//api/name/queryParameters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(RKAdditions)/queryParametersUsingEncoding:</TokenIdentifier>
+			<Abstract type="html">Returns a dictionary of parameter keys and values given a URL-style query string
+on the receiving object. For example, when given the string /contacts?foo=bar&amp;amp;amp;color=red,
+this will return a dictionary of parameters containing foo=bar and color=red, excludes the path &quot;/contacts?&quot;</Abstract>
+			<DeclaredIn>NSString+RKAdditions.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)queryParametersUsingEncoding:(NSStringEncoding)encoding</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>receiver</Name>
+					<Abstract type="html">A string in the form of @&quot;/object/?sortBy=name&quot;, or @&quot;/object/?sortBy=name&amp;amp;amp;color=red&quot;</Abstract>
+				</Parameter><Parameter>
+					<Name>encoding</Name>
+					<Abstract type="html">The encoding for to use while parsing the query string.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new dictionary of query parameters, with keys like &apos;sortBy&apos; and values like &apos;name&apos;.</Abstract></ReturnValue>
+			<Anchor>//api/name/queryParametersUsingEncoding:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(RKAdditions)/queryParametersUsingArrays:encoding:</TokenIdentifier>
+			<Abstract type="html">Returns a dictionary of parameter keys and values arrays (if requested) given a URL-style query string
+on the receiving object. For example, when given the string /contacts?foo=bar&amp;amp;amp;color=red,
+this will return a dictionary of parameters containing foo=[bar] and color=[red], excludes the path &quot;/contacts?&quot;</Abstract>
+			<DeclaredIn>NSString+RKAdditions.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSString(RKAdditions)/queryParametersUsingEncoding:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSDictionary *)queryParametersUsingArrays:(BOOL)shouldUseArrays encoding:(NSStringEncoding)encoding</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>shouldUseArrays</Name>
+					<Abstract type="html">If NO, it yields the same results as queryParametersUsingEncoding:, otherwise it creates value arrays instead of value strings.</Abstract>
+				</Parameter><Parameter>
+					<Name>encoding</Name>
+					<Abstract type="html">The encoding for to use while parsing the query string.</Abstract>
+				</Parameter><Parameter>
+					<Name>receiver</Name>
+					<Abstract type="html">A string in the form of @&quot;/object?sortBy=name&quot;, or @&quot;/object?sortBy=name&amp;amp;amp;color=red&quot;</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new dictionary of query parameters, with keys like &apos;sortBy&apos; and value arrays (if requested) like [&apos;name&apos;].</Abstract></ReturnValue>
+			<Anchor>//api/name/queryParametersUsingArrays:encoding:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(RKAdditions)/stringByAddingURLEncoding</TokenIdentifier>
+			<Abstract type="html">Returns a URL encoded representation of self.</Abstract>
+			<DeclaredIn>NSString+RKAdditions.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)stringByAddingURLEncoding</Declaration>
+			
+			
+			<Anchor>//api/name/stringByAddingURLEncoding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(RKAdditions)/stringByReplacingURLEncoding</TokenIdentifier>
+			<Abstract type="html">Returns a representation of self with percent URL encoded characters replaced with
+their literal values.</Abstract>
+			<DeclaredIn>NSString+RKAdditions.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)stringByReplacingURLEncoding</Declaration>
+			
+			
+			<Anchor>//api/name/stringByReplacingURLEncoding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(RKAdditions)/stringByAppendingPathComponent:isDirectory:</TokenIdentifier>
+			<Abstract type="html">Returns a new string made by appending a path component to the original string,
+along with a trailing slash if the component is designated a directory.</Abstract>
+			<DeclaredIn>NSString+RKAdditions.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)stringByAppendingPathComponent:(NSString *)pathComponent isDirectory:(BOOL)isDirectory</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pathComponent</Name>
+					<Abstract type="html">The path component to add to the URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>isDirectory:</Name>
+					<Abstract type="html">If TRUE, a trailing slash is appended after pathComponent.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new string with pathComponent appended.</Abstract></ReturnValue>
+			<Anchor>//api/name/stringByAppendingPathComponent:isDirectory:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(RKAdditions)/MIMETypeForPathExtension</TokenIdentifier>
+			<Abstract type="html">Interprets the receiver as a path and returns the MIME Type for the path extension
+using Core Services.</Abstract>
+			<DeclaredIn>NSString+RKAdditions.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)MIMETypeForPathExtension</Declaration>
+			
+			<ReturnValue><Abstract type="html">The expected MIME Type of the resource identified by the path or nil if unknown</Abstract></ReturnValue>
+			<Anchor>//api/name/MIMETypeForPathExtension</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(RKAdditions)/isIPAddress</TokenIdentifier>
+			<Abstract type="html">Returns YES if the receiver contains a valid IP address</Abstract>
+			<DeclaredIn>NSString+RKAdditions.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isIPAddress</Declaration>
+			
+			
+			<Anchor>//api/name/isIPAddress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(RKAdditions)/MD5</TokenIdentifier>
+			<Abstract type="html">Returns a string of the MD5 sum of the receiver.</Abstract>
+			<DeclaredIn>NSString+RKAdditions.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)MD5</Declaration>
+			
+			<ReturnValue><Abstract type="html">A new string containing the MD5 sum of the receiver.</Abstract></ReturnValue>
+			<Anchor>//api/name/MD5</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

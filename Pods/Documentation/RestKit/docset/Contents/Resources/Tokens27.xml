@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKObjectMapper.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKObjectMapper</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>
+			
+			<NodeRef refid="27"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMapper/setSourceObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id sourceObject</Declaration>
+			
+			
+			<Anchor>//api/name/sourceObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectMapper/sourceObject</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id sourceObject</Declaration>
+			
+			
+			<Anchor>//api/name/sourceObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMapper/setTargetObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id targetObject</Declaration>
+			
+			
+			<Anchor>//api/name/targetObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectMapper/targetObject</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id targetObject</Declaration>
+			
+			
+			<Anchor>//api/name/targetObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMapper/setMappingProvider:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKObjectMappingProvider *mappingProvider</Declaration>
+			
+			
+			<Anchor>//api/name/mappingProvider</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectMapper/mappingProvider</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKObjectMappingProvider *mappingProvider</Declaration>
+			
+			
+			<Anchor>//api/name/mappingProvider</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMapper/setContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKObjectMappingProviderContext context</Declaration>
+			
+			
+			<Anchor>//api/name/context</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectMapper/context</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKObjectMappingProviderContext context</Declaration>
+			
+			
+			<Anchor>//api/name/context</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMapper/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectMapper/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMapper/setErrors:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *errors</Declaration>
+			
+			
+			<Anchor>//api/name/errors</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectMapper/errors</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *errors</Declaration>
+			
+			
+			<Anchor>//api/name/errors</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKObjectMapper/mapperWithObject:mappingProvider:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>+ (id)mapperWithObject:(id)object mappingProvider:(RKObjectMappingProvider *)mappingProvider</Declaration>
+			
+			
+			<Anchor>//api/name/mapperWithObject:mappingProvider:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMapper/initWithObject:mappingProvider:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithObject:(id)object mappingProvider:(RKObjectMappingProvider *)mappingProvider</Declaration>
+			
+			
+			<Anchor>//api/name/initWithObject:mappingProvider:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMapper/performMapping</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>- (RKObjectMappingResult *)performMapping</Declaration>
+			
+			
+			<Anchor>//api/name/performMapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMapper/errorCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)errorCount</Declaration>
+			
+			
+			<Anchor>//api/name/errorCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMapper/mapObject:atKeyPath:usingMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper_Private.h</DeclaredIn>			
+			
+			<Declaration>- (id)mapObject:(id)mappableObject atKeyPath:(NSString *)keyPath usingMapping:(RKObjectMappingDefinition *)mapping</Declaration>
+			
+			
+			<Anchor>//api/name/mapObject:atKeyPath:usingMapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMapper/mapCollection:atKeyPath:usingMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper_Private.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)mapCollection:(NSArray *)mappableObjects atKeyPath:(NSString *)keyPath usingMapping:(RKObjectMappingDefinition *)mapping</Declaration>
+			
+			
+			<Anchor>//api/name/mapCollection:atKeyPath:usingMapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMapper/mapFromObject:toObject:atKeyPath:usingMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper_Private.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)mapFromObject:(id)mappableObject toObject:(id)destinationObject atKeyPath:(NSString *)keyPath usingMapping:(RKObjectMappingDefinition *)mapping</Declaration>
+			
+			
+			<Anchor>//api/name/mapFromObject:toObject:atKeyPath:usingMapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMapper/objectWithMapping:andData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper_Private.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectWithMapping:(RKObjectMappingDefinition *)objectMapping andData:(id)mappableData</Declaration>
+			
+			
+			<Anchor>//api/name/objectWithMapping:andData:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

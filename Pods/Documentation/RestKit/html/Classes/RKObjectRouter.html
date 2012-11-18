@@ -1,0 +1,563 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>RKObjectRouter Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">RestKit 0.10.3 </a></h1>
+				<a id="developerHome" href="../index.html">Blake Watters</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">RKObjectRouter Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/routeClass:toResourcePath:">&nbsp;&nbsp;&nbsp;&nbsp;- routeClass:toResourcePath:</option>
+	
+	<option value="//api/name/routeClass:toResourcePath:forMethod:">&nbsp;&nbsp;&nbsp;&nbsp;- routeClass:toResourcePath:forMethod:</option>
+	
+	<option value="//api/name/routeClass:toResourcePath:forMethod:escapeRoutedPath:">&nbsp;&nbsp;&nbsp;&nbsp;- routeClass:toResourcePath:forMethod:escapeRoutedPath:</option>
+	
+	<option value="//api/name/routeClass:toResourcePathPattern:">&nbsp;&nbsp;&nbsp;&nbsp;- routeClass:toResourcePathPattern:</option>
+	
+	<option value="//api/name/routeClass:toResourcePathPattern:forMethod:">&nbsp;&nbsp;&nbsp;&nbsp;- routeClass:toResourcePathPattern:forMethod:</option>
+	
+	<option value="//api/name/routeClass:toResourcePathPattern:forMethod:escapeRoutedPath:">&nbsp;&nbsp;&nbsp;&nbsp;- routeClass:toResourcePathPattern:forMethod:escapeRoutedPath:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CompatibilityAliases Methods">CompatibilityAliases Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/routeClass:toResourcePath:">routeClass:toResourcePath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/routeClass:toResourcePath:forMethod:">routeClass:toResourcePath:forMethod:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/routeClass:toResourcePath:forMethod:escapeRoutedPath:">routeClass:toResourcePath:forMethod:escapeRoutedPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/routeClass:toResourcePathPattern:">routeClass:toResourcePathPattern:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/routeClass:toResourcePathPattern:forMethod:">routeClass:toResourcePathPattern:forMethod:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/routeClass:toResourcePathPattern:forMethod:escapeRoutedPath:">routeClass:toResourcePathPattern:forMethod:escapeRoutedPath:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="RKObjectRouter Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">RKObjectRouter Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/RKRouter.html">RKRouter</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">RKObjectRouter.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>An implementation of the <a href="../Protocols/RKRouter.html">RKRouter</a> protocol that is suitable for use in either
+static or dynamic route generation. Static routes are added by simply encoding
+the resourcePath that the mappable object should be sent to when a GET, POST, PUT
+or DELETE action is invoked. Dynamic routes are available by encoding key paths into
+the resourcePath using a single colon delimiter, such as /users/:userID</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/routeClass:toResourcePathPattern:">&ndash;&nbsp;routeClass:toResourcePathPattern:</a></code>
+		<span class="tooltip"><p>Register a mapping from an object class to a resource path. This resourcePath can be static
+(i.e. /this/is/the/path) or dynamic (i.e. /users/:userID/:username). Dynamic routes are
+evaluated against the object being routed using Key-Value coding and coerced into a string.
+<em>NOTE </em>&ndash; The pattern matcher fully supports KVM, so /:key1.otherKey normally resolves as it
+would in any other KVM situation, &hellip; otherKey is a sub-key on a the object represented by
+key1.  This presents a problem in situations where you might want to build a pattern like
+/:filename.json, where the dot isn&rsquo;t intended as a sub-key on the dynamic &ldquo;filename&rdquo;, but
+rather it is part of the &ldquo;json&rdquo; static string.  In these instances, you need to escape the
+dot with two backslashes, like so: /:filename\.json</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/routeClass:toResourcePathPattern:forMethod:">&ndash;&nbsp;routeClass:toResourcePathPattern:forMethod:</a></code>
+		<span class="tooltip"><p>Register a mapping from an object class to a resource path for a specific HTTP method.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/routeClass:toResourcePathPattern:forMethod:escapeRoutedPath:">&ndash;&nbsp;routeClass:toResourcePathPattern:forMethod:escapeRoutedPath:</a></code>
+		<span class="tooltip"><p>Register a mapping from an object class to a resource path for a specific HTTP method,
+optionally adding url escapes to the path.  This urlEscape flag comes in handy when you want to provide
+your own fully escaped dynamic resource path via a method/attribute on the object model.
+For example, if your Person model has a string attribute titled &ldquo;polymorphicResourcePath&rdquo; that returns
+@&ldquo;/this/is/the/path&rdquo;, you should configure the route with url escapes &lsquo;off&rsquo;, otherwise the router will return
+@&ldquo;%2Fthis%2Fis%2Fthe%2Fpath&rdquo;.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="CompatibilityAliases Methods" name="task_CompatibilityAliases Methods"></a>
+						<h3 class="subsubtitle task-title">CompatibilityAliases Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/routeClass:toResourcePath:">&ndash;&nbsp;routeClass:toResourcePath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/routeClass:toResourcePath:forMethod:">&ndash;&nbsp;routeClass:toResourcePath:forMethod:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/routeClass:toResourcePath:forMethod:escapeRoutedPath:">&ndash;&nbsp;routeClass:toResourcePath:forMethod:escapeRoutedPath:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/routeClass:toResourcePath:" title="routeClass:toResourcePath:"></a>
+	<h3 class="subsubtitle method-title">routeClass:toResourcePath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)routeClass:(Class)<em>objectClass</em> toResourcePath:(NSString *)<em>resourcePath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/routeClass:toResourcePath:forMethod:" title="routeClass:toResourcePath:forMethod:"></a>
+	<h3 class="subsubtitle method-title">routeClass:toResourcePath:forMethod:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)routeClass:(Class)<em>objectClass</em> toResourcePath:(NSString *)<em>resourcePath</em> forMethod:(RKRequestMethod)<em>method</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/routeClass:toResourcePath:forMethod:escapeRoutedPath:" title="routeClass:toResourcePath:forMethod:escapeRoutedPath:"></a>
+	<h3 class="subsubtitle method-title">routeClass:toResourcePath:forMethod:escapeRoutedPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)routeClass:(Class)<em>objectClass</em> toResourcePath:(NSString *)<em>resourcePath</em> forMethod:(RKRequestMethod)<em>method</em> escapeRoutedPath:(BOOL)<em>addEscapes</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/routeClass:toResourcePathPattern:" title="routeClass:toResourcePathPattern:"></a>
+	<h3 class="subsubtitle method-title">routeClass:toResourcePathPattern:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Register a mapping from an object class to a resource path. This resourcePath can be static
+(i.e. /this/is/the/path) or dynamic (i.e. /users/:userID/:username). Dynamic routes are
+evaluated against the object being routed using Key-Value coding and coerced into a string.
+<em>NOTE </em>&ndash; The pattern matcher fully supports KVM, so /:key1.otherKey normally resolves as it
+would in any other KVM situation, &hellip; otherKey is a sub-key on a the object represented by
+key1.  This presents a problem in situations where you might want to build a pattern like
+/:filename.json, where the dot isn&rsquo;t intended as a sub-key on the dynamic &ldquo;filename&rdquo;, but
+rather it is part of the &ldquo;json&rdquo; static string.  In these instances, you need to escape the
+dot with two backslashes, like so: /:filename\.json</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)routeClass:(Class)<em>objectClass</em> toResourcePathPattern:(NSString *)<em>resourcePathPattern</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Register a mapping from an object class to a resource path. This resourcePath can be static
+(i.e. /this/is/the/path) or dynamic (i.e. /users/:userID/:username). Dynamic routes are
+evaluated against the object being routed using Key-Value coding and coerced into a string.
+<em>NOTE </em>&ndash; The pattern matcher fully supports KVM, so /:key1.otherKey normally resolves as it
+would in any other KVM situation, &hellip; otherKey is a sub-key on a the object represented by
+key1.  This presents a problem in situations where you might want to build a pattern like
+/:filename.json, where the dot isn&rsquo;t intended as a sub-key on the dynamic &ldquo;filename&rdquo;, but
+rather it is part of the &ldquo;json&rdquo; static string.  In these instances, you need to escape the
+dot with two backslashes, like so: /:filename\.json</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/RKPathMatcher.html">RKPathMatcher</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectRouter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/routeClass:toResourcePathPattern:forMethod:" title="routeClass:toResourcePathPattern:forMethod:"></a>
+	<h3 class="subsubtitle method-title">routeClass:toResourcePathPattern:forMethod:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Register a mapping from an object class to a resource path for a specific HTTP method.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)routeClass:(Class)<em>objectClass</em> toResourcePathPattern:(NSString *)<em>resourcePathPattern</em> forMethod:(RKRequestMethod)<em>method</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Register a mapping from an object class to a resource path for a specific HTTP method.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/RKPathMatcher.html">RKPathMatcher</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectRouter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/routeClass:toResourcePathPattern:forMethod:escapeRoutedPath:" title="routeClass:toResourcePathPattern:forMethod:escapeRoutedPath:"></a>
+	<h3 class="subsubtitle method-title">routeClass:toResourcePathPattern:forMethod:escapeRoutedPath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Register a mapping from an object class to a resource path for a specific HTTP method,
+optionally adding url escapes to the path.  This urlEscape flag comes in handy when you want to provide
+your own fully escaped dynamic resource path via a method/attribute on the object model.
+For example, if your Person model has a string attribute titled &ldquo;polymorphicResourcePath&rdquo; that returns
+@&ldquo;/this/is/the/path&rdquo;, you should configure the route with url escapes &lsquo;off&rsquo;, otherwise the router will return
+@&ldquo;%2Fthis%2Fis%2Fthe%2Fpath&rdquo;.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)routeClass:(Class)<em>objectClass</em> toResourcePathPattern:(NSString *)<em>resourcePathPattern</em> forMethod:(RKRequestMethod)<em>method</em> escapeRoutedPath:(BOOL)<em>addEscapes</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Register a mapping from an object class to a resource path for a specific HTTP method,
+optionally adding url escapes to the path.  This urlEscape flag comes in handy when you want to provide
+your own fully escaped dynamic resource path via a method/attribute on the object model.
+For example, if your Person model has a string attribute titled &ldquo;polymorphicResourcePath&rdquo; that returns
+@&ldquo;/this/is/the/path&rdquo;, you should configure the route with url escapes &lsquo;off&rsquo;, otherwise the router will return
+@&ldquo;%2Fthis%2Fis%2Fthe%2Fpath&rdquo;.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/RKPathMatcher.html">RKPathMatcher</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectRouter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Blake Watters. All rights reserved. (Last updated: 2012-11-16)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

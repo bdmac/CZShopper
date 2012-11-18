@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKSearchEngine.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKSearchEngine</TokenIdentifier>
+			<Abstract type="html">An instance of RKSearchEngine provides a simple interface for searching
+arbitrary objects for matching text. Searching is performed by constructing
+a compound NSPredicate and evaluating a collection of candidate objects for matches.
+RKSearchEngine is only suitable for searching a relatively small collection of in-memory
+objects that are not backed by Core Data (see RKManagedObjectSearchEngine).</Abstract>
+			<DeclaredIn>RKSearchEngine.h</DeclaredIn>
+			
+			<NodeRef refid="53"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKSearchEngine/setMode:</TokenIdentifier>
+			<Abstract type="html">The type of matching to perform. Can be either RKSearchModeAnd or RKSearchModeOr.</Abstract>
+			<DeclaredIn>RKSearchEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKSearchMode mode</Declaration>
+			
+			
+			<Anchor>//api/name/mode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKSearchEngine/mode</TokenIdentifier>
+			<Abstract type="html">The type of matching to perform. Can be either RKSearchModeAnd or RKSearchModeOr.</Abstract>
+			<DeclaredIn>RKSearchEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKSearchMode mode</Declaration>
+			
+			
+			<Anchor>//api/name/mode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKSearchEngine/setTokenizeQuery:</TokenIdentifier>
+			<Abstract type="html">A Boolean value that determines if the search query should be split into subterms at whitespace boundaries.</Abstract>
+			<DeclaredIn>RKSearchEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL tokenizeQuery</Declaration>
+			
+			
+			<Anchor>//api/name/tokenizeQuery</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKSearchEngine/tokenizeQuery</TokenIdentifier>
+			<Abstract type="html">A Boolean value that determines if the search query should be split into subterms at whitespace boundaries.</Abstract>
+			<DeclaredIn>RKSearchEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL tokenizeQuery</Declaration>
+			
+			
+			<Anchor>//api/name/tokenizeQuery</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKSearchEngine/setStripsWhitespace:</TokenIdentifier>
+			<Abstract type="html">A Boolean value that determines if whitespace is to be stripped off of the search terms before searching.</Abstract>
+			<DeclaredIn>RKSearchEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL stripsWhitespace</Declaration>
+			
+			
+			<Anchor>//api/name/stripsWhitespace</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKSearchEngine/stripsWhitespace</TokenIdentifier>
+			<Abstract type="html">A Boolean value that determines if whitespace is to be stripped off of the search terms before searching.</Abstract>
+			<DeclaredIn>RKSearchEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL stripsWhitespace</Declaration>
+			
+			
+			<Anchor>//api/name/stripsWhitespace</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKSearchEngine/setCaseSensitive:</TokenIdentifier>
+			<Abstract type="html">A Boolean value that determines if search terms should be matched case sensitively.</Abstract>
+			<DeclaredIn>RKSearchEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, getter=isCaseSensitive) BOOL caseSensitive</Declaration>
+			
+			
+			<Anchor>//api/name/caseSensitive</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKSearchEngine/caseSensitive</TokenIdentifier>
+			<Abstract type="html">A Boolean value that determines if search terms should be matched case sensitively.</Abstract>
+			<DeclaredIn>RKSearchEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, getter=isCaseSensitive) BOOL caseSensitive</Declaration>
+			
+			
+			<Anchor>//api/name/caseSensitive</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKSearchEngine/searchEngine</TokenIdentifier>
+			<Abstract type="html">Creates and returns a search engine object.</Abstract>
+			<DeclaredIn>RKSearchEngine.h</DeclaredIn>			
+			
+			<Declaration>+ (id)searchEngine</Declaration>
+			
+			<ReturnValue><Abstract type="html">A search engine object.</Abstract></ReturnValue>
+			<Anchor>//api/name/searchEngine</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKSearchEngine/searchFor:inCollection:</TokenIdentifier>
+			<Abstract type="html">Searches a collection of RKSearchable objects for the given text using the configuration of the receiver
+and returns an array of objects for which a match was found.</Abstract>
+			<DeclaredIn>RKSearchEngine.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)searchFor:(NSString *)searchText inCollection:(NSArray *)collection</Declaration>
+			
+			<ReturnValue><Abstract type="html">A new array containing the objects in the given collection for which a match was found.</Abstract></ReturnValue>
+			<Anchor>//api/name/searchFor:inCollection:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKSearchEngine/searchFor:onProperties:inCollection:</TokenIdentifier>
+			<Abstract type="html">Searches a set of properties in a collection of objects for the given text using the configuration of the receiver
+and returns an array of objects for which a match was found.</Abstract>
+			<DeclaredIn>RKSearchEngine.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)searchFor:(NSString *)searchText onProperties:(NSArray *)properties inCollection:(NSArray *)collection</Declaration>
+			
+			<ReturnValue><Abstract type="html">A new array containing the objects in the given collection for which a match was found.</Abstract></ReturnValue>
+			<Anchor>//api/name/searchFor:onProperties:inCollection:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

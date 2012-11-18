@@ -1,0 +1,817 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>RKAbstractTableControllerDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">RestKit 0.10.3 </a></h1>
+				<a id="developerHome" href="../index.html">Blake Watters</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">RKAbstractTableControllerDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/tableController:didDeleteObject:atIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- tableController:didDeleteObject:atIndexPath:</option>
+	
+	<option value="//api/name/tableController:didEndEditing:atIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- tableController:didEndEditing:atIndexPath:</option>
+	
+	<option value="//api/name/tableController:didFailLoadWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- tableController:didFailLoadWithError:</option>
+	
+	<option value="//api/name/tableController:didInsertObject:atIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- tableController:didInsertObject:atIndexPath:</option>
+	
+	<option value="//api/name/tableController:didLoadTableWithObjectLoader:">&nbsp;&nbsp;&nbsp;&nbsp;- tableController:didLoadTableWithObjectLoader:</option>
+	
+	<option value="//api/name/tableController:didSelectCell:forObject:atIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- tableController:didSelectCell:forObject:atIndexPath:</option>
+	
+	<option value="//api/name/tableController:didUpdateObject:atIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- tableController:didUpdateObject:atIndexPath:</option>
+	
+	<option value="//api/name/tableController:willAddSwipeView:toCell:forObject:">&nbsp;&nbsp;&nbsp;&nbsp;- tableController:willAddSwipeView:toCell:forObject:</option>
+	
+	<option value="//api/name/tableController:willBeginEditing:atIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- tableController:willBeginEditing:atIndexPath:</option>
+	
+	<option value="//api/name/tableController:willDisplayCell:forObject:atIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- tableController:willDisplayCell:forObject:atIndexPath:</option>
+	
+	<option value="//api/name/tableController:willLoadTableWithObjectLoader:">&nbsp;&nbsp;&nbsp;&nbsp;- tableController:willLoadTableWithObjectLoader:</option>
+	
+	<option value="//api/name/tableController:willRemoveSwipeView:fromCell:forObject:">&nbsp;&nbsp;&nbsp;&nbsp;- tableController:willRemoveSwipeView:fromCell:forObject:</option>
+	
+	<option value="//api/name/tableControllerDidBecomeEmpty:">&nbsp;&nbsp;&nbsp;&nbsp;- tableControllerDidBecomeEmpty:</option>
+	
+	<option value="//api/name/tableControllerDidBecomeOffline:">&nbsp;&nbsp;&nbsp;&nbsp;- tableControllerDidBecomeOffline:</option>
+	
+	<option value="//api/name/tableControllerDidBecomeOnline:">&nbsp;&nbsp;&nbsp;&nbsp;- tableControllerDidBecomeOnline:</option>
+	
+	<option value="//api/name/tableControllerDidCancelLoad:">&nbsp;&nbsp;&nbsp;&nbsp;- tableControllerDidCancelLoad:</option>
+	
+	<option value="//api/name/tableControllerDidFinalizeLoad:">&nbsp;&nbsp;&nbsp;&nbsp;- tableControllerDidFinalizeLoad:</option>
+	
+	<option value="//api/name/tableControllerDidFinishLoad:">&nbsp;&nbsp;&nbsp;&nbsp;- tableControllerDidFinishLoad:</option>
+	
+	<option value="//api/name/tableControllerDidStartLoad:">&nbsp;&nbsp;&nbsp;&nbsp;- tableControllerDidStartLoad:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableController:didDeleteObject:atIndexPath:">tableController:didDeleteObject:atIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableController:didEndEditing:atIndexPath:">tableController:didEndEditing:atIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableController:didFailLoadWithError:">tableController:didFailLoadWithError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableController:didInsertObject:atIndexPath:">tableController:didInsertObject:atIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableController:didLoadTableWithObjectLoader:">tableController:didLoadTableWithObjectLoader:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableController:didSelectCell:forObject:atIndexPath:">tableController:didSelectCell:forObject:atIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableController:didUpdateObject:atIndexPath:">tableController:didUpdateObject:atIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableController:willAddSwipeView:toCell:forObject:">tableController:willAddSwipeView:toCell:forObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableController:willBeginEditing:atIndexPath:">tableController:willBeginEditing:atIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableController:willDisplayCell:forObject:atIndexPath:">tableController:willDisplayCell:forObject:atIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableController:willLoadTableWithObjectLoader:">tableController:willLoadTableWithObjectLoader:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableController:willRemoveSwipeView:fromCell:forObject:">tableController:willRemoveSwipeView:fromCell:forObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableControllerDidBecomeEmpty:">tableControllerDidBecomeEmpty:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableControllerDidBecomeOffline:">tableControllerDidBecomeOffline:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableControllerDidBecomeOnline:">tableControllerDidBecomeOnline:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableControllerDidCancelLoad:">tableControllerDidCancelLoad:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableControllerDidFinalizeLoad:">tableControllerDidFinalizeLoad:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableControllerDidFinishLoad:">tableControllerDidFinishLoad:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableControllerDidStartLoad:">tableControllerDidStartLoad:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="RKAbstractTableControllerDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">RKAbstractTableControllerDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">RKAbstractTableController.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableController:willLoadTableWithObjectLoader:">&ndash;&nbsp;tableController:willLoadTableWithObjectLoader:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableController:didLoadTableWithObjectLoader:">&ndash;&nbsp;tableController:didLoadTableWithObjectLoader:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableControllerDidStartLoad:">&ndash;&nbsp;tableControllerDidStartLoad:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableControllerDidFinishLoad:">&ndash;&nbsp;tableControllerDidFinishLoad:</a></code>
+		<span class="tooltip"><p>Sent when the table view has transitioned out of the loading state regardless of outcome</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableController:didFailLoadWithError:">&ndash;&nbsp;tableController:didFailLoadWithError:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableControllerDidCancelLoad:">&ndash;&nbsp;tableControllerDidCancelLoad:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableControllerDidFinalizeLoad:">&ndash;&nbsp;tableControllerDidFinalizeLoad:</a></code>
+		<span class="tooltip"><p>Sent to the delegate when the controller is really and truly finished loading/updating, whether from the network or from Core Data,
+or from static data, &hellip; this happens in didFinishLoading</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableControllerDidBecomeEmpty:">&ndash;&nbsp;tableControllerDidBecomeEmpty:</a></code>
+		<span class="tooltip"><p>Sent to the delegate when the content of the table view has become empty</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableControllerDidBecomeOnline:">&ndash;&nbsp;tableControllerDidBecomeOnline:</a></code>
+		<span class="tooltip"><p>Sent to the delegate when the table controller has transitioned from offline to online</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableControllerDidBecomeOffline:">&ndash;&nbsp;tableControllerDidBecomeOffline:</a></code>
+		<span class="tooltip"><p>Sent to the delegate when the table controller has transitioned from online to offline</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableController:didInsertObject:atIndexPath:">&ndash;&nbsp;tableController:didInsertObject:atIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableController:didUpdateObject:atIndexPath:">&ndash;&nbsp;tableController:didUpdateObject:atIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableController:didDeleteObject:atIndexPath:">&ndash;&nbsp;tableController:didDeleteObject:atIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableController:willBeginEditing:atIndexPath:">&ndash;&nbsp;tableController:willBeginEditing:atIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableController:didEndEditing:atIndexPath:">&ndash;&nbsp;tableController:didEndEditing:atIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableController:willAddSwipeView:toCell:forObject:">&ndash;&nbsp;tableController:willAddSwipeView:toCell:forObject:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableController:willRemoveSwipeView:fromCell:forObject:">&ndash;&nbsp;tableController:willRemoveSwipeView:fromCell:forObject:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableController:willDisplayCell:forObject:atIndexPath:">&ndash;&nbsp;tableController:willDisplayCell:forObject:atIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableController:didSelectCell:forObject:atIndexPath:">&ndash;&nbsp;tableController:didSelectCell:forObject:atIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/tableController:didDeleteObject:atIndexPath:" title="tableController:didDeleteObject:atIndexPath:"></a>
+	<h3 class="subsubtitle method-title">tableController:didDeleteObject:atIndexPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)tableController:(RKAbstractTableController *)<em>tableController</em> didDeleteObject:(id)<em>object</em> atIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableController:didEndEditing:atIndexPath:" title="tableController:didEndEditing:atIndexPath:"></a>
+	<h3 class="subsubtitle method-title">tableController:didEndEditing:atIndexPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)tableController:(RKAbstractTableController *)<em>tableController</em> didEndEditing:(id)<em>object</em> atIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableController:didFailLoadWithError:" title="tableController:didFailLoadWithError:"></a>
+	<h3 class="subsubtitle method-title">tableController:didFailLoadWithError:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)tableController:(RKAbstractTableController *)<em>tableController</em> didFailLoadWithError:(NSError *)<em>error</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableController:didInsertObject:atIndexPath:" title="tableController:didInsertObject:atIndexPath:"></a>
+	<h3 class="subsubtitle method-title">tableController:didInsertObject:atIndexPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)tableController:(RKAbstractTableController *)<em>tableController</em> didInsertObject:(id)<em>object</em> atIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableController:didLoadTableWithObjectLoader:" title="tableController:didLoadTableWithObjectLoader:"></a>
+	<h3 class="subsubtitle method-title">tableController:didLoadTableWithObjectLoader:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)tableController:(RKAbstractTableController *)<em>tableController</em> didLoadTableWithObjectLoader:(RKObjectLoader *)<em>objectLoader</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableController:didSelectCell:forObject:atIndexPath:" title="tableController:didSelectCell:forObject:atIndexPath:"></a>
+	<h3 class="subsubtitle method-title">tableController:didSelectCell:forObject:atIndexPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)tableController:(RKAbstractTableController *)<em>tableController</em> didSelectCell:(UITableViewCell *)<em>cell</em> forObject:(id)<em>object</em> atIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableController:didUpdateObject:atIndexPath:" title="tableController:didUpdateObject:atIndexPath:"></a>
+	<h3 class="subsubtitle method-title">tableController:didUpdateObject:atIndexPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)tableController:(RKAbstractTableController *)<em>tableController</em> didUpdateObject:(id)<em>object</em> atIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableController:willAddSwipeView:toCell:forObject:" title="tableController:willAddSwipeView:toCell:forObject:"></a>
+	<h3 class="subsubtitle method-title">tableController:willAddSwipeView:toCell:forObject:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)tableController:(RKAbstractTableController *)<em>tableController</em> willAddSwipeView:(UIView *)<em>swipeView</em> toCell:(UITableViewCell *)<em>cell</em> forObject:(id)<em>object</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableController:willBeginEditing:atIndexPath:" title="tableController:willBeginEditing:atIndexPath:"></a>
+	<h3 class="subsubtitle method-title">tableController:willBeginEditing:atIndexPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)tableController:(RKAbstractTableController *)<em>tableController</em> willBeginEditing:(id)<em>object</em> atIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableController:willDisplayCell:forObject:atIndexPath:" title="tableController:willDisplayCell:forObject:atIndexPath:"></a>
+	<h3 class="subsubtitle method-title">tableController:willDisplayCell:forObject:atIndexPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)tableController:(RKAbstractTableController *)<em>tableController</em> willDisplayCell:(UITableViewCell *)<em>cell</em> forObject:(id)<em>object</em> atIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableController:willLoadTableWithObjectLoader:" title="tableController:willLoadTableWithObjectLoader:"></a>
+	<h3 class="subsubtitle method-title">tableController:willLoadTableWithObjectLoader:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)tableController:(RKAbstractTableController *)<em>tableController</em> willLoadTableWithObjectLoader:(RKObjectLoader *)<em>objectLoader</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableController:willRemoveSwipeView:fromCell:forObject:" title="tableController:willRemoveSwipeView:fromCell:forObject:"></a>
+	<h3 class="subsubtitle method-title">tableController:willRemoveSwipeView:fromCell:forObject:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)tableController:(RKAbstractTableController *)<em>tableController</em> willRemoveSwipeView:(UIView *)<em>swipeView</em> fromCell:(UITableViewCell *)<em>cell</em> forObject:(id)<em>object</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableControllerDidBecomeEmpty:" title="tableControllerDidBecomeEmpty:"></a>
+	<h3 class="subsubtitle method-title">tableControllerDidBecomeEmpty:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sent to the delegate when the content of the table view has become empty</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tableControllerDidBecomeEmpty:(RKAbstractTableController *)<em>tableController</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sent to the delegate when the content of the table view has become empty</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKAbstractTableController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableControllerDidBecomeOffline:" title="tableControllerDidBecomeOffline:"></a>
+	<h3 class="subsubtitle method-title">tableControllerDidBecomeOffline:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sent to the delegate when the table controller has transitioned from online to offline</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tableControllerDidBecomeOffline:(RKAbstractTableController *)<em>tableController</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sent to the delegate when the table controller has transitioned from online to offline</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKAbstractTableController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableControllerDidBecomeOnline:" title="tableControllerDidBecomeOnline:"></a>
+	<h3 class="subsubtitle method-title">tableControllerDidBecomeOnline:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sent to the delegate when the table controller has transitioned from offline to online</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tableControllerDidBecomeOnline:(RKAbstractTableController *)<em>tableController</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sent to the delegate when the table controller has transitioned from offline to online</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKAbstractTableController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableControllerDidCancelLoad:" title="tableControllerDidCancelLoad:"></a>
+	<h3 class="subsubtitle method-title">tableControllerDidCancelLoad:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)tableControllerDidCancelLoad:(RKAbstractTableController *)<em>tableController</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableControllerDidFinalizeLoad:" title="tableControllerDidFinalizeLoad:"></a>
+	<h3 class="subsubtitle method-title">tableControllerDidFinalizeLoad:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sent to the delegate when the controller is really and truly finished loading/updating, whether from the network or from Core Data,
+or from static data, &hellip; this happens in didFinishLoading</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tableControllerDidFinalizeLoad:(RKAbstractTableController *)<em>tableController</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sent to the delegate when the controller is really and truly finished loading/updating, whether from the network or from Core Data,
+or from static data, &hellip; this happens in didFinishLoading</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKAbstractTableController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableControllerDidFinishLoad:" title="tableControllerDidFinishLoad:"></a>
+	<h3 class="subsubtitle method-title">tableControllerDidFinishLoad:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sent when the table view has transitioned out of the loading state regardless of outcome</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tableControllerDidFinishLoad:(RKAbstractTableController *)<em>tableController</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sent when the table view has transitioned out of the loading state regardless of outcome</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKAbstractTableController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableControllerDidStartLoad:" title="tableControllerDidStartLoad:"></a>
+	<h3 class="subsubtitle method-title">tableControllerDidStartLoad:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)tableControllerDidStartLoad:(RKAbstractTableController *)<em>tableController</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Blake Watters. All rights reserved. (Last updated: 2012-11-16)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKMutableBlockDictionary.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKMutableBlockDictionary</TokenIdentifier>
+			<Abstract type="html">A dictionary capable of storing dynamic values provided
+as a Objective-C block. Otherwise identical in functionality
+to a vanilla NSMutableDictionary</Abstract>
+			<DeclaredIn>RKMutableBlockDictionary.h</DeclaredIn>
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKMutableBlockDictionary/setValueWithBlock:forKey:</TokenIdentifier>
+			<Abstract type="html">Assigns a block as the value for a key in the dictionary. This allows you
+to implement simple logic using key-value coding semantics within the dictionary.</Abstract>
+			<DeclaredIn>RKMutableBlockDictionary.h</DeclaredIn>			
+			
+			<Declaration>- (void)setValueWithBlock:(id ( ^ ) ( ))block forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">An Objective-C block returning an id and accepting no parameters</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">An NSString key for setting the</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setValueWithBlock:forKey:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

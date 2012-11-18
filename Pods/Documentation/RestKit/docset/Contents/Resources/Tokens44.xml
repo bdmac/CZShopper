@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKPortCheck.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKPortCheck</TokenIdentifier>
+			<Abstract type="html">The RKPortCheck class provides a simple interface for quickly testing
+the availability of a listening TCP port on a remote host by IP Address or
+Hostname.</Abstract>
+			<DeclaredIn>RKPortCheck.h</DeclaredIn>
+			
+			<NodeRef refid="44"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKPortCheck/initWithHost:port:</TokenIdentifier>
+			<Abstract type="html">Initializes the receiver with a given hostname or IP address as a string
+and a numeric TCP port number.</Abstract>
+			<DeclaredIn>RKPortCheck.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithHost:(NSString *)hostNameOrIPAddress port:(NSUInteger)port</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>hostNameOrIPAddress</Name>
+					<Abstract type="html">A string containing the hostname or IP address to check.</Abstract>
+				</Parameter><Parameter>
+					<Name>port</Name>
+					<Abstract type="html">The TCP port on the remote host to check for a listening server on.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The receiver, initialized with host and port.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithHost:port:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKPortCheck/setHost:</TokenIdentifier>
+			<Abstract type="html">The hostname or IP address the receiver is checking.</Abstract>
+			<DeclaredIn>RKPortCheck.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSString *host</Declaration>
+			
+			
+			<Anchor>//api/name/host</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKPortCheck/host</TokenIdentifier>
+			<Abstract type="html">The hostname or IP address the receiver is checking.</Abstract>
+			<DeclaredIn>RKPortCheck.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSString *host</Declaration>
+			
+			
+			<Anchor>//api/name/host</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKPortCheck/setPort:</TokenIdentifier>
+			<Abstract type="html">The TCP port to check for a listening server on.</Abstract>
+			<DeclaredIn>RKPortCheck.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSUInteger port</Declaration>
+			
+			
+			<Anchor>//api/name/port</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKPortCheck/port</TokenIdentifier>
+			<Abstract type="html">The TCP port to check for a listening server on.</Abstract>
+			<DeclaredIn>RKPortCheck.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSUInteger port</Declaration>
+			
+			
+			<Anchor>//api/name/port</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKPortCheck/run</TokenIdentifier>
+			<Abstract type="html">Runs the check by creating a socket and attempting to connect to the
+target host and port via TCP. The</Abstract>
+			<DeclaredIn>RKPortCheck.h</DeclaredIn>			
+			
+			<Declaration>- (void)run</Declaration>
+			
+			
+			<Anchor>//api/name/run</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKPortCheck/hasRun</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating if the check has been run.</Abstract>
+			<DeclaredIn>RKPortCheck.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasRun</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the check has been run, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasRun</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKPortCheck/isOpen</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating if the host and port the receiver checked
+is open and listening for incoming connections.</Abstract>
+			<DeclaredIn>RKPortCheck.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isOpen</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the port on the remote host is open, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/isOpen</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKPortCheck/isClosed</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating if the host and port the receiver checked
+is NOT open and listening for incoming connections.</Abstract>
+			<DeclaredIn>RKPortCheck.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isClosed</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the port on the remote host is closed, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/isClosed</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

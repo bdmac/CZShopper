@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RKObjectMappingOperationDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RKObjectMappingOperationDelegate</TokenIdentifier>
+			<Abstract type="html">Objects acting as the delegate for RKObjectMappingOperation objects must adopt the
+RKObjectMappingOperationDelegate protocol. These methods enable the delegate to be
+notified of events such as the application of attribute and relationship mappings
+during a mapping operation.</Abstract>
+			<DeclaredIn>RKObjectMappingOperation.h</DeclaredIn>
+			
+			<NodeRef refid="84"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectMappingOperationDelegate/objectMappingOperation:didFindMapping:forKeyPath:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that an attribute or relationship mapping was found for a given key
+path within the data being mapped.</Abstract>
+			<DeclaredIn>RKObjectMappingOperation.h</DeclaredIn>			
+			
+			<Declaration>- (void)objectMappingOperation:(RKObjectMappingOperation *)operation didFindMapping:(RKObjectAttributeMapping *)mapping forKeyPath:(NSString *)keyPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>operation</Name>
+					<Abstract type="html">The object mapping operation being performed.</Abstract>
+				</Parameter><Parameter>
+					<Name>mapping</Name>
+					<Abstract type="html">The RKObjectAttributeMapping or RKObjectRelationshipMapping found for the key path.</Abstract>
+				</Parameter><Parameter>
+					<Name>keyPath</Name>
+					<Abstract type="html">The key path in the source object for which the mapping is to be applied.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/objectMappingOperation:didFindMapping:forKeyPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectMappingOperationDelegate/objectMappingOperation:didNotFindMappingForKeyPath:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that no attribute or relationships mapping was found for a given key
+path within the data being mapped.</Abstract>
+			<DeclaredIn>RKObjectMappingOperation.h</DeclaredIn>			
+			
+			<Declaration>- (void)objectMappingOperation:(RKObjectMappingOperation *)operation didNotFindMappingForKeyPath:(NSString *)keyPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>operation</Name>
+					<Abstract type="html">The object mapping operation being performed.</Abstract>
+				</Parameter><Parameter>
+					<Name>keyPath</Name>
+					<Abstract type="html">The key path in the source object for which no mapping was found.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/objectMappingOperation:didNotFindMappingForKeyPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectMappingOperationDelegate/objectMappingOperation:didSetValue:forKeyPath:usingMapping:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the mapping operation has set a value for a given key path with
+an attribute or relationship mapping.</Abstract>
+			<DeclaredIn>RKObjectMappingOperation.h</DeclaredIn>			
+			
+			<Declaration>- (void)objectMappingOperation:(RKObjectMappingOperation *)operation didSetValue:(id)value forKeyPath:(NSString *)keyPath usingMapping:(RKObjectAttributeMapping *)mapping</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>operation</Name>
+					<Abstract type="html">The object mapping operation being performed.</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">A new value that was set on the destination object.</Abstract>
+				</Parameter><Parameter>
+					<Name>keyPath</Name>
+					<Abstract type="html">The key path in the destination object for which a new value has been set.</Abstract>
+				</Parameter><Parameter>
+					<Name>mapping</Name>
+					<Abstract type="html">The RKObjectAttributeMapping or RKObjectRelationshipMapping found for the key path.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/objectMappingOperation:didSetValue:forKeyPath:usingMapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectMappingOperationDelegate/objectMappingOperation:didNotSetUnchangedValue:forKeyPath:usingMapping:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the mapping operation has declined to set a value for a given
+key path because the value has not changed.</Abstract>
+			<DeclaredIn>RKObjectMappingOperation.h</DeclaredIn>			
+			
+			<Declaration>- (void)objectMappingOperation:(RKObjectMappingOperation *)operation didNotSetUnchangedValue:(id)value forKeyPath:(NSString *)keyPath usingMapping:(RKObjectAttributeMapping *)mapping</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>operation</Name>
+					<Abstract type="html">The object mapping operation being performed.</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">A unchanged value for the key path in the destination object.</Abstract>
+				</Parameter><Parameter>
+					<Name>keyPath</Name>
+					<Abstract type="html">The key path in the destination object for which a unchanged value was not set.</Abstract>
+				</Parameter><Parameter>
+					<Name>mapping</Name>
+					<Abstract type="html">The RKObjectAttributeMapping or RKObjectRelationshipMapping found for the key path.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/objectMappingOperation:didNotSetUnchangedValue:forKeyPath:usingMapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectMappingOperationDelegate/objectMappingOperation:didFailWithError:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the object mapping operation has failed due to an error.</Abstract>
+			<DeclaredIn>RKObjectMappingOperation.h</DeclaredIn>			
+			
+			<Declaration>- (void)objectMappingOperation:(RKObjectMappingOperation *)operation didFailWithError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>operation</Name>
+					<Abstract type="html">The object mapping operation that has failed.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">An error object indicating the reason for the failure.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/objectMappingOperation:didFailWithError:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

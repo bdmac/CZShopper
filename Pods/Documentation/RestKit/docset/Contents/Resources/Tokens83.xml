@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RKObjectMapperDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RKObjectMapperDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>
+			
+			<NodeRef refid="83"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectMapperDelegate/objectMapperWillBeginMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>- (void)objectMapperWillBeginMapping:(RKObjectMapper *)objectMapper</Declaration>
+			
+			
+			<Anchor>//api/name/objectMapperWillBeginMapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectMapperDelegate/objectMapperDidFinishMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>- (void)objectMapperDidFinishMapping:(RKObjectMapper *)objectMapper</Declaration>
+			
+			
+			<Anchor>//api/name/objectMapperDidFinishMapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectMapperDelegate/objectMapper:didAddError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>- (void)objectMapper:(RKObjectMapper *)objectMapper didAddError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/objectMapper:didAddError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectMapperDelegate/objectMapper:didFindMappableObject:atKeyPath:withMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>- (void)objectMapper:(RKObjectMapper *)objectMapper didFindMappableObject:(id)object atKeyPath:(NSString *)keyPath withMapping:(RKObjectMappingDefinition *)mapping</Declaration>
+			
+			
+			<Anchor>//api/name/objectMapper:didFindMappableObject:atKeyPath:withMapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectMapperDelegate/objectMapper:didNotFindMappableObjectAtKeyPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>- (void)objectMapper:(RKObjectMapper *)objectMapper didNotFindMappableObjectAtKeyPath:(NSString *)keyPath</Declaration>
+			
+			
+			<Anchor>//api/name/objectMapper:didNotFindMappableObjectAtKeyPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectMapperDelegate/objectMapper:willMapFromObject:toObject:atKeyPath:usingMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>- (void)objectMapper:(RKObjectMapper *)objectMapper willMapFromObject:(id)sourceObject toObject:(id)destinationObject atKeyPath:(NSString *)keyPath usingMapping:(RKObjectMappingDefinition *)objectMapping</Declaration>
+			
+			
+			<Anchor>//api/name/objectMapper:willMapFromObject:toObject:atKeyPath:usingMapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectMapperDelegate/objectMapper:didMapFromObject:toObject:atKeyPath:usingMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>- (void)objectMapper:(RKObjectMapper *)objectMapper didMapFromObject:(id)sourceObject toObject:(id)destinationObject atKeyPath:(NSString *)keyPath usingMapping:(RKObjectMappingDefinition *)objectMapping</Declaration>
+			
+			
+			<Anchor>//api/name/objectMapper:didMapFromObject:toObject:atKeyPath:usingMapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectMapperDelegate/objectMapper:didFailMappingFromObject:toObject:withError:atKeyPath:usingMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMapper.h</DeclaredIn>			
+			
+			<Declaration>- (void)objectMapper:(RKObjectMapper *)objectMapper didFailMappingFromObject:(id)sourceObject toObject:(id)destinationObject withError:(NSError *)error atKeyPath:(NSString *)keyPath usingMapping:(RKObjectMappingDefinition *)objectMapping</Declaration>
+			
+			
+			<Anchor>//api/name/objectMapper:didFailMappingFromObject:toObject:withError:atKeyPath:usingMapping:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

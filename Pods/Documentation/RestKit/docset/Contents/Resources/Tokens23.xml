@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKObjectAttributeMapping.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKObjectAttributeMapping</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectAttributeMapping.h</DeclaredIn>
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectAttributeMapping/setSourceKeyPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectAttributeMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *sourceKeyPath</Declaration>
+			
+			
+			<Anchor>//api/name/sourceKeyPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectAttributeMapping/sourceKeyPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectAttributeMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *sourceKeyPath</Declaration>
+			
+			
+			<Anchor>//api/name/sourceKeyPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectAttributeMapping/setDestinationKeyPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectAttributeMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *destinationKeyPath</Declaration>
+			
+			
+			<Anchor>//api/name/destinationKeyPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectAttributeMapping/destinationKeyPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectAttributeMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *destinationKeyPath</Declaration>
+			
+			
+			<Anchor>//api/name/destinationKeyPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKObjectAttributeMapping/mappingFromKeyPath:toKeyPath:</TokenIdentifier>
+			<Abstract type="html">Defines a mapping from one keyPath to another within an object mapping</Abstract>
+			<DeclaredIn>RKObjectAttributeMapping.h</DeclaredIn>			
+			
+			<Declaration>+ (RKObjectAttributeMapping *)mappingFromKeyPath:(NSString *)sourceKeyPath toKeyPath:(NSString *)destinationKeyPath</Declaration>
+			
+			
+			<Anchor>//api/name/mappingFromKeyPath:toKeyPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectAttributeMapping/isMappingForKeyOfNestedDictionary</TokenIdentifier>
+			<Abstract type="html">Returns YES if this attribute mapping targets the key of a nested dictionary.</Abstract>
+			<DeclaredIn>RKObjectAttributeMapping.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/RKObjectMapping/mapKeyOfNestedDictionaryToAttribute:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)isMappingForKeyOfNestedDictionary</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if this attribute mapping targets a nesting key path</Abstract></ReturnValue>
+			<Anchor>//api/name/isMappingForKeyOfNestedDictionary</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKFormSection.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKFormSection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKFormSection.h</DeclaredIn>
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKFormSection/setForm:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKFormSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKForm *form</Declaration>
+			
+			
+			<Anchor>//api/name/form</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKFormSection/form</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKFormSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKForm *form</Declaration>
+			
+			
+			<Anchor>//api/name/form</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKFormSection/setObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKFormSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id object</Declaration>
+			
+			
+			<Anchor>//api/name/object</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKFormSection/object</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKFormSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id object</Declaration>
+			
+			
+			<Anchor>//api/name/object</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKFormSection/sectionInForm:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKFormSection.h</DeclaredIn>			
+			
+			<Declaration>+ (id)sectionInForm:(RKForm *)form</Declaration>
+			
+			
+			<Anchor>//api/name/sectionInForm:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKFormSection/initWithForm:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKFormSection.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithForm:(RKForm *)form</Declaration>
+			
+			
+			<Anchor>//api/name/initWithForm:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKFormSection/addTableItem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKFormSection.h</DeclaredIn>			
+			
+			<Declaration>- (void)addTableItem:(RKTableItem *)tableItem</Declaration>
+			
+			
+			<Anchor>//api/name/addTableItem:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKFormSection/addRowForAttribute:withControlType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKFormSection.h</DeclaredIn>			
+			
+			<Declaration>- (void)addRowForAttribute:(NSString *)attributeKeyPath withControlType:(RKFormControlType)controlType</Declaration>
+			
+			
+			<Anchor>//api/name/addRowForAttribute:withControlType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKFormSection/addRowForAttribute:withControlType:usingBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKFormSection.h</DeclaredIn>			
+			
+			<Declaration>- (void)addRowForAttribute:(NSString *)attributeKeyPath withControlType:(RKFormControlType)controlType usingBlock:(void ( ^ ) ( RKControlTableItem *tableItem ))block</Declaration>
+			
+			
+			<Anchor>//api/name/addRowForAttribute:withControlType:usingBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKFormSection/addRowMappingAttribute:toKeyPath:onControl:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKFormSection.h</DeclaredIn>			
+			
+			<Declaration>- (void)addRowMappingAttribute:(NSString *)attributeKeyPath toKeyPath:(NSString *)controlKeyPath onControl:(UIControl *)control</Declaration>
+			
+			
+			<Anchor>//api/name/addRowMappingAttribute:toKeyPath:onControl:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKFormSection/addRowMappingAttribute:toKeyPath:onControl:usingBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKFormSection.h</DeclaredIn>			
+			
+			<Declaration>- (void)addRowMappingAttribute:(NSString *)attributeKeyPath toKeyPath:(NSString *)controlKeyPath onControl:(UIControl *)control usingBlock:(void ( ^ ) ( RKControlTableItem *tableItem ))block</Declaration>
+			
+			
+			<Anchor>//api/name/addRowMappingAttribute:toKeyPath:onControl:usingBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKFormSection/addRowMappingAttribute:toKeyPath:onCellWithClass:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKFormSection.h</DeclaredIn>			
+			
+			<Declaration>- (void)addRowMappingAttribute:(NSString *)attributeKeyPath toKeyPath:(NSString *)cellKeyPath onCellWithClass:(Class)cellClass</Declaration>
+			
+			
+			<Anchor>//api/name/addRowMappingAttribute:toKeyPath:onCellWithClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKFormSection/addRowMappingAttribute:toKeyPath:onCellWithClass:usingBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKFormSection.h</DeclaredIn>			
+			
+			<Declaration>- (void)addRowMappingAttribute:(NSString *)attributeKeyPath toKeyPath:(NSString *)cellKeyPath onCellWithClass:(Class)cellClass usingBlock:(void ( ^ ) ( RKTableItem *tableItem ))block</Declaration>
+			
+			
+			<Anchor>//api/name/addRowMappingAttribute:toKeyPath:onCellWithClass:usingBlock:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIView+FindFirstResponder.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIView(FindFirstResponder)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+FindFirstResponder.h</DeclaredIn>
+			
+			<NodeRef refid="76"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(FindFirstResponder)/findFirstResponder</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+FindFirstResponder.h</DeclaredIn>			
+			
+			<Declaration>- (UIView *)findFirstResponder</Declaration>
+			
+			
+			<Anchor>//api/name/findFirstResponder</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

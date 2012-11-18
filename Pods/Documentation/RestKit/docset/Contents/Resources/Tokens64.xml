@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKURL.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKURL</TokenIdentifier>
+			<Abstract type="html">RKURL extends the Cocoa NSURL base class to provide support for the concepts of
+base URL and resource path that are used extensively throughout the RestKit
+framework. RKURL is immutable, but provides numerous methods for constructing
+new RKURL instances where the received becomes the baseURL of the RKURL
+instance.</Abstract>
+			<DeclaredIn>RKURL.h</DeclaredIn>
+			
+			<NodeRef refid="64"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKURL/URLWithBaseURL:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an RKURL object intialized with a provided base URL.</Abstract>
+			<DeclaredIn>RKURL.h</DeclaredIn>			
+			
+			<Declaration>+ (id)URLWithBaseURL:(NSURL *)baseURL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>baseURL</Name>
+					<Abstract type="html">The URL object with which to initialize the RKURL object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKURL object initialized with baseURL.</Abstract></ReturnValue>
+			<Anchor>//api/name/URLWithBaseURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKURL/URLWithBaseURL:resourcePath:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an RKURL object intialized with a provided base URL and
+resource path.</Abstract>
+			<DeclaredIn>RKURL.h</DeclaredIn>			
+			
+			<Declaration>+ (id)URLWithBaseURL:(NSURL *)baseURL resourcePath:(NSString *)resourcePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>baseURL</Name>
+					<Abstract type="html">The URL object with which to initialize the RKURL object.</Abstract>
+				</Parameter><Parameter>
+					<Name>resourcePath</Name>
+					<Abstract type="html">The resource path for the RKURL object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKURL object initialized with baseURL and resourcePath.</Abstract></ReturnValue>
+			<Anchor>//api/name/URLWithBaseURL:resourcePath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKURL/URLWithBaseURL:resourcePath:queryParameters:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an RKURL object intialized with a provided base URL,
+resource path, and a dictionary of query parameters.</Abstract>
+			<DeclaredIn>RKURL.h</DeclaredIn>			
+			
+			<Declaration>+ (id)URLWithBaseURL:(NSURL *)baseURL resourcePath:(NSString *)resourcePath queryParameters:(NSDictionary *)queryParameters</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>baseURL</Name>
+					<Abstract type="html">The URL object with which to initialize the RKURL object.</Abstract>
+				</Parameter><Parameter>
+					<Name>resourcePath</Name>
+					<Abstract type="html">The resource path for the RKURL object.</Abstract>
+				</Parameter><Parameter>
+					<Name>queryParameters</Name>
+					<Abstract type="html">The query parameters for the RKURL object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKURL object initialized with baseURL, resourcePath, and
+queryParameters.</Abstract></ReturnValue>
+			<Anchor>//api/name/URLWithBaseURL:resourcePath:queryParameters:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKURL/URLWithBaseURLString:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an RKURL object intialized with a base URL constructed from
+the specified base URL string.</Abstract>
+			<DeclaredIn>RKURL.h</DeclaredIn>			
+			
+			<Declaration>+ (id)URLWithBaseURLString:(NSString *)baseURLString</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>baseURLString</Name>
+					<Abstract type="html">The string with which to initialize the RKURL object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKURL object initialized with baseURLString.</Abstract></ReturnValue>
+			<Anchor>//api/name/URLWithBaseURLString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKURL/URLWithBaseURLString:resourcePath:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an RKURL object intialized with a base URL constructed from
+the specified base URL string and resource path.</Abstract>
+			<DeclaredIn>RKURL.h</DeclaredIn>			
+			
+			<Declaration>+ (id)URLWithBaseURLString:(NSString *)baseURLString resourcePath:(NSString *)resourcePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>baseURLString</Name>
+					<Abstract type="html">The string with which to initialize the RKURL object.</Abstract>
+				</Parameter><Parameter>
+					<Name>resourcePath</Name>
+					<Abstract type="html">The resource path for the RKURL object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKURL object initialized with baseURLString and resourcePath.</Abstract></ReturnValue>
+			<Anchor>//api/name/URLWithBaseURLString:resourcePath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKURL/URLWithBaseURLString:resourcePath:queryParameters:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an RKURL object intialized with a base URL constructed from
+the specified base URL string, resource path and a dictionary of query
+parameters.</Abstract>
+			<DeclaredIn>RKURL.h</DeclaredIn>			
+			
+			<Declaration>+ (id)URLWithBaseURLString:(NSString *)baseURLString resourcePath:(NSString *)resourcePath queryParameters:(NSDictionary *)queryParameters</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>baseURLString</Name>
+					<Abstract type="html">The string with which to initialize the RKURL object.</Abstract>
+				</Parameter><Parameter>
+					<Name>resourcePath</Name>
+					<Abstract type="html">The resource path for the RKURL object.</Abstract>
+				</Parameter><Parameter>
+					<Name>queryParameters</Name>
+					<Abstract type="html">The query parameters for the RKURL object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKURL object initialized with baseURLString, resourcePath and
+queryParameters.</Abstract></ReturnValue>
+			<Anchor>//api/name/URLWithBaseURLString:resourcePath:queryParameters:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKURL/initWithBaseURL:resourcePath:queryParameters:</TokenIdentifier>
+			<Abstract type="html">Initializes an RKURL object with a base URL, a resource path string, and a
+dictionary of query parameters.</Abstract>
+			<DeclaredIn>RKURL.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithBaseURL:(NSURL *)theBaseURL resourcePath:(NSString *)theResourcePath queryParameters:(NSDictionary *)theQueryParameters</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>theBaseURL</Name>
+					<Abstract type="html">The NSURL with which to initialize the RKURL object.</Abstract>
+				</Parameter><Parameter>
+					<Name>theResourcePath</Name>
+					<Abstract type="html">The resource path for the RKURL object.</Abstract>
+				</Parameter><Parameter>
+					<Name>theQueryParameters</Name>
+					<Abstract type="html">The query parameters for the RKURL object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKURL object initialized with baseURL, resourcePath and queryParameters.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithBaseURL:resourcePath:queryParameters:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKURL/setBaseURL:</TokenIdentifier>
+			<Abstract type="html">Returns the base URL of the receiver.</Abstract>
+			<DeclaredIn>RKURL.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSURL *baseURL</Declaration>
+			
+			
+			<Anchor>//api/name/baseURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKURL/baseURL</TokenIdentifier>
+			<Abstract type="html">Returns the base URL of the receiver.</Abstract>
+			<DeclaredIn>RKURL.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSURL *baseURL</Declaration>
+			
+			
+			<Anchor>//api/name/baseURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKURL/setResourcePath:</TokenIdentifier>
+			<Abstract type="html">Returns the resource path of the receiver.</Abstract>
+			<DeclaredIn>RKURL.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *resourcePath</Declaration>
+			
+			
+			<Anchor>//api/name/resourcePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKURL/resourcePath</TokenIdentifier>
+			<Abstract type="html">Returns the resource path of the receiver.</Abstract>
+			<DeclaredIn>RKURL.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *resourcePath</Declaration>
+			
+			
+			<Anchor>//api/name/resourcePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKURL/setQueryParameters:</TokenIdentifier>
+			<Abstract type="html">Returns the query component of a URL conforming to RFC 1808 as a dictionary.</Abstract>
+			<DeclaredIn>RKURL.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDictionary *queryParameters</Declaration>
+			
+			
+			<Anchor>//api/name/queryParameters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKURL/queryParameters</TokenIdentifier>
+			<Abstract type="html">Returns the query component of a URL conforming to RFC 1808 as a dictionary.</Abstract>
+			<DeclaredIn>RKURL.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDictionary *queryParameters</Declaration>
+			
+			
+			<Anchor>//api/name/queryParameters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKURL/URLByAppendingResourcePath:</TokenIdentifier>
+			<Abstract type="html">Returns a new RKURL object with a new resource path appended to its path.</Abstract>
+			<DeclaredIn>RKURL.h</DeclaredIn>			
+			
+			<Declaration>- (RKURL *)URLByAppendingResourcePath:(NSString *)theResourcePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>theResourcePath</Name>
+					<Abstract type="html">The resource path to append to the receiver&apos;s path.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new RKURL that refers to a new resource at theResourcePath.</Abstract></ReturnValue>
+			<Anchor>//api/name/URLByAppendingResourcePath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKURL/URLByAppendingResourcePath:queryParameters:</TokenIdentifier>
+			<Abstract type="html">Returns a new RKURL object with a new resource path appended to its path and a
+dictionary of query parameters merged with the existing query component.</Abstract>
+			<DeclaredIn>RKURL.h</DeclaredIn>			
+			
+			<Declaration>- (RKURL *)URLByAppendingResourcePath:(NSString *)theResourcePath queryParameters:(NSDictionary *)theQueryParameters</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>theResourcePath</Name>
+					<Abstract type="html">The resource path to append to the receiver&apos;s path.</Abstract>
+				</Parameter><Parameter>
+					<Name>theQueryParameters</Name>
+					<Abstract type="html">A dictionary of query parameters to merge with any
+existing query parameters.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new RKURL that refers to a new resource at theResourcePath with a new
+query component including the values from theQueryParameters.</Abstract></ReturnValue>
+			<Anchor>//api/name/URLByAppendingResourcePath:queryParameters:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKURL/URLByAppendingQueryParameters:</TokenIdentifier>
+			<Abstract type="html">Returns a new RKURL object with a dictionary of query parameters merged with
+the existing query component.</Abstract>
+			<DeclaredIn>RKURL.h</DeclaredIn>			
+			
+			<Declaration>- (RKURL *)URLByAppendingQueryParameters:(NSDictionary *)theQueryParameters</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>theQueryParameters</Name>
+					<Abstract type="html">A dictionary of query parameters to merge with any
+existing query parameters.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new RKURL that refers to the same resource as the receiver with a new
+query component including the values from theQueryParameters.</Abstract></ReturnValue>
+			<Anchor>//api/name/URLByAppendingQueryParameters:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKURL/URLByReplacingResourcePath:</TokenIdentifier>
+			<Abstract type="html">Returns a new RKURL object with the baseURL of the receiver and a new
+resourcePath.</Abstract>
+			<DeclaredIn>RKURL.h</DeclaredIn>			
+			
+			<Declaration>- (RKURL *)URLByReplacingResourcePath:(NSString *)newResourcePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>newResourcePath</Name>
+					<Abstract type="html">The resource path to replace the value of resourcePath
+in the new RKURL object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKURL object with newResourcePath appended to the receiver&apos;s baseURL.</Abstract></ReturnValue>
+			<Anchor>//api/name/URLByReplacingResourcePath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKURL/URLByInterpolatingResourcePathWithObject:</TokenIdentifier>
+			<Abstract type="html">Returns a new RKURL object with its resource path processed as a pattern and
+evaluated against the specified object.</Abstract>
+			<DeclaredIn>RKURL.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKPathMatcher</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (RKURL *)URLByInterpolatingResourcePathWithObject:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object to call methods on for the pattern strings in the
+resource path.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new RKURL object with its resource path evaluated as a pattern and
+interpolated with properties of object.</Abstract></ReturnValue>
+			<Anchor>//api/name/URLByInterpolatingResourcePathWithObject:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

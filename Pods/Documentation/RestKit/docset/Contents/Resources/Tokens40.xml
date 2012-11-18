@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKParams.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKParams</TokenIdentifier>
+			<Abstract type="html">This helper class implements the RKRequestSerializable protocol to provide
+support for creating the multi-part request body for RKRequest objects.</Abstract>
+			<DeclaredIn>RKParams.h</DeclaredIn>
+			
+			<NodeRef refid="40"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKParams/params</TokenIdentifier>
+			<Abstract type="html">Creates and returns an RKParams object that is ready for population.</Abstract>
+			<DeclaredIn>RKParams.h</DeclaredIn>			
+			
+			<Declaration>+ (RKParams *)params</Declaration>
+			
+			<ReturnValue><Abstract type="html">An RKParams object to be populated.</Abstract></ReturnValue>
+			<Anchor>//api/name/params</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKParams/paramsWithDictionary:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an RKParams object created from a dictionary of key/value
+pairs.</Abstract>
+			<DeclaredIn>RKParams.h</DeclaredIn>			
+			
+			<Declaration>+ (RKParams *)paramsWithDictionary:(NSDictionary *)dictionary</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dictionary</Name>
+					<Abstract type="html">NSDictionary of key/value pairs to add as RKParamsAttachment
+objects.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKParams object with the key/value pairs of the dictionary.</Abstract></ReturnValue>
+			<Anchor>//api/name/paramsWithDictionary:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParams/initWithDictionary:</TokenIdentifier>
+			<Abstract type="html">Initalize an RKParams object from a dictionary of key/value pairs</Abstract>
+			<DeclaredIn>RKParams.h</DeclaredIn>			
+			
+			<Declaration>- (RKParams *)initWithDictionary:(NSDictionary *)dictionary</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dictionary</Name>
+					<Abstract type="html">NSDictionary of key/value pairs to add as RKParamsAttachment
+objects.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKParams object with the key/value pairs of the dictionary.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDictionary:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParams/setAttachments:</TokenIdentifier>
+			<Abstract type="html">Array of all RKParamsAttachment attachments</Abstract>
+			<DeclaredIn>RKParams.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSMutableArray *attachments</Declaration>
+			
+			
+			<Anchor>//api/name/attachments</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKParams/attachments</TokenIdentifier>
+			<Abstract type="html">Array of all RKParamsAttachment attachments</Abstract>
+			<DeclaredIn>RKParams.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSMutableArray *attachments</Declaration>
+			
+			
+			<Anchor>//api/name/attachments</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParams/setValue:forParam:</TokenIdentifier>
+			<Abstract type="html">Creates a new RKParamsAttachment from the key/value pair passed in and adds it
+to the attachments array.</Abstract>
+			<DeclaredIn>RKParams.h</DeclaredIn>			
+			
+			<Declaration>- (RKParamsAttachment *)setValue:(id&lt;NSObject&gt;)value forParam:(NSString *)param</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>value</Name>
+					<Abstract type="html">Value of the attachment to add</Abstract>
+				</Parameter><Parameter>
+					<Name>param</Name>
+					<Abstract type="html">Key name of the attachment to add</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the new RKParamsAttachment that was added to the attachments array</Abstract></ReturnValue>
+			<Anchor>//api/name/setValue:forParam:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParams/setFile:forParam:</TokenIdentifier>
+			<Abstract type="html">Creates a new RKParamsAttachment for a named parameter with the data contained
+in the file at the given path and adds it to the attachments array.</Abstract>
+			<DeclaredIn>RKParams.h</DeclaredIn>			
+			
+			<Declaration>- (RKParamsAttachment *)setFile:(NSString *)filePath forParam:(NSString *)param</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">String of the path to the file to be attached</Abstract>
+				</Parameter><Parameter>
+					<Name>param</Name>
+					<Abstract type="html">Key name of the attachment to add</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the new RKParamsAttachment that was added to the attachments array</Abstract></ReturnValue>
+			<Anchor>//api/name/setFile:forParam:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParams/setData:forParam:</TokenIdentifier>
+			<Abstract type="html">Creates a new RKParamsAttachment for a named parameter with the data given and
+adds it to the attachments array.</Abstract>
+			<DeclaredIn>RKParams.h</DeclaredIn>			
+			
+			<Declaration>- (RKParamsAttachment *)setData:(NSData *)data forParam:(NSString *)param</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">NSData object of the data to be attached</Abstract>
+				</Parameter><Parameter>
+					<Name>param</Name>
+					<Abstract type="html">Key name of the attachment to add</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the new RKParamsAttachment that was added to the attachments array</Abstract></ReturnValue>
+			<Anchor>//api/name/setData:forParam:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParams/setData:MIMEType:forParam:</TokenIdentifier>
+			<Abstract type="html">Creates a new RKParamsAttachment for a named parameter with the data given and
+the MIME type specified and adds it to the attachments array.</Abstract>
+			<DeclaredIn>RKParams.h</DeclaredIn>			
+			
+			<Declaration>- (RKParamsAttachment *)setData:(NSData *)data MIMEType:(NSString *)MIMEType forParam:(NSString *)param</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">NSData object of the data to be attached</Abstract>
+				</Parameter><Parameter>
+					<Name>MIMEType</Name>
+					<Abstract type="html">String of the MIME type of the data</Abstract>
+				</Parameter><Parameter>
+					<Name>param</Name>
+					<Abstract type="html">Key name of the attachment to add</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the new RKParamsAttachment that was added to the attachments array</Abstract></ReturnValue>
+			<Anchor>//api/name/setData:MIMEType:forParam:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParams/setData:MIMEType:fileName:forParam:</TokenIdentifier>
+			<Abstract type="html">Creates a new RKParamsAttachment and sets the value for a named parameter to a
+data object with the specified MIME Type and attachment file name.</Abstract>
+			<DeclaredIn>RKParams.h</DeclaredIn>			
+			
+			<Declaration>- (RKParamsAttachment *)setData:(NSData *)data MIMEType:(NSString *)MIMEType fileName:(NSString *)fileName forParam:(NSString *)param</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">NSData object of the data to be attached</Abstract>
+				</Parameter><Parameter>
+					<Name>MIMEType</Name>
+					<Abstract type="html">String of the MIME type of the data</Abstract>
+				</Parameter><Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">String of the attachment file name</Abstract>
+				</Parameter><Parameter>
+					<Name>param</Name>
+					<Abstract type="html">Key name of the attachment to add</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the new RKParamsAttachment that was added to the attachments array</Abstract></ReturnValue>
+			<Anchor>//api/name/setData:MIMEType:fileName:forParam:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParams/setFile:MIMEType:fileName:forParam:</TokenIdentifier>
+			<Abstract type="html">Creates a new RKParamsAttachment and sets the value for a named parameter to
+the data contained in a file at the given path with the specified MIME Type and
+attachment file name.</Abstract>
+			<DeclaredIn>RKParams.h</DeclaredIn>			
+			
+			<Declaration>- (RKParamsAttachment *)setFile:(NSString *)filePath MIMEType:(NSString *)MIMEType fileName:(NSString *)fileName forParam:(NSString *)param</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">String of the path to the file to be attached</Abstract>
+				</Parameter><Parameter>
+					<Name>MIMEType</Name>
+					<Abstract type="html">String of the MIME type of the data</Abstract>
+				</Parameter><Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">String of the attachment file name</Abstract>
+				</Parameter><Parameter>
+					<Name>param</Name>
+					<Abstract type="html">Key name of the attachment to add</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the new RKParamsAttachment that was added to the attachments array</Abstract></ReturnValue>
+			<Anchor>//api/name/setFile:MIMEType:fileName:forParam:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParams/dictionaryOfPlainTextParams</TokenIdentifier>
+			<Abstract type="html">Get the dictionary of params which are plain text as specified by
+RFC 5849.</Abstract>
+			<DeclaredIn>RKParams.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)dictionaryOfPlainTextParams</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSDictionary of key/values extracting from the RKParamsAttachment
+objects that meet the plain text criteria</Abstract></ReturnValue>
+			<Anchor>//api/name/dictionaryOfPlainTextParams</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParams/reset</TokenIdentifier>
+			<Abstract type="html">Resets the state of the RKParams stream.</Abstract>
+			<DeclaredIn>RKParams.h</DeclaredIn>			
+			
+			<Declaration>- (void)reset</Declaration>
+			
+			
+			<Anchor>//api/name/reset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParams/MD5</TokenIdentifier>
+			<Abstract type="html">Return a composite MD5 checksum value for all attachments.</Abstract>
+			<DeclaredIn>RKParams.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)MD5</Declaration>
+			
+			
+			<Anchor>//api/name/MD5</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

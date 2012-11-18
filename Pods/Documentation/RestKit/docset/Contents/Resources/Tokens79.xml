@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RKDynamicObjectMappingDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RKDynamicObjectMappingDelegate</TokenIdentifier>
+			<Abstract type="html">Return the appropriate object mapping given a mappable data</Abstract>
+			<DeclaredIn>RKDynamicObjectMapping.h</DeclaredIn>
+			
+			<NodeRef refid="79"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKDynamicObjectMappingDelegate/objectMappingForData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKDynamicObjectMapping.h</DeclaredIn>			
+			
+			<Declaration>- (RKObjectMapping *)objectMappingForData:(id)data</Declaration>
+			
+			
+			<Anchor>//api/name/objectMappingForData:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

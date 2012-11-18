@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKObjectPaginator.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKObjectPaginator</TokenIdentifier>
+			<Abstract type="html">Instances of RKObjectPaginator retrieve paginated collections of mappable data
+from remote systems via HTTP. Paginators perform GET requests and use a patterned
+URL to construct a full URL reflecting the state of the paginator. Paginators rely
+on an instance of RKObjectMappingProvider to determine how to perform object mapping
+on the retrieved data. Paginators can load Core Data backed models provided that an
+instance of RKManagedObjectStore is assigned to the paginator.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>
+			
+			<NodeRef refid="34"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKObjectPaginator/paginatorWithPatternURL:mappingProvider:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a RKObjectPaginator object with the a provided patternURL and mappingProvider.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKObjectPaginator/patternURL</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id)paginatorWithPatternURL:(RKURL *)patternURL mappingProvider:(RKObjectMappingProvider *)mappingProvider</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>patternURL</Name>
+					<Abstract type="html">A RKURL containing a dynamic pattern for constructing a URL to the paginated
+    resource collection.</Abstract>
+				</Parameter><Parameter>
+					<Name>mappingProvider</Name>
+					<Abstract type="html">An RKObjectMappingProvider containing object mapping configurations for mapping the
+    paginated resource collection.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A paginator object initialized with patterned URL and mapping provider.</Abstract></ReturnValue>
+			<Anchor>//api/name/paginatorWithPatternURL:mappingProvider:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPaginator/initWithPatternURL:mappingProvider:</TokenIdentifier>
+			<Abstract type="html">Initializes a RKObjectPaginator object with the a provided patternURL and mappingProvider.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKObjectPaginator/patternURL</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)initWithPatternURL:(RKURL *)patternURL mappingProvider:(RKObjectMappingProvider *)mappingProvider</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>patternURL</Name>
+					<Abstract type="html">A RKURL containing a dynamic pattern for constructing a URL to the paginated
+resource collection.</Abstract>
+				</Parameter><Parameter>
+					<Name>mappingProvider</Name>
+					<Abstract type="html">An RKObjectMappingProvider containing object mapping configurations for mapping the
+paginated resource collection.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The receiver, initialized with patterned URL and mapping provider.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithPatternURL:mappingProvider:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPaginator/setPatternURL:</TokenIdentifier>
+			<Abstract type="html">A RKURL with a resource path pattern for building a complete URL from
+which to load the paginated resource collection. The patterned resource
+path will be evaluated against the state of the paginator object itself.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/RKURL/URLByInterpolatingResourcePathWithObject:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) RKURL *patternURL</Declaration>
+			
+			
+			<Anchor>//api/name/patternURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectPaginator/patternURL</TokenIdentifier>
+			<Abstract type="html">A RKURL with a resource path pattern for building a complete URL from
+which to load the paginated resource collection. The patterned resource
+path will be evaluated against the state of the paginator object itself.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/RKURL/URLByInterpolatingResourcePathWithObject:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) RKURL *patternURL</Declaration>
+			
+			
+			<Anchor>//api/name/patternURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPaginator/setURL:</TokenIdentifier>
+			<Abstract type="html">Returns a complete RKURL to the paginated resource collection by interpolating
+the state of the paginator object against the resource</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectPaginator/URL</TokenIdentifier>
+			<Abstract type="html">Returns a complete RKURL to the paginated resource collection by interpolating
+the state of the paginator object against the resource</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPaginator/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate of the receiving paginator.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectPaginator/delegate</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate of the receiving paginator.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPaginator/setOnDidLoadObjectsForPage:</TokenIdentifier>
+			<Abstract type="html">The block to invoke when the paginator has loaded a page of objects from the collection.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) RKObjectPaginatorDidLoadObjectsForPageBlock onDidLoadObjectsForPage</Declaration>
+			
+			
+			<Anchor>//api/name/onDidLoadObjectsForPage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectPaginator/onDidLoadObjectsForPage</TokenIdentifier>
+			<Abstract type="html">The block to invoke when the paginator has loaded a page of objects from the collection.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) RKObjectPaginatorDidLoadObjectsForPageBlock onDidLoadObjectsForPage</Declaration>
+			
+			
+			<Anchor>//api/name/onDidLoadObjectsForPage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPaginator/setOnDidFailWithError:</TokenIdentifier>
+			<Abstract type="html">The block to invoke when the paginator has failed loading due to an error.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/RKObjectPaginatorDelegate/paginator:didFailWithError:objectLoader:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) RKObjectPaginatorDidFailWithErrorBlock onDidFailWithError</Declaration>
+			
+			
+			<Anchor>//api/name/onDidFailWithError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectPaginator/onDidFailWithError</TokenIdentifier>
+			<Abstract type="html">The block to invoke when the paginator has failed loading due to an error.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/RKObjectPaginatorDelegate/paginator:didFailWithError:objectLoader:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) RKObjectPaginatorDidFailWithErrorBlock onDidFailWithError</Declaration>
+			
+			
+			<Anchor>//api/name/onDidFailWithError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPaginator/setConfigurationDelegate:</TokenIdentifier>
+			<Abstract type="html">The object that acts as the configuration delegate for RKObjectLoader instances built
+and utilized by the paginator.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKClient</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectManager</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; configurationDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/configurationDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectPaginator/configurationDelegate</TokenIdentifier>
+			<Abstract type="html">The object that acts as the configuration delegate for RKObjectLoader instances built
+and utilized by the paginator.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKClient</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectManager</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; configurationDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/configurationDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPaginator/setMappingProvider:</TokenIdentifier>
+			<Abstract type="html">The mapping provider to use when performing object mapping on the data
+loaded from the remote system. The provider will be assigned to the RKObjectLoader
+instance built to retrieve the paginated resource collection.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKObjectMappingProvider *mappingProvider</Declaration>
+			
+			
+			<Anchor>//api/name/mappingProvider</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectPaginator/mappingProvider</TokenIdentifier>
+			<Abstract type="html">The mapping provider to use when performing object mapping on the data
+loaded from the remote system. The provider will be assigned to the RKObjectLoader
+instance built to retrieve the paginated resource collection.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKObjectMappingProvider *mappingProvider</Declaration>
+			
+			
+			<Anchor>//api/name/mappingProvider</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPaginator/setObjectStore:</TokenIdentifier>
+			<Abstract type="html">An object store for accessing Core Data. Required if the objects being paginated
+are stored into Core Data.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKManagedObjectStore *objectStore</Declaration>
+			
+			
+			<Anchor>//api/name/objectStore</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectPaginator/objectStore</TokenIdentifier>
+			<Abstract type="html">An object store for accessing Core Data. Required if the objects being paginated
+are stored into Core Data.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKManagedObjectStore *objectStore</Declaration>
+			
+			
+			<Anchor>//api/name/objectStore</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPaginator/setPerPage:</TokenIdentifier>
+			<Abstract type="html">The number of objects to load per page</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger perPage</Declaration>
+			
+			
+			<Anchor>//api/name/perPage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectPaginator/perPage</TokenIdentifier>
+			<Abstract type="html">The number of objects to load per page</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger perPage</Declaration>
+			
+			
+			<Anchor>//api/name/perPage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPaginator/setLoaded:</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating if the paginator has loaded a page of objects</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=isLoaded) BOOL loaded</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES when the paginator has loaded a page of objects</Abstract></ReturnValue>
+			<Anchor>//api/name/loaded</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectPaginator/loaded</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating if the paginator has loaded a page of objects</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=isLoaded) BOOL loaded</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES when the paginator has loaded a page of objects</Abstract></ReturnValue>
+			<Anchor>//api/name/loaded</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPaginator/setCurrentPage:</TokenIdentifier>
+			<Abstract type="html">Returns the page number for the most recently loaded page of objects.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger currentPage</Declaration>
+			
+			<ReturnValue><Abstract type="html">The page number for the current page of objects.</Abstract></ReturnValue>
+			<Anchor>//api/name/currentPage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectPaginator/currentPage</TokenIdentifier>
+			<Abstract type="html">Returns the page number for the most recently loaded page of objects.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger currentPage</Declaration>
+			
+			<ReturnValue><Abstract type="html">The page number for the current page of objects.</Abstract></ReturnValue>
+			<Anchor>//api/name/currentPage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPaginator/setPageCount:</TokenIdentifier>
+			<Abstract type="html">Returns the number of pages in the total resource collection.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger pageCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">A count of the number of pages in the resource collection.</Abstract></ReturnValue>
+			<Anchor>//api/name/pageCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectPaginator/pageCount</TokenIdentifier>
+			<Abstract type="html">Returns the number of pages in the total resource collection.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger pageCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">A count of the number of pages in the resource collection.</Abstract></ReturnValue>
+			<Anchor>//api/name/pageCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPaginator/setObjectCount:</TokenIdentifier>
+			<Abstract type="html">Returns the total number of objects in the collection</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger objectCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">A count of the number of objects in the resource collection.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectPaginator/objectCount</TokenIdentifier>
+			<Abstract type="html">Returns the total number of objects in the collection</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger objectCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">A count of the number of objects in the resource collection.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPaginator/hasPageCount</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating if the total number of pages in the collection
+is known by the paginator.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasPageCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the paginator knows the page count, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/hasPageCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPaginator/hasObjectCount</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating if the total number of objects in the collection
+is known by the paginator.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasObjectCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the paginator knows the number of objects in the paginated collection, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasObjectCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPaginator/hasNextPage</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating if there is a next page in the collection.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasNextPage</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if there is a next page, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasNextPage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPaginator/hasPreviousPage</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating if there is a previous page in the collection.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasPreviousPage</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if there is a previous page, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasPreviousPage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPaginator/loadNextPage</TokenIdentifier>
+			<Abstract type="html">Loads the next page of data by incrementing the current page, constructing an object
+loader to fetch the data, and object mapping the results.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadNextPage</Declaration>
+			
+			
+			<Anchor>//api/name/loadNextPage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPaginator/loadPreviousPage</TokenIdentifier>
+			<Abstract type="html">Loads the previous page of data by decrementing the current page, constructing an object
+loader to fetch the data, and object mapping the results.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadPreviousPage</Declaration>
+			
+			
+			<Anchor>//api/name/loadPreviousPage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPaginator/loadPage:</TokenIdentifier>
+			<Abstract type="html">Loads a specific page of data by mutating the current page, constructing an object
+loader to fetch the data, and object mapping the results.</Abstract>
+			<DeclaredIn>RKObjectPaginator.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadPage:(NSUInteger)pageNumber</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pageNumber</Name>
+					<Abstract type="html">The page of objects to load from the remote backend</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadPage:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKAbstractTableControllerTestDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKAbstractTableControllerTestDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableControllerTestDelegate.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableControllerTestDelegate/setCancelled:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableControllerTestDelegate.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=isCancelled) BOOL cancelled</Declaration>
+			
+			
+			<Anchor>//api/name/cancelled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableControllerTestDelegate/cancelled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableControllerTestDelegate.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=isCancelled) BOOL cancelled</Declaration>
+			
+			
+			<Anchor>//api/name/cancelled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableControllerTestDelegate/setTimeout:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableControllerTestDelegate.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval timeout</Declaration>
+			
+			
+			<Anchor>//api/name/timeout</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableControllerTestDelegate/timeout</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableControllerTestDelegate.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval timeout</Declaration>
+			
+			
+			<Anchor>//api/name/timeout</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableControllerTestDelegate/setAwaitingResponse:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableControllerTestDelegate.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL awaitingResponse</Declaration>
+			
+			
+			<Anchor>//api/name/awaitingResponse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableControllerTestDelegate/awaitingResponse</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableControllerTestDelegate.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL awaitingResponse</Declaration>
+			
+			
+			<Anchor>//api/name/awaitingResponse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKAbstractTableControllerTestDelegate/tableControllerDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableControllerTestDelegate.h</DeclaredIn>			
+			
+			<Declaration>+ (id)tableControllerDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/tableControllerDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableControllerTestDelegate/waitForLoad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableControllerTestDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)waitForLoad</Declaration>
+			
+			
+			<Anchor>//api/name/waitForLoad</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKObjectMappingProvider.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKObjectMappingProvider</TokenIdentifier>
+			<Abstract type="html">The mapping provider is a repository of registered object mappings for use by instances
+of RKObjectManager and RKObjectMapper. It provides for the storage and retrieval of object
+mappings by keyPath and type.</Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>
+			
+			<NodeRef refid="31"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKObjectMappingProvider/mappingProvider</TokenIdentifier>
+			<Abstract type="html">Creates and returns an autoreleased RKObjectMappingProvider instance.</Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+			<Declaration>+ (id)mappingProvider</Declaration>
+			
+			<ReturnValue><Abstract type="html">A new autoreleased object mapping provider instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/mappingProvider</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKObjectMappingProvider/mappingProviderUsingBlock:</TokenIdentifier>
+			<Abstract type="html">Instantiate and return a new auto-released object mapping provider after
+yielding it to the specified block for configuration</Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+			<Declaration>+ (id)mappingProviderUsingBlock:(void ( ^ ) ( RKObjectMappingProvider *))block</Declaration>
+			
+			
+			<Anchor>//api/name/mappingProviderUsingBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/setObjectMapping:forKeyPath:</TokenIdentifier>
+			<Abstract type="html">Configures the mapping provider to use the RKObjectMapping or RKDynamicObjectMapping provided when
+content is encountered at the specified keyPath.</Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectMapper</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectMappingOperation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)setObjectMapping:(RKObjectMappingDefinition *)objectOrDynamicMapping forKeyPath:(NSString *)keyPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectOrDynamicMapping</Name>
+					<Abstract type="html">An RKObjectMapping or RKDynamicObjectMapping to register for keyPath based mapping.</Abstract>
+				</Parameter><Parameter>
+					<Name>keyPath</Name>
+					<Abstract type="html">The keyPath to register the mapping as being responsible for mapping.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setObjectMapping:forKeyPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/objectMappingForKeyPath:</TokenIdentifier>
+			<Abstract type="html">Returns the RKObjectMapping or RKObjectDynamic mapping configured for use
+when mappable content is encountered at keyPath</Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+			<Declaration>- (RKObjectMappingDefinition *)objectMappingForKeyPath:(NSString *)keyPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>keyPath</Name>
+					<Abstract type="html">A registered keyPath to retrieve the object mapping for</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The RKObjectMapping or RKDynamicObjectMapping for the specified keyPath or nil if none is registered.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectMappingForKeyPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/removeObjectMappingForKeyPath:</TokenIdentifier>
+			<Abstract type="html">Removes the RKObjectMapping or RKDynamicObjectMapping registered at the specified keyPath
+from the provider.</Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeObjectMappingForKeyPath:(NSString *)keyPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>keyPath</Name>
+					<Abstract type="html">The keyPath to remove the corresponding mapping for</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeObjectMappingForKeyPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/objectMappingsByKeyPath</TokenIdentifier>
+			<Abstract type="html">Returns a dictionary where the keys are mappable keyPaths and the values are the RKObjectMapping
+or RKDynamicObjectMapping to use for mappable data that appears at the keyPath.</Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)objectMappingsByKeyPath</Declaration>
+			
+			<ReturnValue><Abstract type="html">A dictionary of all registered keyPaths and their corresponding object mapping instances</Abstract></ReturnValue>
+			<Anchor>//api/name/objectMappingsByKeyPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/registerObjectMapping:withRootKeyPath:</TokenIdentifier>
+			<Abstract type="html">Registers an object mapping as being rooted at a specific keyPath. The keyPath will be registered
+and an inverse mapping for the object will be generated and used for serialization.</Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+			<Declaration>- (void)registerObjectMapping:(RKObjectMapping *)objectMapping withRootKeyPath:(NSString *)keyPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectMapping</Name>
+					<Abstract type="html">An object mapping we wish to register on the provider</Abstract>
+				</Parameter><Parameter>
+					<Name>keyPath</Name>
+					<Abstract type="html">The keyPath we wish to register for the mapping and use as the rootKeyPath for serialization</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registerObjectMapping:withRootKeyPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/addObjectMapping:</TokenIdentifier>
+			<Abstract type="html">Adds an object mapping to the provider for later retrieval. The mapping is not bound to a particular keyPath and
+must be explicitly set on an instance of RKObjectLoader or RKObjectMappingOperation to be applied. This is useful
+in cases where the remote system does not namespace resources in a keyPath that can be used for disambiguation.</Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/objectMappingsForClass:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/objectMappingForClass:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)addObjectMapping:(RKObjectMapping *)objectMapping</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectMapping</Name>
+					<Abstract type="html">An object mapping instance we wish to register with the provider.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addObjectMapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/objectMappingsForClass:</TokenIdentifier>
+			<Abstract type="html">Returns all object mappings registered for a particular class on the provider. The collection of mappings is assembled
+by searching for all mappings added via addObjctMapping: and then consulting those registered via objectMappingForKeyPath:</Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)objectMappingsForClass:(Class)objectClass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectClass</Name>
+					<Abstract type="html">The class we want to retrieve the mappings for</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An array of all object mappings matching the objectClass. Can be empty.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectMappingsForClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/objectMappingForClass:</TokenIdentifier>
+			<Abstract type="html">Returns the first object mapping for a objectClass registered in the provider.</Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+			<Declaration>- (RKObjectMapping *)objectMappingForClass:(Class)objectClass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectClass</Name>
+					<Abstract type="html">The class that we want to return mappings for</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKObjectMapping matching objectClass or nil</Abstract></ReturnValue>
+			<Anchor>//api/name/objectMappingForClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/setSerializationMapping:forClass:</TokenIdentifier>
+			<Abstract type="html">Registers an object mapping for use when serializing instances of objectClass for transport
+over HTTP. Used by the object manager during postObject: and putObject:.</Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/RKObjectMapping/serializationMapping</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)setSerializationMapping:(RKObjectMapping *)objectMapping forClass:(Class)objectClass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectMapping</Name>
+					<Abstract type="html">The serialization mapping to register for use when serializing objectClass</Abstract>
+				</Parameter><Parameter>
+					<Name>objectClass</Name>
+					<Abstract type="html">The class of the object type we are registering a serialization for</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setSerializationMapping:forClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/serializationMappingForClass:</TokenIdentifier>
+			<Abstract type="html">Returns the serialization mapping for a specific object class
+which has been previously registered.</Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/setSerializationMapping:forClass:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (RKObjectMapping *)serializationMappingForClass:(Class)objectClass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectClass</Name>
+					<Abstract type="html">The class we wish to obtain the serialization mapping for</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The RKObjectMapping instance used for mapping instances of objectClass for transport</Abstract></ReturnValue>
+			<Anchor>//api/name/serializationMappingForClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/setObjectMapping:forResourcePathPattern:</TokenIdentifier>
+			<Abstract type="html">Configures an object mapping to be used when during a load event where the resourcePath of
+the RKObjectLoader instance matches resourcePathPattern.</Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKPathMatcher</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RKURL</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectLoader</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)setObjectMapping:(RKObjectMappingDefinition *)objectMapping forResourcePathPattern:(NSString *)resourcePathPattern</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectMapping</Name>
+					<Abstract type="html">The object mapping to use when the resourcePath matches the specified
+    resourcePathPattern.</Abstract>
+				</Parameter><Parameter>
+					<Name>resourcePathPattern</Name>
+					<Abstract type="html">A pattern to be evaluated using an RKPathMatcher against a resourcePath
+    to determine if objectMapping is the appropriate mapping.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setObjectMapping:forResourcePathPattern:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/objectMappingForResourcePath:</TokenIdentifier>
+			<Abstract type="html">Returns the first objectMapping configured in the provider with a resourcePathPattern matching
+the specified resourcePath.</Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+			<Declaration>- (RKObjectMappingDefinition *)objectMappingForResourcePath:(NSString *)resourcePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>resourcePath</Name>
+					<Abstract type="html">A resource path to retrieve the first RKObjectMapping or RKDynamicObjectMapping
+    configured with a matching pattern.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKObjectMapping or RKDynamicObjectMapping for a resource path pattern matching resourcePath
+    or nil if no match was found.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectMappingForResourcePath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/setEntry:forResourcePathPattern:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+			<Declaration>- (void)setEntry:(RKObjectMappingProviderContextEntry *)entry forResourcePathPattern:(NSString *)resourcePath</Declaration>
+			
+			
+			<Anchor>//api/name/setEntry:forResourcePathPattern:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/entryForResourcePath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+			<Declaration>- (RKObjectMappingProviderContextEntry *)entryForResourcePath:(NSString *)resourcePath</Declaration>
+			
+			
+			<Anchor>//api/name/entryForResourcePath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/setErrorMapping:</TokenIdentifier>
+			<Abstract type="html">An object mapping used when the remote system returns an error status code
+and a payload with a MIME Type that RestKit is capable of parsing.</Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectLoader</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RKParserRegistry</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) RKObjectMapping *errorMapping</Declaration>
+			
+			
+			<Anchor>//api/name/errorMapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectMappingProvider/errorMapping</TokenIdentifier>
+			<Abstract type="html">An object mapping used when the remote system returns an error status code
+and a payload with a MIME Type that RestKit is capable of parsing.</Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectLoader</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RKParserRegistry</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) RKObjectMapping *errorMapping</Declaration>
+			
+			
+			<Anchor>//api/name/errorMapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/setPaginationMapping:</TokenIdentifier>
+			<Abstract type="html">An object mapping used when mapping pagination metadata (current page, object count, etc)
+during a paginated object loading operation. The objectClass of the paginationMapping must
+be RKObjectPaginator.</Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectPaginator</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) RKObjectMapping *paginationMapping</Declaration>
+			
+			
+			<Anchor>//api/name/paginationMapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectMappingProvider/paginationMapping</TokenIdentifier>
+			<Abstract type="html">An object mapping used when mapping pagination metadata (current page, object count, etc)
+during a paginated object loading operation. The objectClass of the paginationMapping must
+be RKObjectPaginator.</Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectPaginator</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) RKObjectMapping *paginationMapping</Declaration>
+			
+			
+			<Anchor>//api/name/paginationMapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/initializeContext:withValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider+Contexts.h</DeclaredIn>			
+			
+			<Declaration>- (void)initializeContext:(RKObjectMappingProviderContext)context withValue:(id)value</Declaration>
+			
+			
+			<Anchor>//api/name/initializeContext:withValue:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/valueForContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider+Contexts.h</DeclaredIn>			
+			
+			<Declaration>- (id)valueForContext:(RKObjectMappingProviderContext)context</Declaration>
+			
+			
+			<Anchor>//api/name/valueForContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/setValue:forContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider+Contexts.h</DeclaredIn>			
+			
+			<Declaration>- (void)setValue:(id)value forContext:(RKObjectMappingProviderContext)context</Declaration>
+			
+			
+			<Anchor>//api/name/setValue:forContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/mappingForContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider+Contexts.h</DeclaredIn>			
+			
+			<Declaration>- (RKObjectMappingDefinition *)mappingForContext:(RKObjectMappingProviderContext)context</Declaration>
+			
+			
+			<Anchor>//api/name/mappingForContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/setMapping:context:</TokenIdentifier>
+			<Abstract type="html">Stores a single object mapping for a given context. Useful when a component needs to enable
+configuration via one (and only one) object mapping.</Abstract>
+			<DeclaredIn>RKObjectMappingProvider+Contexts.h</DeclaredIn>			
+			
+			<Declaration>- (void)setMapping:(RKObjectMappingDefinition *)mapping context:(RKObjectMappingProviderContext)context</Declaration>
+			
+			
+			<Anchor>//api/name/setMapping:context:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/mappingsForContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider+Contexts.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)mappingsForContext:(RKObjectMappingProviderContext)context</Declaration>
+			
+			
+			<Anchor>//api/name/mappingsForContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/addMapping:context:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider+Contexts.h</DeclaredIn>			
+			
+			<Declaration>- (void)addMapping:(RKObjectMappingDefinition *)mapping context:(RKObjectMappingProviderContext)context</Declaration>
+			
+			
+			<Anchor>//api/name/addMapping:context:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/removeMapping:context:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider+Contexts.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeMapping:(RKObjectMappingDefinition *)mapping context:(RKObjectMappingProviderContext)context</Declaration>
+			
+			
+			<Anchor>//api/name/removeMapping:context:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/mappingForKeyPath:context:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider+Contexts.h</DeclaredIn>			
+			
+			<Declaration>- (RKObjectMappingDefinition *)mappingForKeyPath:(NSString *)keyPath context:(RKObjectMappingProviderContext)context</Declaration>
+			
+			
+			<Anchor>//api/name/mappingForKeyPath:context:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/setMapping:forKeyPath:context:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider+Contexts.h</DeclaredIn>			
+			
+			<Declaration>- (void)setMapping:(RKObjectMappingDefinition *)mapping forKeyPath:(NSString *)keyPath context:(RKObjectMappingProviderContext)context</Declaration>
+			
+			
+			<Anchor>//api/name/setMapping:forKeyPath:context:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/removeMappingForKeyPath:context:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider+Contexts.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeMappingForKeyPath:(NSString *)keyPath context:(RKObjectMappingProviderContext)context</Declaration>
+			
+			
+			<Anchor>//api/name/removeMappingForKeyPath:context:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/setMapping:forPattern:atIndex:context:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider+Contexts.h</DeclaredIn>			
+			
+			<Declaration>- (void)setMapping:(RKObjectMappingDefinition *)mapping forPattern:(NSString *)pattern atIndex:(NSUInteger)index context:(RKObjectMappingProviderContext)context</Declaration>
+			
+			
+			<Anchor>//api/name/setMapping:forPattern:atIndex:context:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/setMapping:forPattern:context:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider+Contexts.h</DeclaredIn>			
+			
+			<Declaration>- (void)setMapping:(RKObjectMappingDefinition *)mapping forPattern:(NSString *)pattern context:(RKObjectMappingProviderContext)context</Declaration>
+			
+			
+			<Anchor>//api/name/setMapping:forPattern:context:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/mappingForPatternMatchingString:context:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider+Contexts.h</DeclaredIn>			
+			
+			<Declaration>- (RKObjectMappingDefinition *)mappingForPatternMatchingString:(NSString *)string context:(RKObjectMappingProviderContext)context</Declaration>
+			
+			
+			<Anchor>//api/name/mappingForPatternMatchingString:context:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/setEntry:forPattern:context:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider+Contexts.h</DeclaredIn>			
+			
+			<Declaration>- (void)setEntry:(RKObjectMappingProviderContextEntry *)entry forPattern:(NSString *)pattern context:(RKObjectMappingProviderContext)context</Declaration>
+			
+			
+			<Anchor>//api/name/setEntry:forPattern:context:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/entryForPatternMatchingString:context:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider+Contexts.h</DeclaredIn>			
+			
+			<Declaration>- (RKObjectMappingProviderContextEntry *)entryForPatternMatchingString:(NSString *)string context:(RKObjectMappingProviderContext)context</Declaration>
+			
+			
+			<Anchor>//api/name/entryForPatternMatchingString:context:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKObjectMappingProvider/objectMappingProvider</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+			<Declaration>+ (RKObjectMappingProvider *)objectMappingProvider</Declaration>
+			
+			
+			<Anchor>//api/name/objectMappingProvider</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/registerMapping:withRootKeyPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+			<Declaration>- (void)registerMapping:(RKObjectMapping *)objectMapping withRootKeyPath:(NSString *)keyPath</Declaration>
+			
+			
+			<Anchor>//api/name/registerMapping:withRootKeyPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/setMapping:forKeyPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+			<Declaration>- (void)setMapping:(RKObjectMappingDefinition *)objectOrDynamicMapping forKeyPath:(NSString *)keyPath</Declaration>
+			
+			
+			<Anchor>//api/name/setMapping:forKeyPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/mappingForKeyPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+			<Declaration>- (RKObjectMappingDefinition *)mappingForKeyPath:(NSString *)keyPath</Declaration>
+			
+			
+			<Anchor>//api/name/mappingForKeyPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/mappingsByKeyPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)mappingsByKeyPath</Declaration>
+			
+			
+			<Anchor>//api/name/mappingsByKeyPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProvider/removeMappingForKeyPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProvider.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeMappingForKeyPath:(NSString *)keyPath</Declaration>
+			
+			
+			<Anchor>//api/name/removeMappingForKeyPath:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

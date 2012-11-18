@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RKRouter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RKRouter</TokenIdentifier>
+			<Abstract type="html">Defines a protocol for mapping Cocoa objects to remote resource locations and
+serializables representations.</Abstract>
+			<DeclaredIn>RKRouter.h</DeclaredIn>
+			
+			<NodeRef refid="91"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRouter/resourcePathForObject:method:</TokenIdentifier>
+			<Abstract type="html">Returns the resource path to send requests for a given object and HTTP method</Abstract>
+			<DeclaredIn>RKRouter.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)resourcePathForObject:(NSObject *)object method:(RKRequestMethod)method</Declaration>
+			
+			
+			<Anchor>//api/name/resourcePathForObject:method:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

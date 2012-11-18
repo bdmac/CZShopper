@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKTableSection.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKTableSection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>
+			
+			<NodeRef refid="57"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableSection/setTableController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKTableController *tableController</Declaration>
+			
+			
+			<Anchor>//api/name/tableController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableSection/tableController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKTableController *tableController</Declaration>
+			
+			
+			<Anchor>//api/name/tableController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableSection/setTableView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UITableView *tableView</Declaration>
+			
+			
+			<Anchor>//api/name/tableView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableSection/tableView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UITableView *tableView</Declaration>
+			
+			
+			<Anchor>//api/name/tableView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableSection/setObjects:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *objects</Declaration>
+			
+			
+			<Anchor>//api/name/objects</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableSection/objects</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *objects</Declaration>
+			
+			
+			<Anchor>//api/name/objects</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableSection/setCellMappings:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKTableViewCellMappings *cellMappings</Declaration>
+			
+			
+			<Anchor>//api/name/cellMappings</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableSection/cellMappings</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKTableViewCellMappings *cellMappings</Declaration>
+			
+			
+			<Anchor>//api/name/cellMappings</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableSection/setHeaderTitle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *headerTitle</Declaration>
+			
+			
+			<Anchor>//api/name/headerTitle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableSection/headerTitle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *headerTitle</Declaration>
+			
+			
+			<Anchor>//api/name/headerTitle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableSection/setFooterTitle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *footerTitle</Declaration>
+			
+			
+			<Anchor>//api/name/footerTitle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableSection/footerTitle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *footerTitle</Declaration>
+			
+			
+			<Anchor>//api/name/footerTitle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableSection/setHeaderHeight:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat headerHeight</Declaration>
+			
+			
+			<Anchor>//api/name/headerHeight</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableSection/headerHeight</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat headerHeight</Declaration>
+			
+			
+			<Anchor>//api/name/headerHeight</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableSection/setFooterHeight:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat footerHeight</Declaration>
+			
+			
+			<Anchor>//api/name/footerHeight</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableSection/footerHeight</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat footerHeight</Declaration>
+			
+			
+			<Anchor>//api/name/footerHeight</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableSection/setHeaderView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *headerView</Declaration>
+			
+			
+			<Anchor>//api/name/headerView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableSection/headerView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *headerView</Declaration>
+			
+			
+			<Anchor>//api/name/headerView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableSection/setFooterView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *footerView</Declaration>
+			
+			
+			<Anchor>//api/name/footerView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableSection/footerView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *footerView</Declaration>
+			
+			
+			<Anchor>//api/name/footerView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableSection/setRowCount:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger rowCount</Declaration>
+			
+			
+			<Anchor>//api/name/rowCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableSection/rowCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger rowCount</Declaration>
+			
+			
+			<Anchor>//api/name/rowCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKTableSection/section</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>+ (id)section</Declaration>
+			
+			
+			<Anchor>//api/name/section</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKTableSection/sectionUsingBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>+ (id)sectionUsingBlock:(void ( ^ ) ( RKTableSection *))block</Declaration>
+			
+			
+			<Anchor>//api/name/sectionUsingBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKTableSection/sectionForObjects:withMappings:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>+ (id)sectionForObjects:(NSArray *)objects withMappings:(RKTableViewCellMappings *)cellMappings</Declaration>
+			
+			
+			<Anchor>//api/name/sectionForObjects:withMappings:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableSection/objectAtIndex:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectAtIndex:(NSUInteger)rowIndex</Declaration>
+			
+			
+			<Anchor>//api/name/objectAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableSection/insertObject:atIndex:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>- (void)insertObject:(id)object atIndex:(NSUInteger)index</Declaration>
+			
+			
+			<Anchor>//api/name/insertObject:atIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableSection/removeObjectAtIndex:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeObjectAtIndex:(NSUInteger)index</Declaration>
+			
+			
+			<Anchor>//api/name/removeObjectAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableSection/replaceObjectAtIndex:withObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>- (void)replaceObjectAtIndex:(NSUInteger)index withObject:(id)object</Declaration>
+			
+			
+			<Anchor>//api/name/replaceObjectAtIndex:withObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableSection/moveObjectAtIndex:toIndex:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableSection.h</DeclaredIn>			
+			
+			<Declaration>- (void)moveObjectAtIndex:(NSUInteger)sourceIndex toIndex:(NSUInteger)destinationIndex</Declaration>
+			
+			
+			<Anchor>//api/name/moveObjectAtIndex:toIndex:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

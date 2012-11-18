@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKObjectSerializer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKObjectSerializer</TokenIdentifier>
+			<Abstract type="html">Performs a serialization of an object and its relationships back into
+a dictionary representation according to the mappings specified. The
+transformed object is then enclosed in an RKRequestSerializable representation
+that is suitable for inclusion in an RKRequest.</Abstract>
+			<DeclaredIn>RKObjectSerializer.h</DeclaredIn>
+			
+			<NodeRef refid="38"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectSerializer/setObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectSerializer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id object</Declaration>
+			
+			
+			<Anchor>//api/name/object</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectSerializer/object</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectSerializer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id object</Declaration>
+			
+			
+			<Anchor>//api/name/object</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectSerializer/setMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectSerializer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKObjectMapping *mapping</Declaration>
+			
+			
+			<Anchor>//api/name/mapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectSerializer/mapping</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectSerializer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKObjectMapping *mapping</Declaration>
+			
+			
+			<Anchor>//api/name/mapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKObjectSerializer/serializerWithObject:mapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectSerializer.h</DeclaredIn>			
+			
+			<Declaration>+ (id)serializerWithObject:(id)object mapping:(RKObjectMapping *)mapping</Declaration>
+			
+			
+			<Anchor>//api/name/serializerWithObject:mapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectSerializer/initWithObject:mapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectSerializer.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithObject:(id)object mapping:(RKObjectMapping *)mapping</Declaration>
+			
+			
+			<Anchor>//api/name/initWithObject:mapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectSerializer/serializedObject:</TokenIdentifier>
+			<Abstract type="html">Return a serialized representation of the source object by applying an object mapping
+with a target object type of NSMutableDictionary. The serialized object will contain attributes
+and relationships composed of simple KVC compliant Cocoa types.</Abstract>
+			<DeclaredIn>RKObjectSerializer.h</DeclaredIn>			
+			
+			<Declaration>- (NSMutableDictionary *)serializedObject:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/serializedObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectSerializer/serializedObjectForMIMEType:error:</TokenIdentifier>
+			<Abstract type="html">Return a serialized representation of the source object by mapping it into a NSMutableDictionary and
+then encoding it into the destination MIME Type via an instance of RKParser that is registered
+for the specified MIME Type</Abstract>
+			<DeclaredIn>RKObjectSerializer.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)serializedObjectForMIMEType:(NSString *)MIMEType error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/serializedObjectForMIMEType:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectSerializer/serializationForMIMEType:error:</TokenIdentifier>
+			<Abstract type="html">Return a request serialization for the source object by mapping it to an NSMutableDictionary, encoding
+the data via a parser into the specified MIME Type, and wrapping it into a serializable format that can
+be used as the params of an RKRequest or RKObjectLoader</Abstract>
+			<DeclaredIn>RKObjectSerializer.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RKRequestSerializable&gt;)serializationForMIMEType:(NSString *)mimeType error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/serializationForMIMEType:error:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

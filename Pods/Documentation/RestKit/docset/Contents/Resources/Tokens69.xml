@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSDictionary+RKAdditions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSDictionary(RKAdditions)</TokenIdentifier>
+			<Abstract type="html">Provides useful additions to the NSDictionary interface.</Abstract>
+			<DeclaredIn>NSDictionary+RKAdditions.h</DeclaredIn>
+			
+			<NodeRef refid="69"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(RKAdditions)/dictionaryWithKeysAndObjects:</TokenIdentifier>
+			<Abstract type="html">Creates and initializes a dictionary with key value pairs, with the keys specified
+first instead of the objects.</Abstract>
+			<DeclaredIn>NSDictionary+RKAdditions.h</DeclaredIn>			
+			
+			<Declaration>+ (id)dictionaryWithKeysAndObjects:(id)firstKey, ...</Declaration>
+			
+			
+			<Anchor>//api/name/dictionaryWithKeysAndObjects:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(RKAdditions)/dictionaryByReplacingPercentEscapesInEntries</TokenIdentifier>
+			<Abstract type="html">Return a new dictionary by stripping out any percent escapes (such as %20)
+from the receiving dictionary&apos;s key and values.</Abstract>
+			<DeclaredIn>NSDictionary+RKAdditions.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)dictionaryByReplacingPercentEscapesInEntries</Declaration>
+			
+			<ReturnValue><Abstract type="html">A new dictionary wherein any percent escape sequences in the key and values
+have been replaced with their literal values.</Abstract></ReturnValue>
+			<Anchor>//api/name/dictionaryByReplacingPercentEscapesInEntries</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(RKAdditions)/dictionaryWithURLEncodedString:</TokenIdentifier>
+			<Abstract type="html">Returns a dictionary by digesting a URL encoded set of key/value pairs into unencoded
+values. Keys that appear multiple times with the string are decoded into an array of
+values.</Abstract>
+			<DeclaredIn>NSDictionary+RKAdditions.h</DeclaredIn>			
+			
+			<Declaration>+ (NSDictionary *)dictionaryWithURLEncodedString:(NSString *)URLEncodedString</Declaration>
+			
+			
+			<Anchor>//api/name/dictionaryWithURLEncodedString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(RKAdditions)/stringWithURLEncodedEntries</TokenIdentifier>
+			<Abstract type="html">Returns a representation of the dictionary as a URLEncoded string</Abstract>
+			<DeclaredIn>NSDictionary+RKAdditions.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)stringWithURLEncodedEntries</Declaration>
+			
+			<ReturnValue><Abstract type="html">A UTF-8 encoded string representation of the keys/values in the dictionary</Abstract></ReturnValue>
+			<Anchor>//api/name/stringWithURLEncodedEntries</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(RKAdditions)/URLEncodedString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSDictionary+RKAdditions.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)URLEncodedString</Declaration>
+			
+			
+			<Anchor>//api/name/URLEncodedString</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

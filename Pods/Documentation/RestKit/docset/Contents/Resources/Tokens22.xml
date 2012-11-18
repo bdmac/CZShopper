@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKOAuthClient.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKOAuthClient</TokenIdentifier>
+			<Abstract type="html">An OAuth client implementation that conforms to RKRequestDelegate to handle the
+authentication involved with the OAuth 2 authorization code flow.</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/RKOAuthClientDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKOAuthClient/initWithClientID:secret:</TokenIdentifier>
+			<Abstract type="html">Initialize a new RKOAuthClient with OAuth client credentials.</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithClientID:(NSString *)clientID secret:(NSString *)secret</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>clientID</Name>
+					<Abstract type="html">The ID of your application obtained from the OAuth provider.</Abstract>
+				</Parameter><Parameter>
+					<Name>secret</Name>
+					<Abstract type="html">Confidential key obtained from the OAuth provider that is used to
+sign requests sent to the authentication server.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKOAuthClient initialized with a client ID and secret key.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithClientID:secret:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKOAuthClient/clientWithClientID:secret:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an RKOAuthClient initialized with OAuth client credentials.</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>+ (RKOAuthClient *)clientWithClientID:(NSString *)clientID secret:(NSString *)secret</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>clientID</Name>
+					<Abstract type="html">The ID of your application obtained from the OAuth provider.</Abstract>
+				</Parameter><Parameter>
+					<Name>secret</Name>
+					<Abstract type="html">Confidential key obtained from the OAuth provider that is used to
+sign requests sent to the authentication server.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKOAuthClient initialized with a client ID and secret key.</Abstract></ReturnValue>
+			<Anchor>//api/name/clientWithClientID:secret:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKOAuthClient/setDelegate:</TokenIdentifier>
+			<Abstract type="html">A delegate that must conform to the RKOAuthClientDelegate protocol.</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/RKOAuthClientDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKOAuthClient/delegate</TokenIdentifier>
+			<Abstract type="html">A delegate that must conform to the RKOAuthClientDelegate protocol.</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/RKOAuthClientDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKOAuthClient/setClientID:</TokenIdentifier>
+			<Abstract type="html">The ID of your application obtained from the OAuth provider</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *clientID</Declaration>
+			
+			
+			<Anchor>//api/name/clientID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKOAuthClient/clientID</TokenIdentifier>
+			<Abstract type="html">The ID of your application obtained from the OAuth provider</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *clientID</Declaration>
+			
+			
+			<Anchor>//api/name/clientID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKOAuthClient/setClientSecret:</TokenIdentifier>
+			<Abstract type="html">Confidential key obtained from the OAuth provider that is used to sign requests
+sent to the authentication server.</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *clientSecret</Declaration>
+			
+			
+			<Anchor>//api/name/clientSecret</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKOAuthClient/clientSecret</TokenIdentifier>
+			<Abstract type="html">Confidential key obtained from the OAuth provider that is used to sign requests
+sent to the authentication server.</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *clientSecret</Declaration>
+			
+			
+			<Anchor>//api/name/clientSecret</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKOAuthClient/setAuthorizationURL:</TokenIdentifier>
+			<Abstract type="html">A string of the URL where the authorization server can be accessed</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *authorizationURL</Declaration>
+			
+			
+			<Anchor>//api/name/authorizationURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKOAuthClient/authorizationURL</TokenIdentifier>
+			<Abstract type="html">A string of the URL where the authorization server can be accessed</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *authorizationURL</Declaration>
+			
+			
+			<Anchor>//api/name/authorizationURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKOAuthClient/setCallbackURL:</TokenIdentifier>
+			<Abstract type="html">A string of the URL where authorization attempts will be redirected to</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *callbackURL</Declaration>
+			
+			
+			<Anchor>//api/name/callbackURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKOAuthClient/callbackURL</TokenIdentifier>
+			<Abstract type="html">A string of the URL where authorization attempts will be redirected to</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *callbackURL</Declaration>
+			
+			
+			<Anchor>//api/name/callbackURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKOAuthClient/setAuthorizationCode:</TokenIdentifier>
+			<Abstract type="html">The authorization code is used in conjunction with your client secret to obtain
+an access token.</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *authorizationCode</Declaration>
+			
+			
+			<Anchor>//api/name/authorizationCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKOAuthClient/authorizationCode</TokenIdentifier>
+			<Abstract type="html">The authorization code is used in conjunction with your client secret to obtain
+an access token.</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *authorizationCode</Declaration>
+			
+			
+			<Anchor>//api/name/authorizationCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKOAuthClient/setAccessToken:</TokenIdentifier>
+			<Abstract type="html">Returns the access token retrieved from the authentication server</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
+			
+			
+			<Anchor>//api/name/accessToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKOAuthClient/accessToken</TokenIdentifier>
+			<Abstract type="html">Returns the access token retrieved from the authentication server</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
+			
+			
+			<Anchor>//api/name/accessToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKOAuthClient/validateAuthorizationCode</TokenIdentifier>
+			<Abstract type="html">Fire a request to the authentication server to validate the authorization code
+that has been set on the authorizationCode property.  All responses are handled
+by the delegate.</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/RKOAuthClientDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)validateAuthorizationCode</Declaration>
+			
+			
+			<Anchor>//api/name/validateAuthorizationCode</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

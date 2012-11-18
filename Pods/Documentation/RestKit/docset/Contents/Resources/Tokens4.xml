@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKCache.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKCache</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKCache.h</DeclaredIn>
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKCache/setCachePath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *cachePath</Declaration>
+			
+			
+			<Anchor>//api/name/cachePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKCache/cachePath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *cachePath</Declaration>
+			
+			
+			<Anchor>//api/name/cachePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKCache/initWithPath:subDirectories:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKCache.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithPath:(NSString *)cachePath subDirectories:(NSArray *)subDirectories</Declaration>
+			
+			
+			<Anchor>//api/name/initWithPath:subDirectories:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKCache/hasEntry:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKCache.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasEntry:(NSString *)cacheKey</Declaration>
+			
+			
+			<Anchor>//api/name/hasEntry:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKCache/invalidateEntry:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)invalidateEntry:(NSString *)cacheKey</Declaration>
+			
+			
+			<Anchor>//api/name/invalidateEntry:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKCache/invalidateSubDirectory:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)invalidateSubDirectory:(NSString *)subDirectory</Declaration>
+			
+			
+			<Anchor>//api/name/invalidateSubDirectory:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKCache/invalidateAll</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)invalidateAll</Declaration>
+			
+			
+			<Anchor>//api/name/invalidateAll</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKCache/writeDictionary:withCacheKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)writeDictionary:(NSDictionary *)dictionary withCacheKey:(NSString *)cacheKey</Declaration>
+			
+			
+			<Anchor>//api/name/writeDictionary:withCacheKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKCache/writeData:withCacheKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)writeData:(NSData *)data withCacheKey:(NSString *)cacheKey</Declaration>
+			
+			
+			<Anchor>//api/name/writeData:withCacheKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKCache/dictionaryForCacheKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKCache.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)dictionaryForCacheKey:(NSString *)cacheKey</Declaration>
+			
+			
+			<Anchor>//api/name/dictionaryForCacheKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKCache/dataForCacheKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKCache.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)dataForCacheKey:(NSString *)cacheKey</Declaration>
+			
+			
+			<Anchor>//api/name/dataForCacheKey:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

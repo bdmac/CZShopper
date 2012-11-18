@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKErrorMessage.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKErrorMessage</TokenIdentifier>
+			<Abstract type="html">A destination class for mapping simple remote error messages.</Abstract>
+			<DeclaredIn>RKErrorMessage.h</DeclaredIn>
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKErrorMessage/setErrorMessage:</TokenIdentifier>
+			<Abstract type="html">The error message string mapped from the response payload</Abstract>
+			<DeclaredIn>RKErrorMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *errorMessage</Declaration>
+			
+			
+			<Anchor>//api/name/errorMessage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKErrorMessage/errorMessage</TokenIdentifier>
+			<Abstract type="html">The error message string mapped from the response payload</Abstract>
+			<DeclaredIn>RKErrorMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *errorMessage</Declaration>
+			
+			
+			<Anchor>//api/name/errorMessage</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

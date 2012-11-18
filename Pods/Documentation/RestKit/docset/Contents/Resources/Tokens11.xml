@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKDynamicObjectMappingMatcher.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKDynamicObjectMappingMatcher</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKDynamicObjectMappingMatcher.h</DeclaredIn>
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKDynamicObjectMappingMatcher/setObjectMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKDynamicObjectMappingMatcher.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKObjectMapping *objectMapping</Declaration>
+			
+			
+			<Anchor>//api/name/objectMapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKDynamicObjectMappingMatcher/objectMapping</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKDynamicObjectMappingMatcher.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKObjectMapping *objectMapping</Declaration>
+			
+			
+			<Anchor>//api/name/objectMapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKDynamicObjectMappingMatcher/setPrimaryKeyAttribute:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKDynamicObjectMappingMatcher.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *primaryKeyAttribute</Declaration>
+			
+			
+			<Anchor>//api/name/primaryKeyAttribute</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKDynamicObjectMappingMatcher/primaryKeyAttribute</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKDynamicObjectMappingMatcher.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *primaryKeyAttribute</Declaration>
+			
+			
+			<Anchor>//api/name/primaryKeyAttribute</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKDynamicObjectMappingMatcher/initWithKey:value:objectMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKDynamicObjectMappingMatcher.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithKey:(NSString *)key value:(id)value objectMapping:(RKObjectMapping *)objectMapping</Declaration>
+			
+			
+			<Anchor>//api/name/initWithKey:value:objectMapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKDynamicObjectMappingMatcher/initWithKey:value:primaryKeyAttribute:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKDynamicObjectMappingMatcher.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithKey:(NSString *)key value:(id)value primaryKeyAttribute:(NSString *)primaryKeyAttribute</Declaration>
+			
+			
+			<Anchor>//api/name/initWithKey:value:primaryKeyAttribute:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKDynamicObjectMappingMatcher/initWithPrimaryKeyAttribute:evaluationBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKDynamicObjectMappingMatcher.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithPrimaryKeyAttribute:(NSString *)primaryKeyAttribute evaluationBlock:(BOOL ( ^ ) ( id data ))block</Declaration>
+			
+			
+			<Anchor>//api/name/initWithPrimaryKeyAttribute:evaluationBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKDynamicObjectMappingMatcher/isMatchForData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKDynamicObjectMappingMatcher.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isMatchForData:(id)data</Declaration>
+			
+			
+			<Anchor>//api/name/isMatchForData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKDynamicObjectMappingMatcher/matchDescription</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKDynamicObjectMappingMatcher.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)matchDescription</Declaration>
+			
+			
+			<Anchor>//api/name/matchDescription</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

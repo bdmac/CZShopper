@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKRequestQueue.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKRequestQueue</TokenIdentifier>
+			<Abstract type="html">A lightweight queue implementation responsible for dispatching and managing
+RKRequest objects.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>
+			
+			<NodeRef refid="50"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKRequestQueue/requestQueue</TokenIdentifier>
+			<Abstract type="html">Creates and returns a new request queue.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>+ (id)requestQueue</Declaration>
+			
+			<ReturnValue><Abstract type="html">An autoreleased RKRequestQueue object.</Abstract></ReturnValue>
+			<Anchor>//api/name/requestQueue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKRequestQueue/newRequestQueueWithName:</TokenIdentifier>
+			<Abstract type="html">Returns a new retained request queue with the given name. If there is already
+an existing queue with the given name, nil will be returned.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>+ (id)newRequestQueueWithName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">A symbolic name for the queue.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new retained RKRequestQueue with the given name or nil if one already
+exists with the given name.</Abstract></ReturnValue>
+			<Anchor>//api/name/newRequestQueueWithName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKRequestQueue/requestQueueWithName:</TokenIdentifier>
+			<Abstract type="html">Returns queue with the specified name. If no queue is found with the name
+provided, a new queue will be initialized and returned.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>+ (id)requestQueueWithName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">A symbolic name for the queue.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An existing RKRequestQueue with the given name or a new queue if none
+currently exist.</Abstract></ReturnValue>
+			<Anchor>//api/name/requestQueueWithName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestQueue/setName:</TokenIdentifier>
+			<Abstract type="html">A symbolic name for the queue.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequestQueue/name</TokenIdentifier>
+			<Abstract type="html">A symbolic name for the queue.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKRequestQueue/requestQueueExistsWithName:</TokenIdentifier>
+			<Abstract type="html">Determine if a queue exists with a given name.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)requestQueueExistsWithName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The queue name to search against.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES when there is a queue with the given name.</Abstract></ReturnValue>
+			<Anchor>//api/name/requestQueueExistsWithName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestQueue/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The delegate to inform when the request queue state machine changes.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequestQueue/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate to inform when the request queue state machine changes.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestQueue/setConcurrentRequestsLimit:</TokenIdentifier>
+			<Abstract type="html">The number of concurrent requests supported by this queue.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) NSUInteger concurrentRequestsLimit</Declaration>
+			
+			
+			<Anchor>//api/name/concurrentRequestsLimit</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequestQueue/concurrentRequestsLimit</TokenIdentifier>
+			<Abstract type="html">The number of concurrent requests supported by this queue.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) NSUInteger concurrentRequestsLimit</Declaration>
+			
+			
+			<Anchor>//api/name/concurrentRequestsLimit</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestQueue/setRequestTimeout:</TokenIdentifier>
+			<Abstract type="html">Request timeout value used by the queue.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger requestTimeout</Declaration>
+			
+			
+			<Anchor>//api/name/requestTimeout</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequestQueue/requestTimeout</TokenIdentifier>
+			<Abstract type="html">Request timeout value used by the queue.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger requestTimeout</Declaration>
+			
+			
+			<Anchor>//api/name/requestTimeout</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestQueue/setCount:</TokenIdentifier>
+			<Abstract type="html">Returns the total number of requests in the queue.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequestQueue/count</TokenIdentifier>
+			<Abstract type="html">Returns the total number of requests in the queue.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestQueue/addRequest:</TokenIdentifier>
+			<Abstract type="html">Add an asynchronous request to the queue and send it as as soon as possible.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>- (void)addRequest:(RKRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The request to be added to the queue.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestQueue/cancelRequest:</TokenIdentifier>
+			<Abstract type="html">Cancel a request that is in progress.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>- (void)cancelRequest:(RKRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The request to be cancelled.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cancelRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestQueue/cancelRequestsWithDelegate:</TokenIdentifier>
+			<Abstract type="html">Cancel all requests with a given delegate.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>- (void)cancelRequestsWithDelegate:(id&lt;RKRequestDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">The delegate assigned to the requests to be cancelled.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cancelRequestsWithDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestQueue/abortRequestsWithDelegate:</TokenIdentifier>
+			<Abstract type="html">Aborts all requests with a given delegate by nullifying the delegate
+reference and canceling the request.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>- (void)abortRequestsWithDelegate:(id&lt;RKRequestDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">The object acting as the delegate for all enqueued requests that are to be aborted.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/abortRequestsWithDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestQueue/cancelAllRequests</TokenIdentifier>
+			<Abstract type="html">Cancel all active or pending requests.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>- (void)cancelAllRequests</Declaration>
+			
+			
+			<Anchor>//api/name/cancelAllRequests</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestQueue/containsRequest:</TokenIdentifier>
+			<Abstract type="html">Determine if a given request is currently in this queue.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)containsRequest:(RKRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The request to check the queue for.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the specified request is in this queue.</Abstract></ReturnValue>
+			<Anchor>//api/name/containsRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestQueue/start</TokenIdentifier>
+			<Abstract type="html">Start checking for and processing requests.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>- (void)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestQueue/setSuspended:</TokenIdentifier>
+			<Abstract type="html">Sets the flag that determines if new load requests are allowed to reach the
+network.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL suspended</Declaration>
+			
+			
+			<Anchor>//api/name/suspended</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequestQueue/suspended</TokenIdentifier>
+			<Abstract type="html">Sets the flag that determines if new load requests are allowed to reach the
+network.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL suspended</Declaration>
+			
+			
+			<Anchor>//api/name/suspended</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestQueue/setLoadingCount:</TokenIdentifier>
+			<Abstract type="html">Returns the total number of requests that are currently loading.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger loadingCount</Declaration>
+			
+			
+			<Anchor>//api/name/loadingCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequestQueue/loadingCount</TokenIdentifier>
+			<Abstract type="html">Returns the total number of requests that are currently loading.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger loadingCount</Declaration>
+			
+			
+			<Anchor>//api/name/loadingCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestQueue/setShowsNetworkActivityIndicatorWhenBusy:</TokenIdentifier>
+			<Abstract type="html">Sets the flag for showing the network activity indicatory.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL showsNetworkActivityIndicatorWhenBusy</Declaration>
+			
+			
+			<Anchor>//api/name/showsNetworkActivityIndicatorWhenBusy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequestQueue/showsNetworkActivityIndicatorWhenBusy</TokenIdentifier>
+			<Abstract type="html">Sets the flag for showing the network activity indicatory.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL showsNetworkActivityIndicatorWhenBusy</Declaration>
+			
+			
+			<Anchor>//api/name/showsNetworkActivityIndicatorWhenBusy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKRequestQueue/sharedQueue</TokenIdentifier>
+			<Abstract type="html">Returns the global queue</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKClient/requestQueue</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (RKRequestQueue *)sharedQueue</Declaration>
+			
+			<ReturnValue><Abstract type="html">Global request queue.</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedQueue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKRequestQueue/setSharedQueue:</TokenIdentifier>
+			<Abstract type="html">Sets the global queue</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKClient/requestQueue</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)setSharedQueue:(RKRequestQueue *)requestQueue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>requestQueue</Name>
+					<Abstract type="html">The request queue to assign as the global queue.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setSharedQueue:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKControlTableItem.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKControlTableItem</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKControlTableItem.h</DeclaredIn>
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKControlTableItem/setControl:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKControlTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIControl *control</Declaration>
+			
+			
+			<Anchor>//api/name/control</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKControlTableItem/control</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKControlTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIControl *control</Declaration>
+			
+			
+			<Anchor>//api/name/control</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKControlTableItem/setButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKControlTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIButton *button</Declaration>
+			
+			
+			<Anchor>//api/name/button</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKControlTableItem/button</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKControlTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIButton *button</Declaration>
+			
+			
+			<Anchor>//api/name/button</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKControlTableItem/setTextField:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKControlTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UITextField *textField</Declaration>
+			
+			
+			<Anchor>//api/name/textField</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKControlTableItem/textField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKControlTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UITextField *textField</Declaration>
+			
+			
+			<Anchor>//api/name/textField</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKControlTableItem/setSwitchControl:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKControlTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UISwitch *switchControl</Declaration>
+			
+			
+			<Anchor>//api/name/switchControl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKControlTableItem/switchControl</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKControlTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UISwitch *switchControl</Declaration>
+			
+			
+			<Anchor>//api/name/switchControl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKControlTableItem/setSlider:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKControlTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UISlider *slider</Declaration>
+			
+			
+			<Anchor>//api/name/slider</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKControlTableItem/slider</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKControlTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UISlider *slider</Declaration>
+			
+			
+			<Anchor>//api/name/slider</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKControlTableItem/setLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKControlTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UILabel *label</Declaration>
+			
+			
+			<Anchor>//api/name/label</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKControlTableItem/label</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKControlTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UILabel *label</Declaration>
+			
+			
+			<Anchor>//api/name/label</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKControlTableItem/tableItemWithControl:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKControlTableItem.h</DeclaredIn>			
+			
+			<Declaration>+ (id)tableItemWithControl:(UIControl *)control</Declaration>
+			
+			
+			<Anchor>//api/name/tableItemWithControl:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKControlTableItem/controlValue</TokenIdentifier>
+			<Abstract type="html">Return the value from the control as an object. This will wrap
+any primitive values into an appropriate object for use in mapping.</Abstract>
+			<DeclaredIn>RKControlTableItem.h</DeclaredIn>			
+			
+			<Declaration>- (id)controlValue</Declaration>
+			
+			
+			<Anchor>//api/name/controlValue</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

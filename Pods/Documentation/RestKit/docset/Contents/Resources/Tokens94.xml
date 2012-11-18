@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RKTestFactoryCallbacks.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RKTestFactoryCallbacks</TokenIdentifier>
+			<Abstract type="html">Defines optional callback methods for extending the functionality of the
+factory. Implementation can be provided via a category.</Abstract>
+			<DeclaredIn>RKTestFactory.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKTestFactory</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="94"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKTestFactoryCallbacks/didInitialize</TokenIdentifier>
+			<Abstract type="html">Application specific initialization point for the factory.
+Called once per unit testing run when the factory singleton instance is initialized. RestKit
+applications may override via a category.</Abstract>
+			<DeclaredIn>RKTestFactory.h</DeclaredIn>			
+			
+			<Declaration>+ (void)didInitialize</Declaration>
+			
+			
+			<Anchor>//api/name/didInitialize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKTestFactoryCallbacks/didSetUp</TokenIdentifier>
+			<Abstract type="html">Application specific customization point for the factory.
+Invoked each time the factory is asked to set up the environment. RestKit applications
+leveraging the factory may override via a category.</Abstract>
+			<DeclaredIn>RKTestFactory.h</DeclaredIn>			
+			
+			<Declaration>+ (void)didSetUp</Declaration>
+			
+			
+			<Anchor>//api/name/didSetUp</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKTestFactoryCallbacks/didTearDown</TokenIdentifier>
+			<Abstract type="html">Application specific customization point for the factory.
+Invoked each time the factory is tearing down the environment. RestKit applications
+leveraging the factory may override via a category.</Abstract>
+			<DeclaredIn>RKTestFactory.h</DeclaredIn>			
+			
+			<Declaration>+ (void)didTearDown</Declaration>
+			
+			
+			<Anchor>//api/name/didTearDown</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

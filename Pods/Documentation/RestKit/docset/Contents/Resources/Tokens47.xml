@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKRefreshTriggerView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKRefreshTriggerView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKRefreshTriggerView.h</DeclaredIn>
+			
+			<NodeRef refid="47"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRefreshTriggerView/setTitleLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKRefreshTriggerView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UILabel *titleLabel</Declaration>
+			
+			
+			<Anchor>//api/name/titleLabel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRefreshTriggerView/titleLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKRefreshTriggerView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UILabel *titleLabel</Declaration>
+			
+			
+			<Anchor>//api/name/titleLabel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRefreshTriggerView/setLastUpdatedLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKRefreshTriggerView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UILabel *lastUpdatedLabel</Declaration>
+			
+			
+			<Anchor>//api/name/lastUpdatedLabel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRefreshTriggerView/lastUpdatedLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKRefreshTriggerView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UILabel *lastUpdatedLabel</Declaration>
+			
+			
+			<Anchor>//api/name/lastUpdatedLabel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRefreshTriggerView/setArrowView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKRefreshTriggerView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImageView *arrowView</Declaration>
+			
+			
+			<Anchor>//api/name/arrowView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRefreshTriggerView/arrowView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKRefreshTriggerView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImageView *arrowView</Declaration>
+			
+			
+			<Anchor>//api/name/arrowView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRefreshTriggerView/setActivityView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKRefreshTriggerView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIActivityIndicatorView *activityView</Declaration>
+			
+			
+			<Anchor>//api/name/activityView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRefreshTriggerView/activityView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKRefreshTriggerView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIActivityIndicatorView *activityView</Declaration>
+			
+			
+			<Anchor>//api/name/activityView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRefreshTriggerView/setUI_APPEARANCE_SELECTOR:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKRefreshTriggerView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UIImage *UI_APPEARANCE_SELECTOR</Declaration>
+			
+			
+			<Anchor>//api/name/UI_APPEARANCE_SELECTOR</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRefreshTriggerView/UI_APPEARANCE_SELECTOR</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKRefreshTriggerView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UIImage *UI_APPEARANCE_SELECTOR</Declaration>
+			
+			
+			<Anchor>//api/name/UI_APPEARANCE_SELECTOR</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

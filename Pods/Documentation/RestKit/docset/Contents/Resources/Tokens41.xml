@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKParamsAttachment.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKParamsAttachment</TokenIdentifier>
+			<Abstract type="html">Models an individual part of a multi-part MIME document. These attachments are
+stacked together within the RKParams document to allow for uploading files via
+HTTP.</Abstract>
+			<DeclaredIn>RKParamsAttachment.h</DeclaredIn>
+			
+			<NodeRef refid="41"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParamsAttachment/initWithName:value:</TokenIdentifier>
+			<Abstract type="html">Returns a newly initialized attachment with a given parameter name and value.</Abstract>
+			<DeclaredIn>RKParamsAttachment.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithName:(NSString *)name value:(id&lt;NSObject&gt;)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The parameter name of this attachment in the multi-part document.</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">A value that is used to create the attachment body</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized attachment with the given name and value.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithName:value:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParamsAttachment/initWithName:data:</TokenIdentifier>
+			<Abstract type="html">Returns a newly initialized attachment with a given parameter name and the data
+stored in an NSData object.</Abstract>
+			<DeclaredIn>RKParamsAttachment.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithName:(NSString *)name data:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The parameter name of this attachment in the multi-part document.</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The data that is used to create the attachment body.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized attachment with the given name and data.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithName:data:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParamsAttachment/initWithName:file:</TokenIdentifier>
+			<Abstract type="html">Returns a newly initialized attachment with a given parameter name and the data
+stored on disk at the given file path.</Abstract>
+			<DeclaredIn>RKParamsAttachment.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithName:(NSString *)name file:(NSString *)filePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The parameter name of this attachment in the multi-part document.</Abstract>
+				</Parameter><Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">The complete path of a file to use its data contents as the
+attachment body.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized attachment with the name and the contents of the file at
+the path given.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithName:file:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParamsAttachment/setName:</TokenIdentifier>
+			<Abstract type="html">The parameter name of this attachment in the multi-part document.</Abstract>
+			<DeclaredIn>RKParamsAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKParamsAttachment/name</TokenIdentifier>
+			<Abstract type="html">The parameter name of this attachment in the multi-part document.</Abstract>
+			<DeclaredIn>RKParamsAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParamsAttachment/setMIMEType:</TokenIdentifier>
+			<Abstract type="html">The MIME type of the attached file in the MIME stream. MIME Type will be
+auto-detected from the file extension of the attached file.</Abstract>
+			<DeclaredIn>RKParamsAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *MIMEType</Declaration>
+			
+			
+			<Anchor>//api/name/MIMEType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKParamsAttachment/MIMEType</TokenIdentifier>
+			<Abstract type="html">The MIME type of the attached file in the MIME stream. MIME Type will be
+auto-detected from the file extension of the attached file.</Abstract>
+			<DeclaredIn>RKParamsAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *MIMEType</Declaration>
+			
+			
+			<Anchor>//api/name/MIMEType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParamsAttachment/setMIMEBoundary:</TokenIdentifier>
+			<Abstract type="html">The MIME boundary string</Abstract>
+			<DeclaredIn>RKParamsAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *MIMEBoundary</Declaration>
+			
+			
+			<Anchor>//api/name/MIMEBoundary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKParamsAttachment/MIMEBoundary</TokenIdentifier>
+			<Abstract type="html">The MIME boundary string</Abstract>
+			<DeclaredIn>RKParamsAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *MIMEBoundary</Declaration>
+			
+			
+			<Anchor>//api/name/MIMEBoundary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParamsAttachment/setFilePath:</TokenIdentifier>
+			<Abstract type="html">The complete path to the attached file on disk.</Abstract>
+			<DeclaredIn>RKParamsAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *filePath</Declaration>
+			
+			
+			<Anchor>//api/name/filePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKParamsAttachment/filePath</TokenIdentifier>
+			<Abstract type="html">The complete path to the attached file on disk.</Abstract>
+			<DeclaredIn>RKParamsAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *filePath</Declaration>
+			
+			
+			<Anchor>//api/name/filePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParamsAttachment/setFileName:</TokenIdentifier>
+			<Abstract type="html">The name of the attached file in the MIME stream</Abstract>
+			<DeclaredIn>RKParamsAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *fileName</Declaration>
+			
+			
+			<Anchor>//api/name/fileName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKParamsAttachment/fileName</TokenIdentifier>
+			<Abstract type="html">The name of the attached file in the MIME stream</Abstract>
+			<DeclaredIn>RKParamsAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *fileName</Declaration>
+			
+			
+			<Anchor>//api/name/fileName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParamsAttachment/setValue:</TokenIdentifier>
+			<Abstract type="html">The value that is set when initialized through initWithName:value:</Abstract>
+			<DeclaredIn>RKParamsAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id&lt;&gt; value</Declaration>
+			
+			
+			<Anchor>//api/name/value</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKParamsAttachment/value</TokenIdentifier>
+			<Abstract type="html">The value that is set when initialized through initWithName:value:</Abstract>
+			<DeclaredIn>RKParamsAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id&lt;&gt; value</Declaration>
+			
+			
+			<Anchor>//api/name/value</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParamsAttachment/open</TokenIdentifier>
+			<Abstract type="html">Open the attachment stream to begin reading. This will generate a MIME header
+and prepare the attachment for writing to an RKParams stream.</Abstract>
+			<DeclaredIn>RKParamsAttachment.h</DeclaredIn>			
+			
+			<Declaration>- (void)open</Declaration>
+			
+			
+			<Anchor>//api/name/open</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParamsAttachment/length</TokenIdentifier>
+			<Abstract type="html">The length of the entire attachment including the MIME header and the body.</Abstract>
+			<DeclaredIn>RKParamsAttachment.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)length</Declaration>
+			
+			<ReturnValue><Abstract type="html">Unsigned integer of the MIME header and the body.</Abstract></ReturnValue>
+			<Anchor>//api/name/length</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParamsAttachment/MD5</TokenIdentifier>
+			<Abstract type="html">Calculate and return an MD5 checksum for the body of this attachment.</Abstract>
+			<DeclaredIn>RKParamsAttachment.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)MD5</Declaration>
+			
+			
+			<Anchor>//api/name/MD5</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKParamsAttachment/read:maxLength:</TokenIdentifier>
+			<Abstract type="html">Read the attachment body in a streaming fashion for NSInputStream.</Abstract>
+			<DeclaredIn>RKParamsAttachment.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)read:(uint8_t *)buffer maxLength:(NSUInteger)len</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>buffer</Name>
+					<Abstract type="html">A data buffer. The buffer must be large enough to contain the
+number of bytes specified by len.</Abstract>
+				</Parameter><Parameter>
+					<Name>len</Name>
+					<Abstract type="html">The maximum number of bytes to read.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A number indicating the outcome of the operation:
+
+- A positive number indicates the number of bytes read;
+- 0 indicates that the end of the buffer was reached;
+- A negative number means that the operation failed.</Abstract></ReturnValue>
+			<Anchor>//api/name/read:maxLength:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

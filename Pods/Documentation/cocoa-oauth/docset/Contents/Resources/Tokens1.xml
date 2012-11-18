@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GCOAuth.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GCOAuth</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GCOAuth.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GCOAuth/setUserAgent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GCOAuth.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setUserAgent:(NSString *)agent</Declaration>
+			
+			
+			<Anchor>//api/name/setUserAgent:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GCOAuth/setTimeStampOffset:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GCOAuth.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setTimeStampOffset:(time_t)offset</Declaration>
+			
+			
+			<Anchor>//api/name/setTimeStampOffset:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GCOAuth/setHTTPShouldHandleCookies:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GCOAuth.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setHTTPShouldHandleCookies:(BOOL)handle</Declaration>
+			
+			
+			<Anchor>//api/name/setHTTPShouldHandleCookies:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GCOAuth/URLRequestForPath:HTTPMethod:parameters:scheme:host:consumerKey:consumerSecret:accessToken:tokenSecret:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a URL request that will perform an HTTP operation for the given method. All
+of the appropriate fields will be parameter encoded as necessary so do not
+encode them yourself. The contents of the parameters dictionary must be string
+key/value pairs. You are contracted to consume the NSURLRequest immediately.</Abstract>
+			<DeclaredIn>GCOAuth.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURLRequest *)URLRequestForPath:(NSString *)path HTTPMethod:(NSString *)HTTPMethod parameters:(NSDictionary *)parameters scheme:(NSString *)scheme host:(NSString *)host consumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret accessToken:(NSString *)accessToken tokenSecret:(NSString *)tokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/URLRequestForPath:HTTPMethod:parameters:scheme:host:consumerKey:consumerSecret:accessToken:tokenSecret:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GCOAuth/URLRequestForPath:GETParameters:host:consumerKey:consumerSecret:accessToken:tokenSecret:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GCOAuth.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURLRequest *)URLRequestForPath:(NSString *)path GETParameters:(NSDictionary *)parameters host:(NSString *)host consumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret accessToken:(NSString *)accessToken tokenSecret:(NSString *)tokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/URLRequestForPath:GETParameters:host:consumerKey:consumerSecret:accessToken:tokenSecret:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GCOAuth/URLRequestForPath:GETParameters:scheme:host:consumerKey:consumerSecret:accessToken:tokenSecret:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GCOAuth.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURLRequest *)URLRequestForPath:(NSString *)path GETParameters:(NSDictionary *)parameters scheme:(NSString *)scheme host:(NSString *)host consumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret accessToken:(NSString *)accessToken tokenSecret:(NSString *)tokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/URLRequestForPath:GETParameters:scheme:host:consumerKey:consumerSecret:accessToken:tokenSecret:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GCOAuth/URLRequestForPath:POSTParameters:host:consumerKey:consumerSecret:accessToken:tokenSecret:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GCOAuth.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURLRequest *)URLRequestForPath:(NSString *)path POSTParameters:(NSDictionary *)parameters host:(NSString *)host consumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret accessToken:(NSString *)accessToken tokenSecret:(NSString *)tokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/URLRequestForPath:POSTParameters:host:consumerKey:consumerSecret:accessToken:tokenSecret:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GCOAuth/URLRequestForPath:POSTParameters:scheme:host:consumerKey:consumerSecret:accessToken:tokenSecret:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GCOAuth.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURLRequest *)URLRequestForPath:(NSString *)path POSTParameters:(NSDictionary *)parameters scheme:(NSString *)scheme host:(NSString *)host consumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret accessToken:(NSString *)accessToken tokenSecret:(NSString *)tokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/URLRequestForPath:POSTParameters:scheme:host:consumerKey:consumerSecret:accessToken:tokenSecret:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

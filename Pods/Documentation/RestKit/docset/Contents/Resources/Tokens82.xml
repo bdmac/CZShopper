@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RKObjectLoaderDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RKObjectLoaderDelegate</TokenIdentifier>
+			<Abstract type="html">The delegate of an RKObjectLoader object must adopt the RKObjectLoaderDelegate protocol. Optional
+methods of the protocol allow the delegate to handle asynchronous object mapping operations performed
+by the object loader. Also note that the RKObjectLoaderDelegate protocol incorporates the
+RKRequestDelegate protocol and the delegate may provide implementations of methods from RKRequestDelegate
+as well.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/RKRequestDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="82"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectLoaderDelegate/objectLoader:didFailWithError:</TokenIdentifier>
+			<Abstract type="html">Sent when an object loaded failed to load the collection due to an error</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>- (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/objectLoader:didFailWithError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectLoaderDelegate/objectLoader:didLoadObjects:</TokenIdentifier>
+			<Abstract type="html">When implemented, sent to the delegate when the object laoder has completed successfully
+and loaded a collection of objects. All objects mapped from the remote payload will be returned
+as a single array.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>- (void)objectLoader:(RKObjectLoader *)objectLoader didLoadObjects:(NSArray *)objects</Declaration>
+			
+			
+			<Anchor>//api/name/objectLoader:didLoadObjects:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectLoaderDelegate/objectLoader:didLoadObject:</TokenIdentifier>
+			<Abstract type="html">When implemented, sent to the delegate when the object loader has completed succesfully.
+If the load resulted in a collection of objects being mapped, only the first object
+in the collection will be sent with this delegate method. This method simplifies things
+when you know you are working with a single object reference.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>- (void)objectLoader:(RKObjectLoader *)objectLoader didLoadObject:(id)object</Declaration>
+			
+			
+			<Anchor>//api/name/objectLoader:didLoadObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectLoaderDelegate/objectLoader:didLoadObjectDictionary:</TokenIdentifier>
+			<Abstract type="html">When implemented, sent to the delegate when an object loader has completed successfully. The
+dictionary will be expressed as pairs of keyPaths and objects mapped from the payload. This
+method is useful when you have multiple root objects and want to differentiate them by keyPath.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>- (void)objectLoader:(RKObjectLoader *)objectLoader didLoadObjectDictionary:(NSDictionary *)dictionary</Declaration>
+			
+			
+			<Anchor>//api/name/objectLoader:didLoadObjectDictionary:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectLoaderDelegate/objectLoaderDidFinishLoading:</TokenIdentifier>
+			<Abstract type="html">Invoked when the object loader has finished loading</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>- (void)objectLoaderDidFinishLoading:(RKObjectLoader *)objectLoader</Declaration>
+			
+			
+			<Anchor>//api/name/objectLoaderDidFinishLoading:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectLoaderDelegate/objectLoader:didSerializeSourceObject:toSerialization:</TokenIdentifier>
+			<Abstract type="html">Informs the delegate that the object loader has serialized the source object into a serializable representation
+for sending to the remote system. The serialization can be modified to allow customization of the request payload independent of mapping.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>- (void)objectLoader:(RKObjectLoader *)objectLoader didSerializeSourceObject:(id)sourceObject toSerialization:(inout id&lt;RKRequestSerializable&gt; *)serialization</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectLoader</Name>
+					<Abstract type="html">The object loader performing the serialization.</Abstract>
+				</Parameter><Parameter>
+					<Name>sourceObject</Name>
+					<Abstract type="html">The object that was serialized.</Abstract>
+				</Parameter><Parameter>
+					<Name>serialization</Name>
+					<Abstract type="html">The serialization of sourceObject to be sent to the remote backend for processing.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/objectLoader:didSerializeSourceObject:toSerialization:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectLoaderDelegate/objectLoaderDidLoadUnexpectedResponse:</TokenIdentifier>
+			<Abstract type="html">Sent when an object loader encounters a response status code or MIME Type that RestKit does not know how to handle.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>- (void)objectLoaderDidLoadUnexpectedResponse:(RKObjectLoader *)objectLoader</Declaration>
+			
+			
+			<Anchor>//api/name/objectLoaderDidLoadUnexpectedResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKObjectLoaderDelegate/objectLoader:willMapData:</TokenIdentifier>
+			<Abstract type="html">Invoked just after parsing has completed, but before object mapping begins. This can be helpful
+to extract data from the parsed payload that is not object mapped, but is interesting for one
+reason or another. The mappableData will be made mutable via mutableCopy before the delegate
+method is invoked.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>- (void)objectLoader:(RKObjectLoader *)loader willMapData:(inout id *)mappableData</Declaration>
+			
+			
+			<Anchor>//api/name/objectLoader:willMapData:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

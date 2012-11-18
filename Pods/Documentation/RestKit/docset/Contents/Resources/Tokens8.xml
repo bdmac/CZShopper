@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKDirectory.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKDirectory</TokenIdentifier>
+			<Abstract type="html">iOS and OS X agnostic accessors for safely returning directory paths for use
+by the framework and applications.</Abstract>
+			<DeclaredIn>RKDirectory.h</DeclaredIn>
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKDirectory/applicationDataDirectory</TokenIdentifier>
+			<Abstract type="html">Returns the path to the Application Data directory for the executing application. On iOS,
+this is a sandboxed path specific for the executing application. On OS X, this is an application
+specific path under NSApplicationSupportDirectory (i.e. ~/Application Support).</Abstract>
+			<DeclaredIn>RKDirectory.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)applicationDataDirectory</Declaration>
+			
+			<ReturnValue><Abstract type="html">The full path to the application data directory.</Abstract></ReturnValue>
+			<Anchor>//api/name/applicationDataDirectory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKDirectory/cachesDirectory</TokenIdentifier>
+			<Abstract type="html">Returns a path to the root caches directory used by RestKit for storage. On iOS, this is
+a sanboxed path specific for the executing application. On OS X, this is an application
+specific path under NSCachesDirectory (i.e. ~/Library/Caches).</Abstract>
+			<DeclaredIn>RKDirectory.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)cachesDirectory</Declaration>
+			
+			<ReturnValue><Abstract type="html">The full path to the Caches directory.</Abstract></ReturnValue>
+			<Anchor>//api/name/cachesDirectory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKDirectory/ensureDirectoryExistsAtPath:error:</TokenIdentifier>
+			<Abstract type="html">Ensures that a directory exists at a given path by checking for the existence
+of the directory and creating it if it does not exist.</Abstract>
+			<DeclaredIn>RKDirectory.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)ensureDirectoryExistsAtPath:(NSString *)path error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to ensure a directory exists at.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">On input, a pointer to an error object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A Boolean value indicating if the directory exists.</Abstract></ReturnValue>
+			<Anchor>//api/name/ensureDirectoryExistsAtPath:error:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

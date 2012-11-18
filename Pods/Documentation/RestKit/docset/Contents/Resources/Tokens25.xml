@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKObjectLoader.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKObjectLoader</TokenIdentifier>
+			<Abstract type="html">Wraps a request/response cycle and loads a remote object representation into local domain objects</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>
+			
+			<NodeRef refid="25"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate of the receiving object loader.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/RKRequestDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectLoader/delegate</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate of the receiving object loader.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/RKRequestDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/setOnDidFailWithError:</TokenIdentifier>
+			<Abstract type="html">The block to invoke when the object loader fails due to an error.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/RKObjectLoaderDelegate/objectLoader:didFailWithError:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) RKObjectLoaderDidFailWithErrorBlock onDidFailWithError</Declaration>
+			
+			
+			<Anchor>//api/name/onDidFailWithError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectLoader/onDidFailWithError</TokenIdentifier>
+			<Abstract type="html">The block to invoke when the object loader fails due to an error.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/RKObjectLoaderDelegate/objectLoader:didFailWithError:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) RKObjectLoaderDidFailWithErrorBlock onDidFailWithError</Declaration>
+			
+			
+			<Anchor>//api/name/onDidFailWithError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/setOnDidLoadObject:</TokenIdentifier>
+			<Abstract type="html">The block to invoke when the object loader has completed object mapping and the consumer
+wishes to retrieve a single object from the mapping result.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/RKObjectLoaderDelegate/objectLoader:didLoadObject:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectMappingResult</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) RKObjectLoaderDidLoadObjectBlock onDidLoadObject</Declaration>
+			
+			
+			<Anchor>//api/name/onDidLoadObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectLoader/onDidLoadObject</TokenIdentifier>
+			<Abstract type="html">The block to invoke when the object loader has completed object mapping and the consumer
+wishes to retrieve a single object from the mapping result.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/RKObjectLoaderDelegate/objectLoader:didLoadObject:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectMappingResult</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) RKObjectLoaderDidLoadObjectBlock onDidLoadObject</Declaration>
+			
+			
+			<Anchor>//api/name/onDidLoadObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/setOnDidLoadObjects:</TokenIdentifier>
+			<Abstract type="html">The block to invoke when the object loader has completed object mapping and the consumer
+wishes to retrieve an collections of objects from the mapping result.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/RKObjectLoaderDelegate/objectLoader:didLoadObjects:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectMappingResult</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) RKObjectLoaderDidLoadObjectsBlock onDidLoadObjects</Declaration>
+			
+			
+			<Anchor>//api/name/onDidLoadObjects</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectLoader/onDidLoadObjects</TokenIdentifier>
+			<Abstract type="html">The block to invoke when the object loader has completed object mapping and the consumer
+wishes to retrieve an collections of objects from the mapping result.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/RKObjectLoaderDelegate/objectLoader:didLoadObjects:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectMappingResult</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) RKObjectLoaderDidLoadObjectsBlock onDidLoadObjects</Declaration>
+			
+			
+			<Anchor>//api/name/onDidLoadObjects</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/setOnDidLoadObjectsDictionary:</TokenIdentifier>
+			<Abstract type="html">The block to invoke when the object loader has completed object mapping and the consumer
+wishes to retrieve the entire mapping result as a dictionary. Each key within the
+dictionary will correspond to a mapped keyPath within the source JSON/XML and the value
+will be the object mapped result.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/RKObjectLoaderDelegate/objectLoader:didLoadObjects:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectMappingResult</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) RKObjectLoaderDidLoadObjectsDictionaryBlock onDidLoadObjectsDictionary</Declaration>
+			
+			
+			<Anchor>//api/name/onDidLoadObjectsDictionary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectLoader/onDidLoadObjectsDictionary</TokenIdentifier>
+			<Abstract type="html">The block to invoke when the object loader has completed object mapping and the consumer
+wishes to retrieve the entire mapping result as a dictionary. Each key within the
+dictionary will correspond to a mapped keyPath within the source JSON/XML and the value
+will be the object mapped result.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/RKObjectLoaderDelegate/objectLoader:didLoadObjects:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectMappingResult</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) RKObjectLoaderDidLoadObjectsDictionaryBlock onDidLoadObjectsDictionary</Declaration>
+			
+			
+			<Anchor>//api/name/onDidLoadObjectsDictionary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/setObjectMapping:</TokenIdentifier>
+			<Abstract type="html">The object mapping to use when processing the response. If this is nil,
+then RestKit will search the parsed response body for mappable keyPaths and
+perform mapping on all available content. For instances where your target JSON
+is not returned under a uniquely identifiable keyPath, you must specify the object
+mapping directly for RestKit to know how to map it.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectMappingProvider</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) RKObjectMapping *objectMapping</Declaration>
+			
+			
+			<Anchor>//api/name/objectMapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectLoader/objectMapping</TokenIdentifier>
+			<Abstract type="html">The object mapping to use when processing the response. If this is nil,
+then RestKit will search the parsed response body for mappable keyPaths and
+perform mapping on all available content. For instances where your target JSON
+is not returned under a uniquely identifiable keyPath, you must specify the object
+mapping directly for RestKit to know how to map it.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectMappingProvider</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) RKObjectMapping *objectMapping</Declaration>
+			
+			
+			<Anchor>//api/name/objectMapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/setMappingProvider:</TokenIdentifier>
+			<Abstract type="html">A mapping provider containing object mapping configurations for mapping remote
+object representations into local domain objects.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectMappingProvider</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) RKObjectMappingProvider *mappingProvider</Declaration>
+			
+			
+			<Anchor>//api/name/mappingProvider</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectLoader/mappingProvider</TokenIdentifier>
+			<Abstract type="html">A mapping provider containing object mapping configurations for mapping remote
+object representations into local domain objects.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectMappingProvider</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) RKObjectMappingProvider *mappingProvider</Declaration>
+			
+			
+			<Anchor>//api/name/mappingProvider</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/setResponse:</TokenIdentifier>
+			<Abstract type="html">The underlying response object for this loader</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) RKResponse *response</Declaration>
+			
+			
+			<Anchor>//api/name/response</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectLoader/response</TokenIdentifier>
+			<Abstract type="html">The underlying response object for this loader</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) RKResponse *response</Declaration>
+			
+			
+			<Anchor>//api/name/response</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/setResult:</TokenIdentifier>
+			<Abstract type="html">The mapping result that was produced after the request finished loading and
+object mapping has completed. Provides access to the final products of the
+object mapper in a variety of formats.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKObjectMappingResult *result</Declaration>
+			
+			
+			<Anchor>//api/name/result</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectLoader/result</TokenIdentifier>
+			<Abstract type="html">The mapping result that was produced after the request finished loading and
+object mapping has completed. Provides access to the final products of the
+object mapper in a variety of formats.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKObjectMappingResult *result</Declaration>
+			
+			
+			<Anchor>//api/name/result</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/setSerializationMapping:</TokenIdentifier>
+			<Abstract type="html">The object mapping to use when serializing a target object for transport
+to the remote server.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectMappingProvider</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) RKObjectMapping *serializationMapping</Declaration>
+			
+			
+			<Anchor>//api/name/serializationMapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectLoader/serializationMapping</TokenIdentifier>
+			<Abstract type="html">The object mapping to use when serializing a target object for transport
+to the remote server.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectMappingProvider</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) RKObjectMapping *serializationMapping</Declaration>
+			
+			
+			<Anchor>//api/name/serializationMapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/setSerializationMIMEType:</TokenIdentifier>
+			<Abstract type="html">The MIME Type to serialize the targetObject into according to the mapping
+rules in the serializationMapping. Typical MIME Types for serialization are
+JSON (RKMIMETypeJSON) and URL Form Encoded (RKMIMETypeFormURLEncoded).</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *serializationMIMEType</Declaration>
+			
+			
+			<Anchor>//api/name/serializationMIMEType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectLoader/serializationMIMEType</TokenIdentifier>
+			<Abstract type="html">The MIME Type to serialize the targetObject into according to the mapping
+rules in the serializationMapping. Typical MIME Types for serialization are
+JSON (RKMIMETypeJSON) and URL Form Encoded (RKMIMETypeFormURLEncoded).</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *serializationMIMEType</Declaration>
+			
+			
+			<Anchor>//api/name/serializationMIMEType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/setSourceObject:</TokenIdentifier>
+			<Abstract type="html">The object being serialized for transport. This object will be transformed into a
+serialization in the serializationMIMEType using the serializationMapping.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectSerializer</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) NSObject *sourceObject</Declaration>
+			
+			
+			<Anchor>//api/name/sourceObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectLoader/sourceObject</TokenIdentifier>
+			<Abstract type="html">The object being serialized for transport. This object will be transformed into a
+serialization in the serializationMIMEType using the serializationMapping.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectSerializer</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) NSObject *sourceObject</Declaration>
+			
+			
+			<Anchor>//api/name/sourceObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/setTargetObject:</TokenIdentifier>
+			<Abstract type="html">The target object to map results back onto. If nil, a new object instance
+for the appropriate mapping will be created. If not nil, the results will
+be used to update the targetObject&apos;s attributes and relationships.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSObject *targetObject</Declaration>
+			
+			
+			<Anchor>//api/name/targetObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectLoader/targetObject</TokenIdentifier>
+			<Abstract type="html">The target object to map results back onto. If nil, a new object instance
+for the appropriate mapping will be created. If not nil, the results will
+be used to update the targetObject&apos;s attributes and relationships.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSObject *targetObject</Declaration>
+			
+			
+			<Anchor>//api/name/targetObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/setMappingQueue:</TokenIdentifier>
+			<Abstract type="html">The Grand Central Dispatch queue to perform our parsing and object mapping
+within. By default, object loaders will use the mappingQueue from the RKObjectManager
+that created the loader. You can override this on a per-loader basis as necessary.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) dispatch_queue_t mappingQueue</Declaration>
+			
+			
+			<Anchor>//api/name/mappingQueue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectLoader/mappingQueue</TokenIdentifier>
+			<Abstract type="html">The Grand Central Dispatch queue to perform our parsing and object mapping
+within. By default, object loaders will use the mappingQueue from the RKObjectManager
+that created the loader. You can override this on a per-loader basis as necessary.</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) dispatch_queue_t mappingQueue</Declaration>
+			
+			
+			<Anchor>//api/name/mappingQueue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKObjectLoader/loaderWithURL:mappingProvider:</TokenIdentifier>
+			<Abstract type="html">Initialize and return an autoreleased object loader targeting a remote URL using a mapping provider</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>+ (id)loaderWithURL:(RKURL *)URL mappingProvider:(RKObjectMappingProvider *)mappingProvider</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>URL</Name>
+					<Abstract type="html">A RestKit RKURL targetting a particular baseURL and resourcePath</Abstract>
+				</Parameter><Parameter>
+					<Name>mappingProvider</Name>
+					<Abstract type="html">A mapping provider containing object mapping configurations for processing loaded payloads</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loaderWithURL:mappingProvider:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/initWithURL:mappingProvider:</TokenIdentifier>
+			<Abstract type="html">Initialize and return an autoreleased object loader targeting a remote URL using a mapping provider</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(RKURL *)URL mappingProvider:(RKObjectMappingProvider *)mappingProvider</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>URL</Name>
+					<Abstract type="html">A RestKit RKURL targetting a particular baseURL and resourcePath</Abstract>
+				</Parameter><Parameter>
+					<Name>mappingProvider</Name>
+					<Abstract type="html">A mapping provider containing object mapping configurations for processing loaded payloads</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithURL:mappingProvider:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/handleResponseError</TokenIdentifier>
+			<Abstract type="html">Handle an error in the response preventing it from being mapped, called from isResponseMappable</Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>- (void)handleResponseError</Declaration>
+			
+			
+			<Anchor>//api/name/handleResponseError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKObjectLoader/loaderWithResourcePath:objectManager:delegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>+ (id)loaderWithResourcePath:(NSString *)resourcePath objectManager:(RKObjectManager *)objectManager delegate:(id&lt;RKObjectLoaderDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/loaderWithResourcePath:objectManager:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/initWithResourcePath:objectManager:delegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectLoader.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithResourcePath:(NSString *)resourcePath objectManager:(RKObjectManager *)objectManager delegate:(id&lt;RKObjectLoaderDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/initWithResourcePath:objectManager:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/setClient:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectLoader_Internals.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKClient *client</Declaration>
+			
+			
+			<Anchor>//api/name/client</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectLoader/client</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectLoader_Internals.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKClient *client</Declaration>
+			
+			
+			<Anchor>//api/name/client</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/handleTargetObject</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectLoader_Internals.h</DeclaredIn>			
+			
+			<Declaration>- (void)handleTargetObject</Declaration>
+			
+			
+			<Anchor>//api/name/handleTargetObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/informDelegateOfObjectLoadWithResultDictionary:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectLoader_Internals.h</DeclaredIn>			
+			
+			<Declaration>- (void)informDelegateOfObjectLoadWithResultDictionary:(NSDictionary *)dictionary</Declaration>
+			
+			
+			<Anchor>//api/name/informDelegateOfObjectLoadWithResultDictionary:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/performMappingOnBackgroundThread</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectLoader_Internals.h</DeclaredIn>			
+			
+			<Declaration>- (void)performMappingOnBackgroundThread</Declaration>
+			
+			
+			<Anchor>//api/name/performMappingOnBackgroundThread</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/isResponseMappable</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectLoader_Internals.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isResponseMappable</Declaration>
+			
+			
+			<Anchor>//api/name/isResponseMappable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectLoader/finalizeLoad:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectLoader_Internals.h</DeclaredIn>			
+			
+			<Declaration>- (void)finalizeLoad:(BOOL)successful error:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/finalizeLoad:error:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

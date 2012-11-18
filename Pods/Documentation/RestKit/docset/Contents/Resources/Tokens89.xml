@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RKRequestQueueDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RKRequestQueueDelegate</TokenIdentifier>
+			<Abstract type="html">Lifecycle events for an RKRequestQueue</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>
+			
+			<NodeRef refid="89"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestQueueDelegate/requestQueueDidBeginLoading:</TokenIdentifier>
+			<Abstract type="html">Sent when the queue transitions from an empty state to processing requests.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>- (void)requestQueueDidBeginLoading:(RKRequestQueue *)queue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queue</Name>
+					<Abstract type="html">The queue that began processing requests.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestQueueDidBeginLoading:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestQueueDelegate/requestQueueDidFinishLoading:</TokenIdentifier>
+			<Abstract type="html">Sent when queue transitions from a processing state to an empty start.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>- (void)requestQueueDidFinishLoading:(RKRequestQueue *)queue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queue</Name>
+					<Abstract type="html">The queue that finished processing requests.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestQueueDidFinishLoading:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestQueueDelegate/requestQueueWasSuspended:</TokenIdentifier>
+			<Abstract type="html">Sent when the queue has been suspended and request processing has been halted.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>- (void)requestQueueWasSuspended:(RKRequestQueue *)queue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queue</Name>
+					<Abstract type="html">The request queue that has been suspended.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestQueueWasSuspended:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestQueueDelegate/requestQueueWasUnsuspended:</TokenIdentifier>
+			<Abstract type="html">Sent when the queue has been unsuspended and request processing has resumed.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>- (void)requestQueueWasUnsuspended:(RKRequestQueue *)queue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queue</Name>
+					<Abstract type="html">The request queue that has resumed processing.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestQueueWasUnsuspended:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestQueueDelegate/requestQueue:willSendRequest:</TokenIdentifier>
+			<Abstract type="html">Sent before queue sends a request.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>- (void)requestQueue:(RKRequestQueue *)queue willSendRequest:(RKRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queue</Name>
+					<Abstract type="html">The queue that will process the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The request to be processed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestQueue:willSendRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestQueueDelegate/requestQueue:didSendRequest:</TokenIdentifier>
+			<Abstract type="html">Sent after queue has sent a request.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>- (void)requestQueue:(RKRequestQueue *)queue didSendRequest:(RKRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queue</Name>
+					<Abstract type="html">The queue that processed the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The processed request.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestQueue:didSendRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestQueueDelegate/requestQueue:didLoadResponse:</TokenIdentifier>
+			<Abstract type="html">Sent when queue received a response for a request.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>- (void)requestQueue:(RKRequestQueue *)queue didLoadResponse:(RKResponse *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queue</Name>
+					<Abstract type="html">The queue that received the response.</Abstract>
+				</Parameter><Parameter>
+					<Name>response</Name>
+					<Abstract type="html">The response that was received.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestQueue:didLoadResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestQueueDelegate/requestQueue:didCancelRequest:</TokenIdentifier>
+			<Abstract type="html">Sent when queue has cancelled a request.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>- (void)requestQueue:(RKRequestQueue *)queue didCancelRequest:(RKRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queue</Name>
+					<Abstract type="html">The queue that cancelled the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The cancelled request.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestQueue:didCancelRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestQueueDelegate/requestQueue:didFailRequest:withError:</TokenIdentifier>
+			<Abstract type="html">Sent when an attempted request fails.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>- (void)requestQueue:(RKRequestQueue *)queue didFailRequest:(RKRequest *)request withError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queue</Name>
+					<Abstract type="html">The queue in which the request failed from.</Abstract>
+				</Parameter><Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The failed request.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">An NSError object containing the RKRestKitError that caused the
+request to fail.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestQueue:didFailRequest:withError:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

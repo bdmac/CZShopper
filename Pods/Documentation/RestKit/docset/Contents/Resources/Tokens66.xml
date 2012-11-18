@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSArray+RKAdditions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSArray(RKAdditions)</TokenIdentifier>
+			<Abstract type="html">Provides useful additions to the NSArray interface.</Abstract>
+			<DeclaredIn>NSArray+RKAdditions.h</DeclaredIn>
+			
+			<NodeRef refid="66"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(RKAdditions)/sectionsGroupedByKeyPath:</TokenIdentifier>
+			<Abstract type="html">Evaluates a given key path against the receiving array, divides the array entries into
+sections grouped by the value for the key path, and returns an aggregate array of arrays
+containing the sections. The receiving array is assumed to be sorted.</Abstract>
+			<DeclaredIn>NSArray+RKAdditions.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)sectionsGroupedByKeyPath:(NSString *)keyPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>keyPath</Name>
+					<Abstract type="html">The key path of the value to group the entries by.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An array of section arrays, with each section containing a group of objects sharing
+the same value for the given key path.</Abstract></ReturnValue>
+			<Anchor>//api/name/sectionsGroupedByKeyPath:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

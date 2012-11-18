@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKResponse.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKResponse</TokenIdentifier>
+			<Abstract type="html">Models the response portion of an HTTP request/response cycle</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>
+			
+			<NodeRef refid="52"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/initWithRequest:</TokenIdentifier>
+			<Abstract type="html">Initializes a new response object for a REST request.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithRequest:(RKRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The request that the response being created belongs to.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKResponse object with the request parameter set.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/initWithRequest:body:headers:</TokenIdentifier>
+			<Abstract type="html">Initializes a new response object from a cached request.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithRequest:(RKRequest *)request body:(NSData *)body headers:(NSDictionary *)headers</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The request that the response being created belongs to.</Abstract>
+				</Parameter><Parameter>
+					<Name>body</Name>
+					<Abstract type="html">The data of the body of the response.</Abstract>
+				</Parameter><Parameter>
+					<Name>headers</Name>
+					<Abstract type="html">A dictionary of the response&apos;s headers.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKResponse object with the request, body, and header parameters set.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithRequest:body:headers:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/initWithSynchronousRequest:URLResponse:body:error:</TokenIdentifier>
+			<Abstract type="html">Initializes a response object from the results of a synchronous request.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithSynchronousRequest:(RKRequest *)request URLResponse:(NSHTTPURLResponse *)URLResponse body:(NSData *)body error:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The request that the response being created belongs to.</Abstract>
+				</Parameter><Parameter>
+					<Name>URLResponse</Name>
+					<Abstract type="html">The response from the NSURLConnection call containing the
+headers and HTTP status code.</Abstract>
+				</Parameter><Parameter>
+					<Name>body</Name>
+					<Abstract type="html">The data of the body of the response.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The error returned from the NSURLConnection call, if any.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKResponse object with the results of the synchronous request
+derived from the NSHTTPURLResponse and body passed.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithSynchronousRequest:URLResponse:body:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/setRequest:</TokenIdentifier>
+			<Abstract type="html">The request that generated this response.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) RKRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKResponse/request</TokenIdentifier>
+			<Abstract type="html">The request that generated this response.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) RKRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/setURL:</TokenIdentifier>
+			<Abstract type="html">The URL the response was loaded from.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKResponse/URL</TokenIdentifier>
+			<Abstract type="html">The URL the response was loaded from.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/setStatusCode:</TokenIdentifier>
+			<Abstract type="html">The status code of the HTTP response.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger statusCode</Declaration>
+			
+			
+			<Anchor>//api/name/statusCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKResponse/statusCode</TokenIdentifier>
+			<Abstract type="html">The status code of the HTTP response.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger statusCode</Declaration>
+			
+			
+			<Anchor>//api/name/statusCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/setAllHeaderFields:</TokenIdentifier>
+			<Abstract type="html">Return a dictionary of headers sent with the HTTP response.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDictionary *allHeaderFields</Declaration>
+			
+			
+			<Anchor>//api/name/allHeaderFields</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKResponse/allHeaderFields</TokenIdentifier>
+			<Abstract type="html">Return a dictionary of headers sent with the HTTP response.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDictionary *allHeaderFields</Declaration>
+			
+			
+			<Anchor>//api/name/allHeaderFields</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/setCookies:</TokenIdentifier>
+			<Abstract type="html">An NSArray of NSHTTPCookie objects associated with the response.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *cookies</Declaration>
+			
+			
+			<Anchor>//api/name/cookies</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKResponse/cookies</TokenIdentifier>
+			<Abstract type="html">An NSArray of NSHTTPCookie objects associated with the response.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *cookies</Declaration>
+			
+			
+			<Anchor>//api/name/cookies</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/localizedStatusCodeString</TokenIdentifier>
+			<Abstract type="html">Returns the localized human readable representation of the HTTP Status Code
+returned.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)localizedStatusCodeString</Declaration>
+			
+			
+			<Anchor>//api/name/localizedStatusCodeString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/contentType</TokenIdentifier>
+			<Abstract type="html">Returns the value of &apos;Content-Type&apos; HTTP header</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)contentType</Declaration>
+			
+			
+			<Anchor>//api/name/contentType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/contentLength</TokenIdentifier>
+			<Abstract type="html">Returns the value of the &apos;Content-Length&apos; HTTP header</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)contentLength</Declaration>
+			
+			
+			<Anchor>//api/name/contentLength</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/location</TokenIdentifier>
+			<Abstract type="html">Returns the value of the &apos;Location&apos; HTTP Header</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/setBody:</TokenIdentifier>
+			<Abstract type="html">The data returned as the response body.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSData *body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKResponse/body</TokenIdentifier>
+			<Abstract type="html">The data returned as the response body.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSData *body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/bodyAsString</TokenIdentifier>
+			<Abstract type="html">Returns the response body as an NSString</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)bodyAsString</Declaration>
+			
+			
+			<Anchor>//api/name/bodyAsString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/bodyAsJSON</TokenIdentifier>
+			<Abstract type="html">Returns the response body parsed as JSON into an object</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (id)bodyAsJSON</Declaration>
+			
+			
+			<Anchor>//api/name/bodyAsJSON</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/parsedBody:</TokenIdentifier>
+			<Abstract type="html">Returns the response body parsed as JSON into an object</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (id)parsedBody:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">An NSError to populate if something goes wrong while parsing the
+body JSON into an object.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parsedBody:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/setFailureError:</TokenIdentifier>
+			<Abstract type="html">The error returned if the URL connection fails.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSError *failureError</Declaration>
+			
+			
+			<Anchor>//api/name/failureError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKResponse/failureError</TokenIdentifier>
+			<Abstract type="html">The error returned if the URL connection fails.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSError *failureError</Declaration>
+			
+			
+			<Anchor>//api/name/failureError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/failureErrorDescription</TokenIdentifier>
+			<Abstract type="html">Determines if there is an error object and uses it&apos;s localized message</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)failureErrorDescription</Declaration>
+			
+			<ReturnValue><Abstract type="html">A string of the localized error message.</Abstract></ReturnValue>
+			<Anchor>//api/name/failureErrorDescription</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/wasLoadedFromCache</TokenIdentifier>
+			<Abstract type="html">Indicates whether the response was loaded from RKCache</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)wasLoadedFromCache</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the response was loaded from the cache</Abstract></ReturnValue>
+			<Anchor>//api/name/wasLoadedFromCache</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isFailure</TokenIdentifier>
+			<Abstract type="html">Indicates that the connection failed to reach the remote server. The details of
+the failure are available on the failureError reader.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isFailure</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the connection failed to reach the remote server.</Abstract></ReturnValue>
+			<Anchor>//api/name/isFailure</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isInvalid</TokenIdentifier>
+			<Abstract type="html">Indicates an invalid HTTP response code less than 100 or greater than 600</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isInvalid</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the HTTP response code is less than 100 or greater than 600</Abstract></ReturnValue>
+			<Anchor>//api/name/isInvalid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isInformational</TokenIdentifier>
+			<Abstract type="html">Indicates an informational HTTP response code between 100 and 199</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isInformational</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the HTTP response code is between 100 and 199</Abstract></ReturnValue>
+			<Anchor>//api/name/isInformational</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isSuccessful</TokenIdentifier>
+			<Abstract type="html">Indicates an HTTP response code between 200 and 299.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isSuccessful</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the HTTP response code is between 200 and 299</Abstract></ReturnValue>
+			<Anchor>//api/name/isSuccessful</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isRedirection</TokenIdentifier>
+			<Abstract type="html">Indicates an HTTP response code between 300 and 399.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isRedirection</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the HTTP response code is between 300 and 399.</Abstract></ReturnValue>
+			<Anchor>//api/name/isRedirection</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isClientError</TokenIdentifier>
+			<Abstract type="html">Indicates an HTTP response code between 400 and 499.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isClientError</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the HTTP response code is between 400 and 499.</Abstract></ReturnValue>
+			<Anchor>//api/name/isClientError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isServerError</TokenIdentifier>
+			<Abstract type="html">Indicates an HTTP response code between 500 and 599.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isServerError</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the HTTP response code is between 500 and 599.</Abstract></ReturnValue>
+			<Anchor>//api/name/isServerError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isError</TokenIdentifier>
+			<Abstract type="html">Indicates that the response is either a server or a client error.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isError</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the response is either a server or client error, with a response
+code between 400 and 599.</Abstract></ReturnValue>
+			<Anchor>//api/name/isError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isOK</TokenIdentifier>
+			<Abstract type="html">Indicates an HTTP response code of 200.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isOK</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the response is 200 OK.</Abstract></ReturnValue>
+			<Anchor>//api/name/isOK</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isCreated</TokenIdentifier>
+			<Abstract type="html">Indicates an HTTP response code of 201.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isCreated</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the response is 201 Created.</Abstract></ReturnValue>
+			<Anchor>//api/name/isCreated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isNoContent</TokenIdentifier>
+			<Abstract type="html">Indicates an HTTP response code of 204.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isNoContent</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the response is 204 No Content.</Abstract></ReturnValue>
+			<Anchor>//api/name/isNoContent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isNotModified</TokenIdentifier>
+			<Abstract type="html">Indicates an HTTP response code of 304.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isNotModified</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the response is 304 Not Modified.</Abstract></ReturnValue>
+			<Anchor>//api/name/isNotModified</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isUnauthorized</TokenIdentifier>
+			<Abstract type="html">Indicates an HTTP response code of 401.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isUnauthorized</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the response is 401 Unauthorized.</Abstract></ReturnValue>
+			<Anchor>//api/name/isUnauthorized</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isForbidden</TokenIdentifier>
+			<Abstract type="html">Indicates an HTTP response code of 403.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isForbidden</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the response is 403 Forbidden.</Abstract></ReturnValue>
+			<Anchor>//api/name/isForbidden</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isNotFound</TokenIdentifier>
+			<Abstract type="html">Indicates an HTTP response code of 404.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isNotFound</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the response is 404 Not Found.</Abstract></ReturnValue>
+			<Anchor>//api/name/isNotFound</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isConflict</TokenIdentifier>
+			<Abstract type="html">Indicates an HTTP response code of 409.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isConflict</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the response is 409 Conflict.</Abstract></ReturnValue>
+			<Anchor>//api/name/isConflict</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isGone</TokenIdentifier>
+			<Abstract type="html">Indicates an HTTP response code of 410.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isGone</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the response is 410 Gone.</Abstract></ReturnValue>
+			<Anchor>//api/name/isGone</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isUnprocessableEntity</TokenIdentifier>
+			<Abstract type="html">Indicates an HTTP response code of 422.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isUnprocessableEntity</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the response is 422 Unprocessable Entity.</Abstract></ReturnValue>
+			<Anchor>//api/name/isUnprocessableEntity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isRedirect</TokenIdentifier>
+			<Abstract type="html">Indicates an HTTP response code of 301, 302, 303 or 307.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isRedirect</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the response requires a redirect to finish processing.</Abstract></ReturnValue>
+			<Anchor>//api/name/isRedirect</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isEmpty</TokenIdentifier>
+			<Abstract type="html">Indicates an empty HTTP response code of 201, 204, or 304</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isEmpty</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the response body is empty.</Abstract></ReturnValue>
+			<Anchor>//api/name/isEmpty</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isServiceUnavailable</TokenIdentifier>
+			<Abstract type="html">Indicates an HTTP response code of 503</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isServiceUnavailable</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the response is 503 Service Unavailable.</Abstract></ReturnValue>
+			<Anchor>//api/name/isServiceUnavailable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/setMIMEType:</TokenIdentifier>
+			<Abstract type="html">The MIME Type of the response body.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *MIMEType</Declaration>
+			
+			
+			<Anchor>//api/name/MIMEType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKResponse/MIMEType</TokenIdentifier>
+			<Abstract type="html">The MIME Type of the response body.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *MIMEType</Declaration>
+			
+			
+			<Anchor>//api/name/MIMEType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isHTML</TokenIdentifier>
+			<Abstract type="html">True when the server turned an HTML response.</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isHTML</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES when the MIME type is text/html.</Abstract></ReturnValue>
+			<Anchor>//api/name/isHTML</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isXHTML</TokenIdentifier>
+			<Abstract type="html">True when the server turned an XHTML response</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isXHTML</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES when the MIME type is application/xhtml+xml.</Abstract></ReturnValue>
+			<Anchor>//api/name/isXHTML</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isXML</TokenIdentifier>
+			<Abstract type="html">True when the server turned an XML response</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isXML</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES when the MIME type is application/xml.</Abstract></ReturnValue>
+			<Anchor>//api/name/isXML</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/isJSON</TokenIdentifier>
+			<Abstract type="html">True when the server turned an JSON response</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isJSON</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES when the MIME type is application/json.</Abstract></ReturnValue>
+			<Anchor>//api/name/isJSON</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/bodyEncodingName</TokenIdentifier>
+			<Abstract type="html">Returns the name of the string encoding used for the response body</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)bodyEncodingName</Declaration>
+			
+			
+			<Anchor>//api/name/bodyEncodingName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKResponse/bodyEncoding</TokenIdentifier>
+			<Abstract type="html">Returns the string encoding used for the response body</Abstract>
+			<DeclaredIn>RKResponse.h</DeclaredIn>			
+			
+			<Declaration>- (NSStringEncoding)bodyEncoding</Declaration>
+			
+			
+			<Anchor>//api/name/bodyEncoding</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,1414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKRequest</TokenIdentifier>
+			<Abstract type="html">Models the request portion of an HTTP request/response cycle.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>
+			
+			<NodeRef refid="48"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKRequest/requestWithURL:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a RKRequest object initialized to load content from a
+provided URL.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (RKRequest *)requestWithURL:(NSURL *)URL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>URL</Name>
+					<Abstract type="html">The remote URL to load</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An autoreleased RKRequest object initialized with URL.</Abstract></ReturnValue>
+			<Anchor>//api/name/requestWithURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/initWithURL:</TokenIdentifier>
+			<Abstract type="html">Initializes a RKRequest object to load from a provided URL</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)URL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>URL</Name>
+					<Abstract type="html">The remote URL to load</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKRequest object initialized with URL.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKRequest/requestWithURL:delegate:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a RKRequest object initialized to load content from a
+provided URL with a specified delegate.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (RKRequest *)requestWithURL:(NSURL *)URL delegate:(id)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>URL</Name>
+					<Abstract type="html">The remote URL to load</Abstract>
+				</Parameter><Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">The delegate that will handle the response callbacks.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An autoreleased RKRequest object initialized with URL.</Abstract></ReturnValue>
+			<Anchor>//api/name/requestWithURL:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/initWithURL:delegate:</TokenIdentifier>
+			<Abstract type="html">Initializes a RKRequest object to load from a provided URL</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)URL delegate:(id)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>URL</Name>
+					<Abstract type="html">The remote URL to load</Abstract>
+				</Parameter><Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">The delegate that will handle the response callbacks.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKRequest object initialized with URL.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithURL:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setURL:</TokenIdentifier>
+			<Abstract type="html">The URL this request is loading</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/URL</TokenIdentifier>
+			<Abstract type="html">The URL this request is loading</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setResourcePath:</TokenIdentifier>
+			<Abstract type="html">The resourcePath portion of the request&apos;s URL</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *resourcePath</Declaration>
+			
+			
+			<Anchor>//api/name/resourcePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/resourcePath</TokenIdentifier>
+			<Abstract type="html">The resourcePath portion of the request&apos;s URL</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *resourcePath</Declaration>
+			
+			
+			<Anchor>//api/name/resourcePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setMethod:</TokenIdentifier>
+			<Abstract type="html">The HTTP verb in which the request is sent</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKRequestMethod method</Declaration>
+			
+			
+			<Anchor>//api/name/method</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/method</TokenIdentifier>
+			<Abstract type="html">The HTTP verb in which the request is sent</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKRequestMethod method</Declaration>
+			
+			
+			<Anchor>//api/name/method</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setHTTPMethod:</TokenIdentifier>
+			<Abstract type="html">Returns HTTP method as a string used for this request.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKRequest/method</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readonly) NSString *HTTPMethod</Declaration>
+			
+			
+			<Anchor>//api/name/HTTPMethod</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/HTTPMethod</TokenIdentifier>
+			<Abstract type="html">Returns HTTP method as a string used for this request.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKRequest/method</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readonly) NSString *HTTPMethod</Declaration>
+			
+			
+			<Anchor>//api/name/HTTPMethod</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setResponse:</TokenIdentifier>
+			<Abstract type="html">The response returned when the receiver was sent.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) RKResponse *response</Declaration>
+			
+			
+			<Anchor>//api/name/response</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/response</TokenIdentifier>
+			<Abstract type="html">The response returned when the receiver was sent.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) RKResponse *response</Declaration>
+			
+			
+			<Anchor>//api/name/response</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setParams:</TokenIdentifier>
+			<Abstract type="html">A serializable collection of parameters sent as the HTTP body of the request</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSObject&lt;RKRequestSerializable&gt; *params</Declaration>
+			
+			
+			<Anchor>//api/name/params</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/params</TokenIdentifier>
+			<Abstract type="html">A serializable collection of parameters sent as the HTTP body of the request</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSObject&lt;RKRequestSerializable&gt; *params</Declaration>
+			
+			
+			<Anchor>//api/name/params</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setAdditionalHTTPHeaders:</TokenIdentifier>
+			<Abstract type="html">A dictionary of additional HTTP Headers to send with the request</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *additionalHTTPHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/additionalHTTPHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/additionalHTTPHeaders</TokenIdentifier>
+			<Abstract type="html">A dictionary of additional HTTP Headers to send with the request</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *additionalHTTPHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/additionalHTTPHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setRunLoopMode:</TokenIdentifier>
+			<Abstract type="html">The run loop mode under which the underlying NSURLConnection is performed</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *runLoopMode</Declaration>
+			
+			
+			<Anchor>//api/name/runLoopMode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/runLoopMode</TokenIdentifier>
+			<Abstract type="html">The run loop mode under which the underlying NSURLConnection is performed</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *runLoopMode</Declaration>
+			
+			
+			<Anchor>//api/name/runLoopMode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setUserData:</TokenIdentifier>
+			<Abstract type="html">An opaque pointer to associate user defined data with the request.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id userData</Declaration>
+			
+			
+			<Anchor>//api/name/userData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/userData</TokenIdentifier>
+			<Abstract type="html">An opaque pointer to associate user defined data with the request.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id userData</Declaration>
+			
+			
+			<Anchor>//api/name/userData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setURLRequest:</TokenIdentifier>
+			<Abstract type="html">The underlying NSMutableURLRequest sent for this request</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSMutableURLRequest *URLRequest</Declaration>
+			
+			
+			<Anchor>//api/name/URLRequest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/URLRequest</TokenIdentifier>
+			<Abstract type="html">The underlying NSMutableURLRequest sent for this request</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSMutableURLRequest *URLRequest</Declaration>
+			
+			
+			<Anchor>//api/name/URLRequest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setDefaultHTTPEncoding:</TokenIdentifier>
+			<Abstract type="html">The default value used to decode HTTP body content when HTTP headers received do not provide information on the content.
+This encoding will be used by the RKResponse when creating the body content</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSStringEncoding defaultHTTPEncoding</Declaration>
+			
+			
+			<Anchor>//api/name/defaultHTTPEncoding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/defaultHTTPEncoding</TokenIdentifier>
+			<Abstract type="html">The default value used to decode HTTP body content when HTTP headers received do not provide information on the content.
+This encoding will be used by the RKResponse when creating the body content</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSStringEncoding defaultHTTPEncoding</Declaration>
+			
+			
+			<Anchor>//api/name/defaultHTTPEncoding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setBody:forMIMEType:</TokenIdentifier>
+			<Abstract type="html">Sets the request body using the provided NSDictionary after passing the
+NSDictionary through serialization using the currently configured parser for
+the provided MIMEType.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)setBody:(NSDictionary *)body forMIMEType:(NSString *)MIMEType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>body</Name>
+					<Abstract type="html">An NSDictionary of key/value pairs to be serialized and sent as
+the HTTP body.</Abstract>
+				</Parameter><Parameter>
+					<Name>MIMEType</Name>
+					<Abstract type="html">The MIMEType for the parser to use for the dictionary.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setBody:forMIMEType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setHTTPBody:</TokenIdentifier>
+			<Abstract type="html">The HTTP body as a NSData used for this request</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSData *HTTPBody</Declaration>
+			
+			
+			<Anchor>//api/name/HTTPBody</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/HTTPBody</TokenIdentifier>
+			<Abstract type="html">The HTTP body as a NSData used for this request</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSData *HTTPBody</Declaration>
+			
+			
+			<Anchor>//api/name/HTTPBody</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setHTTPBodyString:</TokenIdentifier>
+			<Abstract type="html">The HTTP body as a string used for this request</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *HTTPBodyString</Declaration>
+			
+			
+			<Anchor>//api/name/HTTPBodyString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/HTTPBodyString</TokenIdentifier>
+			<Abstract type="html">The HTTP body as a string used for this request</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *HTTPBodyString</Declaration>
+			
+			
+			<Anchor>//api/name/HTTPBodyString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The delegate to inform when the request is completed</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate to inform when the request is completed</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setConfigurationDelegate:</TokenIdentifier>
+			<Abstract type="html">A delegate responsible for configuring the request. Centralizes common
+configuration data (such as HTTP headers, authentication information, etc)
+for re-use.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKClient</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectManager</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; configurationDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/configurationDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/configurationDelegate</TokenIdentifier>
+			<Abstract type="html">A delegate responsible for configuring the request. Centralizes common
+configuration data (such as HTTP headers, authentication information, etc)
+for re-use.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKClient</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectManager</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; configurationDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/configurationDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setOnDidLoadResponse:</TokenIdentifier>
+			<Abstract type="html">A block to invoke when the receiver has loaded a response.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/RKRequestDelegate/request:didLoadResponse:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) RKRequestDidLoadResponseBlock onDidLoadResponse</Declaration>
+			
+			
+			<Anchor>//api/name/onDidLoadResponse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/onDidLoadResponse</TokenIdentifier>
+			<Abstract type="html">A block to invoke when the receiver has loaded a response.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/RKRequestDelegate/request:didLoadResponse:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) RKRequestDidLoadResponseBlock onDidLoadResponse</Declaration>
+			
+			
+			<Anchor>//api/name/onDidLoadResponse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setOnDidFailLoadWithError:</TokenIdentifier>
+			<Abstract type="html">A block to invoke when the receuver has failed loading due to an error.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/RKRequestDelegate/request:didFailLoadWithError:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) RKRequestDidFailLoadWithErrorBlock onDidFailLoadWithError</Declaration>
+			
+			
+			<Anchor>//api/name/onDidFailLoadWithError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/onDidFailLoadWithError</TokenIdentifier>
+			<Abstract type="html">A block to invoke when the receuver has failed loading due to an error.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/RKRequestDelegate/request:didFailLoadWithError:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) RKRequestDidFailLoadWithErrorBlock onDidFailLoadWithError</Declaration>
+			
+			
+			<Anchor>//api/name/onDidFailLoadWithError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setFollowRedirect:</TokenIdentifier>
+			<Abstract type="html">Whether this request should follow server redirects or not.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL followRedirect</Declaration>
+			
+			
+			<Anchor>//api/name/followRedirect</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/followRedirect</TokenIdentifier>
+			<Abstract type="html">Whether this request should follow server redirects or not.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL followRedirect</Declaration>
+			
+			
+			<Anchor>//api/name/followRedirect</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setBackgroundPolicy:</TokenIdentifier>
+			<Abstract type="html">The policy to take on transition to the background (iOS 4.x and higher only)</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKRequestBackgroundPolicy backgroundPolicy</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundPolicy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/backgroundPolicy</TokenIdentifier>
+			<Abstract type="html">The policy to take on transition to the background (iOS 4.x and higher only)</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKRequestBackgroundPolicy backgroundPolicy</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundPolicy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setBackgroundTaskIdentifier:</TokenIdentifier>
+			<Abstract type="html">Returns the identifier of the task that has been sent to the background.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIBackgroundTaskIdentifier backgroundTaskIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundTaskIdentifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/backgroundTaskIdentifier</TokenIdentifier>
+			<Abstract type="html">Returns the identifier of the task that has been sent to the background.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIBackgroundTaskIdentifier backgroundTaskIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundTaskIdentifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setAuthenticationType:</TokenIdentifier>
+			<Abstract type="html">The type of authentication to use for this request.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKRequestAuthenticationType authenticationType</Declaration>
+			
+			
+			<Anchor>//api/name/authenticationType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/authenticationType</TokenIdentifier>
+			<Abstract type="html">The type of authentication to use for this request.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKRequestAuthenticationType authenticationType</Declaration>
+			
+			
+			<Anchor>//api/name/authenticationType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setUsername:</TokenIdentifier>
+			<Abstract type="html">The username to use for authentication via HTTP AUTH.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKRequest/authenticationType</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/username</TokenIdentifier>
+			<Abstract type="html">The username to use for authentication via HTTP AUTH.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKRequest/authenticationType</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setPassword:</TokenIdentifier>
+			<Abstract type="html">The password to use for authentication via HTTP AUTH.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKRequest/authenticationType</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/password</TokenIdentifier>
+			<Abstract type="html">The password to use for authentication via HTTP AUTH.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKRequest/authenticationType</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setOAuth1ConsumerKey:</TokenIdentifier>
+			<Abstract type="html">The OAuth 1.0 consumer key</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKRequest/authenticationType</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) NSString *OAuth1ConsumerKey</Declaration>
+			
+			
+			<Anchor>//api/name/OAuth1ConsumerKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/OAuth1ConsumerKey</TokenIdentifier>
+			<Abstract type="html">The OAuth 1.0 consumer key</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKRequest/authenticationType</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) NSString *OAuth1ConsumerKey</Declaration>
+			
+			
+			<Anchor>//api/name/OAuth1ConsumerKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setOAuth1ConsumerSecret:</TokenIdentifier>
+			<Abstract type="html">The OAuth 1.0 consumer secret</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKRequest/authenticationType</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) NSString *OAuth1ConsumerSecret</Declaration>
+			
+			
+			<Anchor>//api/name/OAuth1ConsumerSecret</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/OAuth1ConsumerSecret</TokenIdentifier>
+			<Abstract type="html">The OAuth 1.0 consumer secret</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKRequest/authenticationType</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) NSString *OAuth1ConsumerSecret</Declaration>
+			
+			
+			<Anchor>//api/name/OAuth1ConsumerSecret</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setOAuth1AccessToken:</TokenIdentifier>
+			<Abstract type="html">The OAuth 1.0 access token</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKRequest/authenticationType</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) NSString *OAuth1AccessToken</Declaration>
+			
+			
+			<Anchor>//api/name/OAuth1AccessToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/OAuth1AccessToken</TokenIdentifier>
+			<Abstract type="html">The OAuth 1.0 access token</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKRequest/authenticationType</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) NSString *OAuth1AccessToken</Declaration>
+			
+			
+			<Anchor>//api/name/OAuth1AccessToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setOAuth1AccessTokenSecret:</TokenIdentifier>
+			<Abstract type="html">The OAuth 1.0 access token secret</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKRequest/authenticationType</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) NSString *OAuth1AccessTokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/OAuth1AccessTokenSecret</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/OAuth1AccessTokenSecret</TokenIdentifier>
+			<Abstract type="html">The OAuth 1.0 access token secret</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKRequest/authenticationType</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) NSString *OAuth1AccessTokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/OAuth1AccessTokenSecret</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setOAuth2AccessToken:</TokenIdentifier>
+			<Abstract type="html">The OAuth 2.0 access token</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKRequest/authenticationType</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) NSString *OAuth2AccessToken</Declaration>
+			
+			
+			<Anchor>//api/name/OAuth2AccessToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/OAuth2AccessToken</TokenIdentifier>
+			<Abstract type="html">The OAuth 2.0 access token</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKRequest/authenticationType</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) NSString *OAuth2AccessToken</Declaration>
+			
+			
+			<Anchor>//api/name/OAuth2AccessToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setOAuth2RefreshToken:</TokenIdentifier>
+			<Abstract type="html">The OAuth 2.0 refresh token</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKRequest/authenticationType</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) NSString *OAuth2RefreshToken</Declaration>
+			
+			
+			<Anchor>//api/name/OAuth2RefreshToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/OAuth2RefreshToken</TokenIdentifier>
+			<Abstract type="html">The OAuth 2.0 refresh token</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKRequest/authenticationType</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) NSString *OAuth2RefreshToken</Declaration>
+			
+			
+			<Anchor>//api/name/OAuth2RefreshToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setCacheKey:</TokenIdentifier>
+			<Abstract type="html">Returns the cache key for getting/setting the cache entry for this request in
+the cache.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *cacheKey</Declaration>
+			
+			
+			<Anchor>//api/name/cacheKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/cacheKey</TokenIdentifier>
+			<Abstract type="html">Returns the cache key for getting/setting the cache entry for this request in
+the cache.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *cacheKey</Declaration>
+			
+			
+			<Anchor>//api/name/cacheKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setCachePolicy:</TokenIdentifier>
+			<Abstract type="html">The cache policy used when storing this request into the request cache</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKRequestCachePolicy cachePolicy</Declaration>
+			
+			
+			<Anchor>//api/name/cachePolicy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/cachePolicy</TokenIdentifier>
+			<Abstract type="html">The cache policy used when storing this request into the request cache</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKRequestCachePolicy cachePolicy</Declaration>
+			
+			
+			<Anchor>//api/name/cachePolicy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setCache:</TokenIdentifier>
+			<Abstract type="html">The request cache to store and load responses for this request.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKRequestCache *cache</Declaration>
+			
+			
+			<Anchor>//api/name/cache</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/cache</TokenIdentifier>
+			<Abstract type="html">The request cache to store and load responses for this request.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKRequestCache *cache</Declaration>
+			
+			
+			<Anchor>//api/name/cache</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/isCacheable</TokenIdentifier>
+			<Abstract type="html">Returns YES if the request is cacheable</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isCacheable</Declaration>
+			
+			
+			<Anchor>//api/name/isCacheable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setCacheTimeoutInterval:</TokenIdentifier>
+			<Abstract type="html">The timeout interval within which the request should not be sent and the cached
+response should be used. Used if the cache policy includes
+RKRequestCachePolicyTimeout.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval cacheTimeoutInterval</Declaration>
+			
+			
+			<Anchor>//api/name/cacheTimeoutInterval</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/cacheTimeoutInterval</TokenIdentifier>
+			<Abstract type="html">The timeout interval within which the request should not be sent and the cached
+response should be used. Used if the cache policy includes
+RKRequestCachePolicyTimeout.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval cacheTimeoutInterval</Declaration>
+			
+			
+			<Anchor>//api/name/cacheTimeoutInterval</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setDisableCertificateValidation:</TokenIdentifier>
+			<Abstract type="html">Flag for disabling SSL certificate validation.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL disableCertificateValidation</Declaration>
+			
+			
+			<Anchor>//api/name/disableCertificateValidation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/disableCertificateValidation</TokenIdentifier>
+			<Abstract type="html">Flag for disabling SSL certificate validation.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL disableCertificateValidation</Declaration>
+			
+			
+			<Anchor>//api/name/disableCertificateValidation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setAdditionalRootCertificates:</TokenIdentifier>
+			<Abstract type="html">A set of additional certificates to be used in evaluating server SSL
+certificates.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSSet *additionalRootCertificates</Declaration>
+			
+			
+			<Anchor>//api/name/additionalRootCertificates</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/additionalRootCertificates</TokenIdentifier>
+			<Abstract type="html">A set of additional certificates to be used in evaluating server SSL
+certificates.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSSet *additionalRootCertificates</Declaration>
+			
+			
+			<Anchor>//api/name/additionalRootCertificates</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/prepareURLRequest</TokenIdentifier>
+			<Abstract type="html">Setup the NSURLRequest.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)prepareURLRequest</Declaration>
+			
+			<ReturnValue><Abstract type="html">A boolean for the success of the URL preparation.</Abstract></ReturnValue>
+			<Anchor>//api/name/prepareURLRequest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setQueue:</TokenIdentifier>
+			<Abstract type="html">The request queue that this request belongs to</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKRequestQueue *queue</Declaration>
+			
+			
+			<Anchor>//api/name/queue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/queue</TokenIdentifier>
+			<Abstract type="html">The request queue that this request belongs to</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKRequestQueue *queue</Declaration>
+			
+			
+			<Anchor>//api/name/queue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/send</TokenIdentifier>
+			<Abstract type="html">Send the request asynchronously. It will be added to the queue and dispatched
+as soon as possible.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)send</Declaration>
+			
+			
+			<Anchor>//api/name/send</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/sendAsynchronously</TokenIdentifier>
+			<Abstract type="html">Immediately dispatch a request asynchronously, skipping the request queue.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendAsynchronously</Declaration>
+			
+			
+			<Anchor>//api/name/sendAsynchronously</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/sendSynchronously</TokenIdentifier>
+			<Abstract type="html">Send the request synchronously and return a hydrated response object.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (RKResponse *)sendSynchronously</Declaration>
+			
+			<ReturnValue><Abstract type="html">An RKResponse object with the result of the request.</Abstract></ReturnValue>
+			<Anchor>//api/name/sendSynchronously</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setCancelled:</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating whether the request has been cancelled.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly, getter=isCancelled) BOOL cancelled</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the request was sent a cancel message, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/cancelled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/cancelled</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating whether the request has been cancelled.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly, getter=isCancelled) BOOL cancelled</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the request was sent a cancel message, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/cancelled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/cancel</TokenIdentifier>
+			<Abstract type="html">Cancels the underlying URL connection.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/RKRequest/cancel</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)cancel</Declaration>
+			
+			
+			<Anchor>//api/name/cancel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setReachabilityObserver:</TokenIdentifier>
+			<Abstract type="html">The reachability observer to consult for network status. Used for performing
+offline cache loads.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKReachabilityObserver *reachabilityObserver</Declaration>
+			
+			
+			<Anchor>//api/name/reachabilityObserver</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/reachabilityObserver</TokenIdentifier>
+			<Abstract type="html">The reachability observer to consult for network status. Used for performing
+offline cache loads.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKReachabilityObserver *reachabilityObserver</Declaration>
+			
+			
+			<Anchor>//api/name/reachabilityObserver</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/reset</TokenIdentifier>
+			<Abstract type="html">Resets the state of an RKRequest so that it can be re-sent.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)reset</Declaration>
+			
+			
+			<Anchor>//api/name/reset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/didFailLoadWithError:</TokenIdentifier>
+			<Abstract type="html">Callback performed to notify the request that the underlying NSURLConnection
+has failed with an error.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)didFailLoadWithError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">An NSError object containing the RKRestKitError that triggered
+the callback.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didFailLoadWithError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/didFinishLoad:</TokenIdentifier>
+			<Abstract type="html">Callback performed to notify the request that the underlying NSURLConnection
+has completed with a response.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)didFinishLoad:(RKResponse *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">An RKResponse object with the result of the request.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didFinishLoad:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setTimeoutInterval:</TokenIdentifier>
+			<Abstract type="html">The timeout interval within which the request should be cancelled if no data
+has been received.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval timeoutInterval</Declaration>
+			
+			
+			<Anchor>//api/name/timeoutInterval</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/timeoutInterval</TokenIdentifier>
+			<Abstract type="html">The timeout interval within which the request should be cancelled if no data
+has been received.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval timeoutInterval</Declaration>
+			
+			
+			<Anchor>//api/name/timeoutInterval</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/createTimeoutTimer</TokenIdentifier>
+			<Abstract type="html">Creates a timeoutTimer to trigger the timeout method</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)createTimeoutTimer</Declaration>
+			
+			
+			<Anchor>//api/name/createTimeoutTimer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/timeout</TokenIdentifier>
+			<Abstract type="html">Cancels request due to connection timeout exceeded.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)timeout</Declaration>
+			
+			
+			<Anchor>//api/name/timeout</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/invalidateTimeoutTimer</TokenIdentifier>
+			<Abstract type="html">Invalidates the timeout timer.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)invalidateTimeoutTimer</Declaration>
+			
+			
+			<Anchor>//api/name/invalidateTimeoutTimer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/isGET</TokenIdentifier>
+			<Abstract type="html">Returns YES when this is a GET request</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isGET</Declaration>
+			
+			
+			<Anchor>//api/name/isGET</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/isPOST</TokenIdentifier>
+			<Abstract type="html">Returns YES when this is a POST request</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isPOST</Declaration>
+			
+			
+			<Anchor>//api/name/isPOST</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/isPUT</TokenIdentifier>
+			<Abstract type="html">Returns YES when this is a PUT request</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isPUT</Declaration>
+			
+			
+			<Anchor>//api/name/isPUT</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/isDELETE</TokenIdentifier>
+			<Abstract type="html">Returns YES when this is a DELETE request</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isDELETE</Declaration>
+			
+			
+			<Anchor>//api/name/isDELETE</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/isHEAD</TokenIdentifier>
+			<Abstract type="html">Returns YES when this is a HEAD request</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isHEAD</Declaration>
+			
+			
+			<Anchor>//api/name/isHEAD</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setLoading:</TokenIdentifier>
+			<Abstract type="html">Returns YES when this request is in-progress</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly, getter=isLoading) BOOL loading</Declaration>
+			
+			
+			<Anchor>//api/name/loading</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/loading</TokenIdentifier>
+			<Abstract type="html">Returns YES when this request is in-progress</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly, getter=isLoading) BOOL loading</Declaration>
+			
+			
+			<Anchor>//api/name/loading</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/setLoaded:</TokenIdentifier>
+			<Abstract type="html">Returns YES when this request has been completed</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly, getter=isLoaded) BOOL loaded</Declaration>
+			
+			
+			<Anchor>//api/name/loaded</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequest/loaded</TokenIdentifier>
+			<Abstract type="html">Returns YES when this request has been completed</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly, getter=isLoaded) BOOL loaded</Declaration>
+			
+			
+			<Anchor>//api/name/loaded</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/isUnsent</TokenIdentifier>
+			<Abstract type="html">Returns YES when this request has not yet been sent</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isUnsent</Declaration>
+			
+			
+			<Anchor>//api/name/isUnsent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/wasSentToResourcePath:</TokenIdentifier>
+			<Abstract type="html">Returns YES when the request was sent to the specified resource path</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)wasSentToResourcePath:(NSString *)resourcePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>resourcePath</Name>
+					<Abstract type="html">A string of the resource path that we want to check against</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/wasSentToResourcePath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/wasSentToResourcePath:method:</TokenIdentifier>
+			<Abstract type="html">Returns YES when the receiver was sent to the specified resource path with a given request method.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)wasSentToResourcePath:(NSString *)resourcePath method:(RKRequestMethod)method</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>resourcePath</Name>
+					<Abstract type="html">A string of the resource path that we want to check against</Abstract>
+				</Parameter><Parameter>
+					<Name>method</Name>
+					<Abstract type="html">The HTTP method to confirm the request was sent with.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/wasSentToResourcePath:method:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequest/finalizeLoad:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKRequest_Internals.h</DeclaredIn>			
+			
+			<Declaration>- (void)finalizeLoad:(BOOL)successful</Declaration>
+			
+			
+			<Anchor>//api/name/finalizeLoad:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

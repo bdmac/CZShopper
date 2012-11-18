@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RKAbstractTableControllerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RKAbstractTableControllerDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>
+			
+			<NodeRef refid="77"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKAbstractTableControllerDelegate/tableController:willLoadTableWithObjectLoader:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)tableController:(RKAbstractTableController *)tableController willLoadTableWithObjectLoader:(RKObjectLoader *)objectLoader</Declaration>
+			
+			
+			<Anchor>//api/name/tableController:willLoadTableWithObjectLoader:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKAbstractTableControllerDelegate/tableController:didLoadTableWithObjectLoader:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)tableController:(RKAbstractTableController *)tableController didLoadTableWithObjectLoader:(RKObjectLoader *)objectLoader</Declaration>
+			
+			
+			<Anchor>//api/name/tableController:didLoadTableWithObjectLoader:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKAbstractTableControllerDelegate/tableControllerDidStartLoad:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)tableControllerDidStartLoad:(RKAbstractTableController *)tableController</Declaration>
+			
+			
+			<Anchor>//api/name/tableControllerDidStartLoad:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKAbstractTableControllerDelegate/tableControllerDidFinishLoad:</TokenIdentifier>
+			<Abstract type="html">Sent when the table view has transitioned out of the loading state regardless of outcome</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)tableControllerDidFinishLoad:(RKAbstractTableController *)tableController</Declaration>
+			
+			
+			<Anchor>//api/name/tableControllerDidFinishLoad:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKAbstractTableControllerDelegate/tableController:didFailLoadWithError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)tableController:(RKAbstractTableController *)tableController didFailLoadWithError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/tableController:didFailLoadWithError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKAbstractTableControllerDelegate/tableControllerDidCancelLoad:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)tableControllerDidCancelLoad:(RKAbstractTableController *)tableController</Declaration>
+			
+			
+			<Anchor>//api/name/tableControllerDidCancelLoad:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKAbstractTableControllerDelegate/tableControllerDidFinalizeLoad:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate when the controller is really and truly finished loading/updating, whether from the network or from Core Data,
+or from static data, ... this happens in didFinishLoading</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)tableControllerDidFinalizeLoad:(RKAbstractTableController *)tableController</Declaration>
+			
+			
+			<Anchor>//api/name/tableControllerDidFinalizeLoad:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKAbstractTableControllerDelegate/tableControllerDidBecomeEmpty:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate when the content of the table view has become empty</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)tableControllerDidBecomeEmpty:(RKAbstractTableController *)tableController</Declaration>
+			
+			
+			<Anchor>//api/name/tableControllerDidBecomeEmpty:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKAbstractTableControllerDelegate/tableControllerDidBecomeOnline:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate when the table controller has transitioned from offline to online</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)tableControllerDidBecomeOnline:(RKAbstractTableController *)tableController</Declaration>
+			
+			
+			<Anchor>//api/name/tableControllerDidBecomeOnline:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKAbstractTableControllerDelegate/tableControllerDidBecomeOffline:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate when the table controller has transitioned from online to offline</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)tableControllerDidBecomeOffline:(RKAbstractTableController *)tableController</Declaration>
+			
+			
+			<Anchor>//api/name/tableControllerDidBecomeOffline:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKAbstractTableControllerDelegate/tableController:didInsertObject:atIndexPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)tableController:(RKAbstractTableController *)tableController didInsertObject:(id)object atIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/tableController:didInsertObject:atIndexPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKAbstractTableControllerDelegate/tableController:didUpdateObject:atIndexPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)tableController:(RKAbstractTableController *)tableController didUpdateObject:(id)object atIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/tableController:didUpdateObject:atIndexPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKAbstractTableControllerDelegate/tableController:didDeleteObject:atIndexPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)tableController:(RKAbstractTableController *)tableController didDeleteObject:(id)object atIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/tableController:didDeleteObject:atIndexPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKAbstractTableControllerDelegate/tableController:willBeginEditing:atIndexPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)tableController:(RKAbstractTableController *)tableController willBeginEditing:(id)object atIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/tableController:willBeginEditing:atIndexPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKAbstractTableControllerDelegate/tableController:didEndEditing:atIndexPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)tableController:(RKAbstractTableController *)tableController didEndEditing:(id)object atIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/tableController:didEndEditing:atIndexPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKAbstractTableControllerDelegate/tableController:willAddSwipeView:toCell:forObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)tableController:(RKAbstractTableController *)tableController willAddSwipeView:(UIView *)swipeView toCell:(UITableViewCell *)cell forObject:(id)object</Declaration>
+			
+			
+			<Anchor>//api/name/tableController:willAddSwipeView:toCell:forObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKAbstractTableControllerDelegate/tableController:willRemoveSwipeView:fromCell:forObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)tableController:(RKAbstractTableController *)tableController willRemoveSwipeView:(UIView *)swipeView fromCell:(UITableViewCell *)cell forObject:(id)object</Declaration>
+			
+			
+			<Anchor>//api/name/tableController:willRemoveSwipeView:fromCell:forObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKAbstractTableControllerDelegate/tableController:willDisplayCell:forObject:atIndexPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)tableController:(RKAbstractTableController *)tableController willDisplayCell:(UITableViewCell *)cell forObject:(id)object atIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/tableController:willDisplayCell:forObject:atIndexPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKAbstractTableControllerDelegate/tableController:didSelectCell:forObject:atIndexPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)tableController:(RKAbstractTableController *)tableController didSelectCell:(UITableViewCell *)cell forObject:(id)object atIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/tableController:didSelectCell:forObject:atIndexPath:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

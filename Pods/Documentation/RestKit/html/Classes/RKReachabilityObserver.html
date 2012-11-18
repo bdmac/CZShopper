@@ -1,0 +1,1652 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>RKReachabilityObserver Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">RestKit 0.10.3 </a></h1>
+				<a id="developerHome" href="../index.html">Blake Watters</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">RKReachabilityObserver Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/host">&nbsp;&nbsp;&nbsp;&nbsp;host</option>
+	
+	<option value="//api/name/monitoringLocalWiFi">&nbsp;&nbsp;&nbsp;&nbsp;monitoringLocalWiFi</option>
+	
+	<option value="//api/name/networkStatus">&nbsp;&nbsp;&nbsp;&nbsp;networkStatus</option>
+	
+	<option value="//api/name/reachabilityDetermined">&nbsp;&nbsp;&nbsp;&nbsp;reachabilityDetermined</option>
+	
+	<option value="//api/name/reachabilityFlags">&nbsp;&nbsp;&nbsp;&nbsp;reachabilityFlags</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/reachabilityObserverForAddress:">&nbsp;&nbsp;&nbsp;&nbsp;+ reachabilityObserverForAddress:</option>
+	
+	<option value="//api/name/reachabilityObserverForHost:">&nbsp;&nbsp;&nbsp;&nbsp;+ reachabilityObserverForHost:</option>
+	
+	<option value="//api/name/reachabilityObserverForInternet">&nbsp;&nbsp;&nbsp;&nbsp;+ reachabilityObserverForInternet</option>
+	
+	<option value="//api/name/reachabilityObserverForInternetAddress:">&nbsp;&nbsp;&nbsp;&nbsp;+ reachabilityObserverForInternetAddress:</option>
+	
+	<option value="//api/name/reachabilityObserverForLocalWifi">&nbsp;&nbsp;&nbsp;&nbsp;+ reachabilityObserverForLocalWifi</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/getFlags">&nbsp;&nbsp;&nbsp;&nbsp;- getFlags</option>
+	
+	<option value="//api/name/initWithAddress:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithAddress:</option>
+	
+	<option value="//api/name/initWithHost:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithHost:</option>
+	
+	<option value="//api/name/isConnectionOnDemand">&nbsp;&nbsp;&nbsp;&nbsp;- isConnectionOnDemand</option>
+	
+	<option value="//api/name/isConnectionRequired">&nbsp;&nbsp;&nbsp;&nbsp;- isConnectionRequired</option>
+	
+	<option value="//api/name/isInterventionRequired">&nbsp;&nbsp;&nbsp;&nbsp;- isInterventionRequired</option>
+	
+	<option value="//api/name/isNetworkReachable">&nbsp;&nbsp;&nbsp;&nbsp;- isNetworkReachable</option>
+	
+	<option value="//api/name/isReachableViaWWAN">&nbsp;&nbsp;&nbsp;&nbsp;- isReachableViaWWAN</option>
+	
+	<option value="//api/name/isReachableViaWiFi">&nbsp;&nbsp;&nbsp;&nbsp;- isReachableViaWiFi</option>
+	
+	<option value="//api/name/reachabilityFlagsDescription">&nbsp;&nbsp;&nbsp;&nbsp;- reachabilityFlagsDescription</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating a Reachability Observer">Creating a Reachability Observer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Determining the Host">Determining the Host</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Reachability States">Managing Reachability States</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Reachability Introspection">Reachability Introspection</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/host">host</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/monitoringLocalWiFi">monitoringLocalWiFi</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/networkStatus">networkStatus</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reachabilityDetermined">reachabilityDetermined</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reachabilityFlags">reachabilityFlags</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reachabilityObserverForAddress:">reachabilityObserverForAddress:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reachabilityObserverForHost:">reachabilityObserverForHost:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reachabilityObserverForInternet">reachabilityObserverForInternet</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reachabilityObserverForInternetAddress:">reachabilityObserverForInternetAddress:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reachabilityObserverForLocalWifi">reachabilityObserverForLocalWifi</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getFlags">getFlags</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithAddress:">initWithAddress:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithHost:">initWithHost:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isConnectionOnDemand">isConnectionOnDemand</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isConnectionRequired">isConnectionRequired</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isInterventionRequired">isInterventionRequired</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isNetworkReachable">isNetworkReachable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isReachableViaWWAN">isReachableViaWWAN</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isReachableViaWiFi">isReachableViaWiFi</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reachabilityFlagsDescription">reachabilityFlagsDescription</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="RKReachabilityObserver Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">RKReachabilityObserver Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">RKReachabilityObserver.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Provides a notification based interface for monitoring changes
+to network status.</p>
+
+<p>When initialized, creates an SCReachabilityReg and schedules it for callback
+notifications on the main dispatch queue. As notifications are intercepted from
+SystemConfiguration, the observer will update its state and emit
+<a href="RKReachabilityDidChangeNotification"><code>RKReachabilityDidChangeNotifications</code></a>
+to inform listeners about state changes.</p>
+
+<p>Portions of this software are derived from the Apple Reachability
+code sample: <a href="http://developer.apple.com/library/ios/">http://developer.apple.com/library/ios/</a>#samplecode/Reachability/Listings/Classes_Reachability_m.html</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating a Reachability Observer" name="task_Creating a Reachability Observer"></a>
+						<h3 class="subsubtitle task-title">Creating a Reachability Observer</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reachabilityObserverForHost:">+&nbsp;reachabilityObserverForHost:</a></code>
+		<span class="tooltip"><p>Creates and returns a RKReachabilityObserver instance observing reachability
+changes to the hostname or IP address referenced in a given string. The
+observer will monitor the ability to reach the specified remote <a href="#//api/name/host">host</a> and emit
+notifications when its reachability status changes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reachabilityObserverForInternet">+&nbsp;reachabilityObserverForInternet</a></code>
+		<span class="tooltip"><p>Creates and returns a reachabilityObserverForInternet instance observing the
+reachability to the Internet in general.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reachabilityObserverForLocalWifi">+&nbsp;reachabilityObserverForLocalWifi</a></code>
+		<span class="tooltip"><p>Creates and returns a <a href="#//api/name/reachabilityObserverForInternet">reachabilityObserverForInternet</a> instance observing the
+reachability to the Internet via the local WiFi interface. Internet access
+available via the WWAN (3G, Edge, etc) will not be considered reachable.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reachabilityObserverForAddress:">+&nbsp;reachabilityObserverForAddress:</a></code>
+		<span class="tooltip"><p>Creates and returns a RKReachabilityObserver instance observing reachability
+changes to the sockaddr address provided.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reachabilityObserverForInternetAddress:">+&nbsp;reachabilityObserverForInternetAddress:</a></code>
+		<span class="tooltip"><p>Creates and returns a RKReachabilityObserver instance observing reachability
+changes to the IP address provided.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithHost:">&ndash;&nbsp;initWithHost:</a></code>
+		<span class="tooltip"><p>Returns a RKReachabilityObserver instance observing reachability changes to the
+hostname or IP address referenced in a given string. The observer will monitor
+the ability to reach the specified remote <a href="#//api/name/host">host</a> and emit notifications when its
+reachability status changes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithAddress:">&ndash;&nbsp;initWithAddress:</a></code>
+		<span class="tooltip"><p>Returns a RKReachabilityObserver instance observing reachability changes to the
+sockaddr address provided.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Determining the Host" name="task_Determining the Host"></a>
+						<h3 class="subsubtitle task-title">Determining the Host</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/host">&nbsp;&nbsp;host</a></code>
+		<span class="tooltip"><p>The remote hostname or IP address being observed for reachability.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Reachability States" name="task_Managing Reachability States"></a>
+						<h3 class="subsubtitle task-title">Managing Reachability States</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reachabilityDetermined">&nbsp;&nbsp;reachabilityDetermined</a></code>
+		<span class="tooltip"><p>Current state of determining reachability</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/networkStatus">&nbsp;&nbsp;networkStatus</a></code>
+		<span class="tooltip"><p>Current network status as determined by examining the state of the currently
+cached <a href="#//api/name/reachabilityFlags">reachabilityFlags</a></p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/monitoringLocalWiFi">&nbsp;&nbsp;monitoringLocalWiFi</a></code>
+		<span class="tooltip"><p>Current state of the local WiFi interface&rsquo;s reachability</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reachabilityFlags">&nbsp;&nbsp;reachabilityFlags</a></code>
+		<span class="tooltip"><p>The reachability flags as of the last invocation of the reachability callback</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getFlags">&ndash;&nbsp;getFlags</a></code>
+		<span class="tooltip"><p>Acquires the current network reachability flags, answering YES if
+successfully acquired; answering NO otherwise.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Reachability Introspection" name="task_Reachability Introspection"></a>
+						<h3 class="subsubtitle task-title">Reachability Introspection</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isNetworkReachable">&ndash;&nbsp;isNetworkReachable</a></code>
+		<span class="tooltip"><p>Returns YES when the Internet is reachable (via WiFi or WWAN)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isReachableViaWWAN">&ndash;&nbsp;isReachableViaWWAN</a></code>
+		<span class="tooltip"><p>Returns YES when we the network is reachable via WWAN</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isReachableViaWiFi">&ndash;&nbsp;isReachableViaWiFi</a></code>
+		<span class="tooltip"><p>Returns YES when we the network is reachable via WiFi</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isConnectionRequired">&ndash;&nbsp;isConnectionRequired</a></code>
+		<span class="tooltip"><p>Returns YES when WWAN may be available, but not active until a connection has been established.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isConnectionOnDemand">&ndash;&nbsp;isConnectionOnDemand</a></code>
+		<span class="tooltip"><p>Returns YES if a dynamic, on-demand connection is available</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isInterventionRequired">&ndash;&nbsp;isInterventionRequired</a></code>
+		<span class="tooltip"><p>Returns YES if user intervention is required to initiate a connection</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reachabilityFlagsDescription">&ndash;&nbsp;reachabilityFlagsDescription</a></code>
+		<span class="tooltip"><p>Returns a string representation of the currently cached <a href="#//api/name/reachabilityFlags">reachabilityFlags</a> for inspection</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/host" title="host"></a>
+	<h3 class="subsubtitle method-title">host</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The remote hostname or IP address being observed for reachability.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *host</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The remote hostname or IP address being observed for reachability.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKReachabilityObserver.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/monitoringLocalWiFi" title="monitoringLocalWiFi"></a>
+	<h3 class="subsubtitle method-title">monitoringLocalWiFi</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Current state of the local WiFi interface&rsquo;s reachability</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, getter=isMonitoringLocalWiFi) BOOL monitoringLocalWiFi</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the reachability observer is monitoring the local WiFi interface</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Current state of the local WiFi interface&rsquo;s reachability</p>
+
+<p>When the local WiFi interface is being monitored, only three reachability
+states are possible:</p>
+
+<ul>
+<li>RKReachabilityIndeterminate</li>
+<li>RKReachabilityNotReachable</li>
+<li>RKReachabilityReachableViaWiFi</li>
+</ul>
+
+
+<p>If the device has connectivity through a WWAN connection only it will consider
+the network not reachable.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/reachabilityObserverForLocalWifi">+ reachabilityObserverForLocalWifi</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKReachabilityObserver.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/networkStatus" title="networkStatus"></a>
+	<h3 class="subsubtitle method-title">networkStatus</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Current network status as determined by examining the state of the currently
+cached <a href="#//api/name/reachabilityFlags">reachabilityFlags</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) RKReachabilityNetworkStatus networkStatus</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Status of the network as RKReachabilityNetworkStatus</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Current network status as determined by examining the state of the currently
+cached <a href="#//api/name/reachabilityFlags">reachabilityFlags</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKReachabilityObserver.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reachabilityDetermined" title="reachabilityDetermined"></a>
+	<h3 class="subsubtitle method-title">reachabilityDetermined</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Current state of determining reachability</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, getter=isReachabilityDetermined) BOOL reachabilityDetermined</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if reachability has been determined</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Current state of determining reachability</p>
+
+<p>When initialized, RKReachabilityObserver instances are in an indeterminate
+state to indicate that reachability status has not been yet established. After
+the first callback is processed by the observer, the observer will answer YES
+for reachabilityDetermined and <a href="#//api/name/networkStatus">networkStatus</a> will return a determinate
+response.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKReachabilityObserver.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reachabilityFlags" title="reachabilityFlags"></a>
+	<h3 class="subsubtitle method-title">reachabilityFlags</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The reachability flags as of the last invocation of the reachability callback</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) SCNetworkReachabilityFlags reachabilityFlags</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The most recently cached reachability flags reflecting current network
+status.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The reachability flags as of the last invocation of the reachability callback</p>
+
+<p>Each time the reachability callback is invoked with an asynchronous update of
+reachability status the flags are cached and made accessible via the
+reachabilityFlags method.</p>
+
+<p>Flags can also be directly obtained via <a href="#//api/name/getFlags">[RKReachabilityObserver getFlags]</a></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/getFlags">&ndash; getFlags</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKReachabilityObserver.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/reachabilityObserverForAddress:" title="reachabilityObserverForAddress:"></a>
+	<h3 class="subsubtitle method-title">reachabilityObserverForAddress:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a RKReachabilityObserver instance observing reachability
+changes to the sockaddr address provided.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (RKReachabilityObserver *)reachabilityObserverForAddress:(const struct sockaddr *)<em>address</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>address</em></dt>
+			<dd><p>A socket address to determine reachability for.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A reachability observer targeting the given socket address or nil if it
+could not be observed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates and returns a RKReachabilityObserver instance observing reachability
+changes to the sockaddr address provided.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKReachabilityObserver.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reachabilityObserverForHost:" title="reachabilityObserverForHost:"></a>
+	<h3 class="subsubtitle method-title">reachabilityObserverForHost:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a RKReachabilityObserver instance observing reachability
+changes to the hostname or IP address referenced in a given string. The
+observer will monitor the ability to reach the specified remote <a href="#//api/name/host">host</a> and emit
+notifications when its reachability status changes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (RKReachabilityObserver *)reachabilityObserverForHost:(NSString *)<em>hostNameOrIPAddress</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>hostNameOrIPAddress</em></dt>
+			<dd><p>An NSString containing a hostname or IP address to
+be observed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A reachability observer targeting the given hostname/IP address or nil
+if it could not be observed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates and returns a RKReachabilityObserver instance observing reachability
+changes to the hostname or IP address referenced in a given string. The
+observer will monitor the ability to reach the specified remote <a href="#//api/name/host">host</a> and emit
+notifications when its reachability status changes.</p>
+
+<p>The hostNameOrIPAddress will be introspected to determine if it contains an IP
+address encoded into a string or a DNS name. The observer will be configured
+appropriately based on the contents of the string.</p><div class="bug"><p><strong>Bug:</strong> Note that iOS 5 has known issues with hostname based reachability</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKReachabilityObserver.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reachabilityObserverForInternet" title="reachabilityObserverForInternet"></a>
+	<h3 class="subsubtitle method-title">reachabilityObserverForInternet</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a reachabilityObserverForInternet instance observing the
+reachability to the Internet in general.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (RKReachabilityObserver *)reachabilityObserverForInternet</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A reachability observer targeting INADDR_ANY or nil if it could not be
+observed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates and returns a reachabilityObserverForInternet instance observing the
+reachability to the Internet in general.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKReachabilityObserver.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reachabilityObserverForInternetAddress:" title="reachabilityObserverForInternetAddress:"></a>
+	<h3 class="subsubtitle method-title">reachabilityObserverForInternetAddress:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a RKReachabilityObserver instance observing reachability
+changes to the IP address provided.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (RKReachabilityObserver *)reachabilityObserverForInternetAddress:(in_addr_t)<em>internetAddress</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>internetAddress</em></dt>
+			<dd><p>A 32-bit integer representation of an IP address</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A reachability observer targeting the given IP address or nil if it
+could not be observed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates and returns a RKReachabilityObserver instance observing reachability
+changes to the IP address provided.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKReachabilityObserver.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reachabilityObserverForLocalWifi" title="reachabilityObserverForLocalWifi"></a>
+	<h3 class="subsubtitle method-title">reachabilityObserverForLocalWifi</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a <a href="#//api/name/reachabilityObserverForInternet">reachabilityObserverForInternet</a> instance observing the
+reachability to the Internet via the local WiFi interface. Internet access
+available via the WWAN (3G, Edge, etc) will not be considered reachable.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (RKReachabilityObserver *)reachabilityObserverForLocalWifi</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A reachability observer targeting IN_LINKLOCALNETNUM or nil if it could
+not be observed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates and returns a <a href="#//api/name/reachabilityObserverForInternet">reachabilityObserverForInternet</a> instance observing the
+reachability to the Internet via the local WiFi interface. Internet access
+available via the WWAN (3G, Edge, etc) will not be considered reachable.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKReachabilityObserver.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/getFlags" title="getFlags"></a>
+	<h3 class="subsubtitle method-title">getFlags</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquires the current network reachability flags, answering YES if
+successfully acquired; answering NO otherwise.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)getFlags</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquires the current network reachability flags, answering YES if
+successfully acquired; answering NO otherwise.</p>
+
+<p>Beware! The System Configuration framework operates synchronously by
+default. See Technical Q&amp;A QA1693, Synchronous Networking On The Main
+Thread. Asking for flags blocks the current thread and potentially kills your
+iOS application if the reachability enquiry does not respond before the
+watchdog times out.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKReachabilityObserver.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithAddress:" title="initWithAddress:"></a>
+	<h3 class="subsubtitle method-title">initWithAddress:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a RKReachabilityObserver instance observing reachability changes to the
+sockaddr address provided.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithAddress:(const struct sockaddr *)<em>address</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>address</em></dt>
+			<dd><p>A socket address to determine reachability for.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A reachability observer targeting the given socket address or nil if it
+could not be observed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a RKReachabilityObserver instance observing reachability changes to the
+sockaddr address provided.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKReachabilityObserver.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithHost:" title="initWithHost:"></a>
+	<h3 class="subsubtitle method-title">initWithHost:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a RKReachabilityObserver instance observing reachability changes to the
+hostname or IP address referenced in a given string. The observer will monitor
+the ability to reach the specified remote <a href="#//api/name/host">host</a> and emit notifications when its
+reachability status changes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithHost:(NSString *)<em>hostNameOrIPAddress</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>hostNameOrIPAddress</em></dt>
+			<dd><p>An NSString containing a hostname or IP address to
+be observed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A reachability observer targeting the given hostname/IP address or nil
+if it could not be observed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a RKReachabilityObserver instance observing reachability changes to the
+hostname or IP address referenced in a given string. The observer will monitor
+the ability to reach the specified remote <a href="#//api/name/host">host</a> and emit notifications when its
+reachability status changes.</p>
+
+<p>The hostNameOrIPAddress will be introspected to determine if it contains an IP
+address encoded into a string or a DNS name. The observer will be configured
+appropriately based on the contents of the string.</p><div class="bug"><p><strong>Bug:</strong> Note that iOS 5 has known issues with hostname based reachability</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKReachabilityObserver.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isConnectionOnDemand" title="isConnectionOnDemand"></a>
+	<h3 class="subsubtitle method-title">isConnectionOnDemand</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES if a dynamic, on-demand connection is available</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isConnectionOnDemand</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES if a dynamic, on-demand connection is available</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection arguments-section exceptions">
+		<h4 class="method-subtitle exception-title">Exceptions</h4>
+		
+		<dl class="argument-def exception-def">
+			<dt><em>NSInternalInconsistencyException</em></dt>
+			<dd><p>Raises an
+NSInternalInconsistencyException if called before reachability is determined</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKReachabilityObserver.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isConnectionRequired" title="isConnectionRequired"></a>
+	<h3 class="subsubtitle method-title">isConnectionRequired</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES when WWAN may be available, but not active until a connection has been established.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isConnectionRequired</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES when WWAN may be available, but not active until a connection has been established.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection arguments-section exceptions">
+		<h4 class="method-subtitle exception-title">Exceptions</h4>
+		
+		<dl class="argument-def exception-def">
+			<dt><em>NSInternalInconsistencyException</em></dt>
+			<dd><p>Raises an
+NSInternalInconsistencyException if called before reachability is determined</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKReachabilityObserver.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isInterventionRequired" title="isInterventionRequired"></a>
+	<h3 class="subsubtitle method-title">isInterventionRequired</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES if user intervention is required to initiate a connection</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isInterventionRequired</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES if user intervention is required to initiate a connection</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection arguments-section exceptions">
+		<h4 class="method-subtitle exception-title">Exceptions</h4>
+		
+		<dl class="argument-def exception-def">
+			<dt><em>NSInternalInconsistencyException</em></dt>
+			<dd><p>Raises an
+NSInternalInconsistencyException if called before reachability is determined</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKReachabilityObserver.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isNetworkReachable" title="isNetworkReachable"></a>
+	<h3 class="subsubtitle method-title">isNetworkReachable</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES when the Internet is reachable (via WiFi or WWAN)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isNetworkReachable</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES when the Internet is reachable (via WiFi or WWAN)</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection arguments-section exceptions">
+		<h4 class="method-subtitle exception-title">Exceptions</h4>
+		
+		<dl class="argument-def exception-def">
+			<dt><em>NSInternalInconsistencyException</em></dt>
+			<dd><p>Raises an
+NSInternalInconsistencyException if called before reachability is determined</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKReachabilityObserver.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isReachableViaWWAN" title="isReachableViaWWAN"></a>
+	<h3 class="subsubtitle method-title">isReachableViaWWAN</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES when we the network is reachable via WWAN</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isReachableViaWWAN</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES when we the network is reachable via WWAN</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection arguments-section exceptions">
+		<h4 class="method-subtitle exception-title">Exceptions</h4>
+		
+		<dl class="argument-def exception-def">
+			<dt><em>NSInternalInconsistencyException</em></dt>
+			<dd><p>Raises an
+NSInternalInconsistencyException if called before reachability is determined</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKReachabilityObserver.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isReachableViaWiFi" title="isReachableViaWiFi"></a>
+	<h3 class="subsubtitle method-title">isReachableViaWiFi</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES when we the network is reachable via WiFi</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isReachableViaWiFi</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES when we the network is reachable via WiFi</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection arguments-section exceptions">
+		<h4 class="method-subtitle exception-title">Exceptions</h4>
+		
+		<dl class="argument-def exception-def">
+			<dt><em>NSInternalInconsistencyException</em></dt>
+			<dd><p>Raises an
+NSInternalInconsistencyException if called before reachability is determined</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKReachabilityObserver.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reachabilityFlagsDescription" title="reachabilityFlagsDescription"></a>
+	<h3 class="subsubtitle method-title">reachabilityFlagsDescription</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a string representation of the currently cached <a href="#//api/name/reachabilityFlags">reachabilityFlags</a> for inspection</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)reachabilityFlagsDescription</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A string containing single character representations of the bits in an
+SCNetworkReachabilityFlags</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a string representation of the currently cached <a href="#//api/name/reachabilityFlags">reachabilityFlags</a> for inspection</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKReachabilityObserver.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Blake Watters. All rights reserved. (Last updated: 2012-11-16)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

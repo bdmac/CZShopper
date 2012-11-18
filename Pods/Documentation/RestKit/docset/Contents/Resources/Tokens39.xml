@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKOrderedDictionary.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKOrderedDictionary</TokenIdentifier>
+			<Abstract type="html">The RKOrderedDictionary class declares the programmatic interface to objects that manage mutable
+associations of keys and values wherein the keys have a specific order. It adds ordered key modification
+operations to the basic operations it inherits from NSMutableDictionary.</Abstract>
+			<DeclaredIn>RKOrderedDictionary.h</DeclaredIn>
+			
+			<NodeRef refid="39"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKOrderedDictionary/insertObject:forKey:atIndex:</TokenIdentifier>
+			<Abstract type="html">Inserts an object into the dictionary for a given key at a specific index.</Abstract>
+			<DeclaredIn>RKOrderedDictionary.h</DeclaredIn>			
+			
+			<Declaration>- (void)insertObject:(id)anObject forKey:(id)aKey atIndex:(NSUInteger)anIndex</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>anObject</Name>
+					<Abstract type="html">The object to add the dictionary.</Abstract>
+				</Parameter><Parameter>
+					<Name>aKey</Name>
+					<Abstract type="html">The key to store the value under.</Abstract>
+				</Parameter><Parameter>
+					<Name>anIndex</Name>
+					<Abstract type="html">The index in the dictionary at which to insert aKey.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/insertObject:forKey:atIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKOrderedDictionary/keyAtIndex:</TokenIdentifier>
+			<Abstract type="html">Returns the key within the dictionary at a given index.</Abstract>
+			<DeclaredIn>RKOrderedDictionary.h</DeclaredIn>			
+			
+			<Declaration>- (id)keyAtIndex:(NSUInteger)anIndex</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>anIndex</Name>
+					<Abstract type="html">An index within the bounds of the array keys.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The key that appears at the given index.</Abstract></ReturnValue>
+			<Anchor>//api/name/keyAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKOrderedDictionary/reverseKeyEnumerator</TokenIdentifier>
+			<Abstract type="html">Returns an enumerator object that lets you access each key in the dictionary,
+in reverse order.</Abstract>
+			<DeclaredIn>RKOrderedDictionary.h</DeclaredIn>			
+			
+			<Declaration>- (NSEnumerator *)reverseKeyEnumerator</Declaration>
+			
+			<ReturnValue><Abstract type="html">An enumerator object that lets you access each key in the dictionary
+in reverse order.</Abstract></ReturnValue>
+			<Anchor>//api/name/reverseKeyEnumerator</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

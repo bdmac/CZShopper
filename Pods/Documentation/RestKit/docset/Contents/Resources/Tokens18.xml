@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKMappingOperationQueue.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKMappingOperationQueue</TokenIdentifier>
+			<Abstract type="html">Provides a simple interface for deferring portion of an larger object mapping
+operation until the entire aggregate operation has completed. This is used by Core
+Data to connect all object relationships once the entire object graph has been mapped,
+rather than as each object is encountered.</Abstract>
+			<DeclaredIn>RKMappingOperationQueue.h</DeclaredIn>
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKMappingOperationQueue/addOperation:</TokenIdentifier>
+			<Abstract type="html">Adds an NSOperation to the queue for later execution</Abstract>
+			<DeclaredIn>RKMappingOperationQueue.h</DeclaredIn>			
+			
+			<Declaration>- (void)addOperation:(NSOperation *)op</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>op</Name>
+					<Abstract type="html">The operation to enqueue</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addOperation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKMappingOperationQueue/addOperationWithBlock:</TokenIdentifier>
+			<Abstract type="html">Adds an NSBlockOperation to the queue configured to executed the block passed</Abstract>
+			<DeclaredIn>RKMappingOperationQueue.h</DeclaredIn>			
+			
+			<Declaration>- (void)addOperationWithBlock:(void ( ^ ) ( void ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">A block to wrap into an operation for later execution</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addOperationWithBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKMappingOperationQueue/operations</TokenIdentifier>
+			<Abstract type="html">Returns the collection of operations in the queue</Abstract>
+			<DeclaredIn>RKMappingOperationQueue.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)operations</Declaration>
+			
+			<ReturnValue><Abstract type="html">A new aray containing the NSOperation objects in the order in which they were added to the queue</Abstract></ReturnValue>
+			<Anchor>//api/name/operations</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKMappingOperationQueue/operationCount</TokenIdentifier>
+			<Abstract type="html">Returns the number of operations in the queue</Abstract>
+			<DeclaredIn>RKMappingOperationQueue.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)operationCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">The number of operations in the queue.</Abstract></ReturnValue>
+			<Anchor>//api/name/operationCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKMappingOperationQueue/waitUntilAllOperationsAreFinished</TokenIdentifier>
+			<Abstract type="html">Starts the execution of all operations in the queue in the order in which they were added to the queue. The
+current threads execution will be blocked until all enqueued operations have returned.</Abstract>
+			<DeclaredIn>RKMappingOperationQueue.h</DeclaredIn>			
+			
+			<Declaration>- (void)waitUntilAllOperationsAreFinished</Declaration>
+			
+			
+			<Anchor>//api/name/waitUntilAllOperationsAreFinished</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

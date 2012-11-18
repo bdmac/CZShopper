@@ -1,0 +1,422 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>RestKit 0.10.3 Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">RestKit 0.10.3 </a></h1>
+				<a id="developerHome" href="index.html">Blake Watters</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">RestKit 0.10.3 Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">RestKit 0.10.3 Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h1>Introduction</h1>
+
+<p>RestKit is a Cocoa framework for interacting with RESTful web services in Objective C on iOS and Mac OS X. It provides a set of primitives for interacting with web services wrapping GET, POST, PUT and DELETE HTTP verbs behind a clean, simple interface. RestKit also provides a system for modeling remote resources by mapping them from JSON (or XML) payloads back into local domain objects. Object mapping functions with normal NSObject derived classes with properties. There is also an object mapping implementation included that provides a Core Data backed store for persisting objects loaded from the web.</p>
+
+<p>RestKit was first publicly introduced in April of 2010.</p>
+
+<p>To get started with installation, skip down the document below the Design &amp; Dependencies section.</p>
+
+<h2>Design</h2>
+
+<p>RestKit is composed of three main components: <strong>Network</strong>, <strong>Object Mapping</strong>, and <strong>Core Data</strong>. Each layer provides a higher level of abstraction around the problem of accessing web services and representing the data returned as an object. The primary goal of RestKit is to allow the application programmer to think more in terms of their application&rsquo;s data model and less about the details of fetching, parsing, and representing resources. Functionally, each piece provides&hellip;</p>
+
+<ol>
+<li><strong>Network</strong> &ndash; The network layer provides a request/response abstraction on top of NSURLConnection. The main interface for the end developer is the <em><a href="Classes/RKClient.html">RKClient</a></em>, which provides an interface for sending GET, POST, PUT, and DELETE requests asynchronously. This wraps the construction and dispatch of <em><a href="Classes/RKRequest.html">RKRequest</a></em> and <em><a href="Classes/RKResponse.html">RKResponse</a></em> objects, that provide a nice interface for working with HTTP requests. Sending parameters with your request is as easy as providing an NSDictionary of key/value pairs. File uploading support from NSData and files is supported through the use of an <em><a href="Classes/RKParams.html">RKParams</a></em> object, which serializes into a multipart form representation suitable for submission to a remote web server for processing. SSL &amp; HTTP AUTH is fully supported for requests. <em><a href="Classes/RKResponse.html">RKResponse</a></em> objects provide access to the string of JSON parsed versions of the response body in one line of code. There are also a number of helpful method for inspecting the request and response such as isXHTML, isJSON, isRedirect, isOK, etc.</li>
+<li><strong>Object Mapping</strong> &ndash; The object mapping layer provides a simple API for turning remote JSON/XML responses into local domain objects declaratively. Rather than working directly with <em><a href="Classes/RKClient.html">RKClient</a></em>, the developer works with <em><a href="Classes/RKObjectManager.html">RKObjectManager</a></em>. <em><a href="Classes/RKObjectManager.html">RKObjectManager</a></em> provides support for loading a remote resource path (see below for discussion) and calling back a delegate with object representations of the data loaded. Remote payloads are parsed to an NSDictionary representation and are then mapped to local objects using Key-Value Coding. Any KVC compliant class can be targeted for object mapping. RestKit also provides support for serializing local objects back into a wire format for submission back to your remote backend system. Local domain objects can be serialized to JSON or URL Form Encoded string representations for transport. To simplify the generation of URL&rsquo;s that identify remote resources, RestKit ships with an object routing implementation that can
+generate an appropriate URL based on the object and HTTP verb being utilized. Object mapping is a deep topic and is explored thoroughly in the <a href="https://github.com/RestKit/RestKit/blob/master/Docs/Object%20Mapping.md">Object Mapping Design Document</a>.</li>
+<li><strong>Core Data</strong> &ndash; The Core Data layer provides additional support on top of the object mapper for mapping from remote resources to persist local objects. This is useful for providing offline support, holding on to transient data, and speeding up user interfaces by avoiding expensive trips to the web server. The Core Data support requires that you initialize an instance of <em>RKManagedObjectStore</em> and assign it to the <em><a href="Classes/RKObjectManager.html">RKObjectManager</a></em>. RestKit includes a library of extensions to NSManagedObject that provide an Active Record pattern on top of the Core Data primitives. See the Examples/ subdirectory for examples of how to get this running. The Core Data support also provides <em>RKManagedObjectSeeder</em>, a tool for creating a local &ldquo;seed database&rdquo; to bootstrap an object model from local JSON files. This allows you to ship an app to the store that already has data pre-loaded and then synchronize with the cloud to keep your clients up to date.</li>
+</ol>
+
+
+<h3>Base URL and Resource Paths</h3>
+
+<p>RestKit utilizes the concepts of the Base URL and resource paths throughout the library. Basically the base URL is a prefix URL that all requests will be sent to. This prevents you from spreading server name details across the code base and repeatedly constructing URL fragments. The <em><a href="Classes/RKClient.html">RKClient</a></em> and <em><a href="Classes/RKObjectManager.html">RKObjectManager</a></em> are both initialized with a base URL initially. All other operations dispatched through these objects work of a resource path, which is basically just a URL path fragment that is appended to the base URL before constructing the request. This allows you to switch between development, staging, and production servers very easily and reduces redundancy.</p>
+
+<p>Note that you can send <em><a href="Classes/RKRequest.html">RKRequest</a></em> objects to arbitrary URL&rsquo;s by constructing them yourself.</p>
+
+<h2>Parsers</h2>
+
+<p>RestKit provides a pluggable parser interface configurable by MIME Type. The standard RestKit distribution includes two parsers:</p>
+
+<ol>
+<li><strong>RKJSONParserJSONKit</strong> &ndash; A very fast JSON parser leveraging <a href="http://github.com/johnezang/JSONKit">JSONKit</a></li>
+<li><strong>RKXMLParserLibXML</strong> &ndash; A custom LibXML2 based parser. Only provides parsing, not serialization.</li>
+</ol>
+
+
+<p>The JSONKit headers can be imported for direct use:</p>
+
+<p>```objc</p>
+
+<pre><code>#import &lt;RestKit/JSONKit.h&gt;
+</code></pre>
+
+<p>```</p>
+
+<p>Additional parsers can be added to your RestKit application by linking the parsers into your application and configuring it to handle the appropriate
+MIME Type:</p>
+
+<p>```objc</p>
+
+<pre><code>[[RKParserRegistry sharedRegistry] setParserClass:[SomeOtherParser class] forMIMEType:@"application/json"]];
+</code></pre>
+
+<p>```</p>
+
+<p>The RestKit project also provides optional additional parsers that can be installed separately from the main library:</p>
+
+<ol>
+<li><a href="[https://github.com/RestKit/RKJSONParserSBJSON"><strong>RKJSONParserSBJSON</strong></a>](https://github.com/RestKit/RKJSONParserSBJSON)) &ndash; A JSON parser built on top of SBJSON</li>
+<li><a href="[https://github.com/RestKit/RKJSONParserYAJL"><strong>RKJSONParserYAJL</strong></a>](https://github.com/RestKit/RKJSONParserYAJL)) &ndash; A JSON parser built on top of YAJL)</li>
+<li><a href="[https://github.com/RestKit/RKJSONParserNXJSON"><strong>RKJSONParserNXJSON</strong></a>](https://github.com/RestKit/RKJSONParserNXJSON)) &ndash; A JSON parser built on top of the Nextive JSON parser</li>
+</ol>
+
+
+<h2>Documentation &amp; Example Code</h2>
+
+<p>Documentation and example code is being added as quickly as possible. Please check the Docs/ and Examples/ subdirectories to see what&rsquo;s available. The <a href="http://groups.google.com/group/restkit">RestKit Google Group</a> is an invaluable resource for getting help working with the library.</p>
+
+<p>RestKit has API documentation available on the web. You can access the documentation in several ways:</p>
+
+<ol>
+<li>Online in your web browser. Visit <a href="http://restkit.org/api/">http://restkit.org/api/</a></li>
+<li>Directly within Xcode. Visit your Xcode Preferences and view the Documentation tab. Click + and add the RestKit feed: feed://restkit.org/api/org.restkit.RestKit.atom</li>
+<li>Generate the documentation directly from the project source code. Run <code>rake docs</code> to generate and <code>rake docs:install</code> to install into Xcode</li>
+</ol>
+
+
+<h1>Installation</h1>
+
+<h2>Quick Start (aka TL;DR)</h2>
+
+<p>RestKit assumes that you are using a modern Xcode project building to the DerivedData directory. Confirm your settings
+via the &ldquo;File&rdquo; menu > &ldquo;Project Settings&hellip;&rdquo;. On the &ldquo;Build&rdquo; tab within the sheet that opens, click the &ldquo;Advanced&hellip;&rdquo;
+button and confirm that your &ldquo;Build Location&rdquo; is the &ldquo;Derived Data Location&rdquo;.</p>
+
+<ol>
+<li>Add Git submodule to your project: <code>git submodule add git://github.com/RestKit/RestKit.git RestKit</code></li>
+<li>Add cross-project reference by dragging <strong>RestKit.xcodeproj</strong> to your project</li>
+<li>Open build settings editor for your project</li>
+<li>Add the following <strong>Header Search Paths</strong> (including the quotes): <code>"$(BUILT_PRODUCTS_DIR)/../../Headers"</code></li>
+<li>Add <strong>Other Linker Flags</strong> for <code>-ObjC -all_load</code></li>
+<li>Open target settings editor for the target you want to link RestKit into</li>
+<li>Add direct dependency on the <strong>RestKit</strong> aggregate target</li>
+<li>Link against required frameworks:
+
+<ol>
+<li><strong>CFNetwork.framework</strong> on iOS</li>
+<li><strong>CoreData.framework</strong></li>
+<li><strong>Security.framework</strong></li>
+<li><strong>MobileCoreServices.framework</strong> on iOS or <strong>CoreServices.framework</strong> on OS X</li>
+<li><strong>SystemConfiguration.framework</strong></li>
+<li><strong>libxml2.dylib</strong></li>
+<li><strong>QuartzCore.framework</strong> on iOS</li>
+</ol>
+</li>
+<li>Link against RestKit:
+
+<ol>
+<li><strong>libRestKit.a</strong> on iOS</li>
+<li><strong>RestKit.framework</strong> on OS X</li>
+</ol>
+</li>
+<li>Import the RestKit headers via <code>#import &lt;RestKit/RestKit.h&gt;</code></li>
+<li>Build the project to verify installation is successful.</li>
+</ol>
+
+
+<h2>Visual Install Guide</h2>
+
+<p>An step-by-step visual install guide for Xcode 4.x is available on the RestKit Wiki: <a href="https://github.com/RestKit/RestKit/wiki/Installing-RestKit-in-Xcode-4.x">https://github.com/RestKit/RestKit/wiki/Installing-RestKit-in-Xcode-4.x</a></p>
+
+<h2>Community Resources</h2>
+
+<p>A Google Group (high traffic) for development discussions and user support is available at: <a href="http://groups.google.com/group/restkit">http://groups.google.com/group/restkit</a></p>
+
+<p>The preferred venue for discussing bugs and feature requests is on Github Issues. The mailing list support traffic can be overwhelming
+for our small development team. Please file all bug reports and feature requests at: <a href="https://github.com/RestKit/RestKit/issues">https://github.com/RestKit/RestKit/issues</a></p>
+
+<p>For users interested in low traffic updates about the library, an announcements list is also available:
+<a href="http://groups.google.com/group/restkit-announce">http://groups.google.com/group/restkit-announce</a></p>
+
+<p>Follow RestKit on Twitter:<a href="http://twitter.com/restkit">http://twitter.com/restkit</a></p>
+
+<h2>Contributing</h2>
+
+<p>Forks, patches and other feedback are always welcome.</p>
+
+<h2>Credits</h2>
+
+<p>RestKit is brought to you by <a href="http://twitter.com/blakewatters">Blake Watters</a> and the RestKit team.</p>
+
+<p>Support is provided by the following organizations:</p>
+
+<ul>
+<li><a href="http://www.gateguruapp.com/">GateGuru</a></li>
+<li><a href="http://www.twotoasters.com/">Two Toasters</a></li>
+</ul>
+
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/RKAbstractTableController.html">RKAbstractTableController</a></li>
+							
+							<li><a href="Classes/RKAbstractTableControllerTestDelegate.html">RKAbstractTableControllerTestDelegate</a></li>
+							
+							<li><a href="Classes/RKBenchmark.html">RKBenchmark</a></li>
+							
+							<li><a href="Classes/RKCache.html">RKCache</a></li>
+							
+							<li><a href="Classes/RKClient.html">RKClient</a></li>
+							
+							<li><a href="Classes/RKControlTableItem.html">RKControlTableItem</a></li>
+							
+							<li><a href="Classes/RKControlTableViewCell.html">RKControlTableViewCell</a></li>
+							
+							<li><a href="Classes/RKDirectory.html">RKDirectory</a></li>
+							
+							<li><a href="Classes/RKDotNetDateFormatter.html">RKDotNetDateFormatter</a></li>
+							
+							<li><a href="Classes/RKDynamicObjectMapping.html">RKDynamicObjectMapping</a></li>
+							
+							<li><a href="Classes/RKDynamicObjectMappingMatcher.html">RKDynamicObjectMappingMatcher</a></li>
+							
+							<li><a href="Classes/RKErrorMessage.html">RKErrorMessage</a></li>
+							
+							<li><a href="Classes/RKFetchedResultsTableController.html">RKFetchedResultsTableController</a></li>
+							
+							<li><a href="Classes/RKFetchedResultsTableControllerTestDelegate.html">RKFetchedResultsTableControllerTestDelegate</a></li>
+							
+							<li><a href="Classes/RKForm.html">RKForm</a></li>
+							
+							<li><a href="Classes/RKFormSection.html">RKFormSection</a></li>
+							
+							<li><a href="Classes/RKISO8601DateFormatter.html">RKISO8601DateFormatter</a></li>
+							
+							<li><a href="Classes/RKMappingOperationQueue.html">RKMappingOperationQueue</a></li>
+							
+							<li><a href="Classes/RKMappingTest.html">RKMappingTest</a></li>
+							
+							<li><a href="Classes/RKMappingTestExpectation.html">RKMappingTestExpectation</a></li>
+							
+							<li><a href="Classes/RKMutableBlockDictionary.html">RKMutableBlockDictionary</a></li>
+							
+							<li><a href="Classes/RKOAuthClient.html">RKOAuthClient</a></li>
+							
+							<li><a href="Classes/RKObjectAttributeMapping.html">RKObjectAttributeMapping</a></li>
+							
+							<li><a href="Classes/RKObjectDynamicMapping.html">RKObjectDynamicMapping</a></li>
+							
+							<li><a href="Classes/RKObjectLoader.html">RKObjectLoader</a></li>
+							
+							<li><a href="Classes/RKObjectManager.html">RKObjectManager</a></li>
+							
+							<li><a href="Classes/RKObjectMapper.html">RKObjectMapper</a></li>
+							
+							<li><a href="Classes/RKObjectMapping.html">RKObjectMapping</a></li>
+							
+							<li><a href="Classes/RKObjectMappingDefinition.html">RKObjectMappingDefinition</a></li>
+							
+							<li><a href="Classes/RKObjectMappingOperation.html">RKObjectMappingOperation</a></li>
+							
+							<li><a href="Classes/RKObjectMappingProvider.html">RKObjectMappingProvider</a></li>
+							
+							<li><a href="Classes/RKObjectMappingProviderContextEntry.html">RKObjectMappingProviderContextEntry</a></li>
+							
+							<li><a href="Classes/RKObjectMappingResult.html">RKObjectMappingResult</a></li>
+							
+							<li><a href="Classes/RKObjectPaginator.html">RKObjectPaginator</a></li>
+							
+							<li><a href="Classes/RKObjectPropertyInspector.html">RKObjectPropertyInspector</a></li>
+							
+							<li><a href="Classes/RKObjectRelationshipMapping.html">RKObjectRelationshipMapping</a></li>
+							
+							<li><a href="Classes/RKObjectRouter.html">RKObjectRouter</a></li>
+							
+							<li><a href="Classes/RKObjectSerializer.html">RKObjectSerializer</a></li>
+							
+							<li><a href="Classes/RKOrderedDictionary.html">RKOrderedDictionary</a></li>
+							
+							<li><a href="Classes/RKParams.html">RKParams</a></li>
+							
+							<li><a href="Classes/RKParamsAttachment.html">RKParamsAttachment</a></li>
+							
+							<li><a href="Classes/RKParserRegistry.html">RKParserRegistry</a></li>
+							
+							<li><a href="Classes/RKPathMatcher.html">RKPathMatcher</a></li>
+							
+							<li><a href="Classes/RKPortCheck.html">RKPortCheck</a></li>
+							
+							<li><a href="Classes/RKReachabilityObserver.html">RKReachabilityObserver</a></li>
+							
+							<li><a href="Classes/RKRefreshGestureRecognizer.html">RKRefreshGestureRecognizer</a></li>
+							
+							<li><a href="Classes/RKRefreshTriggerView.html">RKRefreshTriggerView</a></li>
+							
+							<li><a href="Classes/RKRequest.html">RKRequest</a></li>
+							
+							<li><a href="Classes/RKRequestCache.html">RKRequestCache</a></li>
+							
+							<li><a href="Classes/RKRequestQueue.html">RKRequestQueue</a></li>
+							
+							<li><a href="Classes/RKRequestSerialization.html">RKRequestSerialization</a></li>
+							
+							<li><a href="Classes/RKResponse.html">RKResponse</a></li>
+							
+							<li><a href="Classes/RKSearchEngine.html">RKSearchEngine</a></li>
+							
+							<li><a href="Classes/RKTableController.html">RKTableController</a></li>
+							
+							<li><a href="Classes/RKTableControllerTestDelegate.html">RKTableControllerTestDelegate</a></li>
+							
+							<li><a href="Classes/RKTableItem.html">RKTableItem</a></li>
+							
+							<li><a href="Classes/RKTableSection.html">RKTableSection</a></li>
+							
+							<li><a href="Classes/RKTableViewCellMapping.html">RKTableViewCellMapping</a></li>
+							
+							<li><a href="Classes/RKTableViewCellMappings.html">RKTableViewCellMappings</a></li>
+							
+							<li><a href="Classes/RKTestFactory.html">RKTestFactory</a></li>
+							
+							<li><a href="Classes/RKTestFixture.html">RKTestFixture</a></li>
+							
+							<li><a href="Classes/RKTestNotificationObserver.html">RKTestNotificationObserver</a></li>
+							
+							<li><a href="Classes/RKTestResponseLoader.html">RKTestResponseLoader</a></li>
+							
+							<li><a href="Classes/RKURL.html">RKURL</a></li>
+							
+							<li><a href="Classes/RK_FIX_CATEGORY_BUG.html">RK_FIX_CATEGORY_BUG</a></li>
+							
+						</ul>
+					</div>
+					
+					
+						
+					<div class="index-column">
+						
+						<h2 class="index-title">Protocol References</h2>
+						<ul>
+							
+							<li><a href="Protocols/RKAbstractTableControllerDelegate.html">RKAbstractTableControllerDelegate</a></li>
+							
+							<li><a href="Protocols/RKConfigurationDelegate.html">RKConfigurationDelegate</a></li>
+							
+							<li><a href="Protocols/RKDynamicObjectMappingDelegate.html">RKDynamicObjectMappingDelegate</a></li>
+							
+							<li><a href="Protocols/RKFetchedResultsTableControllerDelegate.html">RKFetchedResultsTableControllerDelegate</a></li>
+							
+							<li><a href="Protocols/RKOAuthClientDelegate.html">RKOAuthClientDelegate</a></li>
+							
+							<li><a href="Protocols/RKObjectLoaderDelegate.html">RKObjectLoaderDelegate</a></li>
+							
+							<li><a href="Protocols/RKObjectMapperDelegate.html">RKObjectMapperDelegate</a></li>
+							
+							<li><a href="Protocols/RKObjectMappingOperationDelegate.html">RKObjectMappingOperationDelegate</a></li>
+							
+							<li><a href="Protocols/RKObjectPaginatorDelegate.html">RKObjectPaginatorDelegate</a></li>
+							
+							<li><a href="Protocols/RKParser.html">RKParser</a></li>
+							
+							<li><a href="Protocols/RKRefreshTriggerProtocol.html">RKRefreshTriggerProtocol</a></li>
+							
+							<li><a href="Protocols/RKRequestDelegate.html">RKRequestDelegate</a></li>
+							
+							<li><a href="Protocols/RKRequestQueueDelegate.html">RKRequestQueueDelegate</a></li>
+							
+							<li><a href="Protocols/RKRequestSerializable.html">RKRequestSerializable</a></li>
+							
+							<li><a href="Protocols/RKRouter.html">RKRouter</a></li>
+							
+							<li><a href="Protocols/RKSearchable.html">RKSearchable</a></li>
+							
+							<li><a href="Protocols/RKTableControllerDelegate.html">RKTableControllerDelegate</a></li>
+							
+							<li><a href="Protocols/RKTestFactoryCallbacks.html">RKTestFactoryCallbacks</a></li>
+							
+						</ul>
+						
+						
+						<h2 class="index-title">Category References</h2>
+						<ul>
+							
+							<li><a href="Categories/NSArray+RKAdditions.html">NSArray(RKAdditions)</a></li>
+							
+							<li><a href="Categories/NSBundle+RKAdditions.html">NSBundle(RKAdditions)</a></li>
+							
+							<li><a href="Categories/NSData+RKAdditions.html">NSData(RKAdditions)</a></li>
+							
+							<li><a href="Categories/NSDictionary+RKAdditions.html">NSDictionary(RKAdditions)</a></li>
+							
+							<li><a href="Categories/NSDictionary+RKRequestSerialization.html">NSDictionary(RKRequestSerialization)</a></li>
+							
+							<li><a href="Categories/NSObject+URLEncoding.html">NSObject(URLEncoding)</a></li>
+							
+							<li><a href="Categories/NSString+RKAdditions.html">NSString(RKAdditions)</a></li>
+							
+							<li><a href="Categories/NSURL+RKAdditions.html">NSURL(RKAdditions)</a></li>
+							
+							<li><a href="Categories/UIApplication+RKNetworkActivity.html">UIApplication(RKNetworkActivity)</a></li>
+							
+							<li><a href="Categories/UIImage+RKAdditions.html">UIImage(RKAdditions)</a></li>
+							
+							<li><a href="Categories/UIView+FindFirstResponder.html">UIView(FindFirstResponder)</a></li>
+							
+						</ul>
+						
+					</div>
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Blake Watters. All rights reserved. (Last updated: 2012-11-16)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

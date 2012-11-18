@@ -18,14 +18,21 @@
 		01E146271656E503003D3CE8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01E146261656E503003D3CE8 /* Default-568h@2x.png */; };
 		01E1462A1656E503003D3CE8 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01E146281656E503003D3CE8 /* MainStoryboard_iPhone.storyboard */; };
 		01E1462D1656E503003D3CE8 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01E1462B1656E503003D3CE8 /* MainStoryboard_iPad.storyboard */; };
-		01E146301656E503003D3CE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E1462F1656E503003D3CE8 /* ViewController.m */; };
+		01E14665165713A4003D3CE8 /* ListItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E14664165713A4003D3CE8 /* ListItemsTableViewController.m */; };
+		01E1466916571557003D3CE8 /* ShoppingListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E1466816571557003D3CE8 /* ShoppingListItem.m */; };
+		01E14673165802CC003D3CE8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E14672165802CC003D3CE8 /* CoreData.framework */; };
+		01E1467616580328003D3CE8 /* CZShopperMappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E1467516580328003D3CE8 /* CZShopperMappingProvider.m */; };
+		01E1467D16580706003D3CE8 /* CZShopper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01E1467B16580706003D3CE8 /* CZShopper.xcdatamodeld */; };
+		01E1468016582850003D3CE8 /* ItemDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E1467F16582850003D3CE8 /* ItemDetailsViewController.m */; };
+		01E1469A1658793D003D3CE8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E146991658793D003D3CE8 /* QuartzCore.framework */; };
+		25E1B124499D4B7195E3C0E1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC3279E072EC4943B2FD12FE /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01E1460C1656E503003D3CE8 /* CZShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CZShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		01E146101656E503003D3CE8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		01E146121656E503003D3CE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		01E146141656E503003D3CE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		01E146101656E503003D3CE8 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		01E146121656E503003D3CE8 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		01E146141656E503003D3CE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		01E146181656E503003D3CE8 /* CZShopper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CZShopper-Info.plist"; sourceTree = "<group>"; };
 		01E1461A1656E503003D3CE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		01E1461C1656E503003D3CE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -37,8 +44,19 @@
 		01E146261656E503003D3CE8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		01E146291656E503003D3CE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		01E1462C1656E503003D3CE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		01E1462E1656E503003D3CE8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		01E1462F1656E503003D3CE8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		01E14663165713A4003D3CE8 /* ListItemsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListItemsTableViewController.h; sourceTree = "<group>"; };
+		01E14664165713A4003D3CE8 /* ListItemsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListItemsTableViewController.m; sourceTree = "<group>"; };
+		01E1466716571557003D3CE8 /* ShoppingListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingListItem.h; sourceTree = "<group>"; };
+		01E1466816571557003D3CE8 /* ShoppingListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingListItem.m; sourceTree = "<group>"; };
+		01E14672165802CC003D3CE8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		01E1467416580328003D3CE8 /* CZShopperMappingProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZShopperMappingProvider.h; sourceTree = "<group>"; };
+		01E1467516580328003D3CE8 /* CZShopperMappingProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZShopperMappingProvider.m; sourceTree = "<group>"; };
+		01E1467C16580706003D3CE8 /* CZShopper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CZShopper.xcdatamodel; sourceTree = "<group>"; };
+		01E1467E16582850003D3CE8 /* ItemDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailsViewController.h; sourceTree = "<group>"; };
+		01E1467F16582850003D3CE8 /* ItemDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailsViewController.m; sourceTree = "<group>"; };
+		01E146991658793D003D3CE8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3ACEBF5CDFA34499972CB272 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		BC3279E072EC4943B2FD12FE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,9 +64,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E1469A1658793D003D3CE8 /* QuartzCore.framework in Frameworks */,
+				01E14673165802CC003D3CE8 /* CoreData.framework in Frameworks */,
 				01E146111656E503003D3CE8 /* UIKit.framework in Frameworks */,
 				01E146131656E503003D3CE8 /* Foundation.framework in Frameworks */,
 				01E146151656E503003D3CE8 /* CoreGraphics.framework in Frameworks */,
+				25E1B124499D4B7195E3C0E1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 				01E146161656E503003D3CE8 /* CZShopper */,
 				01E1460F1656E503003D3CE8 /* Frameworks */,
 				01E1460D1656E503003D3CE8 /* Products */,
+				3ACEBF5CDFA34499972CB272 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,9 +97,12 @@
 		01E1460F1656E503003D3CE8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				01E146991658793D003D3CE8 /* QuartzCore.framework */,
+				01E14672165802CC003D3CE8 /* CoreData.framework */,
 				01E146101656E503003D3CE8 /* UIKit.framework */,
 				01E146121656E503003D3CE8 /* Foundation.framework */,
 				01E146141656E503003D3CE8 /* CoreGraphics.framework */,
+				BC3279E072EC4943B2FD12FE /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,12 +110,14 @@
 		01E146161656E503003D3CE8 /* CZShopper */ = {
 			isa = PBXGroup;
 			children = (
+				01E1467A165806DA003D3CE8 /* Resources */,
+				01E14679165806BF003D3CE8 /* Views */,
+				01E14678165806BA003D3CE8 /* Models */,
+				01E14677165806B3003D3CE8 /* Controllers */,
 				01E1461F1656E503003D3CE8 /* AppDelegate.h */,
 				01E146201656E503003D3CE8 /* AppDelegate.m */,
-				01E146281656E503003D3CE8 /* MainStoryboard_iPhone.storyboard */,
-				01E1462B1656E503003D3CE8 /* MainStoryboard_iPad.storyboard */,
-				01E1462E1656E503003D3CE8 /* ViewController.h */,
-				01E1462F1656E503003D3CE8 /* ViewController.m */,
+				01E1467416580328003D3CE8 /* CZShopperMappingProvider.h */,
+				01E1467516580328003D3CE8 /* CZShopperMappingProvider.m */,
 				01E146171656E503003D3CE8 /* Supporting Files */,
 			);
 			path = CZShopper;
@@ -110,6 +137,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		01E14677165806B3003D3CE8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				01E14663165713A4003D3CE8 /* ListItemsTableViewController.h */,
+				01E14664165713A4003D3CE8 /* ListItemsTableViewController.m */,
+				01E1467E16582850003D3CE8 /* ItemDetailsViewController.h */,
+				01E1467F16582850003D3CE8 /* ItemDetailsViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		01E14678165806BA003D3CE8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				01E1466716571557003D3CE8 /* ShoppingListItem.h */,
+				01E1466816571557003D3CE8 /* ShoppingListItem.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		01E14679165806BF003D3CE8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		01E1467A165806DA003D3CE8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				01E146281656E503003D3CE8 /* MainStoryboard_iPhone.storyboard */,
+				01E1462B1656E503003D3CE8 /* MainStoryboard_iPad.storyboard */,
+				01E1467B16580706003D3CE8 /* CZShopper.xcdatamodeld */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,6 +184,7 @@
 				01E146081656E503003D3CE8 /* Sources */,
 				01E146091656E503003D3CE8 /* Frameworks */,
 				01E1460A1656E503003D3CE8 /* Resources */,
+				84754731A4884EC1AB3A8063 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -172,6 +237,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		84754731A4884EC1AB3A8063 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		01E146081656E503003D3CE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -179,7 +261,11 @@
 			files = (
 				01E1461D1656E503003D3CE8 /* main.m in Sources */,
 				01E146211656E503003D3CE8 /* AppDelegate.m in Sources */,
-				01E146301656E503003D3CE8 /* ViewController.m in Sources */,
+				01E14665165713A4003D3CE8 /* ListItemsTableViewController.m in Sources */,
+				01E1466916571557003D3CE8 /* ShoppingListItem.m in Sources */,
+				01E1467616580328003D3CE8 /* CZShopperMappingProvider.m in Sources */,
+				01E1467D16580706003D3CE8 /* CZShopper.xcdatamodeld in Sources */,
+				01E1468016582850003D3CE8 /* ItemDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,10 +353,12 @@
 		};
 		01E146341656E503003D3CE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ACEBF5CDFA34499972CB272 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CZShopper/CZShopper-Prefix.pch";
 				INFOPLIST_FILE = "CZShopper/CZShopper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -278,10 +366,12 @@
 		};
 		01E146351656E503003D3CE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ACEBF5CDFA34499972CB272 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CZShopper/CZShopper-Prefix.pch";
 				INFOPLIST_FILE = "CZShopper/CZShopper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -306,8 +396,22 @@
 				01E146351656E503003D3CE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		01E1467B16580706003D3CE8 /* CZShopper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				01E1467C16580706003D3CE8 /* CZShopper.xcdatamodel */,
+			);
+			currentVersion = 01E1467C16580706003D3CE8 /* CZShopper.xcdatamodel */;
+			path = CZShopper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 01E146031656E503003D3CE8 /* Project object */;
 }

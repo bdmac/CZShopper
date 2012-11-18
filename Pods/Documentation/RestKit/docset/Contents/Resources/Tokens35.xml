@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKObjectPropertyInspector.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKObjectPropertyInspector</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectPropertyInspector.h</DeclaredIn>
+			
+			<NodeRef refid="35"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKObjectPropertyInspector/sharedInspector</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectPropertyInspector.h</DeclaredIn>			
+			
+			<Declaration>+ (RKObjectPropertyInspector *)sharedInspector</Declaration>
+			
+			
+			<Anchor>//api/name/sharedInspector</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPropertyInspector/propertyNamesAndTypesForClass:</TokenIdentifier>
+			<Abstract type="html">Returns a dictionary of names and types for the properties of a given class</Abstract>
+			<DeclaredIn>RKObjectPropertyInspector.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)propertyNamesAndTypesForClass:(Class)objectClass</Declaration>
+			
+			
+			<Anchor>//api/name/propertyNamesAndTypesForClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectPropertyInspector/typeForProperty:ofClass:</TokenIdentifier>
+			<Abstract type="html">Returns the Class type of the specified property on the object class</Abstract>
+			<DeclaredIn>RKObjectPropertyInspector.h</DeclaredIn>			
+			
+			<Declaration>- (Class)typeForProperty:(NSString *)propertyName ofClass:(Class)objectClass</Declaration>
+			
+			
+			<Anchor>//api/name/typeForProperty:ofClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKObjectPropertyInspector/propertyTypeFromAttributeString:</TokenIdentifier>
+			<Abstract type="html">Returns the name of a property when provided the name of a property obtained
+via the property_getAttributes reflection API</Abstract>
+			<DeclaredIn>RKObjectPropertyInspector.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)propertyTypeFromAttributeString:(NSString *)attributeString</Declaration>
+			
+			
+			<Anchor>//api/name/propertyTypeFromAttributeString:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

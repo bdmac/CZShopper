@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKTableItem.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKTableItem</TokenIdentifier>
+			<Abstract type="html">A generic class for defining vanilla table items when
+you do not have local domain items for your table rows. This
+is used to implement simple static tables quickly.</Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>
+			
+			<NodeRef refid="56"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableItem/setText:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableItem/text</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableItem/setDetailText:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *detailText</Declaration>
+			
+			
+			<Anchor>//api/name/detailText</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableItem/detailText</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *detailText</Declaration>
+			
+			
+			<Anchor>//api/name/detailText</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableItem/setImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *image</Declaration>
+			
+			
+			<Anchor>//api/name/image</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableItem/image</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *image</Declaration>
+			
+			
+			<Anchor>//api/name/image</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableItem/setURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableItem/URL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableItem/setUserData:</TokenIdentifier>
+			<Abstract type="html">A dictionary reference for storing ad-hoc KVC data useful in building
+table items that require extra information beyond the concrete properties
+available on the table item.</Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKMutableBlockDictionary</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) RKMutableBlockDictionary *userData</Declaration>
+			
+			
+			<Anchor>//api/name/userData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableItem/userData</TokenIdentifier>
+			<Abstract type="html">A dictionary reference for storing ad-hoc KVC data useful in building
+table items that require extra information beyond the concrete properties
+available on the table item.</Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKMutableBlockDictionary</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) RKMutableBlockDictionary *userData</Declaration>
+			
+			
+			<Anchor>//api/name/userData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableItem/setCellMapping:</TokenIdentifier>
+			<Abstract type="html">Informal protocol implementation. Any object that responds to the cellMapping message
+and returns an RKTableViewCellMapping will be mapped into a table view cell according to
+the rules in the mapping.</Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKTableViewCellMapping *cellMapping</Declaration>
+			
+			
+			<Anchor>//api/name/cellMapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableItem/cellMapping</TokenIdentifier>
+			<Abstract type="html">Informal protocol implementation. Any object that responds to the cellMapping message
+and returns an RKTableViewCellMapping will be mapped into a table view cell according to
+the rules in the mapping.</Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKTableViewCellMapping *cellMapping</Declaration>
+			
+			
+			<Anchor>//api/name/cellMapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKTableItem/tableItemsFromStrings:</TokenIdentifier>
+			<Abstract type="html">Return a new array of RKTableItem instances given a nil terminated list of strings.
+Each table item will have the text property set to the string provided.</Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)tableItemsFromStrings:(NSString *)firstString, ...</Declaration>
+			
+			
+			<Anchor>//api/name/tableItemsFromStrings:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKTableItem/tableItem</TokenIdentifier>
+			<Abstract type="html">Returns a new table item</Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+			<Declaration>+ (id)tableItem</Declaration>
+			
+			
+			<Anchor>//api/name/tableItem</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKTableItem/tableItemUsingBlock:</TokenIdentifier>
+			<Abstract type="html">Initialize a new table item and yield it to the block for configuration</Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+			<Declaration>+ (id)tableItemUsingBlock:(void ( ^ ) ( RKTableItem *tableItem ))block</Declaration>
+			
+			
+			<Anchor>//api/name/tableItemUsingBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKTableItem/tableItemWithText:</TokenIdentifier>
+			<Abstract type="html">Initialize a new table item with the specified text</Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+			<Declaration>+ (id)tableItemWithText:(NSString *)text</Declaration>
+			
+			
+			<Anchor>//api/name/tableItemWithText:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKTableItem/tableItemWithText:detailText:</TokenIdentifier>
+			<Abstract type="html">Initialize a new table item with the specified text &amp;amp; details text</Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+			<Declaration>+ (id)tableItemWithText:(NSString *)text detailText:(NSString *)detailText</Declaration>
+			
+			
+			<Anchor>//api/name/tableItemWithText:detailText:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKTableItem/tableItemWithText:detailText:image:</TokenIdentifier>
+			<Abstract type="html">Construct a new auto-released table item with the specified text, detailText and image
+properties.</Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+			<Declaration>+ (id)tableItemWithText:(NSString *)text detailText:(NSString *)detailText image:(UIImage *)image</Declaration>
+			
+			
+			<Anchor>//api/name/tableItemWithText:detailText:image:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKTableItem/tableItemWithText:usingBlock:</TokenIdentifier>
+			<Abstract type="html">Construct a new table item with the specified text and yield it to the block for configuration.
+This is a convenient mechanism for quickly constructing table items that have been subclassed.</Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+			<Declaration>+ (id)tableItemWithText:(NSString *)text usingBlock:(void ( ^ ) ( RKTableItem *tableItem ))block</Declaration>
+			
+			
+			<Anchor>//api/name/tableItemWithText:usingBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKTableItem/tableItemWithText:URL:</TokenIdentifier>
+			<Abstract type="html">Constructs a new table item with the specified text and URL. This is useful if you are working
+with Three20 or another library that provides URL dispatching.</Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+			<Declaration>+ (id)tableItemWithText:(NSString *)text URL:(NSString *)URL</Declaration>
+			
+			
+			<Anchor>//api/name/tableItemWithText:URL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKTableItem/tableItemWithCellMapping:</TokenIdentifier>
+			<Abstract type="html">Construct a new table item with the specified cell mapping</Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+			<Declaration>+ (id)tableItemWithCellMapping:(RKTableViewCellMapping *)cellMapping</Declaration>
+			
+			
+			<Anchor>//api/name/tableItemWithCellMapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKTableItem/tableItemWithCellClass:</TokenIdentifier>
+			<Abstract type="html">Construct a new table item that will map into an instance of the specified
+UITableViewCell subclass. This is helpful if you are constructing a static table
+with a handful of different cells and don&apos;t need to configure a full cell mapping.</Abstract>
+			<DeclaredIn>RKTableItem.h</DeclaredIn>			
+			
+			<Declaration>+ (id)tableItemWithCellClass:(Class)tableViewCellSubclass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableViewCellSubclass</Name>
+					<Abstract type="html">A subclass of UITableViewCell to map this item into</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tableItemWithCellClass:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

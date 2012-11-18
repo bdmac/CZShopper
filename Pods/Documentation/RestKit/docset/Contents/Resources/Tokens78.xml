@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RKConfigurationDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RKConfigurationDelegate</TokenIdentifier>
+			<Abstract type="html">The RKConfigurationDelegate formal protocol defines
+methods enabling the centralization of RKRequest and
+RKObjectLoader configuration. An object conforming to
+the protocol can be used to set headers, authentication
+credentials, etc.</Abstract>
+			<DeclaredIn>RKConfigurationDelegate.h</DeclaredIn>
+			
+			<NodeRef refid="78"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKConfigurationDelegate/configureRequest:</TokenIdentifier>
+			<Abstract type="html">Configure a request before it is utilized</Abstract>
+			<DeclaredIn>RKConfigurationDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)configureRequest:(RKRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A request object being configured for dispatch</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/configureRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKConfigurationDelegate/configureObjectLoader:</TokenIdentifier>
+			<Abstract type="html">Configure an object loader before it is utilized</Abstract>
+			<DeclaredIn>RKConfigurationDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)configureObjectLoader:(RKObjectLoader *)objectLoader</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">An object loader being configured for dispatch</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/configureObjectLoader:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

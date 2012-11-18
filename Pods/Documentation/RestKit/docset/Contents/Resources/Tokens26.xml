@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKObjectManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKObjectManager</TokenIdentifier>
+			<Abstract type="html">The object manager is the primary interface for interacting with RESTful resources via HTTP. It is
+responsible for retrieving remote object representations via HTTP and transforming them into local
+domain objects via the RKObjectMapper. It is also capable of serializing local objects and sending them
+to a remote system for processing. The object manager strives to hide the developer from the details of
+configuring an RKRequest, processing an RKResponse, parsing any data returned by the remote system, and
+running the parsed data through the object mapper.</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>
+			
+			<NodeRef refid="26"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKObjectManager/sharedManager</TokenIdentifier>
+			<Abstract type="html">Return the shared instance of the object manager</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>+ (RKObjectManager *)sharedManager</Declaration>
+			
+			
+			<Anchor>//api/name/sharedManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKObjectManager/setSharedManager:</TokenIdentifier>
+			<Abstract type="html">Set the shared instance of the object manager</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setSharedManager:(RKObjectManager *)manager</Declaration>
+			
+			
+			<Anchor>//api/name/setSharedManager:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKObjectManager/defaultMappingQueue</TokenIdentifier>
+			<Abstract type="html">Returns the global default Grand Central Dispatch queue used for object mapping
+operations executed by RKObjectLoaders.</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>+ (dispatch_queue_t)defaultMappingQueue</Declaration>
+			
+			
+			<Anchor>//api/name/defaultMappingQueue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKObjectManager/setDefaultMappingQueue:</TokenIdentifier>
+			<Abstract type="html">Sets a new global default Grand Central Dispatch queue for use in object mapping
+operations executed by RKObjectLoaders.</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setDefaultMappingQueue:(dispatch_queue_t)defaultMappingQueue</Declaration>
+			
+			
+			<Anchor>//api/name/setDefaultMappingQueue:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKObjectManager/managerWithBaseURLString:</TokenIdentifier>
+			<Abstract type="html">Create and initialize a new object manager. If this is the first instance created
+it will be set as the shared instance</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>+ (id)managerWithBaseURLString:(NSString *)baseURLString</Declaration>
+			
+			
+			<Anchor>//api/name/managerWithBaseURLString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKObjectManager/managerWithBaseURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>+ (id)managerWithBaseURL:(NSURL *)baseURL</Declaration>
+			
+			
+			<Anchor>//api/name/managerWithBaseURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/initWithBaseURL:</TokenIdentifier>
+			<Abstract type="html">Initializes a newly created object manager with a specified baseURL.</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithBaseURL:(RKURL *)baseURL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>baseURL</Name>
+					<Abstract type="html">A baseURL to initialize the underlying client instance with</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The newly initialized RKObjectManager object</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithBaseURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/setClient:</TokenIdentifier>
+			<Abstract type="html">The underlying HTTP client for this manager</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKClient *client</Declaration>
+			
+			
+			<Anchor>//api/name/client</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectManager/client</TokenIdentifier>
+			<Abstract type="html">The underlying HTTP client for this manager</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKClient *client</Declaration>
+			
+			
+			<Anchor>//api/name/client</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/setBaseURL:</TokenIdentifier>
+			<Abstract type="html">The base URL of the underlying RKClient instance. Object loader
+and paginator instances built through the object manager are
+relative to this URL.</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKClient</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readonly) RKURL *baseURL</Declaration>
+			
+			<ReturnValue><Abstract type="html">The baseURL of the client.</Abstract></ReturnValue>
+			<Anchor>//api/name/baseURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectManager/baseURL</TokenIdentifier>
+			<Abstract type="html">The base URL of the underlying RKClient instance. Object loader
+and paginator instances built through the object manager are
+relative to this URL.</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKClient</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readonly) RKURL *baseURL</Declaration>
+			
+			<ReturnValue><Abstract type="html">The baseURL of the client.</Abstract></ReturnValue>
+			<Anchor>//api/name/baseURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/setRequestCache:</TokenIdentifier>
+			<Abstract type="html">The request cache used to store and load responses for requests sent
+through this object manager&apos;s underlying client object</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKRequestCache *requestCache</Declaration>
+			
+			
+			<Anchor>//api/name/requestCache</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectManager/requestCache</TokenIdentifier>
+			<Abstract type="html">The request cache used to store and load responses for requests sent
+through this object manager&apos;s underlying client object</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKRequestCache *requestCache</Declaration>
+			
+			
+			<Anchor>//api/name/requestCache</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/setRequestQueue:</TokenIdentifier>
+			<Abstract type="html">The request queue used to dispatch asynchronous requests sent
+through this object manager&apos;s underlying client object</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKRequestQueue *requestQueue</Declaration>
+			
+			
+			<Anchor>//api/name/requestQueue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectManager/requestQueue</TokenIdentifier>
+			<Abstract type="html">The request queue used to dispatch asynchronous requests sent
+through this object manager&apos;s underlying client object</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKRequestQueue *requestQueue</Declaration>
+			
+			
+			<Anchor>//api/name/requestQueue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/setNetworkStatus:</TokenIdentifier>
+			<Abstract type="html">  Returns the current network status for this object manager as determined
+  by connectivity to the remote backend system</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKObjectManagerNetworkStatus networkStatus</Declaration>
+			
+			
+			<Anchor>//api/name/networkStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectManager/networkStatus</TokenIdentifier>
+			<Abstract type="html">  Returns the current network status for this object manager as determined
+  by connectivity to the remote backend system</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKObjectManagerNetworkStatus networkStatus</Declaration>
+			
+			
+			<Anchor>//api/name/networkStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/setIsOnline:</TokenIdentifier>
+			<Abstract type="html">Returns YES when we are in online mode</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isOnline</Declaration>
+			
+			
+			<Anchor>//api/name/isOnline</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectManager/isOnline</TokenIdentifier>
+			<Abstract type="html">Returns YES when we are in online mode</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isOnline</Declaration>
+			
+			
+			<Anchor>//api/name/isOnline</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/setIsOffline:</TokenIdentifier>
+			<Abstract type="html">Returns YES when we are in offline mode</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isOffline</Declaration>
+			
+			
+			<Anchor>//api/name/isOffline</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectManager/isOffline</TokenIdentifier>
+			<Abstract type="html">Returns YES when we are in offline mode</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isOffline</Declaration>
+			
+			
+			<Anchor>//api/name/isOffline</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/setMappingProvider:</TokenIdentifier>
+			<Abstract type="html">The Mapping Provider responsible for returning mappings for various keyPaths.</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKObjectMappingProvider *mappingProvider</Declaration>
+			
+			
+			<Anchor>//api/name/mappingProvider</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectManager/mappingProvider</TokenIdentifier>
+			<Abstract type="html">The Mapping Provider responsible for returning mappings for various keyPaths.</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKObjectMappingProvider *mappingProvider</Declaration>
+			
+			
+			<Anchor>//api/name/mappingProvider</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/setRouter:</TokenIdentifier>
+			<Abstract type="html">Router object responsible for generating resource paths for
+HTTP requests</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKObjectRouter *router</Declaration>
+			
+			
+			<Anchor>//api/name/router</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectManager/router</TokenIdentifier>
+			<Abstract type="html">Router object responsible for generating resource paths for
+HTTP requests</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKObjectRouter *router</Declaration>
+			
+			
+			<Anchor>//api/name/router</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/setObjectStore:</TokenIdentifier>
+			<Abstract type="html">A Core Data backed object store for persisting objects that have been fetched from the Web</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKManagedObjectStore *objectStore</Declaration>
+			
+			
+			<Anchor>//api/name/objectStore</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectManager/objectStore</TokenIdentifier>
+			<Abstract type="html">A Core Data backed object store for persisting objects that have been fetched from the Web</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKManagedObjectStore *objectStore</Declaration>
+			
+			
+			<Anchor>//api/name/objectStore</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/setMappingQueue:</TokenIdentifier>
+			<Abstract type="html">The Grand Dispatch Queue to use when performing expensive object mapping operations
+within RKObjectLoader instances created through this object manager</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) dispatch_queue_t mappingQueue</Declaration>
+			
+			
+			<Anchor>//api/name/mappingQueue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectManager/mappingQueue</TokenIdentifier>
+			<Abstract type="html">The Grand Dispatch Queue to use when performing expensive object mapping operations
+within RKObjectLoader instances created through this object manager</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) dispatch_queue_t mappingQueue</Declaration>
+			
+			
+			<Anchor>//api/name/mappingQueue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/setSerializationMIMEType:</TokenIdentifier>
+			<Abstract type="html">The Default MIME Type to be used in object serialization.</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *serializationMIMEType</Declaration>
+			
+			
+			<Anchor>//api/name/serializationMIMEType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectManager/serializationMIMEType</TokenIdentifier>
+			<Abstract type="html">The Default MIME Type to be used in object serialization.</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *serializationMIMEType</Declaration>
+			
+			
+			<Anchor>//api/name/serializationMIMEType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/setAcceptMIMEType:</TokenIdentifier>
+			<Abstract type="html">The value for the HTTP Accept header to specify the preferred format for retrieved data</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSString *acceptMIMEType</Declaration>
+			
+			
+			<Anchor>//api/name/acceptMIMEType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectManager/acceptMIMEType</TokenIdentifier>
+			<Abstract type="html">The value for the HTTP Accept header to specify the preferred format for retrieved data</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSString *acceptMIMEType</Declaration>
+			
+			
+			<Anchor>//api/name/acceptMIMEType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/objectLoaderClass</TokenIdentifier>
+			<Abstract type="html">Returns the class of object loader instances built through the manager. When Core Data has
+been configured, instances of RKManagedObjectLoader will be emitted by the manager. Otherwise
+RKObjectLoader is used.</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>- (Class)objectLoaderClass</Declaration>
+			
+			<ReturnValue><Abstract type="html">RKObjectLoader OR RKManagedObjectLoader</Abstract></ReturnValue>
+			<Anchor>//api/name/objectLoaderClass</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/loaderWithResourcePath:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an RKObjectLoader or RKManagedObjectLoader instance targeting the specified resourcePath.</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKURL</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RKClient</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)loaderWithResourcePath:(NSString *)resourcePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>resourcePath</Name>
+					<Abstract type="html">A resource to use when building the URL to initialize the object loader instance.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The newly created object loader instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/loaderWithResourcePath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/loaderWithURL:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an RKObjectLoader or RKManagedObjectLoader instance targeting the specified URL.</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKURL</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RKClient</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)loaderWithURL:(NSURL *)URL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>URL</Name>
+					<Abstract type="html">The URL with which to initialize the object loader.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The newly created object loader instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/loaderWithURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/loaderForObject:method:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an RKObjectLoader or RKManagedObjectLoader instance for an object instance.</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectLoader</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectRouter</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)loaderForObject:(id&lt;NSObject&gt;)object method:(RKRequestMethod)method</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object with which to initialize the object loader.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The newly created object loader instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/loaderForObject:method:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/paginatorWithResourcePathPattern:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an RKObjectPaginator instance targeting the specified resource path pattern.</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectMappingProvider</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectPaginator</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (RKObjectPaginator *)paginatorWithResourcePathPattern:(NSString *)resourcePathPattern</Declaration>
+			
+			<ReturnValue><Abstract type="html">The newly created paginator instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/paginatorWithResourcePathPattern:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/loadObjectsAtResourcePath:delegate:</TokenIdentifier>
+			<Abstract type="html">Create and send an asynchronous GET request to load the objects at the resource path and call back the delegate
+with the loaded objects. Remote objects will be mapped to local objects by consulting the keyPath registrations
+set on the mapping provider.</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadObjectsAtResourcePath:(NSString *)resourcePath delegate:(id&lt;RKObjectLoaderDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/loadObjectsAtResourcePath:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/getObject:delegate:</TokenIdentifier>
+			<Abstract type="html">Fetch the data for a mappable object by performing an HTTP GET.</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)getObject:(id&lt;NSObject&gt;)object delegate:(id&lt;RKObjectLoaderDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/getObject:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/postObject:delegate:</TokenIdentifier>
+			<Abstract type="html">Create a remote mappable model by POSTing the attributes to the remote resource and loading the resulting objects from the payload</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)postObject:(id&lt;NSObject&gt;)object delegate:(id&lt;RKObjectLoaderDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/postObject:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/putObject:delegate:</TokenIdentifier>
+			<Abstract type="html">Update a remote mappable model by PUTing the attributes to the remote resource and loading the resulting objects from the payload</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)putObject:(id&lt;NSObject&gt;)object delegate:(id&lt;RKObjectLoaderDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/putObject:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/deleteObject:delegate:</TokenIdentifier>
+			<Abstract type="html">Delete the remote instance of a mappable model by performing an HTTP DELETE on the remote resource</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)deleteObject:(id&lt;NSObject&gt;)object delegate:(id&lt;RKObjectLoaderDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/deleteObject:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/loadObjectsAtResourcePath:usingBlock:</TokenIdentifier>
+			<Abstract type="html">Load the objects at the specified resource path and perform object mapping on the response payload. Prior to sending the object loader, the
+block will be invoked to allow you to configure the object loader as you see fit. This can be used to change the response type, set custom
+parameters, choose an object mapping, etc.</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadObjectsAtResourcePath:(NSString *)resourcePath usingBlock:(RKObjectLoaderBlock)block</Declaration>
+			
+			
+			<Anchor>//api/name/loadObjectsAtResourcePath:usingBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/sendObject:toResourcePath:usingBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendObject:(id&lt;NSObject&gt;)object toResourcePath:(NSString *)resourcePath usingBlock:(RKObjectLoaderBlock)block</Declaration>
+			
+			
+			<Anchor>//api/name/sendObject:toResourcePath:usingBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/getObject:usingBlock:</TokenIdentifier>
+			<Abstract type="html">GET a remote object instance and yield the object loader to the block before sending</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)getObject:(id&lt;NSObject&gt;)object usingBlock:(RKObjectLoaderBlock)block</Declaration>
+			
+			
+			<Anchor>//api/name/getObject:usingBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/postObject:usingBlock:</TokenIdentifier>
+			<Abstract type="html">POST a remote object instance and yield the object loader to the block before sending</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)postObject:(id&lt;NSObject&gt;)object usingBlock:(RKObjectLoaderBlock)block</Declaration>
+			
+			
+			<Anchor>//api/name/postObject:usingBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/putObject:usingBlock:</TokenIdentifier>
+			<Abstract type="html">PUT a remote object instance and yield the object loader to the block before sending</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)putObject:(id&lt;NSObject&gt;)object usingBlock:(RKObjectLoaderBlock)block</Declaration>
+			
+			
+			<Anchor>//api/name/putObject:usingBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/deleteObject:usingBlock:</TokenIdentifier>
+			<Abstract type="html">DELETE a remote object instance and yield the object loader to the block before sending</Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)deleteObject:(id&lt;NSObject&gt;)object usingBlock:(RKObjectLoaderBlock)block</Declaration>
+			
+			
+			<Anchor>//api/name/deleteObject:usingBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKObjectManager/objectManagerWithBaseURLString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>+ (RKObjectManager *)objectManagerWithBaseURLString:(NSString *)baseURLString</Declaration>
+			
+			
+			<Anchor>//api/name/objectManagerWithBaseURLString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKObjectManager/objectManagerWithBaseURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>+ (RKObjectManager *)objectManagerWithBaseURL:(NSURL *)baseURL</Declaration>
+			
+			
+			<Anchor>//api/name/objectManagerWithBaseURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/loadObjectsAtResourcePath:objectMapping:delegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadObjectsAtResourcePath:(NSString *)resourcePath objectMapping:(RKObjectMapping *)objectMapping delegate:(id&lt;RKObjectLoaderDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/loadObjectsAtResourcePath:objectMapping:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/objectLoaderWithResourcePath:delegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>- (RKObjectLoader *)objectLoaderWithResourcePath:(NSString *)resourcePath delegate:(id&lt;RKObjectLoaderDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/objectLoaderWithResourcePath:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/objectLoaderForObject:method:delegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>- (RKObjectLoader *)objectLoaderForObject:(id&lt;NSObject&gt;)object method:(RKRequestMethod)method delegate:(id&lt;RKObjectLoaderDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/objectLoaderForObject:method:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/getObject:mapResponseWith:delegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)getObject:(id&lt;NSObject&gt;)object mapResponseWith:(RKObjectMapping *)objectMapping delegate:(id&lt;RKObjectLoaderDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/getObject:mapResponseWith:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/postObject:mapResponseWith:delegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)postObject:(id&lt;NSObject&gt;)object mapResponseWith:(RKObjectMapping *)objectMapping delegate:(id&lt;RKObjectLoaderDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/postObject:mapResponseWith:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/putObject:mapResponseWith:delegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)putObject:(id&lt;NSObject&gt;)object mapResponseWith:(RKObjectMapping *)objectMapping delegate:(id&lt;RKObjectLoaderDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/putObject:mapResponseWith:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/deleteObject:mapResponseWith:delegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)deleteObject:(id&lt;NSObject&gt;)object mapResponseWith:(RKObjectMapping *)objectMapping delegate:(id&lt;RKObjectLoaderDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/deleteObject:mapResponseWith:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/tableControllerForTableViewController:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a table controller object capable of loading remote object representations
+into a UITableView using the RestKit object mapping engine for a given table view controller.</Abstract>
+			<DeclaredIn>RKObjectManager+RKTableController.h</DeclaredIn>			
+			
+			<Declaration>- (RKTableController *)tableControllerForTableViewController:(UITableViewController *)tableViewController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableViewController</Name>
+					<Abstract type="html">A UITableViewController to instantiate a table controller for</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKTableController instance ready to drive the table view for the provided tableViewController.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableControllerForTableViewController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/tableControllerWithTableView:forViewController:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a table controller object capable of loading remote object representations
+into a UITableView using the RestKit object mapping engine for a given table view and view controller.</Abstract>
+			<DeclaredIn>RKObjectManager+RKTableController.h</DeclaredIn>			
+			
+			<Declaration>- (RKTableController *)tableControllerWithTableView:(UITableView *)tableView forViewController:(UIViewController *)viewController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The UITableView object that table controller with acts as the delegate and data source for.</Abstract>
+				</Parameter><Parameter>
+					<Name>viewController</Name>
+					<Abstract type="html">The UIViewController that owns the specified tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKTableController instance ready to drive the table view for the provided tableViewController.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableControllerWithTableView:forViewController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/fetchedResultsTableControllerForTableViewController:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a fetched results table controller object capable of loading remote object representations
+stored in Core Data into a UITableView using the RestKit object mapping engine for a given table view controller.</Abstract>
+			<DeclaredIn>RKObjectManager+RKTableController.h</DeclaredIn>			
+			
+			<Declaration>- (RKFetchedResultsTableController *)fetchedResultsTableControllerForTableViewController:(UITableViewController *)tableViewController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableViewController</Name>
+					<Abstract type="html">A UITableViewController to instantiate a table controller for</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKFetchedResultsTableController instance ready to drive the table view for the provided tableViewController.</Abstract></ReturnValue>
+			<Anchor>//api/name/fetchedResultsTableControllerForTableViewController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectManager/fetchedResultsTableControllerWithTableView:forViewController:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a table controller object capable of loading remote object representations
+stored in Core Data into a UITableView using the RestKit object mapping engine for a given table view and view controller.</Abstract>
+			<DeclaredIn>RKObjectManager+RKTableController.h</DeclaredIn>			
+			
+			<Declaration>- (RKFetchedResultsTableController *)fetchedResultsTableControllerWithTableView:(UITableView *)tableView forViewController:(UIViewController *)viewController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The UITableView object that table controller with acts as the delegate and data source for.</Abstract>
+				</Parameter><Parameter>
+					<Name>viewController</Name>
+					<Abstract type="html">The UIViewController that owns the specified tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKFetchedResultsTableController instance ready to drive the table view for the provided tableViewController.</Abstract></ReturnValue>
+			<Anchor>//api/name/fetchedResultsTableControllerWithTableView:forViewController:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

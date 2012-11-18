@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKRequestCache.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKRequestCache</TokenIdentifier>
+			<Abstract type="html">Stores and retrieves cache entries for RestKit request objects.</Abstract>
+			<DeclaredIn>RKRequestCache.h</DeclaredIn>
+			
+			<NodeRef refid="49"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestCache/initWithPath:storagePolicy:</TokenIdentifier>
+			<Abstract type="html">Initializes the receiver with a cache at a given path and storage policy.</Abstract>
+			<DeclaredIn>RKRequestCache.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithPath:(NSString *)cachePath storagePolicy:(RKRequestCacheStoragePolicy)storagePolicy</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cachePath</Name>
+					<Abstract type="html">The path to store cached data in.</Abstract>
+				</Parameter><Parameter>
+					<Name>storagePolicy</Name>
+					<Abstract type="html">The storage policy to use for cached data.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized request cache object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithPath:storagePolicy:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestCache/setPath:</TokenIdentifier>
+			<Abstract type="html">Returns the full pathname to the cache.</Abstract>
+			<DeclaredIn>RKRequestCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequestCache/path</TokenIdentifier>
+			<Abstract type="html">Returns the full pathname to the cache.</Abstract>
+			<DeclaredIn>RKRequestCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestCache/pathForRequest:</TokenIdentifier>
+			<Abstract type="html">Returns the cache path for the specified request.</Abstract>
+			<DeclaredIn>RKRequestCache.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)pathForRequest:(RKRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">An RKRequest object to determine the cache path.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A string of the cache path for the specified request.</Abstract></ReturnValue>
+			<Anchor>//api/name/pathForRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestCache/hasResponseForRequest:</TokenIdentifier>
+			<Abstract type="html">Determine if a response exists for a request.</Abstract>
+			<DeclaredIn>RKRequestCache.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasResponseForRequest:(RKRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">An RKRequest object that is looking for cached content.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A boolean value for if a response exists in the cache.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasResponseForRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestCache/storeResponse:forRequest:</TokenIdentifier>
+			<Abstract type="html">Store a request&apos;s response in the cache.</Abstract>
+			<DeclaredIn>RKRequestCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)storeResponse:(RKResponse *)response forRequest:(RKRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">The response to be stored in the cache.</Abstract>
+				</Parameter><Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The request that retrieved the response.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storeResponse:forRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestCache/setCacheDate:forRequest:</TokenIdentifier>
+			<Abstract type="html">Set the cache date for a request.</Abstract>
+			<DeclaredIn>RKRequestCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)setCacheDate:(NSDate *)date forRequest:(RKRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>date</Name>
+					<Abstract type="html">The date the response for a request was cached.</Abstract>
+				</Parameter><Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The request to store the cache date for.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setCacheDate:forRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestCache/headersForRequest:</TokenIdentifier>
+			<Abstract type="html">Returns a dictionary of cached headers for a cached request.</Abstract>
+			<DeclaredIn>RKRequestCache.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)headersForRequest:(RKRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The request to retrieve cached headers for.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An NSDictionary of the cached headers that were stored for the
+specified request.</Abstract></ReturnValue>
+			<Anchor>//api/name/headersForRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestCache/etagForRequest:</TokenIdentifier>
+			<Abstract type="html">Returns an ETag for a request if it is stored in the cached headers.</Abstract>
+			<DeclaredIn>RKRequestCache.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)etagForRequest:(RKRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The request that an ETag is to be determined for.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A string of the ETag value stored for the specified request.</Abstract></ReturnValue>
+			<Anchor>//api/name/etagForRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestCache/cacheDateForRequest:</TokenIdentifier>
+			<Abstract type="html">Returns the date of the cached request.</Abstract>
+			<DeclaredIn>RKRequestCache.h</DeclaredIn>			
+			
+			<Declaration>- (NSDate *)cacheDateForRequest:(RKRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The request that needs a cache date returned.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A date object for the cached request.</Abstract></ReturnValue>
+			<Anchor>//api/name/cacheDateForRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestCache/responseForRequest:</TokenIdentifier>
+			<Abstract type="html">Returns the cached response for a given request.</Abstract>
+			<DeclaredIn>RKRequestCache.h</DeclaredIn>			
+			
+			<Declaration>- (RKResponse *)responseForRequest:(RKRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The request used to find the cached response.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An RKResponse object that was cached for a given request.</Abstract></ReturnValue>
+			<Anchor>//api/name/responseForRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestCache/setStoragePolicy:</TokenIdentifier>
+			<Abstract type="html">The storage policy for the cache.</Abstract>
+			<DeclaredIn>RKRequestCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKRequestCacheStoragePolicy storagePolicy</Declaration>
+			
+			
+			<Anchor>//api/name/storagePolicy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKRequestCache/storagePolicy</TokenIdentifier>
+			<Abstract type="html">The storage policy for the cache.</Abstract>
+			<DeclaredIn>RKRequestCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKRequestCacheStoragePolicy storagePolicy</Declaration>
+			
+			
+			<Anchor>//api/name/storagePolicy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestCache/invalidateRequest:</TokenIdentifier>
+			<Abstract type="html">Invalidate the cache for a given request.</Abstract>
+			<DeclaredIn>RKRequestCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)invalidateRequest:(RKRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The request that needs its cache invalidated.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/invalidateRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestCache/invalidateWithStoragePolicy:</TokenIdentifier>
+			<Abstract type="html">Invalidate any caches that fall under the given storage policy.</Abstract>
+			<DeclaredIn>RKRequestCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)invalidateWithStoragePolicy:(RKRequestCacheStoragePolicy)storagePolicy</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>storagePolicy</Name>
+					<Abstract type="html">The RKRequestCacheStorePolicy used to determine which
+caches need to be invalidated.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/invalidateWithStoragePolicy:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKRequestCache/invalidateAll</TokenIdentifier>
+			<Abstract type="html">Invalidate all caches on disk.</Abstract>
+			<DeclaredIn>RKRequestCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)invalidateAll</Declaration>
+			
+			
+			<Anchor>//api/name/invalidateAll</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKRequestCache/rfc1123DateFormatter</TokenIdentifier>
+			<Abstract type="html">The date formatter used to generate the cache date for the HTTP header.</Abstract>
+			<DeclaredIn>RKRequestCache.h</DeclaredIn>			
+			
+			<Declaration>+ (NSDateFormatter *)rfc1123DateFormatter</Declaration>
+			
+			
+			<Anchor>//api/name/rfc1123DateFormatter</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

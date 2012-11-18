@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RKRequestDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RKRequestDelegate</TokenIdentifier>
+			<Abstract type="html">Lifecycle events for an RKRequest object</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>
+			
+			<NodeRef refid="88"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestDelegate/requestWillPrepareForSend:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate the request is about to be prepared for sending to the remote host.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)requestWillPrepareForSend:(RKRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The RKRequest object that is about to be sent.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestWillPrepareForSend:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestDelegate/request:didReceiveResponse:</TokenIdentifier>
+			<Abstract type="html">Sent when a request has received a response from the remote host.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)request:(RKRequest *)request didReceiveResponse:(RKResponse *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The RKRequest object that received a response.</Abstract>
+				</Parameter><Parameter>
+					<Name>response</Name>
+					<Abstract type="html">The RKResponse object for the HTTP response that was received.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/request:didReceiveResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestDelegate/requestDidStartLoad:</TokenIdentifier>
+			<Abstract type="html">Sent when a request has started loading</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)requestDidStartLoad:(RKRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The RKRequest object that has begun loading.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestDidStartLoad:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestDelegate/request:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:</TokenIdentifier>
+			<Abstract type="html">Sent when a request has uploaded data to the remote site</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)request:(RKRequest *)request didSendBodyData:(NSInteger)bytesWritten totalBytesWritten:(NSInteger)totalBytesWritten totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The RKRequest object that is handling the loading.</Abstract>
+				</Parameter><Parameter>
+					<Name>bytesWritten</Name>
+					<Abstract type="html">An integer of the bytes of the chunk just sent to the
+remote site.</Abstract>
+				</Parameter><Parameter>
+					<Name>totalBytesWritten</Name>
+					<Abstract type="html">An integer of the total bytes that have been sent to
+the remote site.</Abstract>
+				</Parameter><Parameter>
+					<Name>totalBytesExpectedToWrite</Name>
+					<Abstract type="html">An integer of the total bytes that will be
+sent to the remote site.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/request:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestDelegate/request:didReceiveData:totalBytesReceived:totalBytesExpectedToReceive:</TokenIdentifier>
+			<Abstract type="html">Sent when request has received data from remote site</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)request:(RKRequest *)request didReceiveData:(NSInteger)bytesReceived totalBytesReceived:(NSInteger)totalBytesReceived totalBytesExpectedToReceive:(NSInteger)totalBytesExpectedToReceive</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The RKRequest object that is handling the loading.</Abstract>
+				</Parameter><Parameter>
+					<Name>bytesReceived</Name>
+					<Abstract type="html">An integer of the bytes of the chunk just received from
+the remote site.</Abstract>
+				</Parameter><Parameter>
+					<Name>totalBytesReceived</Name>
+					<Abstract type="html">An integer of the total bytes that have been
+received from the remote site.</Abstract>
+				</Parameter><Parameter>
+					<Name>totalBytesExpectedToReceive</Name>
+					<Abstract type="html">An integer of the total bytes that will be
+received from the remote site.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/request:didReceiveData:totalBytesReceived:totalBytesExpectedToReceive:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestDelegate/request:didLoadResponse:</TokenIdentifier>
+			<Abstract type="html">Sent when a request has finished loading</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)request:(RKRequest *)request didLoadResponse:(RKResponse *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The RKRequest object that was handling the loading.</Abstract>
+				</Parameter><Parameter>
+					<Name>response</Name>
+					<Abstract type="html">The RKResponse object containing the result of the request.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/request:didLoadResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestDelegate/request:didFailLoadWithError:</TokenIdentifier>
+			<Abstract type="html">Sent when a request has failed due to an error</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)request:(RKRequest *)request didFailLoadWithError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The RKRequest object that was handling the loading.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">An NSError object containing the RKRestKitError that triggered
+the callback.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/request:didFailLoadWithError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestDelegate/requestDidCancelLoad:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate when a request was cancelled</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)requestDidCancelLoad:(RKRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The RKRequest object that was cancelled.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestDidCancelLoad:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKRequestDelegate/requestDidTimeout:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate when a request has timed out. This is sent when a
+backgrounded request expired before completion.</Abstract>
+			<DeclaredIn>RKRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)requestDidTimeout:(RKRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The RKRequest object that timed out.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestDidTimeout:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

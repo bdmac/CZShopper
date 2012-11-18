@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIApplication+RKNetworkActivity.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIApplication(RKNetworkActivity)</TokenIdentifier>
+			<Abstract type="html">A category on UIApplication to allow for jointly managing the network activity
+indicator.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>
+			
+			<NodeRef refid="74"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIApplication(RKNetworkActivity)/setNetworkActivityCount:</TokenIdentifier>
+			<Abstract type="html">Returns the number of network activity requests.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSInteger networkActivityCount</Declaration>
+			
+			
+			<Anchor>//api/name/networkActivityCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIApplication(RKNetworkActivity)/networkActivityCount</TokenIdentifier>
+			<Abstract type="html">Returns the number of network activity requests.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSInteger networkActivityCount</Declaration>
+			
+			
+			<Anchor>//api/name/networkActivityCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIApplication(RKNetworkActivity)/pushNetworkActivity</TokenIdentifier>
+			<Abstract type="html">Push a network activity request onto the stack.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>- (void)pushNetworkActivity</Declaration>
+			
+			
+			<Anchor>//api/name/pushNetworkActivity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIApplication(RKNetworkActivity)/popNetworkActivity</TokenIdentifier>
+			<Abstract type="html">Pop a network activity request off the stack.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>- (void)popNetworkActivity</Declaration>
+			
+			
+			<Anchor>//api/name/popNetworkActivity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIApplication(RKNetworkActivity)/resetNetworkActivity</TokenIdentifier>
+			<Abstract type="html">Reset the network activity stack.</Abstract>
+			<DeclaredIn>RKRequestQueue.h</DeclaredIn>			
+			
+			<Declaration>- (void)resetNetworkActivity</Declaration>
+			
+			
+			<Anchor>//api/name/resetNetworkActivity</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

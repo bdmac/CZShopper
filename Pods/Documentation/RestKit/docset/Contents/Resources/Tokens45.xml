@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKReachabilityObserver.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKReachabilityObserver</TokenIdentifier>
+			<Abstract type="html">Provides a notification based interface for monitoring changes
+to network status.</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>
+			
+			<NodeRef refid="45"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKReachabilityObserver/reachabilityObserverForHost:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a RKReachabilityObserver instance observing reachability
+changes to the hostname or IP address referenced in a given string. The
+observer will monitor the ability to reach the specified remote host and emit
+notifications when its reachability status changes.</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+			<Declaration>+ (RKReachabilityObserver *)reachabilityObserverForHost:(NSString *)hostNameOrIPAddress</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>hostNameOrIPAddress</Name>
+					<Abstract type="html">An NSString containing a hostname or IP address to
+be observed.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A reachability observer targeting the given hostname/IP address or nil
+if it could not be observed.</Abstract></ReturnValue>
+			<Anchor>//api/name/reachabilityObserverForHost:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKReachabilityObserver/reachabilityObserverForInternet</TokenIdentifier>
+			<Abstract type="html">Creates and returns a reachabilityObserverForInternet instance observing the
+reachability to the Internet in general.</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+			<Declaration>+ (RKReachabilityObserver *)reachabilityObserverForInternet</Declaration>
+			
+			<ReturnValue><Abstract type="html">A reachability observer targeting INADDR_ANY or nil if it could not be
+observed.</Abstract></ReturnValue>
+			<Anchor>//api/name/reachabilityObserverForInternet</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKReachabilityObserver/reachabilityObserverForLocalWifi</TokenIdentifier>
+			<Abstract type="html">Creates and returns a reachabilityObserverForInternet instance observing the
+reachability to the Internet via the local WiFi interface. Internet access
+available via the WWAN (3G, Edge, etc) will not be considered reachable.</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+			<Declaration>+ (RKReachabilityObserver *)reachabilityObserverForLocalWifi</Declaration>
+			
+			<ReturnValue><Abstract type="html">A reachability observer targeting IN_LINKLOCALNETNUM or nil if it could
+not be observed.</Abstract></ReturnValue>
+			<Anchor>//api/name/reachabilityObserverForLocalWifi</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKReachabilityObserver/reachabilityObserverForAddress:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a RKReachabilityObserver instance observing reachability
+changes to the sockaddr address provided.</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+			<Declaration>+ (RKReachabilityObserver *)reachabilityObserverForAddress:(const struct sockaddr *)address</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>address</Name>
+					<Abstract type="html">A socket address to determine reachability for.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A reachability observer targeting the given socket address or nil if it
+could not be observed.</Abstract></ReturnValue>
+			<Anchor>//api/name/reachabilityObserverForAddress:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKReachabilityObserver/reachabilityObserverForInternetAddress:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a RKReachabilityObserver instance observing reachability
+changes to the IP address provided.</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+			<Declaration>+ (RKReachabilityObserver *)reachabilityObserverForInternetAddress:(in_addr_t)internetAddress</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>internetAddress</Name>
+					<Abstract type="html">A 32-bit integer representation of an IP address</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A reachability observer targeting the given IP address or nil if it
+could not be observed.</Abstract></ReturnValue>
+			<Anchor>//api/name/reachabilityObserverForInternetAddress:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKReachabilityObserver/initWithHost:</TokenIdentifier>
+			<Abstract type="html">Returns a RKReachabilityObserver instance observing reachability changes to the
+hostname or IP address referenced in a given string. The observer will monitor
+the ability to reach the specified remote host and emit notifications when its
+reachability status changes.</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithHost:(NSString *)hostNameOrIPAddress</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>hostNameOrIPAddress</Name>
+					<Abstract type="html">An NSString containing a hostname or IP address to
+be observed.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A reachability observer targeting the given hostname/IP address or nil
+if it could not be observed.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithHost:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKReachabilityObserver/initWithAddress:</TokenIdentifier>
+			<Abstract type="html">Returns a RKReachabilityObserver instance observing reachability changes to the
+sockaddr address provided.</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithAddress:(const struct sockaddr *)address</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>address</Name>
+					<Abstract type="html">A socket address to determine reachability for.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A reachability observer targeting the given socket address or nil if it
+could not be observed.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithAddress:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKReachabilityObserver/setHost:</TokenIdentifier>
+			<Abstract type="html">The remote hostname or IP address being observed for reachability.</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *host</Declaration>
+			
+			
+			<Anchor>//api/name/host</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKReachabilityObserver/host</TokenIdentifier>
+			<Abstract type="html">The remote hostname or IP address being observed for reachability.</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *host</Declaration>
+			
+			
+			<Anchor>//api/name/host</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKReachabilityObserver/setReachabilityDetermined:</TokenIdentifier>
+			<Abstract type="html">Current state of determining reachability</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=isReachabilityDetermined) BOOL reachabilityDetermined</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if reachability has been determined</Abstract></ReturnValue>
+			<Anchor>//api/name/reachabilityDetermined</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKReachabilityObserver/reachabilityDetermined</TokenIdentifier>
+			<Abstract type="html">Current state of determining reachability</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=isReachabilityDetermined) BOOL reachabilityDetermined</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if reachability has been determined</Abstract></ReturnValue>
+			<Anchor>//api/name/reachabilityDetermined</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKReachabilityObserver/setNetworkStatus:</TokenIdentifier>
+			<Abstract type="html">Current network status as determined by examining the state of the currently
+cached reachabilityFlags</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKReachabilityNetworkStatus networkStatus</Declaration>
+			
+			<ReturnValue><Abstract type="html">Status of the network as RKReachabilityNetworkStatus</Abstract></ReturnValue>
+			<Anchor>//api/name/networkStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKReachabilityObserver/networkStatus</TokenIdentifier>
+			<Abstract type="html">Current network status as determined by examining the state of the currently
+cached reachabilityFlags</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKReachabilityNetworkStatus networkStatus</Declaration>
+			
+			<ReturnValue><Abstract type="html">Status of the network as RKReachabilityNetworkStatus</Abstract></ReturnValue>
+			<Anchor>//api/name/networkStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKReachabilityObserver/setMonitoringLocalWiFi:</TokenIdentifier>
+			<Abstract type="html">Current state of the local WiFi interface&apos;s reachability</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/RKReachabilityObserver/reachabilityObserverForLocalWifi</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readonly, getter=isMonitoringLocalWiFi) BOOL monitoringLocalWiFi</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the reachability observer is monitoring the local WiFi interface</Abstract></ReturnValue>
+			<Anchor>//api/name/monitoringLocalWiFi</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKReachabilityObserver/monitoringLocalWiFi</TokenIdentifier>
+			<Abstract type="html">Current state of the local WiFi interface&apos;s reachability</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/RKReachabilityObserver/reachabilityObserverForLocalWifi</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readonly, getter=isMonitoringLocalWiFi) BOOL monitoringLocalWiFi</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the reachability observer is monitoring the local WiFi interface</Abstract></ReturnValue>
+			<Anchor>//api/name/monitoringLocalWiFi</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKReachabilityObserver/setReachabilityFlags:</TokenIdentifier>
+			<Abstract type="html">The reachability flags as of the last invocation of the reachability callback</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/RKReachabilityObserver/getFlags</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readonly) SCNetworkReachabilityFlags reachabilityFlags</Declaration>
+			
+			<ReturnValue><Abstract type="html">The most recently cached reachability flags reflecting current network
+status.</Abstract></ReturnValue>
+			<Anchor>//api/name/reachabilityFlags</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKReachabilityObserver/reachabilityFlags</TokenIdentifier>
+			<Abstract type="html">The reachability flags as of the last invocation of the reachability callback</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/RKReachabilityObserver/getFlags</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readonly) SCNetworkReachabilityFlags reachabilityFlags</Declaration>
+			
+			<ReturnValue><Abstract type="html">The most recently cached reachability flags reflecting current network
+status.</Abstract></ReturnValue>
+			<Anchor>//api/name/reachabilityFlags</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKReachabilityObserver/getFlags</TokenIdentifier>
+			<Abstract type="html">Acquires the current network reachability flags, answering YES if
+successfully acquired; answering NO otherwise.</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)getFlags</Declaration>
+			
+			
+			<Anchor>//api/name/getFlags</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKReachabilityObserver/isNetworkReachable</TokenIdentifier>
+			<Abstract type="html">Returns YES when the Internet is reachable (via WiFi or WWAN)</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isNetworkReachable</Declaration>
+			
+			
+			<Anchor>//api/name/isNetworkReachable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKReachabilityObserver/isReachableViaWWAN</TokenIdentifier>
+			<Abstract type="html">Returns YES when we the network is reachable via WWAN</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isReachableViaWWAN</Declaration>
+			
+			
+			<Anchor>//api/name/isReachableViaWWAN</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKReachabilityObserver/isReachableViaWiFi</TokenIdentifier>
+			<Abstract type="html">Returns YES when we the network is reachable via WiFi</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isReachableViaWiFi</Declaration>
+			
+			
+			<Anchor>//api/name/isReachableViaWiFi</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKReachabilityObserver/isConnectionRequired</TokenIdentifier>
+			<Abstract type="html">Returns YES when WWAN may be available, but not active until a connection has been established.</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isConnectionRequired</Declaration>
+			
+			
+			<Anchor>//api/name/isConnectionRequired</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKReachabilityObserver/isConnectionOnDemand</TokenIdentifier>
+			<Abstract type="html">Returns YES if a dynamic, on-demand connection is available</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isConnectionOnDemand</Declaration>
+			
+			
+			<Anchor>//api/name/isConnectionOnDemand</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKReachabilityObserver/isInterventionRequired</TokenIdentifier>
+			<Abstract type="html">Returns YES if user intervention is required to initiate a connection</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isInterventionRequired</Declaration>
+			
+			
+			<Anchor>//api/name/isInterventionRequired</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKReachabilityObserver/reachabilityFlagsDescription</TokenIdentifier>
+			<Abstract type="html">Returns a string representation of the currently cached reachabilityFlags for inspection</Abstract>
+			<DeclaredIn>RKReachabilityObserver.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)reachabilityFlagsDescription</Declaration>
+			
+			<ReturnValue><Abstract type="html">A string containing single character representations of the bits in an
+SCNetworkReachabilityFlags</Abstract></ReturnValue>
+			<Anchor>//api/name/reachabilityFlagsDescription</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

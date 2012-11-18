@@ -11,5 +11,7 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (readonly, strong, nonatomic) RKObjectManager *objectManager;
+@property (readonly, strong, nonatomic) RKManagedObjectStore *objectStore;
 
 @end

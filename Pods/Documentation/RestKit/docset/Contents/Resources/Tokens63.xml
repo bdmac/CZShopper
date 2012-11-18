@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKTestResponseLoader.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKTestResponseLoader</TokenIdentifier>
+			<Abstract type="html">An RKTestResponseLoader object provides testing support for asynchronously loading an RKRequest or
+RKObjectLoader object while blocking the execution of the current thread by spinning the run loop.
+This enables a straight-forward unit testing workflow for asynchronous network operations.</Abstract>
+			<DeclaredIn>RKTestResponseLoader.h</DeclaredIn>
+			
+			<NodeRef refid="63"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTestResponseLoader/setResponse:</TokenIdentifier>
+			<Abstract type="html">The RKResponse object loaded from the RKRequest or RKObjectLoader the receiver is acting as the delegate for.
+*</Abstract>
+			<DeclaredIn>RKTestResponseLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) RKResponse *response</Declaration>
+			
+			
+			<Anchor>//api/name/response</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTestResponseLoader/response</TokenIdentifier>
+			<Abstract type="html">The RKResponse object loaded from the RKRequest or RKObjectLoader the receiver is acting as the delegate for.
+*</Abstract>
+			<DeclaredIn>RKTestResponseLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) RKResponse *response</Declaration>
+			
+			
+			<Anchor>//api/name/response</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTestResponseLoader/setObjects:</TokenIdentifier>
+			<Abstract type="html">The collection of objects loaded from the RKObjectLoader the receiver is acting as the delegate for.</Abstract>
+			<DeclaredIn>RKTestResponseLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSArray *objects</Declaration>
+			
+			
+			<Anchor>//api/name/objects</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTestResponseLoader/objects</TokenIdentifier>
+			<Abstract type="html">The collection of objects loaded from the RKObjectLoader the receiver is acting as the delegate for.</Abstract>
+			<DeclaredIn>RKTestResponseLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSArray *objects</Declaration>
+			
+			
+			<Anchor>//api/name/objects</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTestResponseLoader/setSuccessful:</TokenIdentifier>
+			<Abstract type="html">A Boolean value that indicates whether a response was loaded successfully.</Abstract>
+			<DeclaredIn>RKTestResponseLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=wasSuccessful) BOOL successful</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if a response was loaded successfully.</Abstract></ReturnValue>
+			<Anchor>//api/name/successful</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTestResponseLoader/successful</TokenIdentifier>
+			<Abstract type="html">A Boolean value that indicates whether a response was loaded successfully.</Abstract>
+			<DeclaredIn>RKTestResponseLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=wasSuccessful) BOOL successful</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if a response was loaded successfully.</Abstract></ReturnValue>
+			<Anchor>//api/name/successful</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTestResponseLoader/setCancelled:</TokenIdentifier>
+			<Abstract type="html">A Boolean value that indicates whether the RKRequest or RKObjectLoader the receiver is acting as the delegate for was cancelled.</Abstract>
+			<DeclaredIn>RKTestResponseLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=wasCancelled) BOOL cancelled</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the request was cancelled</Abstract></ReturnValue>
+			<Anchor>//api/name/cancelled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTestResponseLoader/cancelled</TokenIdentifier>
+			<Abstract type="html">A Boolean value that indicates whether the RKRequest or RKObjectLoader the receiver is acting as the delegate for was cancelled.</Abstract>
+			<DeclaredIn>RKTestResponseLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=wasCancelled) BOOL cancelled</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the request was cancelled</Abstract></ReturnValue>
+			<Anchor>//api/name/cancelled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTestResponseLoader/setUnexpectedResponse:</TokenIdentifier>
+			<Abstract type="html">A Boolean value that indicates if an unexpected response was loaded.</Abstract>
+			<DeclaredIn>RKTestResponseLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/RKObjectLoaderDelegate/objectLoaderDidLoadUnexpectedResponse:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readonly, getter=loadedUnexpectedResponse) BOOL unexpectedResponse</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the request loaded an unknown response.</Abstract></ReturnValue>
+			<Anchor>//api/name/unexpectedResponse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTestResponseLoader/unexpectedResponse</TokenIdentifier>
+			<Abstract type="html">A Boolean value that indicates if an unexpected response was loaded.</Abstract>
+			<DeclaredIn>RKTestResponseLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/RKObjectLoaderDelegate/objectLoaderDidLoadUnexpectedResponse:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readonly, getter=loadedUnexpectedResponse) BOOL unexpectedResponse</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the request loaded an unknown response.</Abstract></ReturnValue>
+			<Anchor>//api/name/unexpectedResponse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTestResponseLoader/setError:</TokenIdentifier>
+			<Abstract type="html">An NSError value that was loaded from the RKRequest or RKObjectLoader the receiver is acting as the delegate for.</Abstract>
+			<DeclaredIn>RKTestResponseLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/RKRequestDelegate/request:didFailLoadWithError:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intfm/RKObjectLoaderDelegate/objectLoader:didFailWithError:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy, readonly) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTestResponseLoader/error</TokenIdentifier>
+			<Abstract type="html">An NSError value that was loaded from the RKRequest or RKObjectLoader the receiver is acting as the delegate for.</Abstract>
+			<DeclaredIn>RKTestResponseLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/RKRequestDelegate/request:didFailLoadWithError:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intfm/RKObjectLoaderDelegate/objectLoader:didFailWithError:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy, readonly) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTestResponseLoader/setTimeout:</TokenIdentifier>
+			<Abstract type="html">The timeout interval, in seconds, to wait for a response to load.</Abstract>
+			<DeclaredIn>RKTestResponseLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/RKTestResponseLoader/waitForResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) NSTimeInterval timeout</Declaration>
+			
+			
+			<Anchor>//api/name/timeout</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTestResponseLoader/timeout</TokenIdentifier>
+			<Abstract type="html">The timeout interval, in seconds, to wait for a response to load.</Abstract>
+			<DeclaredIn>RKTestResponseLoader.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/RKTestResponseLoader/waitForResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) NSTimeInterval timeout</Declaration>
+			
+			
+			<Anchor>//api/name/timeout</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKTestResponseLoader/responseLoader</TokenIdentifier>
+			<Abstract type="html">Creates and returns a test response loader object.</Abstract>
+			<DeclaredIn>RKTestResponseLoader.h</DeclaredIn>			
+			
+			<Declaration>+ (id)responseLoader</Declaration>
+			
+			<ReturnValue><Abstract type="html">A new response loader object.</Abstract></ReturnValue>
+			<Anchor>//api/name/responseLoader</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTestResponseLoader/waitForResponse</TokenIdentifier>
+			<Abstract type="html">Waits for an asynchronous RKRequest or RKObjectLoader network operation to load a response
+by spinning the current run loop to block the current thread of execution.</Abstract>
+			<DeclaredIn>RKTestResponseLoader.h</DeclaredIn>			
+			
+			<Declaration>- (void)waitForResponse</Declaration>
+			
+			
+			<Anchor>//api/name/waitForResponse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTestResponseLoader/errorMessage</TokenIdentifier>
+			<Abstract type="html">Returns the localized description error message for the error.</Abstract>
+			<DeclaredIn>RKTestResponseLoader.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)errorMessage</Declaration>
+			
+			<ReturnValue><Abstract type="html">The localized description of the error or nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/errorMessage</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

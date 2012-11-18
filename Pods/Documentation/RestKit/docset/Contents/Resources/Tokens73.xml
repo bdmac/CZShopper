@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSURL+RKAdditions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSURL(RKAdditions)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURL+RKAdditions.h</DeclaredIn>
+			
+			<NodeRef refid="73"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(RKAdditions)/queryParameters</TokenIdentifier>
+			<Abstract type="html">Returns the query portion of the URL as a dictionary</Abstract>
+			<DeclaredIn>NSURL+RKAdditions.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)queryParameters</Declaration>
+			
+			
+			<Anchor>//api/name/queryParameters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(RKAdditions)/MIMETypeForPathExtension</TokenIdentifier>
+			<Abstract type="html">Returns the MIME Type for the resource identified by the URL by interpretting the
+path extension using Core Services.</Abstract>
+			<DeclaredIn>NSURL+RKAdditions.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)MIMETypeForPathExtension</Declaration>
+			
+			<ReturnValue><Abstract type="html">The expected MIME Type of the resource identified by the URL or nil if unknown</Abstract></ReturnValue>
+			<Anchor>//api/name/MIMETypeForPathExtension</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

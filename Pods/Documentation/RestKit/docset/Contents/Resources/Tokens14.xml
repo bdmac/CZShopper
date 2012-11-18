@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKFetchedResultsTableControllerTestDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKFetchedResultsTableControllerTestDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableControllerTestDelegate.h</DeclaredIn>
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

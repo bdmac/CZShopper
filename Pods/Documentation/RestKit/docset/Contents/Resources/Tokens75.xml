@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIImage+RKAdditions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIImage(RKAdditions)</TokenIdentifier>
+			<Abstract type="html">Provides useful extensions to the UIImage interface.</Abstract>
+			<DeclaredIn>UIImage+RKAdditions.h</DeclaredIn>
+			
+			<NodeRef refid="75"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIImage(RKAdditions)/imageWithContentsOfResolutionIndependentFile:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an image object by loading the image data from the file at the specified path
+appropriate for the resolution of the device.</Abstract>
+			<DeclaredIn>UIImage+RKAdditions.h</DeclaredIn>			
+			
+			<Declaration>+ (UIImage *)imageWithContentsOfResolutionIndependentFile:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The full or partial path to the file, possibly including an @2x retina image.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new image object for the specified file, or an image for the @2x version of the specified file,
+or nil if the method could not initialize the image from the specified file.</Abstract></ReturnValue>
+			<Anchor>//api/name/imageWithContentsOfResolutionIndependentFile:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIImage(RKAdditions)/initWithContentsOfResolutionIndependentFile:</TokenIdentifier>
+			<Abstract type="html">Initializes an image object by loading the image data from the file at the specified path
+appropriate for the resolution of the device.</Abstract>
+			<DeclaredIn>UIImage+RKAdditions.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithContentsOfResolutionIndependentFile:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The full or partial path to the file, possibly including an @2x retina image.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The initialized image object for the specified file, or for the @2x version of the specified file,
+or nil if the method could not initialize the image from the specified file.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithContentsOfResolutionIndependentFile:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

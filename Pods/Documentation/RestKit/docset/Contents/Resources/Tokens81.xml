@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RKOAuthClientDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RKOAuthClientDelegate</TokenIdentifier>
+			<Abstract type="html">The delegate of an RKOAuthClient object must adopt the RKOAuthClientDelegate
+protocol.  The protocol defines all methods relating to obtaining an
+accessToken and handling any errors along the way.  It optionally provides
+callbacks for many different OAuth2 exceptions that may occur during the
+authorization code flow.</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>
+			
+			<NodeRef refid="81"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKOAuthClientDelegate/OAuthClient:didAcquireAccessToken:</TokenIdentifier>
+			<Abstract type="html">Sent when a new access token has been acquired</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)OAuthClient:(RKOAuthClient *)client didAcquireAccessToken:(NSString *)token</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">A reference to the RKOAuthClient that triggered the callback</Abstract>
+				</Parameter><Parameter>
+					<Name>token</Name>
+					<Abstract type="html">A string of the access token acquired from the authentication
+server.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/OAuthClient:didAcquireAccessToken:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKOAuthClientDelegate/OAuthClient:didFailWithInvalidGrantError:</TokenIdentifier>
+			<Abstract type="html">Sent when an access token request has failed due an invalid authorization code</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)OAuthClient:(RKOAuthClient *)client didFailWithInvalidGrantError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">A reference to the RKOAuthClient that triggered the callback</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">An NSError object containing the RKOAuthClientError that triggered
+the callback</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/OAuthClient:didFailWithInvalidGrantError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKOAuthClientDelegate/OAuthClient:didFailWithError:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate when the OAuth client encounters any error.</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)OAuthClient:(RKOAuthClient *)client didFailWithError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">A reference to the RKOAuthClient that triggered the callback</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">An NSError object containing the RKOAuthClientError that triggered
+the callback</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/OAuthClient:didFailWithError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKOAuthClientDelegate/OAuthClient:didFailWithUnauthorizedClientError:</TokenIdentifier>
+			<Abstract type="html">Sent when the client isn&apos;t authorized to perform the requested action</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)OAuthClient:(RKOAuthClient *)client didFailWithUnauthorizedClientError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">A reference to the RKOAuthClient that triggered the callback</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">An NSError object containing the RKOAuthClientError that triggered
+the callback</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/OAuthClient:didFailWithUnauthorizedClientError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKOAuthClientDelegate/OAuthClient:didFailWithInvalidClientError:</TokenIdentifier>
+			<Abstract type="html">Sent when an error is encountered with the OAuth client such as an unknown
+client, there is no client authentication included, or an unsupported
+authentication method was used.</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)OAuthClient:(RKOAuthClient *)client didFailWithInvalidClientError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">A reference to the RKOAuthClient that triggered the callback</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">An NSError object containing the RKOAuthClientError that triggered
+the callback</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/OAuthClient:didFailWithInvalidClientError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKOAuthClientDelegate/OAuthClient:didFailWithInvalidRequestError:</TokenIdentifier>
+			<Abstract type="html">Sent when the request sent to the authentication server is invalid</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)OAuthClient:(RKOAuthClient *)client didFailWithInvalidRequestError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">A reference to the RKOAuthClient that triggered the callback</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">An NSError object containing the RKOAuthClientError that triggered
+the callback</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/OAuthClient:didFailWithInvalidRequestError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKOAuthClientDelegate/OAuthClient:didFailWithUnsupportedGrantTypeError:</TokenIdentifier>
+			<Abstract type="html">Sent when the grant type specified isn&apos;t supported by the authentication server</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)OAuthClient:(RKOAuthClient *)client didFailWithUnsupportedGrantTypeError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">A reference to the RKOAuthClient that triggered the callback</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">An NSError object containing the RKOAuthClientError that triggered
+the callback</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/OAuthClient:didFailWithUnsupportedGrantTypeError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKOAuthClientDelegate/OAuthClient:didFailWithInvalidScopeError:</TokenIdentifier>
+			<Abstract type="html">Sent when the requested scope is invalid, unknown, malformed, or exceeds the
+scope granted by the resource owner.</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)OAuthClient:(RKOAuthClient *)client didFailWithInvalidScopeError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">A reference to the RKOAuthClient that triggered the callback</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">An NSError object containing the RKOAuthClientError that triggered
+the callback</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/OAuthClient:didFailWithInvalidScopeError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RKOAuthClientDelegate/OAuthClient:didFailLoadingRequest:withError:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate when an authorization code flow request failed due to a
+loading error somewhere within the RKRequest call</Abstract>
+			<DeclaredIn>RKOAuthClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)OAuthClient:(RKOAuthClient *)client didFailLoadingRequest:(RKRequest *)request withError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">A reference to the RKOAuthClient that triggered the callback</Abstract>
+				</Parameter><Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A reference to the RKRequest that failed</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">An NSError object containing the RKOAuthClientError that triggered
+the callback</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/OAuthClient:didFailLoadingRequest:withError:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

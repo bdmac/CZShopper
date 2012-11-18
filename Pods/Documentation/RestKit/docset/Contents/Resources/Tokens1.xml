@@ -1,0 +1,1448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKAbstractTableController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKAbstractTableController</TokenIdentifier>
+			<Abstract type="html">RKAbstractTableController is an abstract base class for concrete table controller classes.
+A table controller object acts as both the delegate and data source for a UITableView
+object and leverages the RestKit object mapping engine to transform local domain models
+into UITableViewCell representations. Concrete implementations are provided for the
+display of static table views and Core Data backed fetched results controller basied
+table views.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setViewController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIViewController *viewController</Declaration>
+			
+			
+			<Anchor>//api/name/viewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/viewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIViewController *viewController</Declaration>
+			
+			
+			<Anchor>//api/name/viewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setTableView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UITableView *tableView</Declaration>
+			
+			
+			<Anchor>//api/name/tableView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/tableView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UITableView *tableView</Declaration>
+			
+			
+			<Anchor>//api/name/tableView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setDefaultRowAnimation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UITableViewRowAnimation defaultRowAnimation</Declaration>
+			
+			
+			<Anchor>//api/name/defaultRowAnimation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/defaultRowAnimation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UITableViewRowAnimation defaultRowAnimation</Declaration>
+			
+			
+			<Anchor>//api/name/defaultRowAnimation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setPullToRefreshEnabled:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL pullToRefreshEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/pullToRefreshEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/pullToRefreshEnabled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL pullToRefreshEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/pullToRefreshEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setCanEditRows:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL canEditRows</Declaration>
+			
+			
+			<Anchor>//api/name/canEditRows</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/canEditRows</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL canEditRows</Declaration>
+			
+			
+			<Anchor>//api/name/canEditRows</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setCanMoveRows:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL canMoveRows</Declaration>
+			
+			
+			<Anchor>//api/name/canMoveRows</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/canMoveRows</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL canMoveRows</Declaration>
+			
+			
+			<Anchor>//api/name/canMoveRows</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setAutoResizesForKeyboard:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL autoResizesForKeyboard</Declaration>
+			
+			
+			<Anchor>//api/name/autoResizesForKeyboard</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/autoResizesForKeyboard</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL autoResizesForKeyboard</Declaration>
+			
+			
+			<Anchor>//api/name/autoResizesForKeyboard</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKAbstractTableController/tableControllerWithTableView:forViewController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>+ (id)tableControllerWithTableView:(UITableView *)tableView forViewController:(UIViewController *)viewController</Declaration>
+			
+			
+			<Anchor>//api/name/tableControllerWithTableView:forViewController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKAbstractTableController/tableControllerForTableViewController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>+ (id)tableControllerForTableViewController:(UITableViewController *)tableViewController</Declaration>
+			
+			
+			<Anchor>//api/name/tableControllerForTableViewController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/initWithTableView:viewController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithTableView:(UITableView *)tableView viewController:(UIViewController *)viewController</Declaration>
+			
+			
+			<Anchor>//api/name/initWithTableView:viewController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setCellMappings:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKTableViewCellMappings *cellMappings</Declaration>
+			
+			
+			<Anchor>//api/name/cellMappings</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/cellMappings</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKTableViewCellMappings *cellMappings</Declaration>
+			
+			
+			<Anchor>//api/name/cellMappings</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/mapObjectsWithClass:toTableCellsWithMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)mapObjectsWithClass:(Class)objectClass toTableCellsWithMapping:(RKTableViewCellMapping *)cellMapping</Declaration>
+			
+			
+			<Anchor>//api/name/mapObjectsWithClass:toTableCellsWithMapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/mapObjectsWithClassName:toTableCellsWithMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)mapObjectsWithClassName:(NSString *)objectClassName toTableCellsWithMapping:(RKTableViewCellMapping *)cellMapping</Declaration>
+			
+			
+			<Anchor>//api/name/mapObjectsWithClassName:toTableCellsWithMapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/objectForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/objectForRowAtIndexPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/cellMappingForObjectAtIndexPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (RKTableViewCellMapping *)cellMappingForObjectAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/cellMappingForObjectAtIndexPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/indexPathForObject:</TokenIdentifier>
+			<Abstract type="html">Return the index path of the object within the table</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (NSIndexPath *)indexPathForObject:(id)object</Declaration>
+			
+			
+			<Anchor>//api/name/indexPathForObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/cellForObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (UITableViewCell *)cellForObject:(id)object</Declaration>
+			
+			
+			<Anchor>//api/name/cellForObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/reloadRowForObject:withRowAnimation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)reloadRowForObject:(id)object withRowAnimation:(UITableViewRowAnimation)rowAnimation</Declaration>
+			
+			
+			<Anchor>//api/name/reloadRowForObject:withRowAnimation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/addHeaderRowForItem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)addHeaderRowForItem:(RKTableItem *)tableItem</Declaration>
+			
+			
+			<Anchor>//api/name/addHeaderRowForItem:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/addFooterRowForItem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)addFooterRowForItem:(RKTableItem *)tableItem</Declaration>
+			
+			
+			<Anchor>//api/name/addFooterRowForItem:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/addHeaderRowWithMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)addHeaderRowWithMapping:(RKTableViewCellMapping *)cellMapping</Declaration>
+			
+			
+			<Anchor>//api/name/addHeaderRowWithMapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/addFooterRowWithMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)addFooterRowWithMapping:(RKTableViewCellMapping *)cellMapping</Declaration>
+			
+			
+			<Anchor>//api/name/addFooterRowWithMapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/removeAllHeaderRows</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeAllHeaderRows</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllHeaderRows</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/removeAllFooterRows</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeAllFooterRows</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllFooterRows</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setObjectManager:</TokenIdentifier>
+			<Abstract type="html">The object manager instance this table controller is associated with.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKObjectManager *objectManager</Declaration>
+			
+			
+			<Anchor>//api/name/objectManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/objectManager</TokenIdentifier>
+			<Abstract type="html">The object manager instance this table controller is associated with.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RKObjectManager *objectManager</Declaration>
+			
+			
+			<Anchor>//api/name/objectManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setAutoRefreshFromNetwork:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL autoRefreshFromNetwork</Declaration>
+			
+			
+			<Anchor>//api/name/autoRefreshFromNetwork</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/autoRefreshFromNetwork</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL autoRefreshFromNetwork</Declaration>
+			
+			
+			<Anchor>//api/name/autoRefreshFromNetwork</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setAutoRefreshRate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval autoRefreshRate</Declaration>
+			
+			
+			<Anchor>//api/name/autoRefreshRate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/autoRefreshRate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval autoRefreshRate</Declaration>
+			
+			
+			<Anchor>//api/name/autoRefreshRate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/loadTableWithObjectLoader:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadTableWithObjectLoader:(RKObjectLoader *)objectLoader</Declaration>
+			
+			
+			<Anchor>//api/name/loadTableWithObjectLoader:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/cancelLoad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)cancelLoad</Declaration>
+			
+			
+			<Anchor>//api/name/cancelLoad</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/isAutoRefreshNeeded</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isAutoRefreshNeeded</Declaration>
+			
+			
+			<Anchor>//api/name/isAutoRefreshNeeded</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setState:</TokenIdentifier>
+			<Abstract type="html">The current state of the table controller. Note that the controller may be in more
+than one state (e.g. loading | empty).</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) RKTableControllerState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/state</TokenIdentifier>
+			<Abstract type="html">The current state of the table controller. Note that the controller may be in more
+than one state (e.g. loading | empty).</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) RKTableControllerState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setError:</TokenIdentifier>
+			<Abstract type="html">An error object that was encountered as the result of an attempt to load
+the table. Will return a value when the table is in the error state,
+otherwise nil.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/error</TokenIdentifier>
+			<Abstract type="html">An error object that was encountered as the result of an attempt to load
+the table. Will return a value when the table is in the error state,
+otherwise nil.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/isLoading</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating if the table controller is currently
+loading content.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isLoading</Declaration>
+			
+			
+			<Anchor>//api/name/isLoading</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/isLoaded</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating if the table controller has attempted
+a load and transitioned into any state.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isLoaded</Declaration>
+			
+			
+			<Anchor>//api/name/isLoaded</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/isEmpty</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating if the table controller has loaded an
+empty set of content.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/imageForEmpty</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)isEmpty</Declaration>
+			
+			
+			<Anchor>//api/name/isEmpty</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/isOnline</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating if the table controller is online
+and network operations may be performed.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isOnline</Declaration>
+			
+			
+			<Anchor>//api/name/isOnline</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/isOffline</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating if the table controller is offline.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/imageForOffline</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)isOffline</Declaration>
+			
+			
+			<Anchor>//api/name/isOffline</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/isError</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating if the table controller encountered
+an error while attempting to load.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/imageForError</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)isError</Declaration>
+			
+			
+			<Anchor>//api/name/isError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setImageForEmpty:</TokenIdentifier>
+			<Abstract type="html">An image to overlay onto the table when the table view
+does not have any row data to display. It will be centered
+within the table view.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *imageForEmpty</Declaration>
+			
+			
+			<Anchor>//api/name/imageForEmpty</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/imageForEmpty</TokenIdentifier>
+			<Abstract type="html">An image to overlay onto the table when the table view
+does not have any row data to display. It will be centered
+within the table view.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *imageForEmpty</Declaration>
+			
+			
+			<Anchor>//api/name/imageForEmpty</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setImageForError:</TokenIdentifier>
+			<Abstract type="html">An image to overlay onto the table when a load operation
+has encountered an error. It will be centered
+within the table view.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *imageForError</Declaration>
+			
+			
+			<Anchor>//api/name/imageForError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/imageForError</TokenIdentifier>
+			<Abstract type="html">An image to overlay onto the table when a load operation
+has encountered an error. It will be centered
+within the table view.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *imageForError</Declaration>
+			
+			
+			<Anchor>//api/name/imageForError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setImageForOffline:</TokenIdentifier>
+			<Abstract type="html">An image to overlay onto the table with when the user does
+not have connectivity to the Internet.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKReachabilityObserver</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) UIImage *imageForOffline</Declaration>
+			
+			
+			<Anchor>//api/name/imageForOffline</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/imageForOffline</TokenIdentifier>
+			<Abstract type="html">An image to overlay onto the table with when the user does
+not have connectivity to the Internet.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKReachabilityObserver</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) UIImage *imageForOffline</Declaration>
+			
+			
+			<Anchor>//api/name/imageForOffline</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setLoadingView:</TokenIdentifier>
+			<Abstract type="html">A UIView to add to the table overlay during loading. It
+will be positioned directly in the center of the table view.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *loadingView</Declaration>
+			
+			
+			<Anchor>//api/name/loadingView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/loadingView</TokenIdentifier>
+			<Abstract type="html">A UIView to add to the table overlay during loading. It
+will be positioned directly in the center of the table view.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *loadingView</Declaration>
+			
+			
+			<Anchor>//api/name/loadingView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/imageForState:</TokenIdentifier>
+			<Abstract type="html">Returns the image, if any, configured for display when the table controller
+is in the given state.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (UIImage *)imageForState:(RKTableControllerState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>state</Name>
+					<Abstract type="html">The table controller state</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The image for the specified state, else nil. Always returns nil for
+RKTableControllerStateNormal, RKTableControllerStateLoading and RKTableControllerStateLoading.</Abstract></ReturnValue>
+			<Anchor>//api/name/imageForState:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setOverlayFrame:</TokenIdentifier>
+			<Abstract type="html">A rectangle configuring the dimensions for the overlay view that is
+applied to the table view during display of the loading view and
+state overlay images (offline/error/empty). By default, the overlay
+view will be auto-sized to cover the entire table. This can result in
+an inaccessible table UI if you have embedded controls within the header
+or footer views of your table. You can adjust the frame of the overlay
+precisely by configuring the overlayFrame property.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGRect overlayFrame</Declaration>
+			
+			
+			<Anchor>//api/name/overlayFrame</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/overlayFrame</TokenIdentifier>
+			<Abstract type="html">A rectangle configuring the dimensions for the overlay view that is
+applied to the table view during display of the loading view and
+state overlay images (offline/error/empty). By default, the overlay
+view will be auto-sized to cover the entire table. This can result in
+an inaccessible table UI if you have embedded controls within the header
+or footer views of your table. You can adjust the frame of the overlay
+precisely by configuring the overlayFrame property.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGRect overlayFrame</Declaration>
+			
+			
+			<Anchor>//api/name/overlayFrame</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setOverlayImage:</TokenIdentifier>
+			<Abstract type="html">The image currently displayed within the overlay view.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIImage *overlayImage</Declaration>
+			
+			
+			<Anchor>//api/name/overlayImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/overlayImage</TokenIdentifier>
+			<Abstract type="html">The image currently displayed within the overlay view.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIImage *overlayImage</Declaration>
+			
+			
+			<Anchor>//api/name/overlayImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setShowsOverlayImagesModally:</TokenIdentifier>
+			<Abstract type="html">When YES, the image view added to the table overlay for displaying table
+state (i.e. for offline, error and empty) will be displayed modally
+and prevent any interaction with the table.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL showsOverlayImagesModally</Declaration>
+			
+			
+			<Anchor>//api/name/showsOverlayImagesModally</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/showsOverlayImagesModally</TokenIdentifier>
+			<Abstract type="html">When YES, the image view added to the table overlay for displaying table
+state (i.e. for offline, error and empty) will be displayed modally
+and prevent any interaction with the table.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL showsOverlayImagesModally</Declaration>
+			
+			
+			<Anchor>//api/name/showsOverlayImagesModally</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setVariableHeightRows:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL variableHeightRows</Declaration>
+			
+			
+			<Anchor>//api/name/variableHeightRows</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/variableHeightRows</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL variableHeightRows</Declaration>
+			
+			
+			<Anchor>//api/name/variableHeightRows</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setShowsHeaderRowsWhenEmpty:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL showsHeaderRowsWhenEmpty</Declaration>
+			
+			
+			<Anchor>//api/name/showsHeaderRowsWhenEmpty</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/showsHeaderRowsWhenEmpty</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL showsHeaderRowsWhenEmpty</Declaration>
+			
+			
+			<Anchor>//api/name/showsHeaderRowsWhenEmpty</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setShowsFooterRowsWhenEmpty:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL showsFooterRowsWhenEmpty</Declaration>
+			
+			
+			<Anchor>//api/name/showsFooterRowsWhenEmpty</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/showsFooterRowsWhenEmpty</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL showsFooterRowsWhenEmpty</Declaration>
+			
+			
+			<Anchor>//api/name/showsFooterRowsWhenEmpty</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setEmptyItem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKTableItem *emptyItem</Declaration>
+			
+			
+			<Anchor>//api/name/emptyItem</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/emptyItem</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKTableItem *emptyItem</Declaration>
+			
+			
+			<Anchor>//api/name/emptyItem</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setSectionCount:</TokenIdentifier>
+			<Abstract type="html">The number of sections in the table.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger sectionCount</Declaration>
+			
+			
+			<Anchor>//api/name/sectionCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/sectionCount</TokenIdentifier>
+			<Abstract type="html">The number of sections in the table.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger sectionCount</Declaration>
+			
+			
+			<Anchor>//api/name/sectionCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setRowCount:</TokenIdentifier>
+			<Abstract type="html">The number of rows across all sections in the model.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger rowCount</Declaration>
+			
+			
+			<Anchor>//api/name/rowCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/rowCount</TokenIdentifier>
+			<Abstract type="html">The number of rows across all sections in the model.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger rowCount</Declaration>
+			
+			
+			<Anchor>//api/name/rowCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/numberOfRowsInSection:</TokenIdentifier>
+			<Abstract type="html">Returns the number of rows in the section at the given index.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)numberOfRowsInSection:(NSUInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The index of the section to return the row count for.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The number of rows contained within the section with the given index.
+@raises NSInvalidArgumentException Raised if index is greater than or
+    equal to the total number of sections in the table.</Abstract></ReturnValue>
+			<Anchor>//api/name/numberOfRowsInSection:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/cellForObjectAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Returns the UITableViewCell created by applying the specified
+mapping operation to the object identified by indexPath.</Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (UITableViewCell *)cellForObjectAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">The indexPath in the tableView for which a cell is needed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cellForObjectAtIndexPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setCellSwipeViewsEnabled:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL cellSwipeViewsEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/cellSwipeViewsEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/cellSwipeViewsEnabled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL cellSwipeViewsEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/cellSwipeViewsEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setCellSwipeView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *cellSwipeView</Declaration>
+			
+			
+			<Anchor>//api/name/cellSwipeView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/cellSwipeView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *cellSwipeView</Declaration>
+			
+			
+			<Anchor>//api/name/cellSwipeView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setSwipeCell:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UITableViewCell *swipeCell</Declaration>
+			
+			
+			<Anchor>//api/name/swipeCell</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/swipeCell</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UITableViewCell *swipeCell</Declaration>
+			
+			
+			<Anchor>//api/name/swipeCell</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setSwipeObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id swipeObject</Declaration>
+			
+			
+			<Anchor>//api/name/swipeObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/swipeObject</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id swipeObject</Declaration>
+			
+			
+			<Anchor>//api/name/swipeObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setAnimatingCellSwipe:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL animatingCellSwipe</Declaration>
+			
+			
+			<Anchor>//api/name/animatingCellSwipe</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/animatingCellSwipe</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL animatingCellSwipe</Declaration>
+			
+			
+			<Anchor>//api/name/animatingCellSwipe</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setSwipeDirection:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UISwipeGestureRecognizerDirection swipeDirection</Declaration>
+			
+			
+			<Anchor>//api/name/swipeDirection</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/swipeDirection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UISwipeGestureRecognizerDirection swipeDirection</Declaration>
+			
+			
+			<Anchor>//api/name/swipeDirection</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/addSwipeViewTo:withObject:direction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)addSwipeViewTo:(UITableViewCell *)cell withObject:(id)object direction:(UISwipeGestureRecognizerDirection)direction</Declaration>
+			
+			
+			<Anchor>//api/name/addSwipeViewTo:withObject:direction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/removeSwipeView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeSwipeView:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/removeSwipeView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setObjectLoader:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, retain) RKObjectLoader *objectLoader</Declaration>
+			
+			
+			<Anchor>//api/name/objectLoader</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/objectLoader</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, retain) RKObjectLoader *objectLoader</Declaration>
+			
+			
+			<Anchor>//api/name/objectLoader</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setHeaderItems:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, retain) NSMutableArray *headerItems</Declaration>
+			
+			
+			<Anchor>//api/name/headerItems</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/headerItems</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, retain) NSMutableArray *headerItems</Declaration>
+			
+			
+			<Anchor>//api/name/headerItems</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setFooterItems:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, retain) NSMutableArray *footerItems</Declaration>
+			
+			
+			<Anchor>//api/name/footerItems</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/footerItems</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, retain) NSMutableArray *footerItems</Declaration>
+			
+			
+			<Anchor>//api/name/footerItems</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setTableOverlayView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIView *tableOverlayView</Declaration>
+			
+			
+			<Anchor>//api/name/tableOverlayView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/tableOverlayView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIView *tableOverlayView</Declaration>
+			
+			
+			<Anchor>//api/name/tableOverlayView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setStateOverlayImageView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIImageView *stateOverlayImageView</Declaration>
+			
+			
+			<Anchor>//api/name/stateOverlayImageView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/stateOverlayImageView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIImageView *stateOverlayImageView</Declaration>
+			
+			
+			<Anchor>//api/name/stateOverlayImageView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setCache:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKCache *cache</Declaration>
+			
+			
+			<Anchor>//api/name/cache</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/cache</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RKCache *cache</Declaration>
+			
+			
+			<Anchor>//api/name/cache</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/setPullToRefreshHeaderView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *pullToRefreshHeaderView</Declaration>
+			
+			
+			<Anchor>//api/name/pullToRefreshHeaderView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKAbstractTableController/pullToRefreshHeaderView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *pullToRefreshHeaderView</Declaration>
+			
+			
+			<Anchor>//api/name/pullToRefreshHeaderView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/didStartLoad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>- (void)didStartLoad</Declaration>
+			
+			
+			<Anchor>//api/name/didStartLoad</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/didFinishLoad</TokenIdentifier>
+			<Abstract type="html">Must be invoked when the table controller has finished loading.</Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>- (void)didFinishLoad</Declaration>
+			
+			
+			<Anchor>//api/name/didFinishLoad</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/didFailLoadWithError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>- (void)didFailLoadWithError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/didFailLoadWithError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/addToOverlayView:modally:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>- (void)addToOverlayView:(UIView *)view modally:(BOOL)modally</Declaration>
+			
+			
+			<Anchor>//api/name/addToOverlayView:modally:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/resetOverlayView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>- (void)resetOverlayView</Declaration>
+			
+			
+			<Anchor>//api/name/resetOverlayView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/addSubviewOverTableView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>- (void)addSubviewOverTableView:(UIView *)view</Declaration>
+			
+			
+			<Anchor>//api/name/addSubviewOverTableView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/removeImageFromOverlay:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)removeImageFromOverlay:(UIImage *)image</Declaration>
+			
+			
+			<Anchor>//api/name/removeImageFromOverlay:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/showImageInOverlay:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>- (void)showImageInOverlay:(UIImage *)image</Declaration>
+			
+			
+			<Anchor>//api/name/showImageInOverlay:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/removeImageOverlay</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeImageOverlay</Declaration>
+			
+			
+			<Anchor>//api/name/removeImageOverlay</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/pullToRefreshStateChanged:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>- (void)pullToRefreshStateChanged:(UIGestureRecognizer *)gesture</Declaration>
+			
+			
+			<Anchor>//api/name/pullToRefreshStateChanged:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/resetPullToRefreshRecognizer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>- (void)resetPullToRefreshRecognizer</Declaration>
+			
+			
+			<Anchor>//api/name/resetPullToRefreshRecognizer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKAbstractTableController/isConsideredEmpty</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating if the table controller
+should be considered empty and transitioned into the empty state.
+Used by the abstract table controller to trigger state transitions.</Abstract>
+			<DeclaredIn>RKAbstractTableController_Internals.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isConsideredEmpty</Declaration>
+			
+			
+			<Anchor>//api/name/isConsideredEmpty</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKTableViewCellMapping.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKTableViewCellMapping</TokenIdentifier>
+			<Abstract type="html">Defines a RestKit object mapping suitable for mapping generic
+objects into UITableViewCell derived classes or cells loaded from
+NIBs. The cell mapping leverages RestKit&apos;s object mapping engine to
+dynamically map keyPaths in your object model into properties on the
+table cell view.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKTableController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="58"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/setCellClass:</TokenIdentifier>
+			<Abstract type="html">The UITableViewCell subclass that this mapping will target. This
+is an alias for the objectClass property defined on the base mapping
+provided here to make things more explicit.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) Class cellClass</Declaration>
+			
+			
+			<Anchor>//api/name/cellClass</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableViewCellMapping/cellClass</TokenIdentifier>
+			<Abstract type="html">The UITableViewCell subclass that this mapping will target. This
+is an alias for the objectClass property defined on the base mapping
+provided here to make things more explicit.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) Class cellClass</Declaration>
+			
+			
+			<Anchor>//api/name/cellClass</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/setCellClassName:</TokenIdentifier>
+			<Abstract type="html">Convenience accessor for setting the cellClass attribute via a string
+rather than a class instance. This will typically save you from having
+to #import the header file for your target cells in your table view controller</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKTableViewCellMapping/cellClass</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) NSString *cellClassName</Declaration>
+			
+			
+			<Anchor>//api/name/cellClassName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableViewCellMapping/cellClassName</TokenIdentifier>
+			<Abstract type="html">Convenience accessor for setting the cellClass attribute via a string
+rather than a class instance. This will typically save you from having
+to #import the header file for your target cells in your table view controller</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKTableViewCellMapping/cellClass</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) NSString *cellClassName</Declaration>
+			
+			
+			<Anchor>//api/name/cellClassName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/setReuseIdentifier:</TokenIdentifier>
+			<Abstract type="html">A reuse identifier for cells created using this mapping. These cells will be
+dequeued and reused within the table view for optimal performance. By default,
+a reuseIdentifier is set for you when you assign an object class to the mapping.
+You can override this behavior if you have multiple cells representing the same types
+of objects within the table view and need to pool the cells differently.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *reuseIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/reuseIdentifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableViewCellMapping/reuseIdentifier</TokenIdentifier>
+			<Abstract type="html">A reuse identifier for cells created using this mapping. These cells will be
+dequeued and reused within the table view for optimal performance. By default,
+a reuseIdentifier is set for you when you assign an object class to the mapping.
+You can override this behavior if you have multiple cells representing the same types
+of objects within the table view and need to pool the cells differently.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *reuseIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/reuseIdentifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/setManagesCellAttributes:</TokenIdentifier>
+			<Abstract type="html">A Boolean value that determines whether the cell mapping manages basic cell
+attributes (accessoryType, selectionStyle, etc.) or defers to a Storyboard/XIB
+for defining basic cell attributes.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL managesCellAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/managesCellAttributes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableViewCellMapping/managesCellAttributes</TokenIdentifier>
+			<Abstract type="html">A Boolean value that determines whether the cell mapping manages basic cell
+attributes (accessoryType, selectionStyle, etc.) or defers to a Storyboard/XIB
+for defining basic cell attributes.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL managesCellAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/managesCellAttributes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/setStyle:</TokenIdentifier>
+			<Abstract type="html">The cell style to use for cells created with this mapping</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UITableViewCellStyle style</Declaration>
+			
+			
+			<Anchor>//api/name/style</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableViewCellMapping/style</TokenIdentifier>
+			<Abstract type="html">The cell style to use for cells created with this mapping</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UITableViewCellStyle style</Declaration>
+			
+			
+			<Anchor>//api/name/style</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/setAccessoryType:</TokenIdentifier>
+			<Abstract type="html">The cell accessory type to use for cells created with this mapping</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UITableViewCellAccessoryType accessoryType</Declaration>
+			
+			
+			<Anchor>//api/name/accessoryType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableViewCellMapping/accessoryType</TokenIdentifier>
+			<Abstract type="html">The cell accessory type to use for cells created with this mapping</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UITableViewCellAccessoryType accessoryType</Declaration>
+			
+			
+			<Anchor>//api/name/accessoryType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/setSelectionStyle:</TokenIdentifier>
+			<Abstract type="html">The cell selection style to use for cells created with this mapping</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UITableViewCellSelectionStyle selectionStyle</Declaration>
+			
+			
+			<Anchor>//api/name/selectionStyle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableViewCellMapping/selectionStyle</TokenIdentifier>
+			<Abstract type="html">The cell selection style to use for cells created with this mapping</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UITableViewCellSelectionStyle selectionStyle</Declaration>
+			
+			
+			<Anchor>//api/name/selectionStyle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/setDeselectsRowOnSelection:</TokenIdentifier>
+			<Abstract type="html">Whether the tableController should call deselectRowAtIndexPath:animated:
+on the tableView when a cell is selected.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL deselectsRowOnSelection</Declaration>
+			
+			
+			<Anchor>//api/name/deselectsRowOnSelection</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableViewCellMapping/deselectsRowOnSelection</TokenIdentifier>
+			<Abstract type="html">Whether the tableController should call deselectRowAtIndexPath:animated:
+on the tableView when a cell is selected.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL deselectsRowOnSelection</Declaration>
+			
+			
+			<Anchor>//api/name/deselectsRowOnSelection</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/setRowHeight:</TokenIdentifier>
+			<Abstract type="html">The row height to use for cells created with this mapping.
+Use of this property requires that RKTableController instance you are
+using the mapping to build cells for has been configured with variableHeightRows = YES</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat rowHeight</Declaration>
+			
+			
+			<Anchor>//api/name/rowHeight</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableViewCellMapping/rowHeight</TokenIdentifier>
+			<Abstract type="html">The row height to use for cells created with this mapping.
+Use of this property requires that RKTableController instance you are
+using the mapping to build cells for has been configured with variableHeightRows = YES</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat rowHeight</Declaration>
+			
+			
+			<Anchor>//api/name/rowHeight</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/setOnSelectCellForObjectAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Invoked when the user has touched a cell corresponding to an object. The block
+is invoked with a reference to both the UITableViewCell that was touched and the
+object the cell is representing.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) RKTableViewCellForObjectAtIndexPathBlock onSelectCellForObjectAtIndexPath</Declaration>
+			
+			
+			<Anchor>//api/name/onSelectCellForObjectAtIndexPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableViewCellMapping/onSelectCellForObjectAtIndexPath</TokenIdentifier>
+			<Abstract type="html">Invoked when the user has touched a cell corresponding to an object. The block
+is invoked with a reference to both the UITableViewCell that was touched and the
+object the cell is representing.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) RKTableViewCellForObjectAtIndexPathBlock onSelectCellForObjectAtIndexPath</Declaration>
+			
+			
+			<Anchor>//api/name/onSelectCellForObjectAtIndexPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/setOnSelectCell:</TokenIdentifier>
+			<Abstract type="html">Invoked when the user has touched a cell configured with this mapping. The block is invoked
+without any arguments. This is useful for one-off touch events where you do not care about
+the content in which the selection took place.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKTableViewCellMapping/onSelectCellForObjectAtIndexPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) RKTableViewAnonymousBlock onSelectCell</Declaration>
+			
+			
+			<Anchor>//api/name/onSelectCell</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableViewCellMapping/onSelectCell</TokenIdentifier>
+			<Abstract type="html">Invoked when the user has touched a cell configured with this mapping. The block is invoked
+without any arguments. This is useful for one-off touch events where you do not care about
+the content in which the selection took place.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/RKTableViewCellMapping/onSelectCellForObjectAtIndexPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) RKTableViewAnonymousBlock onSelectCell</Declaration>
+			
+			
+			<Anchor>//api/name/onSelectCell</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/setOnCellWillAppearForObjectAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">A block to invoke when a table view cell created with this mapping is going to appear in the table.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) RKTableViewCellForObjectAtIndexPathBlock onCellWillAppearForObjectAtIndexPath</Declaration>
+			
+			
+			<Anchor>//api/name/onCellWillAppearForObjectAtIndexPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableViewCellMapping/onCellWillAppearForObjectAtIndexPath</TokenIdentifier>
+			<Abstract type="html">A block to invoke when a table view cell created with this mapping is going to appear in the table.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) RKTableViewCellForObjectAtIndexPathBlock onCellWillAppearForObjectAtIndexPath</Declaration>
+			
+			
+			<Anchor>//api/name/onCellWillAppearForObjectAtIndexPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/setHeightOfCellForObjectAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">A block to invoke when the table view is measuring the height of the UITableViewCell.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) RKTableViewHeightOfCellForObjectAtIndexPathBlock heightOfCellForObjectAtIndexPath</Declaration>
+			
+			
+			<Anchor>//api/name/heightOfCellForObjectAtIndexPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableViewCellMapping/heightOfCellForObjectAtIndexPath</TokenIdentifier>
+			<Abstract type="html">A block to invoke when the table view is measuring the height of the UITableViewCell.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) RKTableViewHeightOfCellForObjectAtIndexPathBlock heightOfCellForObjectAtIndexPath</Declaration>
+			
+			
+			<Anchor>//api/name/heightOfCellForObjectAtIndexPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/setOnTapAccessoryButtonForObjectAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">A block to invoke when the accessory button for a given cell is tapped by the user.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) RKTableViewAccessoryButtonTappedForObjectAtIndexPathBlock onTapAccessoryButtonForObjectAtIndexPath</Declaration>
+			
+			
+			<Anchor>//api/name/onTapAccessoryButtonForObjectAtIndexPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableViewCellMapping/onTapAccessoryButtonForObjectAtIndexPath</TokenIdentifier>
+			<Abstract type="html">A block to invoke when the accessory button for a given cell is tapped by the user.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) RKTableViewAccessoryButtonTappedForObjectAtIndexPathBlock onTapAccessoryButtonForObjectAtIndexPath</Declaration>
+			
+			
+			<Anchor>//api/name/onTapAccessoryButtonForObjectAtIndexPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/setTitleForDeleteButtonForObjectAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">A block to invoke when the table view is determining the title for the delete confirmation button.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) RKTableViewTitleForDeleteButtonForObjectAtIndexPathBlock titleForDeleteButtonForObjectAtIndexPath</Declaration>
+			
+			
+			<Anchor>//api/name/titleForDeleteButtonForObjectAtIndexPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableViewCellMapping/titleForDeleteButtonForObjectAtIndexPath</TokenIdentifier>
+			<Abstract type="html">A block to invoke when the table view is determining the title for the delete confirmation button.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) RKTableViewTitleForDeleteButtonForObjectAtIndexPathBlock titleForDeleteButtonForObjectAtIndexPath</Declaration>
+			
+			
+			<Anchor>//api/name/titleForDeleteButtonForObjectAtIndexPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/setEditingStyleForObjectAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">A block to invoke when the table view is determining the editing style for a given row.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) RKTableViewEditingStyleForObjectAtIndexPathBlock editingStyleForObjectAtIndexPath</Declaration>
+			
+			
+			<Anchor>//api/name/editingStyleForObjectAtIndexPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableViewCellMapping/editingStyleForObjectAtIndexPath</TokenIdentifier>
+			<Abstract type="html">A block to invoke when the table view is determining the editing style for a given row.
+The block will be invoked with the UITableViewCell, an id reference to the mapped object being
+represented in the cell, and the NSIndexPath for the row position the cell will be appearing at.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) RKTableViewEditingStyleForObjectAtIndexPathBlock editingStyleForObjectAtIndexPath</Declaration>
+			
+			
+			<Anchor>//api/name/editingStyleForObjectAtIndexPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/setTargetIndexPathForMove:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) RKTableViewTargetIndexPathForMoveBlock targetIndexPathForMove</Declaration>
+			
+			
+			<Anchor>//api/name/targetIndexPathForMove</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKTableViewCellMapping/targetIndexPathForMove</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) RKTableViewTargetIndexPathForMoveBlock targetIndexPathForMove</Declaration>
+			
+			
+			<Anchor>//api/name/targetIndexPathForMove</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKTableViewCellMapping/cellMapping</TokenIdentifier>
+			<Abstract type="html">Returns a new auto-released mapping targeting UITableViewCell</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>+ (id)cellMapping</Declaration>
+			
+			
+			<Anchor>//api/name/cellMapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKTableViewCellMapping/cellMappingForReuseIdentifier:</TokenIdentifier>
+			<Abstract type="html">Returns a new auto-released mapping targeting UITableViewCell with the specified reuseIdentifier</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>+ (id)cellMappingForReuseIdentifier:(NSString *)reuseIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/cellMappingForReuseIdentifier:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKTableViewCellMapping/defaultCellMapping</TokenIdentifier>
+			<Abstract type="html">Creates and returns an RKTableCellMapping instance configured with the default cell mappings.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>+ (id)defaultCellMapping</Declaration>
+			
+			<ReturnValue><Abstract type="html">An RKTableCellMapping instance with default mappings applied.</Abstract></ReturnValue>
+			<Anchor>//api/name/defaultCellMapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKTableViewCellMapping/cellMappingUsingBlock:</TokenIdentifier>
+			<Abstract type="html">Returns a new auto-released object mapping targeting UITableViewCell. The mapping
+will be yielded to the block for configuration.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>+ (id)cellMappingUsingBlock:(void ( ^ ) ( RKTableViewCellMapping *cellMapping ))block</Declaration>
+			
+			
+			<Anchor>//api/name/cellMappingUsingBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/addDefaultMappings</TokenIdentifier>
+			<Abstract type="html">Sets up default mappings connecting common properties to their UITableViewCell counterparts as follows:</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKTableItem</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)addDefaultMappings</Declaration>
+			
+			
+			<Anchor>//api/name/addDefaultMappings</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/addPrepareCellBlock:</TokenIdentifier>
+			<Abstract type="html">Configure a block to be invoked whenever a cell is prepared for use with this mapping.
+The block will be invoked each time a cell is either initialized or dequeued for reuse.</Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>- (void)addPrepareCellBlock:(void ( ^ ) ( UITableViewCell *cell ))block</Declaration>
+			
+			
+			<Anchor>//api/name/addPrepareCellBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/addTarget:action:forControlEvents:toControlAtKeyPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>- (void)addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents toControlAtKeyPath:(NSString *)keyPath</Declaration>
+			
+			
+			<Anchor>//api/name/addTarget:action:forControlEvents:toControlAtKeyPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/addTarget:action:forTouchEventToControlAtKeyPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>- (void)addTarget:(id)target action:(SEL)action forTouchEventToControlAtKeyPath:(NSString *)keyPath</Declaration>
+			
+			
+			<Anchor>//api/name/addTarget:action:forTouchEventToControlAtKeyPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/addBlockAction:forControlEvents:toControlAtKeyPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>- (void)addBlockAction:(void ( ^ ) ( id sender ))block forControlEvents:(UIControlEvents)controlEvents toControlAtKeyPath:(NSString *)keyPath</Declaration>
+			
+			
+			<Anchor>//api/name/addBlockAction:forControlEvents:toControlAtKeyPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKTableViewCellMapping/addBlockAction:forTouchEventToControlAtKeyPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKTableViewCellMapping.h</DeclaredIn>			
+			
+			<Declaration>- (void)addBlockAction:(void ( ^ ) ( id sender ))block forTouchEventToControlAtKeyPath:(NSString *)keyPath</Declaration>
+			
+			
+			<Anchor>//api/name/addBlockAction:forTouchEventToControlAtKeyPath:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

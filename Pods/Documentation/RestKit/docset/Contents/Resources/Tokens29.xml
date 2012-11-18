@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKObjectMappingDefinition.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKObjectMappingDefinition</TokenIdentifier>
+			<Abstract type="html">RKObjectMappingDefinition is an abstract class for objects defining RestKit object mappings.
+Its interface is common to all object mapping classes, including its concrete subclasses
+RKObjectMapping and RKDynamicObjectMapping.</Abstract>
+			<DeclaredIn>RKObjectMappingDefinition.h</DeclaredIn>
+			
+			<NodeRef refid="29"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingDefinition/setRootKeyPath:</TokenIdentifier>
+			<Abstract type="html">The root key path for the receiver.</Abstract>
+			<DeclaredIn>RKObjectMappingDefinition.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectSerializer</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) NSString *rootKeyPath</Declaration>
+			
+			
+			<Anchor>//api/name/rootKeyPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectMappingDefinition/rootKeyPath</TokenIdentifier>
+			<Abstract type="html">The root key path for the receiver.</Abstract>
+			<DeclaredIn>RKObjectMappingDefinition.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RKObjectSerializer</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) NSString *rootKeyPath</Declaration>
+			
+			
+			<Anchor>//api/name/rootKeyPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingDefinition/setForceCollectionMapping:</TokenIdentifier>
+			<Abstract type="html">Forces the mapper to treat the mapped keyPath as a collection even if it does not
+return an array or a set of objects. This permits mapping where a dictionary identifies
+a collection of objects.</Abstract>
+			<DeclaredIn>RKObjectMappingDefinition.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL forceCollectionMapping</Declaration>
+			
+			
+			<Anchor>//api/name/forceCollectionMapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectMappingDefinition/forceCollectionMapping</TokenIdentifier>
+			<Abstract type="html">Forces the mapper to treat the mapped keyPath as a collection even if it does not
+return an array or a set of objects. This permits mapping where a dictionary identifies
+a collection of objects.</Abstract>
+			<DeclaredIn>RKObjectMappingDefinition.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL forceCollectionMapping</Declaration>
+			
+			
+			<Anchor>//api/name/forceCollectionMapping</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,4328 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>RKRequest Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">RestKit 0.10.3 </a></h1>
+				<a id="developerHome" href="../index.html">Blake Watters</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">RKRequest Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/HTTPBody">&nbsp;&nbsp;&nbsp;&nbsp;HTTPBody</option>
+	
+	<option value="//api/name/HTTPBodyString">&nbsp;&nbsp;&nbsp;&nbsp;HTTPBodyString</option>
+	
+	<option value="//api/name/HTTPMethod">&nbsp;&nbsp;&nbsp;&nbsp;HTTPMethod</option>
+	
+	<option value="//api/name/OAuth1AccessToken">&nbsp;&nbsp;&nbsp;&nbsp;OAuth1AccessToken</option>
+	
+	<option value="//api/name/OAuth1AccessTokenSecret">&nbsp;&nbsp;&nbsp;&nbsp;OAuth1AccessTokenSecret</option>
+	
+	<option value="//api/name/OAuth1ConsumerKey">&nbsp;&nbsp;&nbsp;&nbsp;OAuth1ConsumerKey</option>
+	
+	<option value="//api/name/OAuth1ConsumerSecret">&nbsp;&nbsp;&nbsp;&nbsp;OAuth1ConsumerSecret</option>
+	
+	<option value="//api/name/OAuth2AccessToken">&nbsp;&nbsp;&nbsp;&nbsp;OAuth2AccessToken</option>
+	
+	<option value="//api/name/OAuth2RefreshToken">&nbsp;&nbsp;&nbsp;&nbsp;OAuth2RefreshToken</option>
+	
+	<option value="//api/name/URL">&nbsp;&nbsp;&nbsp;&nbsp;URL</option>
+	
+	<option value="//api/name/URLRequest">&nbsp;&nbsp;&nbsp;&nbsp;URLRequest</option>
+	
+	<option value="//api/name/additionalHTTPHeaders">&nbsp;&nbsp;&nbsp;&nbsp;additionalHTTPHeaders</option>
+	
+	<option value="//api/name/additionalRootCertificates">&nbsp;&nbsp;&nbsp;&nbsp;additionalRootCertificates</option>
+	
+	<option value="//api/name/authenticationType">&nbsp;&nbsp;&nbsp;&nbsp;authenticationType</option>
+	
+	<option value="//api/name/backgroundPolicy">&nbsp;&nbsp;&nbsp;&nbsp;backgroundPolicy</option>
+	
+	<option value="//api/name/backgroundTaskIdentifier">&nbsp;&nbsp;&nbsp;&nbsp;backgroundTaskIdentifier</option>
+	
+	<option value="//api/name/cache">&nbsp;&nbsp;&nbsp;&nbsp;cache</option>
+	
+	<option value="//api/name/cacheKey">&nbsp;&nbsp;&nbsp;&nbsp;cacheKey</option>
+	
+	<option value="//api/name/cachePolicy">&nbsp;&nbsp;&nbsp;&nbsp;cachePolicy</option>
+	
+	<option value="//api/name/cacheTimeoutInterval">&nbsp;&nbsp;&nbsp;&nbsp;cacheTimeoutInterval</option>
+	
+	<option value="//api/name/cancelled">&nbsp;&nbsp;&nbsp;&nbsp;cancelled</option>
+	
+	<option value="//api/name/configurationDelegate">&nbsp;&nbsp;&nbsp;&nbsp;configurationDelegate</option>
+	
+	<option value="//api/name/defaultHTTPEncoding">&nbsp;&nbsp;&nbsp;&nbsp;defaultHTTPEncoding</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/disableCertificateValidation">&nbsp;&nbsp;&nbsp;&nbsp;disableCertificateValidation</option>
+	
+	<option value="//api/name/followRedirect">&nbsp;&nbsp;&nbsp;&nbsp;followRedirect</option>
+	
+	<option value="//api/name/loaded">&nbsp;&nbsp;&nbsp;&nbsp;loaded</option>
+	
+	<option value="//api/name/loading">&nbsp;&nbsp;&nbsp;&nbsp;loading</option>
+	
+	<option value="//api/name/method">&nbsp;&nbsp;&nbsp;&nbsp;method</option>
+	
+	<option value="//api/name/onDidFailLoadWithError">&nbsp;&nbsp;&nbsp;&nbsp;onDidFailLoadWithError</option>
+	
+	<option value="//api/name/onDidLoadResponse">&nbsp;&nbsp;&nbsp;&nbsp;onDidLoadResponse</option>
+	
+	<option value="//api/name/params">&nbsp;&nbsp;&nbsp;&nbsp;params</option>
+	
+	<option value="//api/name/password">&nbsp;&nbsp;&nbsp;&nbsp;password</option>
+	
+	<option value="//api/name/queue">&nbsp;&nbsp;&nbsp;&nbsp;queue</option>
+	
+	<option value="//api/name/reachabilityObserver">&nbsp;&nbsp;&nbsp;&nbsp;reachabilityObserver</option>
+	
+	<option value="//api/name/resourcePath">&nbsp;&nbsp;&nbsp;&nbsp;resourcePath</option>
+	
+	<option value="//api/name/response">&nbsp;&nbsp;&nbsp;&nbsp;response</option>
+	
+	<option value="//api/name/runLoopMode">&nbsp;&nbsp;&nbsp;&nbsp;runLoopMode</option>
+	
+	<option value="//api/name/timeoutInterval">&nbsp;&nbsp;&nbsp;&nbsp;timeoutInterval</option>
+	
+	<option value="//api/name/userData">&nbsp;&nbsp;&nbsp;&nbsp;userData</option>
+	
+	<option value="//api/name/username">&nbsp;&nbsp;&nbsp;&nbsp;username</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/requestWithURL:">&nbsp;&nbsp;&nbsp;&nbsp;+ requestWithURL:</option>
+	
+	<option value="//api/name/requestWithURL:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;+ requestWithURL:delegate:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/cancel">&nbsp;&nbsp;&nbsp;&nbsp;- cancel</option>
+	
+	<option value="//api/name/createTimeoutTimer">&nbsp;&nbsp;&nbsp;&nbsp;- createTimeoutTimer</option>
+	
+	<option value="//api/name/didFailLoadWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- didFailLoadWithError:</option>
+	
+	<option value="//api/name/didFinishLoad:">&nbsp;&nbsp;&nbsp;&nbsp;- didFinishLoad:</option>
+	
+	<option value="//api/name/finalizeLoad:">&nbsp;&nbsp;&nbsp;&nbsp;- finalizeLoad:</option>
+	
+	<option value="//api/name/initWithURL:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithURL:</option>
+	
+	<option value="//api/name/initWithURL:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithURL:delegate:</option>
+	
+	<option value="//api/name/invalidateTimeoutTimer">&nbsp;&nbsp;&nbsp;&nbsp;- invalidateTimeoutTimer</option>
+	
+	<option value="//api/name/isCacheable">&nbsp;&nbsp;&nbsp;&nbsp;- isCacheable</option>
+	
+	<option value="//api/name/isDELETE">&nbsp;&nbsp;&nbsp;&nbsp;- isDELETE</option>
+	
+	<option value="//api/name/isGET">&nbsp;&nbsp;&nbsp;&nbsp;- isGET</option>
+	
+	<option value="//api/name/isHEAD">&nbsp;&nbsp;&nbsp;&nbsp;- isHEAD</option>
+	
+	<option value="//api/name/isPOST">&nbsp;&nbsp;&nbsp;&nbsp;- isPOST</option>
+	
+	<option value="//api/name/isPUT">&nbsp;&nbsp;&nbsp;&nbsp;- isPUT</option>
+	
+	<option value="//api/name/isUnsent">&nbsp;&nbsp;&nbsp;&nbsp;- isUnsent</option>
+	
+	<option value="//api/name/prepareURLRequest">&nbsp;&nbsp;&nbsp;&nbsp;- prepareURLRequest</option>
+	
+	<option value="//api/name/reset">&nbsp;&nbsp;&nbsp;&nbsp;- reset</option>
+	
+	<option value="//api/name/send">&nbsp;&nbsp;&nbsp;&nbsp;- send</option>
+	
+	<option value="//api/name/sendAsynchronously">&nbsp;&nbsp;&nbsp;&nbsp;- sendAsynchronously</option>
+	
+	<option value="//api/name/sendSynchronously">&nbsp;&nbsp;&nbsp;&nbsp;- sendSynchronously</option>
+	
+	<option value="//api/name/setBody:forMIMEType:">&nbsp;&nbsp;&nbsp;&nbsp;- setBody:forMIMEType:</option>
+	
+	<option value="//api/name/timeout">&nbsp;&nbsp;&nbsp;&nbsp;- timeout</option>
+	
+	<option value="//api/name/wasSentToResourcePath:">&nbsp;&nbsp;&nbsp;&nbsp;- wasSentToResourcePath:</option>
+	
+	<option value="//api/name/wasSentToResourcePath:method:">&nbsp;&nbsp;&nbsp;&nbsp;- wasSentToResourcePath:method:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating a Request">Creating a Request</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Setting Properties">Setting Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Working with the HTTP Body">Working with the HTTP Body</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Delegates">Delegates</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling Blocks">Handling Blocks</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Background Tasks">Background Tasks</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Authentication">Authentication</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_OAuth1 Secrets">OAuth1 Secrets</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_OAuth2 Secrets">OAuth2 Secrets</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Caching">Caching</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling SSL Validation">Handling SSL Validation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Sending and Managing the Request">Sending and Managing the Request</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Resetting the State">Resetting the State</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Callbacks">Callbacks</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Timing Out the Request">Timing Out the Request</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Determining the Request Type and State">Determining the Request Type and State</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Internals Methods">Internals Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/HTTPBody">HTTPBody</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/HTTPBodyString">HTTPBodyString</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/HTTPMethod">HTTPMethod</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OAuth1AccessToken">OAuth1AccessToken</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OAuth1AccessTokenSecret">OAuth1AccessTokenSecret</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OAuth1ConsumerKey">OAuth1ConsumerKey</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OAuth1ConsumerSecret">OAuth1ConsumerSecret</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OAuth2AccessToken">OAuth2AccessToken</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OAuth2RefreshToken">OAuth2RefreshToken</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/URL">URL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/URLRequest">URLRequest</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/additionalHTTPHeaders">additionalHTTPHeaders</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/additionalRootCertificates">additionalRootCertificates</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/authenticationType">authenticationType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/backgroundPolicy">backgroundPolicy</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/backgroundTaskIdentifier">backgroundTaskIdentifier</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cache">cache</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cacheKey">cacheKey</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cachePolicy">cachePolicy</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cacheTimeoutInterval">cacheTimeoutInterval</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancelled">cancelled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/configurationDelegate">configurationDelegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultHTTPEncoding">defaultHTTPEncoding</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disableCertificateValidation">disableCertificateValidation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/followRedirect">followRedirect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loaded">loaded</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loading">loading</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/method">method</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onDidFailLoadWithError">onDidFailLoadWithError</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onDidLoadResponse">onDidLoadResponse</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/params">params</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/password">password</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/queue">queue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reachabilityObserver">reachabilityObserver</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resourcePath">resourcePath</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/response">response</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/runLoopMode">runLoopMode</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/timeoutInterval">timeoutInterval</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userData">userData</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/username">username</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestWithURL:">requestWithURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestWithURL:delegate:">requestWithURL:delegate:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancel">cancel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createTimeoutTimer">createTimeoutTimer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didFailLoadWithError:">didFailLoadWithError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didFinishLoad:">didFinishLoad:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/finalizeLoad:">finalizeLoad:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithURL:">initWithURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithURL:delegate:">initWithURL:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/invalidateTimeoutTimer">invalidateTimeoutTimer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isCacheable">isCacheable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isDELETE">isDELETE</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isGET">isGET</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isHEAD">isHEAD</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isPOST">isPOST</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isPUT">isPUT</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isUnsent">isUnsent</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/prepareURLRequest">prepareURLRequest</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reset">reset</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/send">send</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendAsynchronously">sendAsynchronously</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendSynchronously">sendSynchronously</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setBody:forMIMEType:">setBody:forMIMEType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/timeout">timeout</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/wasSentToResourcePath:">wasSentToResourcePath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/wasSentToResourcePath:method:">wasSentToResourcePath:method:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="RKRequest Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">RKRequest Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">RKRequest.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Models the request portion of an HTTP request/<a href="#//api/name/response">response</a> cycle.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating a Request" name="task_Creating a Request"></a>
+						<h3 class="subsubtitle task-title">Creating a Request</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestWithURL:">+&nbsp;requestWithURL:</a></code>
+		<span class="tooltip"><p>Creates and returns a RKRequest object initialized to load content from a
+provided <a href="#//api/name/URL">URL</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithURL:">&ndash;&nbsp;initWithURL:</a></code>
+		<span class="tooltip"><p>Initializes a RKRequest object to load from a provided <a href="#//api/name/URL">URL</a></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestWithURL:delegate:">+&nbsp;requestWithURL:delegate:</a></code>
+		<span class="tooltip"><p>Creates and returns a RKRequest object initialized to load content from a
+provided <a href="#//api/name/URL">URL</a> with a specified <a href="#//api/name/delegate">delegate</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithURL:delegate:">&ndash;&nbsp;initWithURL:delegate:</a></code>
+		<span class="tooltip"><p>Initializes a RKRequest object to load from a provided <a href="#//api/name/URL">URL</a></p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Setting Properties" name="task_Setting Properties"></a>
+						<h3 class="subsubtitle task-title">Setting Properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/URL">&nbsp;&nbsp;URL</a></code>
+		<span class="tooltip"><p>The URL this request is <a href="#//api/name/loading">loading</a></p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resourcePath">&nbsp;&nbsp;resourcePath</a></code>
+		<span class="tooltip"><p>The resourcePath portion of the request&rsquo;s <a href="#//api/name/URL">URL</a></p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/method">&nbsp;&nbsp;method</a></code>
+		<span class="tooltip"><p>The HTTP verb in which the request is sent</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/HTTPMethod">&nbsp;&nbsp;HTTPMethod</a></code>
+		<span class="tooltip"><p>Returns HTTP <a href="#//api/name/method">method</a> as a string used for this request.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/response">&nbsp;&nbsp;response</a></code>
+		<span class="tooltip"><p>The response returned when the receiver was sent.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/params">&nbsp;&nbsp;params</a></code>
+		<span class="tooltip"><p>A serializable collection of parameters sent as the HTTP body of the request</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/additionalHTTPHeaders">&nbsp;&nbsp;additionalHTTPHeaders</a></code>
+		<span class="tooltip"><p>A dictionary of additional HTTP Headers to <a href="#//api/name/send">send</a> with the request</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/runLoopMode">&nbsp;&nbsp;runLoopMode</a></code>
+		<span class="tooltip"><p>The run loop mode under which the underlying NSURLConnection is performed</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/userData">&nbsp;&nbsp;userData</a></code>
+		<span class="tooltip"><p>An opaque pointer to associate user defined data with the request.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/URLRequest">&nbsp;&nbsp;URLRequest</a></code>
+		<span class="tooltip"><p>The underlying NSMutableURLRequest sent for this request</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultHTTPEncoding">&nbsp;&nbsp;defaultHTTPEncoding</a></code>
+		<span class="tooltip"><p>The default value used to decode HTTP body content when HTTP headers received do not provide information on the content.
+This encoding will be used by the <a href="../Classes/RKResponse.html">RKResponse</a> when creating the body content</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Working with the HTTP Body" name="task_Working with the HTTP Body"></a>
+						<h3 class="subsubtitle task-title">Working with the HTTP Body</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setBody:forMIMEType:">&ndash;&nbsp;setBody:forMIMEType:</a></code>
+		<span class="tooltip"><p>Sets the request body using the provided NSDictionary after passing the
+NSDictionary through serialization using the currently configured parser for
+the provided MIMEType.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/HTTPBody">&nbsp;&nbsp;HTTPBody</a></code>
+		<span class="tooltip"><p>The HTTP body as a NSData used for this request</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/HTTPBodyString">&nbsp;&nbsp;HTTPBodyString</a></code>
+		<span class="tooltip"><p>The HTTP body as a string used for this request</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Delegates" name="task_Delegates"></a>
+						<h3 class="subsubtitle task-title">Delegates</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+		<span class="tooltip"><p>The delegate to inform when the request is completed</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/configurationDelegate">&nbsp;&nbsp;configurationDelegate</a></code>
+		<span class="tooltip"><p>A <a href="#//api/name/delegate">delegate</a> responsible for configuring the request. Centralizes common
+configuration data (such as HTTP headers, authentication information, etc)
+for re-use.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Handling Blocks" name="task_Handling Blocks"></a>
+						<h3 class="subsubtitle task-title">Handling Blocks</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/onDidLoadResponse">&nbsp;&nbsp;onDidLoadResponse</a></code>
+		<span class="tooltip"><p>A block to invoke when the receiver has <a href="#//api/name/loaded">loaded</a> a <a href="#//api/name/response">response</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/onDidFailLoadWithError">&nbsp;&nbsp;onDidFailLoadWithError</a></code>
+		<span class="tooltip"><p>A block to invoke when the receuver has failed <a href="#//api/name/loading">loading</a> due to an error.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/followRedirect">&nbsp;&nbsp;followRedirect</a></code>
+		<span class="tooltip"><p>Whether this request should follow server redirects or not.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Background Tasks" name="task_Background Tasks"></a>
+						<h3 class="subsubtitle task-title">Background Tasks</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/backgroundPolicy">&nbsp;&nbsp;backgroundPolicy</a></code>
+		<span class="tooltip"><p>The policy to take on transition to the background (iOS 4.x and higher only)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/backgroundTaskIdentifier">&nbsp;&nbsp;backgroundTaskIdentifier</a></code>
+		<span class="tooltip"><p>Returns the identifier of the task that has been sent to the background.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Authentication" name="task_Authentication"></a>
+						<h3 class="subsubtitle task-title">Authentication</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/authenticationType">&nbsp;&nbsp;authenticationType</a></code>
+		<span class="tooltip"><p>The type of authentication to use for this request.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/username">&nbsp;&nbsp;username</a></code>
+		<span class="tooltip"><p>The username to use for authentication via HTTP AUTH.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/password">&nbsp;&nbsp;password</a></code>
+		<span class="tooltip"><p>The password to use for authentication via HTTP AUTH.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="OAuth1 Secrets" name="task_OAuth1 Secrets"></a>
+						<h3 class="subsubtitle task-title">OAuth1 Secrets</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OAuth1ConsumerKey">&nbsp;&nbsp;OAuth1ConsumerKey</a></code>
+		<span class="tooltip"><p>The OAuth 1.0 consumer key</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OAuth1ConsumerSecret">&nbsp;&nbsp;OAuth1ConsumerSecret</a></code>
+		<span class="tooltip"><p>The OAuth 1.0 consumer secret</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OAuth1AccessToken">&nbsp;&nbsp;OAuth1AccessToken</a></code>
+		<span class="tooltip"><p>The OAuth 1.0 access token</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OAuth1AccessTokenSecret">&nbsp;&nbsp;OAuth1AccessTokenSecret</a></code>
+		<span class="tooltip"><p>The OAuth 1.0 access token secret</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="OAuth2 Secrets" name="task_OAuth2 Secrets"></a>
+						<h3 class="subsubtitle task-title">OAuth2 Secrets</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OAuth2AccessToken">&nbsp;&nbsp;OAuth2AccessToken</a></code>
+		<span class="tooltip"><p>The OAuth 2.0 access token</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OAuth2RefreshToken">&nbsp;&nbsp;OAuth2RefreshToken</a></code>
+		<span class="tooltip"><p>The OAuth 2.0 refresh token</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Caching" name="task_Caching"></a>
+						<h3 class="subsubtitle task-title">Caching</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cacheKey">&nbsp;&nbsp;cacheKey</a></code>
+		<span class="tooltip"><p>Returns the <a href="#//api/name/cache">cache</a> key for getting/setting the <a href="#//api/name/cache">cache</a> entry for this request in
+the <a href="#//api/name/cache">cache</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cachePolicy">&nbsp;&nbsp;cachePolicy</a></code>
+		<span class="tooltip"><p>The <a href="#//api/name/cache">cache</a> policy used when storing this request into the request <a href="#//api/name/cache">cache</a></p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cache">&nbsp;&nbsp;cache</a></code>
+		<span class="tooltip"><p>The request cache to store and load responses for this request.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isCacheable">&ndash;&nbsp;isCacheable</a></code>
+		<span class="tooltip"><p>Returns YES if the request is cacheable</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cacheTimeoutInterval">&nbsp;&nbsp;cacheTimeoutInterval</a></code>
+		<span class="tooltip"><p>The <a href="#//api/name/timeout">timeout</a> interval within which the request should not be sent and the cached
+<a href="#//api/name/response">response</a> should be used. Used if the <a href="#//api/name/cache">cache</a> policy includes
+RKRequestCachePolicyTimeout.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Handling SSL Validation" name="task_Handling SSL Validation"></a>
+						<h3 class="subsubtitle task-title">Handling SSL Validation</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disableCertificateValidation">&nbsp;&nbsp;disableCertificateValidation</a></code>
+		<span class="tooltip"><p>Flag for disabling SSL certificate validation.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/additionalRootCertificates">&nbsp;&nbsp;additionalRootCertificates</a></code>
+		<span class="tooltip"><p>A set of additional certificates to be used in evaluating server SSL
+certificates.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Sending and Managing the Request" name="task_Sending and Managing the Request"></a>
+						<h3 class="subsubtitle task-title">Sending and Managing the Request</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/prepareURLRequest">&ndash;&nbsp;prepareURLRequest</a></code>
+		<span class="tooltip"><p>Setup the NS<a href="#//api/name/URLRequest">URLRequest</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/queue">&nbsp;&nbsp;queue</a></code>
+		<span class="tooltip"><p>The request queue that this request belongs to</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/send">&ndash;&nbsp;send</a></code>
+		<span class="tooltip"><p>Send the request asynchronously. It will be added to the <a href="#//api/name/queue">queue</a> and dispatched
+as soon as possible.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendAsynchronously">&ndash;&nbsp;sendAsynchronously</a></code>
+		<span class="tooltip"><p>Immediately dispatch a request asynchronously, skipping the request <a href="#//api/name/queue">queue</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendSynchronously">&ndash;&nbsp;sendSynchronously</a></code>
+		<span class="tooltip"><p>Send the request synchronously and return a hydrated <a href="#//api/name/response">response</a> object.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancelled">&nbsp;&nbsp;cancelled</a></code>
+		<span class="tooltip"><p>Returns a Boolean value indicating whether the request has been cancelled.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancel">&ndash;&nbsp;cancel</a></code>
+		<span class="tooltip"><p>Cancels the underlying <a href="#//api/name/URL">URL</a> connection.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reachabilityObserver">&nbsp;&nbsp;reachabilityObserver</a></code>
+		<span class="tooltip"><p>The reachability observer to consult for network status. Used for performing
+offline <a href="#//api/name/cache">cache</a> loads.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Resetting the State" name="task_Resetting the State"></a>
+						<h3 class="subsubtitle task-title">Resetting the State</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reset">&ndash;&nbsp;reset</a></code>
+		<span class="tooltip"><p>Resets the state of an RKRequest so that it can be re-sent.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Callbacks" name="task_Callbacks"></a>
+						<h3 class="subsubtitle task-title">Callbacks</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didFailLoadWithError:">&ndash;&nbsp;didFailLoadWithError:</a></code>
+		<span class="tooltip"><p>Callback performed to notify the request that the underlying NSURLConnection
+has failed with an error.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didFinishLoad:">&ndash;&nbsp;didFinishLoad:</a></code>
+		<span class="tooltip"><p>Callback performed to notify the request that the underlying NSURLConnection
+has completed with a <a href="#//api/name/response">response</a>.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Timing Out the Request" name="task_Timing Out the Request"></a>
+						<h3 class="subsubtitle task-title">Timing Out the Request</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/timeoutInterval">&nbsp;&nbsp;timeoutInterval</a></code>
+		<span class="tooltip"><p>The <a href="#//api/name/timeout">timeout</a> interval within which the request should be <a href="#//api/name/cancelled">cancelled</a> if no data
+has been received.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createTimeoutTimer">&ndash;&nbsp;createTimeoutTimer</a></code>
+		<span class="tooltip"><p>Creates a timeoutTimer to trigger the <a href="#//api/name/timeout">timeout</a> <a href="#//api/name/method">method</a></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/timeout">&ndash;&nbsp;timeout</a></code>
+		<span class="tooltip"><p>Cancels request due to connection timeout exceeded.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/invalidateTimeoutTimer">&ndash;&nbsp;invalidateTimeoutTimer</a></code>
+		<span class="tooltip"><p>Invalidates the <a href="#//api/name/timeout">timeout</a> timer.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Determining the Request Type and State" name="task_Determining the Request Type and State"></a>
+						<h3 class="subsubtitle task-title">Determining the Request Type and State</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isGET">&ndash;&nbsp;isGET</a></code>
+		<span class="tooltip"><p>Returns YES when this is a GET request</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isPOST">&ndash;&nbsp;isPOST</a></code>
+		<span class="tooltip"><p>Returns YES when this is a POST request</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isPUT">&ndash;&nbsp;isPUT</a></code>
+		<span class="tooltip"><p>Returns YES when this is a PUT request</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isDELETE">&ndash;&nbsp;isDELETE</a></code>
+		<span class="tooltip"><p>Returns YES when this is a DELETE request</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isHEAD">&ndash;&nbsp;isHEAD</a></code>
+		<span class="tooltip"><p>Returns YES when this is a HEAD request</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loading">&nbsp;&nbsp;loading</a></code>
+		<span class="tooltip"><p>Returns YES when this request is in-progress</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loaded">&nbsp;&nbsp;loaded</a></code>
+		<span class="tooltip"><p>Returns YES when this request has been completed</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isUnsent">&ndash;&nbsp;isUnsent</a></code>
+		<span class="tooltip"><p>Returns YES when this request has not yet been sent</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/wasSentToResourcePath:">&ndash;&nbsp;wasSentToResourcePath:</a></code>
+		<span class="tooltip"><p>Returns YES when the request was sent to the specified resource path</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/wasSentToResourcePath:method:">&ndash;&nbsp;wasSentToResourcePath:method:</a></code>
+		<span class="tooltip"><p>Returns YES when the receiver was sent to the specified resource path with a given request <a href="#//api/name/method">method</a>.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Internals Methods" name="task_Internals Methods"></a>
+						<h3 class="subsubtitle task-title">Internals Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/finalizeLoad:">&ndash;&nbsp;finalizeLoad:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/HTTPBody" title="HTTPBody"></a>
+	<h3 class="subsubtitle method-title">HTTPBody</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The HTTP body as a NSData used for this request</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSData *HTTPBody</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The HTTP body as a NSData used for this request</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/HTTPBodyString" title="HTTPBodyString"></a>
+	<h3 class="subsubtitle method-title">HTTPBodyString</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The HTTP body as a string used for this request</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *HTTPBodyString</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The HTTP body as a string used for this request</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/HTTPMethod" title="HTTPMethod"></a>
+	<h3 class="subsubtitle method-title">HTTPMethod</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns HTTP <a href="#//api/name/method">method</a> as a string used for this request.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *HTTPMethod</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns HTTP <a href="#//api/name/method">method</a> as a string used for this request.</p>
+
+<p>This should be set through the <a href="#//api/name/method">method</a> property using an RKRequestMethod type.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/method">[RKRequest method]</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OAuth1AccessToken" title="OAuth1AccessToken"></a>
+	<h3 class="subsubtitle method-title">OAuth1AccessToken</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The OAuth 1.0 access token</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *OAuth1AccessToken</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The OAuth 1.0 access token</p>
+
+<p>Used to build an Authorization header when <a href="#//api/name/authenticationType">authenticationType</a> is
+RKRequestAuthenticationTypeOAuth1</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/authenticationType">@property authenticationType</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OAuth1AccessTokenSecret" title="OAuth1AccessTokenSecret"></a>
+	<h3 class="subsubtitle method-title">OAuth1AccessTokenSecret</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The OAuth 1.0 access token secret</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *OAuth1AccessTokenSecret</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The OAuth 1.0 access token secret</p>
+
+<p>Used to build an Authorization header when <a href="#//api/name/authenticationType">authenticationType</a> is
+RKRequestAuthenticationTypeOAuth1</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/authenticationType">@property authenticationType</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OAuth1ConsumerKey" title="OAuth1ConsumerKey"></a>
+	<h3 class="subsubtitle method-title">OAuth1ConsumerKey</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The OAuth 1.0 consumer key</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *OAuth1ConsumerKey</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The OAuth 1.0 consumer key</p>
+
+<p>Used to build an Authorization header when <a href="#//api/name/authenticationType">authenticationType</a> is
+RKRequestAuthenticationTypeOAuth1</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/authenticationType">@property authenticationType</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OAuth1ConsumerSecret" title="OAuth1ConsumerSecret"></a>
+	<h3 class="subsubtitle method-title">OAuth1ConsumerSecret</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The OAuth 1.0 consumer secret</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *OAuth1ConsumerSecret</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The OAuth 1.0 consumer secret</p>
+
+<p>Used to build an Authorization header when <a href="#//api/name/authenticationType">authenticationType</a> is
+RKRequestAuthenticationTypeOAuth1</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/authenticationType">@property authenticationType</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OAuth2AccessToken" title="OAuth2AccessToken"></a>
+	<h3 class="subsubtitle method-title">OAuth2AccessToken</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The OAuth 2.0 access token</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *OAuth2AccessToken</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The OAuth 2.0 access token</p>
+
+<p>Used to build an Authorization header when <a href="#//api/name/authenticationType">authenticationType</a> is
+RKRequestAuthenticationTypeOAuth2</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/authenticationType">@property authenticationType</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OAuth2RefreshToken" title="OAuth2RefreshToken"></a>
+	<h3 class="subsubtitle method-title">OAuth2RefreshToken</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The OAuth 2.0 refresh token</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *OAuth2RefreshToken</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The OAuth 2.0 refresh token</p>
+
+<p>Used to retrieve a new access token before expiration and to build an
+Authorization header when <a href="#//api/name/authenticationType">authenticationType</a> is
+RKRequestAuthenticationTypeOAuth2</p><div class="bug"><p><strong>Bug:</strong> <strong>NOT IMPLEMENTED</strong>: This functionality is not yet implemented.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/authenticationType">@property authenticationType</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/URL" title="URL"></a>
+	<h3 class="subsubtitle method-title">URL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The URL this request is <a href="#//api/name/loading">loading</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSURL *URL</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The URL this request is <a href="#//api/name/loading">loading</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/URLRequest" title="URLRequest"></a>
+	<h3 class="subsubtitle method-title">URLRequest</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The underlying NSMutableURLRequest sent for this request</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSMutableURLRequest *URLRequest</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The underlying NSMutableURLRequest sent for this request</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/additionalHTTPHeaders" title="additionalHTTPHeaders"></a>
+	<h3 class="subsubtitle method-title">additionalHTTPHeaders</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A dictionary of additional HTTP Headers to <a href="#//api/name/send">send</a> with the request</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSDictionary *additionalHTTPHeaders</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A dictionary of additional HTTP Headers to <a href="#//api/name/send">send</a> with the request</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/additionalRootCertificates" title="additionalRootCertificates"></a>
+	<h3 class="subsubtitle method-title">additionalRootCertificates</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A set of additional certificates to be used in evaluating server SSL
+certificates.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSSet *additionalRootCertificates</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A set of additional certificates to be used in evaluating server SSL
+certificates.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/authenticationType" title="authenticationType"></a>
+	<h3 class="subsubtitle method-title">authenticationType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The type of authentication to use for this request.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) RKRequestAuthenticationType authenticationType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The type of authentication to use for this request.</p>
+
+<p>This must be assigned one of the following:</p>
+
+<ul>
+<li><code>RKRequestAuthenticationTypeNone</code>: Disable the use of authentication</li>
+<li><code>RKRequestAuthenticationTypeHTTP</code>: Use NSURLConnection&rsquo;s HTTP AUTH
+auto-negotiation</li>
+<li><code>RKRequestAuthenticationTypeHTTPBasic</code>: Force the use of HTTP Basic
+authentication. This will supress AUTH challenges as RestKit will add an
+Authorization header establishing login via HTTP basic.  This is an
+optimization that skips the challenge portion of the request.</li>
+<li><code>RKRequestAuthenticationTypeOAuth1</code>: Enable the use of OAuth 1.0
+authentication. <a href="#//api/name/OAuth1ConsumerKey">OAuth1ConsumerKey</a>, <a href="#//api/name/OAuth1ConsumerSecret">OAuth1ConsumerSecret</a>, <a href="#//api/name/OAuth1AccessToken">OAuth1AccessToken</a>,
+and <a href="#//api/name/OAuth1AccessTokenSecret">OAuth1AccessTokenSecret</a> must be set.</li>
+<li><code>RKRequestAuthenticationTypeOAuth2</code>: Enable the use of OAuth 2.0
+authentication. <a href="#//api/name/OAuth2AccessToken">OAuth2AccessToken</a> must be set.</li>
+</ul>
+
+
+<p><strong>Default</strong>: RKRequestAuthenticationTypeNone</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/backgroundPolicy" title="backgroundPolicy"></a>
+	<h3 class="subsubtitle method-title">backgroundPolicy</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The policy to take on transition to the background (iOS 4.x and higher only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) RKRequestBackgroundPolicy backgroundPolicy</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The policy to take on transition to the background (iOS 4.x and higher only)</p>
+
+<p><strong>Default:</strong> RKRequestBackgroundPolicyCancel</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/backgroundTaskIdentifier" title="backgroundTaskIdentifier"></a>
+	<h3 class="subsubtitle method-title">backgroundTaskIdentifier</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the identifier of the task that has been sent to the background.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) UIBackgroundTaskIdentifier backgroundTaskIdentifier</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the identifier of the task that has been sent to the background.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cache" title="cache"></a>
+	<h3 class="subsubtitle method-title">cache</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The request cache to store and load responses for this request.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) RKRequestCache *cache</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The request cache to store and load responses for this request.</p>
+
+<p>Generally configured by the <a href="../Classes/RKClient.html">RKClient</a> instance that minted this request</p>
+
+<p>This must be assigned one of the following:</p>
+
+<ul>
+<li><code>RKRequestCachePolicyNone</code>: Never use the cache.</li>
+<li><code>RKRequestCachePolicyLoadIfOffline</code>: Load from the cache when offline.</li>
+<li><code>RKRequestCachePolicyLoadOnError</code>: Load from the cache if an error is
+encountered.</li>
+<li><code>RKRequestCachePolicyEtag</code>: Load from the cache if there is data stored and
+the server returns a 304 (Not Modified) <a href="#//api/name/response">response</a>.</li>
+<li><code>RKRequestCachePolicyEnabled</code>: Load from the cache whenever data has been
+stored.</li>
+<li><code>RKRequestCachePolicyTimeout</code>: Load from the cache if the
+<a href="#//api/name/cacheTimeoutInterval">cacheTimeoutInterval</a> is reached before the server responds.</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cacheKey" title="cacheKey"></a>
+	<h3 class="subsubtitle method-title">cacheKey</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the <a href="#//api/name/cache">cache</a> key for getting/setting the <a href="#//api/name/cache">cache</a> entry for this request in
+the <a href="#//api/name/cache">cache</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *cacheKey</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the <a href="#//api/name/cache">cache</a> key for getting/setting the <a href="#//api/name/cache">cache</a> entry for this request in
+the <a href="#//api/name/cache">cache</a>.</p>
+
+<p>The cacheKey is an MD5 value computed by hashing a combination of the
+destination <a href="#//api/name/URL">URL</a>, the HTTP verb, and the request body (when possible).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cachePolicy" title="cachePolicy"></a>
+	<h3 class="subsubtitle method-title">cachePolicy</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="#//api/name/cache">cache</a> policy used when storing this request into the request <a href="#//api/name/cache">cache</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) RKRequestCachePolicy cachePolicy</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The <a href="#//api/name/cache">cache</a> policy used when storing this request into the request <a href="#//api/name/cache">cache</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cacheTimeoutInterval" title="cacheTimeoutInterval"></a>
+	<h3 class="subsubtitle method-title">cacheTimeoutInterval</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="#//api/name/timeout">timeout</a> interval within which the request should not be sent and the cached
+<a href="#//api/name/response">response</a> should be used. Used if the <a href="#//api/name/cache">cache</a> policy includes
+RKRequestCachePolicyTimeout.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSTimeInterval cacheTimeoutInterval</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The <a href="#//api/name/timeout">timeout</a> interval within which the request should not be sent and the cached
+<a href="#//api/name/response">response</a> should be used. Used if the <a href="#//api/name/cache">cache</a> policy includes
+RKRequestCachePolicyTimeout.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cancelled" title="cancelled"></a>
+	<h3 class="subsubtitle method-title">cancelled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a Boolean value indicating whether the request has been cancelled.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly, getter=isCancelled) BOOL cancelled</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the request was sent a <a href="#//api/name/cancel">cancel</a> message, otherwise NO.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a Boolean value indicating whether the request has been cancelled.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/configurationDelegate" title="configurationDelegate"></a>
+	<h3 class="subsubtitle method-title">configurationDelegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A <a href="#//api/name/delegate">delegate</a> responsible for configuring the request. Centralizes common
+configuration data (such as HTTP headers, authentication information, etc)
+for re-use.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id&lt;&gt; configurationDelegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A <a href="#//api/name/delegate">delegate</a> responsible for configuring the request. Centralizes common
+configuration data (such as HTTP headers, authentication information, etc)
+for re-use.</p>
+
+<p><a href="../Classes/RKClient.html">RKClient</a> and <a href="../Classes/RKObjectManager.html">RKObjectManager</a> conform to the <a href="../Protocols/RKConfigurationDelegate.html">RKConfigurationDelegate</a> protocol.
+Request and object loader instances built through these objects will have a
+reference to their parent client/object manager assigned as the configuration
+<a href="#//api/name/delegate">delegate</a>.</p>
+
+<p><strong>Default</strong>: nil</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/RKClient.html">RKClient</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/RKObjectManager.html">RKObjectManager</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultHTTPEncoding" title="defaultHTTPEncoding"></a>
+	<h3 class="subsubtitle method-title">defaultHTTPEncoding</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The default value used to decode HTTP body content when HTTP headers received do not provide information on the content.
+This encoding will be used by the <a href="../Classes/RKResponse.html">RKResponse</a> when creating the body content</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSStringEncoding defaultHTTPEncoding</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The default value used to decode HTTP body content when HTTP headers received do not provide information on the content.
+This encoding will be used by the <a href="../Classes/RKResponse.html">RKResponse</a> when creating the body content</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The delegate to inform when the request is completed</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id&lt;&gt; delegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The delegate to inform when the request is completed</p>
+
+<p>If the object implements the <a href="../Protocols/RKRequestDelegate.html">RKRequestDelegate</a> protocol, it will receive
+request lifecycle event messages.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/disableCertificateValidation" title="disableCertificateValidation"></a>
+	<h3 class="subsubtitle method-title">disableCertificateValidation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Flag for disabling SSL certificate validation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL disableCertificateValidation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Flag for disabling SSL certificate validation.</p>
+
+<p>When YES, SSL certificates will not be validated.</p>
+
+<p><em>Default</em>: NO</p><div class="warning"><p><strong>Warning:</strong> <strong>WARNING</strong>: This is a potential security exposure and should be used
+<strong>ONLY while debugging</strong> in a controlled environment.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/followRedirect" title="followRedirect"></a>
+	<h3 class="subsubtitle method-title">followRedirect</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether this request should follow server redirects or not.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL followRedirect</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Whether this request should follow server redirects or not.</p>
+
+<p>@default YES</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loaded" title="loaded"></a>
+	<h3 class="subsubtitle method-title">loaded</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES when this request has been completed</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly, getter=isLoaded) BOOL loaded</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES when this request has been completed</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loading" title="loading"></a>
+	<h3 class="subsubtitle method-title">loading</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES when this request is in-progress</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly, getter=isLoading) BOOL loading</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES when this request is in-progress</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/method" title="method"></a>
+	<h3 class="subsubtitle method-title">method</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The HTTP verb in which the request is sent</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) RKRequestMethod method</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The HTTP verb in which the request is sent</p>
+
+<p><strong>Default</strong>: RKRequestMethodGET</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/onDidFailLoadWithError" title="onDidFailLoadWithError"></a>
+	<h3 class="subsubtitle method-title">onDidFailLoadWithError</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A block to invoke when the receuver has failed <a href="#//api/name/loading">loading</a> due to an error.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) RKRequestDidFailLoadWithErrorBlock onDidFailLoadWithError</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A block to invoke when the receuver has failed <a href="#//api/name/loading">loading</a> due to an error.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Protocols/RKRequestDelegate.html#//api/name/request:didFailLoadWithError:">[RKRequestDelegate request:didFailLoadWithError:]</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/onDidLoadResponse" title="onDidLoadResponse"></a>
+	<h3 class="subsubtitle method-title">onDidLoadResponse</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A block to invoke when the receiver has <a href="#//api/name/loaded">loaded</a> a <a href="#//api/name/response">response</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) RKRequestDidLoadResponseBlock onDidLoadResponse</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A block to invoke when the receiver has <a href="#//api/name/loaded">loaded</a> a <a href="#//api/name/response">response</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Protocols/RKRequestDelegate.html#//api/name/request:didLoadResponse:">[RKRequestDelegate request:didLoadResponse:]</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/params" title="params"></a>
+	<h3 class="subsubtitle method-title">params</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A serializable collection of parameters sent as the HTTP body of the request</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSObject&lt;RKRequestSerializable&gt; *params</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A serializable collection of parameters sent as the HTTP body of the request</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/password" title="password"></a>
+	<h3 class="subsubtitle method-title">password</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The password to use for authentication via HTTP AUTH.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *password</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The password to use for authentication via HTTP AUTH.</p>
+
+<p>Used to respond to an authentication challenge when <a href="#//api/name/authenticationType">authenticationType</a> is
+RKRequestAuthenticationTypeHTTP or RKRequestAuthenticationTypeHTTPBasic.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/authenticationType">@property authenticationType</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/queue" title="queue"></a>
+	<h3 class="subsubtitle method-title">queue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The request queue that this request belongs to</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) RKRequestQueue *queue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The request queue that this request belongs to</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reachabilityObserver" title="reachabilityObserver"></a>
+	<h3 class="subsubtitle method-title">reachabilityObserver</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The reachability observer to consult for network status. Used for performing
+offline <a href="#//api/name/cache">cache</a> loads.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) RKReachabilityObserver *reachabilityObserver</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The reachability observer to consult for network status. Used for performing
+offline <a href="#//api/name/cache">cache</a> loads.</p>
+
+<p>Generally configured by the <a href="../Classes/RKClient.html">RKClient</a> instance that minted this request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resourcePath" title="resourcePath"></a>
+	<h3 class="subsubtitle method-title">resourcePath</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The resourcePath portion of the request&rsquo;s <a href="#//api/name/URL">URL</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *resourcePath</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The resourcePath portion of the request&rsquo;s <a href="#//api/name/URL">URL</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/response" title="response"></a>
+	<h3 class="subsubtitle method-title">response</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The response returned when the receiver was sent.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readonly) RKResponse *response</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The response returned when the receiver was sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/runLoopMode" title="runLoopMode"></a>
+	<h3 class="subsubtitle method-title">runLoopMode</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The run loop mode under which the underlying NSURLConnection is performed</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *runLoopMode</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The run loop mode under which the underlying NSURLConnection is performed</p>
+
+<p><em>Default</em>: NSRunLoopCommonModes</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/timeoutInterval" title="timeoutInterval"></a>
+	<h3 class="subsubtitle method-title">timeoutInterval</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="#//api/name/timeout">timeout</a> interval within which the request should be <a href="#//api/name/cancelled">cancelled</a> if no data
+has been received.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSTimeInterval timeoutInterval</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The <a href="#//api/name/timeout">timeout</a> interval within which the request should be <a href="#//api/name/cancelled">cancelled</a> if no data
+has been received.</p>
+
+<p>The <a href="#//api/name/timeout">timeout</a> timer is <a href="#//api/name/cancelled">cancelled</a> as soon as we start receiving data and are
+expecting the request to finish.</p>
+
+<p><strong>Default</strong>: 120.0 seconds</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/userData" title="userData"></a>
+	<h3 class="subsubtitle method-title">userData</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An opaque pointer to associate user defined data with the request.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) id userData</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>An opaque pointer to associate user defined data with the request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/username" title="username"></a>
+	<h3 class="subsubtitle method-title">username</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The username to use for authentication via HTTP AUTH.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *username</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The username to use for authentication via HTTP AUTH.</p>
+
+<p>Used to respond to an authentication challenge when <a href="#//api/name/authenticationType">authenticationType</a> is
+RKRequestAuthenticationTypeHTTP or RKRequestAuthenticationTypeHTTPBasic.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/authenticationType">@property authenticationType</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/requestWithURL:" title="requestWithURL:"></a>
+	<h3 class="subsubtitle method-title">requestWithURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a RKRequest object initialized to load content from a
+provided <a href="#//api/name/URL">URL</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (RKRequest *)requestWithURL:(NSURL *)<em>URL</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The remote <a href="#//api/name/URL">URL</a> to load</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An autoreleased RKRequest object initialized with <a href="#//api/name/URL">URL</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates and returns a RKRequest object initialized to load content from a
+provided <a href="#//api/name/URL">URL</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestWithURL:delegate:" title="requestWithURL:delegate:"></a>
+	<h3 class="subsubtitle method-title">requestWithURL:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a RKRequest object initialized to load content from a
+provided <a href="#//api/name/URL">URL</a> with a specified <a href="#//api/name/delegate">delegate</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (RKRequest *)requestWithURL:(NSURL *)<em>URL</em> delegate:(id)<em>delegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The remote <a href="#//api/name/URL">URL</a> to load</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delegate</em></dt>
+			<dd><p>The <a href="#//api/name/delegate">delegate</a> that will handle the <a href="#//api/name/response">response</a> callbacks.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An autoreleased RKRequest object initialized with <a href="#//api/name/URL">URL</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates and returns a RKRequest object initialized to load content from a
+provided <a href="#//api/name/URL">URL</a> with a specified <a href="#//api/name/delegate">delegate</a>.</p><div class="bug"><p><strong>Bug:</strong> <strong>DEPRECATED</strong> in v0.10.0: Use <a href="#//api/name/requestWithURL:">[RKRequest requestWithURL:]</a> instead</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cancel" title="cancel"></a>
+	<h3 class="subsubtitle method-title">cancel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cancels the underlying <a href="#//api/name/URL">URL</a> connection.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)cancel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Cancels the underlying <a href="#//api/name/URL">URL</a> connection.</p>
+
+<p>This will call the requestDidCancel: <a href="#//api/name/delegate">delegate</a> <a href="#//api/name/method">method</a> if your <a href="#//api/name/delegate">delegate</a> responds
+to it. This does not subsequently set the the request&rsquo;s <a href="#//api/name/delegate">delegate</a> to nil.
+However, it&rsquo;s good practice to cancel the RKRequest and immediately set the
+<a href="#//api/name/delegate">delegate</a> property to nil within the delegate&rsquo;s dealloc <a href="#//api/name/method">method</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p>NSURLConnection:<a href="#//api/name/cancel">&ndash; cancel</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createTimeoutTimer" title="createTimeoutTimer"></a>
+	<h3 class="subsubtitle method-title">createTimeoutTimer</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a timeoutTimer to trigger the <a href="#//api/name/timeout">timeout</a> <a href="#//api/name/method">method</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)createTimeoutTimer</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a timeoutTimer to trigger the <a href="#//api/name/timeout">timeout</a> <a href="#//api/name/method">method</a></p>
+
+<p>This is mainly used so we can test that the timer is only being created once.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didFailLoadWithError:" title="didFailLoadWithError:"></a>
+	<h3 class="subsubtitle method-title">didFailLoadWithError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Callback performed to notify the request that the underlying NSURLConnection
+has failed with an error.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didFailLoadWithError:(NSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An NSError object containing the RKRestKitError that triggered
+the callback.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Callback performed to notify the request that the underlying NSURLConnection
+has failed with an error.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didFinishLoad:" title="didFinishLoad:"></a>
+	<h3 class="subsubtitle method-title">didFinishLoad:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Callback performed to notify the request that the underlying NSURLConnection
+has completed with a <a href="#//api/name/response">response</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didFinishLoad:(RKResponse *)<em>response</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>response</em></dt>
+			<dd><p>An <a href="../Classes/RKResponse.html">RKResponse</a> object with the result of the request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Callback performed to notify the request that the underlying NSURLConnection
+has completed with a <a href="#//api/name/response">response</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/finalizeLoad:" title="finalizeLoad:"></a>
+	<h3 class="subsubtitle method-title">finalizeLoad:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)finalizeLoad:(BOOL)<em>successful</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithURL:" title="initWithURL:"></a>
+	<h3 class="subsubtitle method-title">initWithURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes a RKRequest object to load from a provided <a href="#//api/name/URL">URL</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithURL:(NSURL *)<em>URL</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The remote <a href="#//api/name/URL">URL</a> to load</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An RKRequest object initialized with <a href="#//api/name/URL">URL</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initializes a RKRequest object to load from a provided <a href="#//api/name/URL">URL</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithURL:delegate:" title="initWithURL:delegate:"></a>
+	<h3 class="subsubtitle method-title">initWithURL:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes a RKRequest object to load from a provided <a href="#//api/name/URL">URL</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithURL:(NSURL *)<em>URL</em> delegate:(id)<em>delegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The remote <a href="#//api/name/URL">URL</a> to load</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delegate</em></dt>
+			<dd><p>The <a href="#//api/name/delegate">delegate</a> that will handle the <a href="#//api/name/response">response</a> callbacks.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An RKRequest object initialized with <a href="#//api/name/URL">URL</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initializes a RKRequest object to load from a provided <a href="#//api/name/URL">URL</a></p><div class="bug"><p><strong>Bug:</strong> <strong>DEPRECATED</strong> in v0.10.0: Use <a href="#//api/name/initWithURL:">[RKRequest initWithURL:]</a> instead</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/invalidateTimeoutTimer" title="invalidateTimeoutTimer"></a>
+	<h3 class="subsubtitle method-title">invalidateTimeoutTimer</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Invalidates the <a href="#//api/name/timeout">timeout</a> timer.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)invalidateTimeoutTimer</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Invalidates the <a href="#//api/name/timeout">timeout</a> timer.</p>
+
+<p>Called by <a href="../Classes/RKResponse.html">RKResponse</a> when the NSURLConnection begins receiving data.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isCacheable" title="isCacheable"></a>
+	<h3 class="subsubtitle method-title">isCacheable</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES if the request is cacheable</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isCacheable</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES if the request is cacheable</p>
+
+<p>Only GET requests are considered cacheable (see <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html">http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html).</a>.)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isDELETE" title="isDELETE"></a>
+	<h3 class="subsubtitle method-title">isDELETE</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES when this is a DELETE request</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isDELETE</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES when this is a DELETE request</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isGET" title="isGET"></a>
+	<h3 class="subsubtitle method-title">isGET</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES when this is a GET request</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isGET</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES when this is a GET request</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isHEAD" title="isHEAD"></a>
+	<h3 class="subsubtitle method-title">isHEAD</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES when this is a HEAD request</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isHEAD</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES when this is a HEAD request</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isPOST" title="isPOST"></a>
+	<h3 class="subsubtitle method-title">isPOST</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES when this is a POST request</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isPOST</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES when this is a POST request</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isPUT" title="isPUT"></a>
+	<h3 class="subsubtitle method-title">isPUT</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES when this is a PUT request</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isPUT</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES when this is a PUT request</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isUnsent" title="isUnsent"></a>
+	<h3 class="subsubtitle method-title">isUnsent</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES when this request has not yet been sent</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isUnsent</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES when this request has not yet been sent</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/prepareURLRequest" title="prepareURLRequest"></a>
+	<h3 class="subsubtitle method-title">prepareURLRequest</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Setup the NS<a href="#//api/name/URLRequest">URLRequest</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)prepareURLRequest</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A boolean for the success of the <a href="#//api/name/URL">URL</a> preparation.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Setup the NS<a href="#//api/name/URLRequest">URLRequest</a>.</p>
+
+<p>The request must be prepared right before dispatching.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reset" title="reset"></a>
+	<h3 class="subsubtitle method-title">reset</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Resets the state of an RKRequest so that it can be re-sent.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)reset</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Resets the state of an RKRequest so that it can be re-sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/send" title="send"></a>
+	<h3 class="subsubtitle method-title">send</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Send the request asynchronously. It will be added to the <a href="#//api/name/queue">queue</a> and dispatched
+as soon as possible.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)send</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Send the request asynchronously. It will be added to the <a href="#//api/name/queue">queue</a> and dispatched
+as soon as possible.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendAsynchronously" title="sendAsynchronously"></a>
+	<h3 class="subsubtitle method-title">sendAsynchronously</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Immediately dispatch a request asynchronously, skipping the request <a href="#//api/name/queue">queue</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sendAsynchronously</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Immediately dispatch a request asynchronously, skipping the request <a href="#//api/name/queue">queue</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendSynchronously" title="sendSynchronously"></a>
+	<h3 class="subsubtitle method-title">sendSynchronously</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Send the request synchronously and return a hydrated <a href="#//api/name/response">response</a> object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RKResponse *)sendSynchronously</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <a href="../Classes/RKResponse.html">RKResponse</a> object with the result of the request.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Send the request synchronously and return a hydrated <a href="#//api/name/response">response</a> object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setBody:forMIMEType:" title="setBody:forMIMEType:"></a>
+	<h3 class="subsubtitle method-title">setBody:forMIMEType:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the request body using the provided NSDictionary after passing the
+NSDictionary through serialization using the currently configured parser for
+the provided MIMEType.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setBody:(NSDictionary *)<em>body</em> forMIMEType:(NSString *)<em>MIMEType</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>body</em></dt>
+			<dd><p>An NSDictionary of key/value pairs to be serialized and sent as
+the HTTP body.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>MIMEType</em></dt>
+			<dd><p>The MIMEType for the parser to use for the dictionary.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the request body using the provided NSDictionary after passing the
+NSDictionary through serialization using the currently configured parser for
+the provided MIMEType.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/timeout" title="timeout"></a>
+	<h3 class="subsubtitle method-title">timeout</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cancels request due to connection timeout exceeded.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)timeout</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Cancels request due to connection timeout exceeded.</p>
+
+<p>This <a href="#//api/name/method">method</a> is invoked by the timeoutTimer upon its expiration and will return
+an RKRequestConnectionTimeoutError via <a href="#//api/name/didFailLoadWithError:">didFailLoadWithError:</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/wasSentToResourcePath:" title="wasSentToResourcePath:"></a>
+	<h3 class="subsubtitle method-title">wasSentToResourcePath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES when the request was sent to the specified resource path</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)wasSentToResourcePath:(NSString *)<em>resourcePath</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resourcePath</em></dt>
+			<dd><p>A string of the resource path that we want to check against</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES when the request was sent to the specified resource path</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/wasSentToResourcePath:method:" title="wasSentToResourcePath:method:"></a>
+	<h3 class="subsubtitle method-title">wasSentToResourcePath:method:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES when the receiver was sent to the specified resource path with a given request <a href="#//api/name/method">method</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)wasSentToResourcePath:(NSString *)<em>resourcePath</em> method:(RKRequestMethod)<em>method</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resourcePath</em></dt>
+			<dd><p>A string of the resource path that we want to check against</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>method</em></dt>
+			<dd><p>The HTTP <a href="#//api/name/method">method</a> to confirm the request was sent with.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES when the receiver was sent to the specified resource path with a given request <a href="#//api/name/method">method</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Blake Watters. All rights reserved. (Last updated: 2012-11-16)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

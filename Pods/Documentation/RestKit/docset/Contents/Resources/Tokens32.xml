@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RKObjectMappingProviderContextEntry.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RKObjectMappingProviderContextEntry</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProviderContextEntry.h</DeclaredIn>
+			
+			<NodeRef refid="32"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKObjectMappingProviderContextEntry/contextEntryWithMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProviderContextEntry.h</DeclaredIn>			
+			
+			<Declaration>+ (RKObjectMappingProviderContextEntry *)contextEntryWithMapping:(RKObjectMappingDefinition *)mapping</Declaration>
+			
+			
+			<Anchor>//api/name/contextEntryWithMapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RKObjectMappingProviderContextEntry/contextEntryWithMapping:userData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProviderContextEntry.h</DeclaredIn>			
+			
+			<Declaration>+ (RKObjectMappingProviderContextEntry *)contextEntryWithMapping:(RKObjectMappingDefinition *)mapping userData:(id)userData</Declaration>
+			
+			
+			<Anchor>//api/name/contextEntryWithMapping:userData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProviderContextEntry/setMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProviderContextEntry.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKObjectMappingDefinition *mapping</Declaration>
+			
+			
+			<Anchor>//api/name/mapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectMappingProviderContextEntry/mapping</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProviderContextEntry.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) RKObjectMappingDefinition *mapping</Declaration>
+			
+			
+			<Anchor>//api/name/mapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RKObjectMappingProviderContextEntry/setUserData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProviderContextEntry.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id userData</Declaration>
+			
+			
+			<Anchor>//api/name/userData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RKObjectMappingProviderContextEntry/userData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RKObjectMappingProviderContextEntry.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id userData</Declaration>
+			
+			
+			<Anchor>//api/name/userData</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

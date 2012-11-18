@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>RestKit 0.10.3</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
+						<NodeRef refid="23"/>
+						<NodeRef refid="24"/>
+						<NodeRef refid="25"/>
+						<NodeRef refid="26"/>
+						<NodeRef refid="27"/>
+						<NodeRef refid="28"/>
+						<NodeRef refid="29"/>
+						<NodeRef refid="30"/>
+						<NodeRef refid="31"/>
+						<NodeRef refid="32"/>
+						<NodeRef refid="33"/>
+						<NodeRef refid="34"/>
+						<NodeRef refid="35"/>
+						<NodeRef refid="36"/>
+						<NodeRef refid="37"/>
+						<NodeRef refid="38"/>
+						<NodeRef refid="39"/>
+						<NodeRef refid="40"/>
+						<NodeRef refid="41"/>
+						<NodeRef refid="42"/>
+						<NodeRef refid="43"/>
+						<NodeRef refid="44"/>
+						<NodeRef refid="45"/>
+						<NodeRef refid="46"/>
+						<NodeRef refid="47"/>
+						<NodeRef refid="48"/>
+						<NodeRef refid="49"/>
+						<NodeRef refid="50"/>
+						<NodeRef refid="51"/>
+						<NodeRef refid="52"/>
+						<NodeRef refid="53"/>
+						<NodeRef refid="54"/>
+						<NodeRef refid="55"/>
+						<NodeRef refid="56"/>
+						<NodeRef refid="57"/>
+						<NodeRef refid="58"/>
+						<NodeRef refid="59"/>
+						<NodeRef refid="60"/>
+						<NodeRef refid="61"/>
+						<NodeRef refid="62"/>
+						<NodeRef refid="63"/>
+						<NodeRef refid="64"/>
+						<NodeRef refid="65"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="66"/>
+						<NodeRef refid="67"/>
+						<NodeRef refid="68"/>
+						<NodeRef refid="69"/>
+						<NodeRef refid="70"/>
+						<NodeRef refid="71"/>
+						<NodeRef refid="72"/>
+						<NodeRef refid="73"/>
+						<NodeRef refid="74"/>
+						<NodeRef refid="75"/>
+						<NodeRef refid="76"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="77"/>
+						<NodeRef refid="78"/>
+						<NodeRef refid="79"/>
+						<NodeRef refid="80"/>
+						<NodeRef refid="81"/>
+						<NodeRef refid="82"/>
+						<NodeRef refid="83"/>
+						<NodeRef refid="84"/>
+						<NodeRef refid="85"/>
+						<NodeRef refid="86"/>
+						<NodeRef refid="87"/>
+						<NodeRef refid="88"/>
+						<NodeRef refid="89"/>
+						<NodeRef refid="90"/>
+						<NodeRef refid="91"/>
+						<NodeRef refid="92"/>
+						<NodeRef refid="93"/>
+						<NodeRef refid="94"/>
+						
+					</Subnodes>
+				</Node>
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>RKAbstractTableController</Name>
+			<Path>Classes/RKAbstractTableController.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>RKAbstractTableControllerTestDelegate</Name>
+			<Path>Classes/RKAbstractTableControllerTestDelegate.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>RKBenchmark</Name>
+			<Path>Classes/RKBenchmark.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>RKCache</Name>
+			<Path>Classes/RKCache.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>RKClient</Name>
+			<Path>Classes/RKClient.html</Path>
+		</Node>
+		<Node id="6">
+			<Name>RKControlTableItem</Name>
+			<Path>Classes/RKControlTableItem.html</Path>
+		</Node>
+		<Node id="7">
+			<Name>RKControlTableViewCell</Name>
+			<Path>Classes/RKControlTableViewCell.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>RKDirectory</Name>
+			<Path>Classes/RKDirectory.html</Path>
+		</Node>
+		<Node id="9">
+			<Name>RKDotNetDateFormatter</Name>
+			<Path>Classes/RKDotNetDateFormatter.html</Path>
+		</Node>
+		<Node id="10">
+			<Name>RKDynamicObjectMapping</Name>
+			<Path>Classes/RKDynamicObjectMapping.html</Path>
+		</Node>
+		<Node id="11">
+			<Name>RKDynamicObjectMappingMatcher</Name>
+			<Path>Classes/RKDynamicObjectMappingMatcher.html</Path>
+		</Node>
+		<Node id="12">
+			<Name>RKErrorMessage</Name>
+			<Path>Classes/RKErrorMessage.html</Path>
+		</Node>
+		<Node id="13">
+			<Name>RKFetchedResultsTableController</Name>
+			<Path>Classes/RKFetchedResultsTableController.html</Path>
+		</Node>
+		<Node id="14">
+			<Name>RKFetchedResultsTableControllerTestDelegate</Name>
+			<Path>Classes/RKFetchedResultsTableControllerTestDelegate.html</Path>
+		</Node>
+		<Node id="15">
+			<Name>RKForm</Name>
+			<Path>Classes/RKForm.html</Path>
+		</Node>
+		<Node id="16">
+			<Name>RKFormSection</Name>
+			<Path>Classes/RKFormSection.html</Path>
+		</Node>
+		<Node id="17">
+			<Name>RKISO8601DateFormatter</Name>
+			<Path>Classes/RKISO8601DateFormatter.html</Path>
+		</Node>
+		<Node id="18">
+			<Name>RKMappingOperationQueue</Name>
+			<Path>Classes/RKMappingOperationQueue.html</Path>
+		</Node>
+		<Node id="19">
+			<Name>RKMappingTest</Name>
+			<Path>Classes/RKMappingTest.html</Path>
+		</Node>
+		<Node id="20">
+			<Name>RKMappingTestExpectation</Name>
+			<Path>Classes/RKMappingTestExpectation.html</Path>
+		</Node>
+		<Node id="21">
+			<Name>RKMutableBlockDictionary</Name>
+			<Path>Classes/RKMutableBlockDictionary.html</Path>
+		</Node>
+		<Node id="22">
+			<Name>RKOAuthClient</Name>
+			<Path>Classes/RKOAuthClient.html</Path>
+		</Node>
+		<Node id="23">
+			<Name>RKObjectAttributeMapping</Name>
+			<Path>Classes/RKObjectAttributeMapping.html</Path>
+		</Node>
+		<Node id="24">
+			<Name>RKObjectDynamicMapping</Name>
+			<Path>Classes/RKObjectDynamicMapping.html</Path>
+		</Node>
+		<Node id="25">
+			<Name>RKObjectLoader</Name>
+			<Path>Classes/RKObjectLoader.html</Path>
+		</Node>
+		<Node id="26">
+			<Name>RKObjectManager</Name>
+			<Path>Classes/RKObjectManager.html</Path>
+		</Node>
+		<Node id="27">
+			<Name>RKObjectMapper</Name>
+			<Path>Classes/RKObjectMapper.html</Path>
+		</Node>
+		<Node id="28">
+			<Name>RKObjectMapping</Name>
+			<Path>Classes/RKObjectMapping.html</Path>
+		</Node>
+		<Node id="29">
+			<Name>RKObjectMappingDefinition</Name>
+			<Path>Classes/RKObjectMappingDefinition.html</Path>
+		</Node>
+		<Node id="30">
+			<Name>RKObjectMappingOperation</Name>
+			<Path>Classes/RKObjectMappingOperation.html</Path>
+		</Node>
+		<Node id="31">
+			<Name>RKObjectMappingProvider</Name>
+			<Path>Classes/RKObjectMappingProvider.html</Path>
+		</Node>
+		<Node id="32">
+			<Name>RKObjectMappingProviderContextEntry</Name>
+			<Path>Classes/RKObjectMappingProviderContextEntry.html</Path>
+		</Node>
+		<Node id="33">
+			<Name>RKObjectMappingResult</Name>
+			<Path>Classes/RKObjectMappingResult.html</Path>
+		</Node>
+		<Node id="34">
+			<Name>RKObjectPaginator</Name>
+			<Path>Classes/RKObjectPaginator.html</Path>
+		</Node>
+		<Node id="35">
+			<Name>RKObjectPropertyInspector</Name>
+			<Path>Classes/RKObjectPropertyInspector.html</Path>
+		</Node>
+		<Node id="36">
+			<Name>RKObjectRelationshipMapping</Name>
+			<Path>Classes/RKObjectRelationshipMapping.html</Path>
+		</Node>
+		<Node id="37">
+			<Name>RKObjectRouter</Name>
+			<Path>Classes/RKObjectRouter.html</Path>
+		</Node>
+		<Node id="38">
+			<Name>RKObjectSerializer</Name>
+			<Path>Classes/RKObjectSerializer.html</Path>
+		</Node>
+		<Node id="39">
+			<Name>RKOrderedDictionary</Name>
+			<Path>Classes/RKOrderedDictionary.html</Path>
+		</Node>
+		<Node id="40">
+			<Name>RKParams</Name>
+			<Path>Classes/RKParams.html</Path>
+		</Node>
+		<Node id="41">
+			<Name>RKParamsAttachment</Name>
+			<Path>Classes/RKParamsAttachment.html</Path>
+		</Node>
+		<Node id="42">
+			<Name>RKParserRegistry</Name>
+			<Path>Classes/RKParserRegistry.html</Path>
+		</Node>
+		<Node id="43">
+			<Name>RKPathMatcher</Name>
+			<Path>Classes/RKPathMatcher.html</Path>
+		</Node>
+		<Node id="44">
+			<Name>RKPortCheck</Name>
+			<Path>Classes/RKPortCheck.html</Path>
+		</Node>
+		<Node id="45">
+			<Name>RKReachabilityObserver</Name>
+			<Path>Classes/RKReachabilityObserver.html</Path>
+		</Node>
+		<Node id="46">
+			<Name>RKRefreshGestureRecognizer</Name>
+			<Path>Classes/RKRefreshGestureRecognizer.html</Path>
+		</Node>
+		<Node id="47">
+			<Name>RKRefreshTriggerView</Name>
+			<Path>Classes/RKRefreshTriggerView.html</Path>
+		</Node>
+		<Node id="48">
+			<Name>RKRequest</Name>
+			<Path>Classes/RKRequest.html</Path>
+		</Node>
+		<Node id="49">
+			<Name>RKRequestCache</Name>
+			<Path>Classes/RKRequestCache.html</Path>
+		</Node>
+		<Node id="50">
+			<Name>RKRequestQueue</Name>
+			<Path>Classes/RKRequestQueue.html</Path>
+		</Node>
+		<Node id="51">
+			<Name>RKRequestSerialization</Name>
+			<Path>Classes/RKRequestSerialization.html</Path>
+		</Node>
+		<Node id="52">
+			<Name>RKResponse</Name>
+			<Path>Classes/RKResponse.html</Path>
+		</Node>
+		<Node id="53">
+			<Name>RKSearchEngine</Name>
+			<Path>Classes/RKSearchEngine.html</Path>
+		</Node>
+		<Node id="54">
+			<Name>RKTableController</Name>
+			<Path>Classes/RKTableController.html</Path>
+		</Node>
+		<Node id="55">
+			<Name>RKTableControllerTestDelegate</Name>
+			<Path>Classes/RKTableControllerTestDelegate.html</Path>
+		</Node>
+		<Node id="56">
+			<Name>RKTableItem</Name>
+			<Path>Classes/RKTableItem.html</Path>
+		</Node>
+		<Node id="57">
+			<Name>RKTableSection</Name>
+			<Path>Classes/RKTableSection.html</Path>
+		</Node>
+		<Node id="58">
+			<Name>RKTableViewCellMapping</Name>
+			<Path>Classes/RKTableViewCellMapping.html</Path>
+		</Node>
+		<Node id="59">
+			<Name>RKTableViewCellMappings</Name>
+			<Path>Classes/RKTableViewCellMappings.html</Path>
+		</Node>
+		<Node id="60">
+			<Name>RKTestFactory</Name>
+			<Path>Classes/RKTestFactory.html</Path>
+		</Node>
+		<Node id="61">
+			<Name>RKTestFixture</Name>
+			<Path>Classes/RKTestFixture.html</Path>
+		</Node>
+		<Node id="62">
+			<Name>RKTestNotificationObserver</Name>
+			<Path>Classes/RKTestNotificationObserver.html</Path>
+		</Node>
+		<Node id="63">
+			<Name>RKTestResponseLoader</Name>
+			<Path>Classes/RKTestResponseLoader.html</Path>
+		</Node>
+		<Node id="64">
+			<Name>RKURL</Name>
+			<Path>Classes/RKURL.html</Path>
+		</Node>
+		<Node id="65">
+			<Name>RK_FIX_CATEGORY_BUG</Name>
+			<Path>Classes/RK_FIX_CATEGORY_BUG.html</Path>
+		</Node>
+		
+		<Node id="66">
+			<Name>NSArray(RKAdditions)</Name>
+			<Path>Categories/NSArray+RKAdditions.html</Path>
+		</Node>
+		<Node id="67">
+			<Name>NSBundle(RKAdditions)</Name>
+			<Path>Categories/NSBundle+RKAdditions.html</Path>
+		</Node>
+		<Node id="68">
+			<Name>NSData(RKAdditions)</Name>
+			<Path>Categories/NSData+RKAdditions.html</Path>
+		</Node>
+		<Node id="69">
+			<Name>NSDictionary(RKAdditions)</Name>
+			<Path>Categories/NSDictionary+RKAdditions.html</Path>
+		</Node>
+		<Node id="70">
+			<Name>NSDictionary(RKRequestSerialization)</Name>
+			<Path>Categories/NSDictionary+RKRequestSerialization.html</Path>
+		</Node>
+		<Node id="71">
+			<Name>NSObject(URLEncoding)</Name>
+			<Path>Categories/NSObject+URLEncoding.html</Path>
+		</Node>
+		<Node id="72">
+			<Name>NSString(RKAdditions)</Name>
+			<Path>Categories/NSString+RKAdditions.html</Path>
+		</Node>
+		<Node id="73">
+			<Name>NSURL(RKAdditions)</Name>
+			<Path>Categories/NSURL+RKAdditions.html</Path>
+		</Node>
+		<Node id="74">
+			<Name>UIApplication(RKNetworkActivity)</Name>
+			<Path>Categories/UIApplication+RKNetworkActivity.html</Path>
+		</Node>
+		<Node id="75">
+			<Name>UIImage(RKAdditions)</Name>
+			<Path>Categories/UIImage+RKAdditions.html</Path>
+		</Node>
+		<Node id="76">
+			<Name>UIView(FindFirstResponder)</Name>
+			<Path>Categories/UIView+FindFirstResponder.html</Path>
+		</Node>
+		
+		<Node id="77">
+			<Name>RKAbstractTableControllerDelegate</Name>
+			<Path>Protocols/RKAbstractTableControllerDelegate.html</Path>
+		</Node>
+		<Node id="78">
+			<Name>RKConfigurationDelegate</Name>
+			<Path>Protocols/RKConfigurationDelegate.html</Path>
+		</Node>
+		<Node id="79">
+			<Name>RKDynamicObjectMappingDelegate</Name>
+			<Path>Protocols/RKDynamicObjectMappingDelegate.html</Path>
+		</Node>
+		<Node id="80">
+			<Name>RKFetchedResultsTableControllerDelegate</Name>
+			<Path>Protocols/RKFetchedResultsTableControllerDelegate.html</Path>
+		</Node>
+		<Node id="81">
+			<Name>RKOAuthClientDelegate</Name>
+			<Path>Protocols/RKOAuthClientDelegate.html</Path>
+		</Node>
+		<Node id="82">
+			<Name>RKObjectLoaderDelegate</Name>
+			<Path>Protocols/RKObjectLoaderDelegate.html</Path>
+		</Node>
+		<Node id="83">
+			<Name>RKObjectMapperDelegate</Name>
+			<Path>Protocols/RKObjectMapperDelegate.html</Path>
+		</Node>
+		<Node id="84">
+			<Name>RKObjectMappingOperationDelegate</Name>
+			<Path>Protocols/RKObjectMappingOperationDelegate.html</Path>
+		</Node>
+		<Node id="85">
+			<Name>RKObjectPaginatorDelegate</Name>
+			<Path>Protocols/RKObjectPaginatorDelegate.html</Path>
+		</Node>
+		<Node id="86">
+			<Name>RKParser</Name>
+			<Path>Protocols/RKParser.html</Path>
+		</Node>
+		<Node id="87">
+			<Name>RKRefreshTriggerProtocol</Name>
+			<Path>Protocols/RKRefreshTriggerProtocol.html</Path>
+		</Node>
+		<Node id="88">
+			<Name>RKRequestDelegate</Name>
+			<Path>Protocols/RKRequestDelegate.html</Path>
+		</Node>
+		<Node id="89">
+			<Name>RKRequestQueueDelegate</Name>
+			<Path>Protocols/RKRequestQueueDelegate.html</Path>
+		</Node>
+		<Node id="90">
+			<Name>RKRequestSerializable</Name>
+			<Path>Protocols/RKRequestSerializable.html</Path>
+		</Node>
+		<Node id="91">
+			<Name>RKRouter</Name>
+			<Path>Protocols/RKRouter.html</Path>
+		</Node>
+		<Node id="92">
+			<Name>RKSearchable</Name>
+			<Path>Protocols/RKSearchable.html</Path>
+		</Node>
+		<Node id="93">
+			<Name>RKTableControllerDelegate</Name>
+			<Path>Protocols/RKTableControllerDelegate.html</Path>
+		</Node>
+		<Node id="94">
+			<Name>RKTestFactoryCallbacks</Name>
+			<Path>Protocols/RKTestFactoryCallbacks.html</Path>
+		</Node>
+		
+	</Library>
+</DocSetNodes>

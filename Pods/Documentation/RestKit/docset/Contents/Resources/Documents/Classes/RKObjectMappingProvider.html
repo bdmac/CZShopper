@@ -1,0 +1,2086 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>RKObjectMappingProvider Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">RestKit 0.10.3 </a></h1>
+				<a id="developerHome" href="../index.html">Blake Watters</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">RKObjectMappingProvider Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/errorMapping">&nbsp;&nbsp;&nbsp;&nbsp;errorMapping</option>
+	
+	<option value="//api/name/paginationMapping">&nbsp;&nbsp;&nbsp;&nbsp;paginationMapping</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/mappingProvider">&nbsp;&nbsp;&nbsp;&nbsp;+ mappingProvider</option>
+	
+	<option value="//api/name/mappingProviderUsingBlock:">&nbsp;&nbsp;&nbsp;&nbsp;+ mappingProviderUsingBlock:</option>
+	
+	<option value="//api/name/objectMappingProvider">&nbsp;&nbsp;&nbsp;&nbsp;+ objectMappingProvider</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addMapping:context:">&nbsp;&nbsp;&nbsp;&nbsp;- addMapping:context:</option>
+	
+	<option value="//api/name/addObjectMapping:">&nbsp;&nbsp;&nbsp;&nbsp;- addObjectMapping:</option>
+	
+	<option value="//api/name/entryForPatternMatchingString:context:">&nbsp;&nbsp;&nbsp;&nbsp;- entryForPatternMatchingString:context:</option>
+	
+	<option value="//api/name/entryForResourcePath:">&nbsp;&nbsp;&nbsp;&nbsp;- entryForResourcePath:</option>
+	
+	<option value="//api/name/initializeContext:withValue:">&nbsp;&nbsp;&nbsp;&nbsp;- initializeContext:withValue:</option>
+	
+	<option value="//api/name/mappingForContext:">&nbsp;&nbsp;&nbsp;&nbsp;- mappingForContext:</option>
+	
+	<option value="//api/name/mappingForKeyPath:">&nbsp;&nbsp;&nbsp;&nbsp;- mappingForKeyPath:</option>
+	
+	<option value="//api/name/mappingForKeyPath:context:">&nbsp;&nbsp;&nbsp;&nbsp;- mappingForKeyPath:context:</option>
+	
+	<option value="//api/name/mappingForPatternMatchingString:context:">&nbsp;&nbsp;&nbsp;&nbsp;- mappingForPatternMatchingString:context:</option>
+	
+	<option value="//api/name/mappingsByKeyPath">&nbsp;&nbsp;&nbsp;&nbsp;- mappingsByKeyPath</option>
+	
+	<option value="//api/name/mappingsForContext:">&nbsp;&nbsp;&nbsp;&nbsp;- mappingsForContext:</option>
+	
+	<option value="//api/name/objectMappingForClass:">&nbsp;&nbsp;&nbsp;&nbsp;- objectMappingForClass:</option>
+	
+	<option value="//api/name/objectMappingForKeyPath:">&nbsp;&nbsp;&nbsp;&nbsp;- objectMappingForKeyPath:</option>
+	
+	<option value="//api/name/objectMappingForResourcePath:">&nbsp;&nbsp;&nbsp;&nbsp;- objectMappingForResourcePath:</option>
+	
+	<option value="//api/name/objectMappingsByKeyPath">&nbsp;&nbsp;&nbsp;&nbsp;- objectMappingsByKeyPath</option>
+	
+	<option value="//api/name/objectMappingsForClass:">&nbsp;&nbsp;&nbsp;&nbsp;- objectMappingsForClass:</option>
+	
+	<option value="//api/name/registerMapping:withRootKeyPath:">&nbsp;&nbsp;&nbsp;&nbsp;- registerMapping:withRootKeyPath:</option>
+	
+	<option value="//api/name/registerObjectMapping:withRootKeyPath:">&nbsp;&nbsp;&nbsp;&nbsp;- registerObjectMapping:withRootKeyPath:</option>
+	
+	<option value="//api/name/removeMapping:context:">&nbsp;&nbsp;&nbsp;&nbsp;- removeMapping:context:</option>
+	
+	<option value="//api/name/removeMappingForKeyPath:">&nbsp;&nbsp;&nbsp;&nbsp;- removeMappingForKeyPath:</option>
+	
+	<option value="//api/name/removeMappingForKeyPath:context:">&nbsp;&nbsp;&nbsp;&nbsp;- removeMappingForKeyPath:context:</option>
+	
+	<option value="//api/name/removeObjectMappingForKeyPath:">&nbsp;&nbsp;&nbsp;&nbsp;- removeObjectMappingForKeyPath:</option>
+	
+	<option value="//api/name/serializationMappingForClass:">&nbsp;&nbsp;&nbsp;&nbsp;- serializationMappingForClass:</option>
+	
+	<option value="//api/name/setEntry:forPattern:context:">&nbsp;&nbsp;&nbsp;&nbsp;- setEntry:forPattern:context:</option>
+	
+	<option value="//api/name/setEntry:forResourcePathPattern:">&nbsp;&nbsp;&nbsp;&nbsp;- setEntry:forResourcePathPattern:</option>
+	
+	<option value="//api/name/setMapping:context:">&nbsp;&nbsp;&nbsp;&nbsp;- setMapping:context:</option>
+	
+	<option value="//api/name/setMapping:forKeyPath:">&nbsp;&nbsp;&nbsp;&nbsp;- setMapping:forKeyPath:</option>
+	
+	<option value="//api/name/setMapping:forKeyPath:context:">&nbsp;&nbsp;&nbsp;&nbsp;- setMapping:forKeyPath:context:</option>
+	
+	<option value="//api/name/setMapping:forPattern:atIndex:context:">&nbsp;&nbsp;&nbsp;&nbsp;- setMapping:forPattern:atIndex:context:</option>
+	
+	<option value="//api/name/setMapping:forPattern:context:">&nbsp;&nbsp;&nbsp;&nbsp;- setMapping:forPattern:context:</option>
+	
+	<option value="//api/name/setObjectMapping:forKeyPath:">&nbsp;&nbsp;&nbsp;&nbsp;- setObjectMapping:forKeyPath:</option>
+	
+	<option value="//api/name/setObjectMapping:forResourcePathPattern:">&nbsp;&nbsp;&nbsp;&nbsp;- setObjectMapping:forResourcePathPattern:</option>
+	
+	<option value="//api/name/setSerializationMapping:forClass:">&nbsp;&nbsp;&nbsp;&nbsp;- setSerializationMapping:forClass:</option>
+	
+	<option value="//api/name/setValue:forContext:">&nbsp;&nbsp;&nbsp;&nbsp;- setValue:forContext:</option>
+	
+	<option value="//api/name/valueForContext:">&nbsp;&nbsp;&nbsp;&nbsp;- valueForContext:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Contexts Methods">Contexts Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CompatibilityAliases Methods">CompatibilityAliases Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errorMapping">errorMapping</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/paginationMapping">paginationMapping</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mappingProvider">mappingProvider</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mappingProviderUsingBlock:">mappingProviderUsingBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectMappingProvider">objectMappingProvider</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addMapping:context:">addMapping:context:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addObjectMapping:">addObjectMapping:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entryForPatternMatchingString:context:">entryForPatternMatchingString:context:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entryForResourcePath:">entryForResourcePath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initializeContext:withValue:">initializeContext:withValue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mappingForContext:">mappingForContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mappingForKeyPath:">mappingForKeyPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mappingForKeyPath:context:">mappingForKeyPath:context:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mappingForPatternMatchingString:context:">mappingForPatternMatchingString:context:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mappingsByKeyPath">mappingsByKeyPath</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mappingsForContext:">mappingsForContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectMappingForClass:">objectMappingForClass:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectMappingForKeyPath:">objectMappingForKeyPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectMappingForResourcePath:">objectMappingForResourcePath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectMappingsByKeyPath">objectMappingsByKeyPath</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectMappingsForClass:">objectMappingsForClass:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerMapping:withRootKeyPath:">registerMapping:withRootKeyPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerObjectMapping:withRootKeyPath:">registerObjectMapping:withRootKeyPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeMapping:context:">removeMapping:context:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeMappingForKeyPath:">removeMappingForKeyPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeMappingForKeyPath:context:">removeMappingForKeyPath:context:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeObjectMappingForKeyPath:">removeObjectMappingForKeyPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/serializationMappingForClass:">serializationMappingForClass:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setEntry:forPattern:context:">setEntry:forPattern:context:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setEntry:forResourcePathPattern:">setEntry:forResourcePathPattern:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setMapping:context:">setMapping:context:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setMapping:forKeyPath:">setMapping:forKeyPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setMapping:forKeyPath:context:">setMapping:forKeyPath:context:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setMapping:forPattern:atIndex:context:">setMapping:forPattern:atIndex:context:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setMapping:forPattern:context:">setMapping:forPattern:context:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setObjectMapping:forKeyPath:">setObjectMapping:forKeyPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setObjectMapping:forResourcePathPattern:">setObjectMapping:forResourcePathPattern:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSerializationMapping:forClass:">setSerializationMapping:forClass:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setValue:forContext:">setValue:forContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/valueForContext:">valueForContext:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="RKObjectMappingProvider Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">RKObjectMappingProvider Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">RKObjectMappingProvider.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The mapping provider is a repository of registered object mappings for use by instances
+of RKObjectManager and RKObjectMapper. It provides for the storage and retrieval of object
+mappings by keyPath and type.</p>
+
+<p>The mapping provider is responsible for:</p>
+
+<ol>
+<li>Providing instances of RKObjectMapper with keyPaths and object mappings for use
+ when attempting to map a parsed payload into objects. Each keyPath is examined using
+ valueForKeyPath: to determine if any mappable data exists within the payload. If data is
+ found, the RKObjectMapper will instantiate an RKObjectMappingOperation to perform the mapping
+ using the RKObjectMapping or RKDynamicObjectMapping associated with the keyPath.</li>
+<li>Providing the appropriate serialization mapping to instances of RKObjectManager when an object
+ is to be sent to the remote server using <a href="../Classes/RKObjectManager.html#//api/name/postObject:delegate:">[RKObjectManager postObject:delegate:]</a> or
+ [RKObjectManager postObject:delegate]. This mapping is used to serialize the object into a
+ format suitable for encoding into a URL form encoded or JSON representation.</li>
+<li>Providing convenient storage of RKObjectMapping references for users who are not using keyPath
+ based mapping. Mappings can be added to the provider and retrieved by the <a href="../Classes/RKObjectMapping.html#//api/name/objectClass">[RKObjectMapping objectClass]</a>
+ that they target.</li>
+</ol>
+
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mappingProvider">+&nbsp;mappingProvider</a></code>
+		<span class="tooltip"><p>Creates and returns an autoreleased RKObjectMappingProvider instance.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mappingProviderUsingBlock:">+&nbsp;mappingProviderUsingBlock:</a></code>
+		<span class="tooltip"><p>Instantiate and return a new auto-released object mapping provider after
+yielding it to the specified block for configuration</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setObjectMapping:forKeyPath:">&ndash;&nbsp;setObjectMapping:forKeyPath:</a></code>
+		<span class="tooltip"><p>Configures the mapping provider to use the <a href="../Classes/RKObjectMapping.html">RKObjectMapping</a> or <a href="../Classes/RKDynamicObjectMapping.html">RKDynamicObjectMapping</a> provided when
+content is encountered at the specified keyPath.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectMappingForKeyPath:">&ndash;&nbsp;objectMappingForKeyPath:</a></code>
+		<span class="tooltip"><p>Returns the <a href="../Classes/RKObjectMapping.html">RKObjectMapping</a> or RKObjectDynamic mapping configured for use
+when mappable content is encountered at keyPath</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeObjectMappingForKeyPath:">&ndash;&nbsp;removeObjectMappingForKeyPath:</a></code>
+		<span class="tooltip"><p>Removes the <a href="../Classes/RKObjectMapping.html">RKObjectMapping</a> or <a href="../Classes/RKDynamicObjectMapping.html">RKDynamicObjectMapping</a> registered at the specified keyPath
+from the provider.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectMappingsByKeyPath">&ndash;&nbsp;objectMappingsByKeyPath</a></code>
+		<span class="tooltip"><p>Returns a dictionary where the keys are mappable keyPaths and the values are the <a href="../Classes/RKObjectMapping.html">RKObjectMapping</a>
+or <a href="../Classes/RKDynamicObjectMapping.html">RKDynamicObjectMapping</a> to use for mappable data that appears at the keyPath.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/registerObjectMapping:withRootKeyPath:">&ndash;&nbsp;registerObjectMapping:withRootKeyPath:</a></code>
+		<span class="tooltip"><p>Registers an object mapping as being rooted at a specific keyPath. The keyPath will be registered
+and an inverse mapping for the object will be generated and used for serialization.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addObjectMapping:">&ndash;&nbsp;addObjectMapping:</a></code>
+		<span class="tooltip"><p>Adds an object mapping to the provider for later retrieval. The mapping is not bound to a particular keyPath and
+must be explicitly set on an instance of <a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> or <a href="../Classes/RKObjectMappingOperation.html">RKObjectMappingOperation</a> to be applied. This is useful
+in cases where the remote system does not namespace resources in a keyPath that can be used for disambiguation.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectMappingsForClass:">&ndash;&nbsp;objectMappingsForClass:</a></code>
+		<span class="tooltip"><p>Returns all object mappings registered for a particular class on the provider. The collection of mappings is assembled
+by searching for all mappings added via addObjctMapping: and then consulting those registered via <a href="#//api/name/objectMappingForKeyPath:">objectMappingForKeyPath:</a></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectMappingForClass:">&ndash;&nbsp;objectMappingForClass:</a></code>
+		<span class="tooltip"><p>Returns the first object mapping for a objectClass registered in the provider.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSerializationMapping:forClass:">&ndash;&nbsp;setSerializationMapping:forClass:</a></code>
+		<span class="tooltip"><p>Registers an object mapping for use when serializing instances of objectClass for transport
+over HTTP. Used by the object manager during postObject: and putObject:.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/serializationMappingForClass:">&ndash;&nbsp;serializationMappingForClass:</a></code>
+		<span class="tooltip"><p>Returns the serialization mapping for a specific object class
+which has been previously registered.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setObjectMapping:forResourcePathPattern:">&ndash;&nbsp;setObjectMapping:forResourcePathPattern:</a></code>
+		<span class="tooltip"><p>Configures an object mapping to be used when during a load event where the resourcePath of
+the <a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> instance matches resourcePathPattern.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectMappingForResourcePath:">&ndash;&nbsp;objectMappingForResourcePath:</a></code>
+		<span class="tooltip"><p>Returns the first objectMapping configured in the provider with a resourcePathPattern matching
+the specified resourcePath.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setEntry:forResourcePathPattern:">&ndash;&nbsp;setEntry:forResourcePathPattern:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entryForResourcePath:">&ndash;&nbsp;entryForResourcePath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/errorMapping">&nbsp;&nbsp;errorMapping</a></code>
+		<span class="tooltip"><p>An object mapping used when the remote system returns an error status code
+and a payload with a MIME Type that RestKit is capable of parsing.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/paginationMapping">&nbsp;&nbsp;paginationMapping</a></code>
+		<span class="tooltip"><p>An object mapping used when mapping pagination metadata (current page, object count, etc)
+during a paginated object loading operation. The objectClass of the paginationMapping must
+be <a href="../Classes/RKObjectPaginator.html">RKObjectPaginator</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Contexts Methods" name="task_Contexts Methods"></a>
+						<h3 class="subsubtitle task-title">Contexts Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initializeContext:withValue:">&ndash;&nbsp;initializeContext:withValue:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/valueForContext:">&ndash;&nbsp;valueForContext:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setValue:forContext:">&ndash;&nbsp;setValue:forContext:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mappingForContext:">&ndash;&nbsp;mappingForContext:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setMapping:context:">&ndash;&nbsp;setMapping:context:</a></code>
+		<span class="tooltip"><p>Stores a single object mapping for a given context. Useful when a component needs to enable
+configuration via one (and only one) object mapping.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mappingsForContext:">&ndash;&nbsp;mappingsForContext:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addMapping:context:">&ndash;&nbsp;addMapping:context:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeMapping:context:">&ndash;&nbsp;removeMapping:context:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mappingForKeyPath:context:">&ndash;&nbsp;mappingForKeyPath:context:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setMapping:forKeyPath:context:">&ndash;&nbsp;setMapping:forKeyPath:context:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeMappingForKeyPath:context:">&ndash;&nbsp;removeMappingForKeyPath:context:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setMapping:forPattern:atIndex:context:">&ndash;&nbsp;setMapping:forPattern:atIndex:context:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setMapping:forPattern:context:">&ndash;&nbsp;setMapping:forPattern:context:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mappingForPatternMatchingString:context:">&ndash;&nbsp;mappingForPatternMatchingString:context:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setEntry:forPattern:context:">&ndash;&nbsp;setEntry:forPattern:context:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entryForPatternMatchingString:context:">&ndash;&nbsp;entryForPatternMatchingString:context:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="CompatibilityAliases Methods" name="task_CompatibilityAliases Methods"></a>
+						<h3 class="subsubtitle task-title">CompatibilityAliases Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectMappingProvider">+&nbsp;objectMappingProvider</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/registerMapping:withRootKeyPath:">&ndash;&nbsp;registerMapping:withRootKeyPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setMapping:forKeyPath:">&ndash;&nbsp;setMapping:forKeyPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mappingForKeyPath:">&ndash;&nbsp;mappingForKeyPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mappingsByKeyPath">&ndash;&nbsp;mappingsByKeyPath</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeMappingForKeyPath:">&ndash;&nbsp;removeMappingForKeyPath:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/errorMapping" title="errorMapping"></a>
+	<h3 class="subsubtitle method-title">errorMapping</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An object mapping used when the remote system returns an error status code
+and a payload with a MIME Type that RestKit is capable of parsing.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) RKObjectMapping *errorMapping</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>An object mapping used when the remote system returns an error status code
+and a payload with a MIME Type that RestKit is capable of parsing.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/RKObjectLoader.html">RKObjectLoader</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/RKParserRegistry.html">RKParserRegistry</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectMappingProvider.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/paginationMapping" title="paginationMapping"></a>
+	<h3 class="subsubtitle method-title">paginationMapping</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An object mapping used when mapping pagination metadata (current page, object count, etc)
+during a paginated object loading operation. The objectClass of the paginationMapping must
+be <a href="../Classes/RKObjectPaginator.html">RKObjectPaginator</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) RKObjectMapping *paginationMapping</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>An object mapping used when mapping pagination metadata (current page, object count, etc)
+during a paginated object loading operation. The objectClass of the paginationMapping must
+be <a href="../Classes/RKObjectPaginator.html">RKObjectPaginator</a>.</p>
+
+<p>For example, if using the popular will_paginate plugin with Ruby on Rails, we would configure
+our pagination mapping like so:</p>
+
+<p>// Assumes the JSON format of <a href="http://stackoverflow.com/questions/4699182/will-paginate-json-support">http://stackoverflow.com/questions/4699182/will-paginate-json-support</a>
+RKObjectMapping *paginationMapping = [RKObjectMapping mappingForClass:[RKObjectPaginator class]];
+[paginationMapping mapKeyPath:@&ldquo;current_page&rdquo; toAttribute:@&ldquo;currentPage&rdquo;];
+[paginationMapping mapKeyPath:@&ldquo;per_page&rdquo; toAttribute:@&ldquo;perPage&rdquo;];
+[paginationMapping mapKeyPath:@&ldquo;total_entries&rdquo; toAttribute:@&ldquo;objectCount&rdquo;];</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/RKObjectPaginator.html">RKObjectPaginator</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectMappingProvider.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/mappingProvider" title="mappingProvider"></a>
+	<h3 class="subsubtitle method-title">mappingProvider</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns an autoreleased RKObjectMappingProvider instance.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)mappingProvider</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new autoreleased object mapping provider instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates and returns an autoreleased RKObjectMappingProvider instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectMappingProvider.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mappingProviderUsingBlock:" title="mappingProviderUsingBlock:"></a>
+	<h3 class="subsubtitle method-title">mappingProviderUsingBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Instantiate and return a new auto-released object mapping provider after
+yielding it to the specified block for configuration</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)mappingProviderUsingBlock:(void ( ^ ) ( RKObjectMappingProvider *))<em>block</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Instantiate and return a new auto-released object mapping provider after
+yielding it to the specified block for configuration</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectMappingProvider.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectMappingProvider" title="objectMappingProvider"></a>
+	<h3 class="subsubtitle method-title">objectMappingProvider</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (RKObjectMappingProvider *)objectMappingProvider</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addMapping:context:" title="addMapping:context:"></a>
+	<h3 class="subsubtitle method-title">addMapping:context:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addMapping:(RKObjectMappingDefinition *)<em>mapping</em> context:(RKObjectMappingProviderContext)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addObjectMapping:" title="addObjectMapping:"></a>
+	<h3 class="subsubtitle method-title">addObjectMapping:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds an object mapping to the provider for later retrieval. The mapping is not bound to a particular keyPath and
+must be explicitly set on an instance of <a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> or <a href="../Classes/RKObjectMappingOperation.html">RKObjectMappingOperation</a> to be applied. This is useful
+in cases where the remote system does not namespace resources in a keyPath that can be used for disambiguation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addObjectMapping:(RKObjectMapping *)<em>objectMapping</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectMapping</em></dt>
+			<dd><p>An object mapping instance we wish to register with the provider.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Adds an object mapping to the provider for later retrieval. The mapping is not bound to a particular keyPath and
+must be explicitly set on an instance of <a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> or <a href="../Classes/RKObjectMappingOperation.html">RKObjectMappingOperation</a> to be applied. This is useful
+in cases where the remote system does not namespace resources in a keyPath that can be used for disambiguation.</p>
+
+<p>You can retrieve mappings added to the provider by invoking <a href="#//api/name/objectMappingsForClass:">objectMappingsForClass:</a> and <a href="#//api/name/objectMappingForClass:">objectMappingForClass:</a></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/objectMappingsForClass:">&ndash; objectMappingsForClass:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/objectMappingForClass:">&ndash; objectMappingForClass:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectMappingProvider.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/entryForPatternMatchingString:context:" title="entryForPatternMatchingString:context:"></a>
+	<h3 class="subsubtitle method-title">entryForPatternMatchingString:context:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RKObjectMappingProviderContextEntry *)entryForPatternMatchingString:(NSString *)<em>string</em> context:(RKObjectMappingProviderContext)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/entryForResourcePath:" title="entryForResourcePath:"></a>
+	<h3 class="subsubtitle method-title">entryForResourcePath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RKObjectMappingProviderContextEntry *)entryForResourcePath:(NSString *)<em>resourcePath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initializeContext:withValue:" title="initializeContext:withValue:"></a>
+	<h3 class="subsubtitle method-title">initializeContext:withValue:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)initializeContext:(RKObjectMappingProviderContext)<em>context</em> withValue:(id)<em>value</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mappingForContext:" title="mappingForContext:"></a>
+	<h3 class="subsubtitle method-title">mappingForContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RKObjectMappingDefinition *)mappingForContext:(RKObjectMappingProviderContext)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mappingForKeyPath:" title="mappingForKeyPath:"></a>
+	<h3 class="subsubtitle method-title">mappingForKeyPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RKObjectMappingDefinition *)mappingForKeyPath:(NSString *)<em>keyPath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mappingForKeyPath:context:" title="mappingForKeyPath:context:"></a>
+	<h3 class="subsubtitle method-title">mappingForKeyPath:context:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RKObjectMappingDefinition *)mappingForKeyPath:(NSString *)<em>keyPath</em> context:(RKObjectMappingProviderContext)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mappingForPatternMatchingString:context:" title="mappingForPatternMatchingString:context:"></a>
+	<h3 class="subsubtitle method-title">mappingForPatternMatchingString:context:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RKObjectMappingDefinition *)mappingForPatternMatchingString:(NSString *)<em>string</em> context:(RKObjectMappingProviderContext)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mappingsByKeyPath" title="mappingsByKeyPath"></a>
+	<h3 class="subsubtitle method-title">mappingsByKeyPath</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)mappingsByKeyPath</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mappingsForContext:" title="mappingsForContext:"></a>
+	<h3 class="subsubtitle method-title">mappingsForContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)mappingsForContext:(RKObjectMappingProviderContext)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectMappingForClass:" title="objectMappingForClass:"></a>
+	<h3 class="subsubtitle method-title">objectMappingForClass:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the first object mapping for a objectClass registered in the provider.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RKObjectMapping *)objectMappingForClass:(Class)<em>objectClass</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectClass</em></dt>
+			<dd><p>The class that we want to return mappings for</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <a href="../Classes/RKObjectMapping.html">RKObjectMapping</a> matching objectClass or nil</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the first object mapping for a objectClass registered in the provider.</p>
+
+<p>The objectClass is the class for a model you use to represent data retrieved in
+XML or JSON format. For example, if we were developing a Twitter application we
+might have an objectClass of RKTweet for storing Tweet data. We could retrieve
+the object mapping for this model by invoking
+<code>[mappingProvider objectMappingForClass:[RKTweet class]];</code></p>
+
+<p>Mappings registered via <a href="#//api/name/addObjectMapping:">addObjectMapping:</a> take precedence over those registered
+via <a href="#//api/name/setObjectMapping:forKeyPath:">setObjectMapping:forKeyPath:</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectMappingProvider.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectMappingForKeyPath:" title="objectMappingForKeyPath:"></a>
+	<h3 class="subsubtitle method-title">objectMappingForKeyPath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the <a href="../Classes/RKObjectMapping.html">RKObjectMapping</a> or RKObjectDynamic mapping configured for use
+when mappable content is encountered at keyPath</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RKObjectMappingDefinition *)objectMappingForKeyPath:(NSString *)<em>keyPath</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>keyPath</em></dt>
+			<dd><p>A registered keyPath to retrieve the object mapping for</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="../Classes/RKObjectMapping.html">RKObjectMapping</a> or <a href="../Classes/RKDynamicObjectMapping.html">RKDynamicObjectMapping</a> for the specified keyPath or nil if none is registered.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the <a href="../Classes/RKObjectMapping.html">RKObjectMapping</a> or RKObjectDynamic mapping configured for use
+when mappable content is encountered at keyPath</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectMappingProvider.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectMappingForResourcePath:" title="objectMappingForResourcePath:"></a>
+	<h3 class="subsubtitle method-title">objectMappingForResourcePath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the first objectMapping configured in the provider with a resourcePathPattern matching
+the specified resourcePath.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RKObjectMappingDefinition *)objectMappingForResourcePath:(NSString *)<em>resourcePath</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resourcePath</em></dt>
+			<dd><p>A resource path to retrieve the first <a href="../Classes/RKObjectMapping.html">RKObjectMapping</a> or <a href="../Classes/RKDynamicObjectMapping.html">RKDynamicObjectMapping</a></p>
+
+<pre><code>configured with a matching pattern.
+</code></pre></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <a href="../Classes/RKObjectMapping.html">RKObjectMapping</a> or <a href="../Classes/RKDynamicObjectMapping.html">RKDynamicObjectMapping</a> for a resource path pattern matching resourcePath</p>
+
+<pre><code>or nil if no match was found.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the first objectMapping configured in the provider with a resourcePathPattern matching
+the specified resourcePath.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectMappingProvider.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectMappingsByKeyPath" title="objectMappingsByKeyPath"></a>
+	<h3 class="subsubtitle method-title">objectMappingsByKeyPath</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a dictionary where the keys are mappable keyPaths and the values are the <a href="../Classes/RKObjectMapping.html">RKObjectMapping</a>
+or <a href="../Classes/RKDynamicObjectMapping.html">RKDynamicObjectMapping</a> to use for mappable data that appears at the keyPath.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)objectMappingsByKeyPath</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A dictionary of all registered keyPaths and their corresponding object mapping instances</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a dictionary where the keys are mappable keyPaths and the values are the <a href="../Classes/RKObjectMapping.html">RKObjectMapping</a>
+or <a href="../Classes/RKDynamicObjectMapping.html">RKDynamicObjectMapping</a> to use for mappable data that appears at the keyPath.</p><div class="warning"><p><strong>Warning:</strong> The returned dictionary can contain <a href="../Classes/RKDynamicObjectMapping.html">RKDynamicObjectMapping</a> instances. Check the type if</p>
+
+<pre><code>you are using dynamic mapping.
+</code></pre></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectMappingProvider.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectMappingsForClass:" title="objectMappingsForClass:"></a>
+	<h3 class="subsubtitle method-title">objectMappingsForClass:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns all object mappings registered for a particular class on the provider. The collection of mappings is assembled
+by searching for all mappings added via addObjctMapping: and then consulting those registered via <a href="#//api/name/objectMappingForKeyPath:">objectMappingForKeyPath:</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)objectMappingsForClass:(Class)<em>objectClass</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectClass</em></dt>
+			<dd><p>The class we want to retrieve the mappings for</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An array of all object mappings matching the objectClass. Can be empty.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns all object mappings registered for a particular class on the provider. The collection of mappings is assembled
+by searching for all mappings added via addObjctMapping: and then consulting those registered via <a href="#//api/name/objectMappingForKeyPath:">objectMappingForKeyPath:</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectMappingProvider.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/registerMapping:withRootKeyPath:" title="registerMapping:withRootKeyPath:"></a>
+	<h3 class="subsubtitle method-title">registerMapping:withRootKeyPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)registerMapping:(RKObjectMapping *)<em>objectMapping</em> withRootKeyPath:(NSString *)<em>keyPath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/registerObjectMapping:withRootKeyPath:" title="registerObjectMapping:withRootKeyPath:"></a>
+	<h3 class="subsubtitle method-title">registerObjectMapping:withRootKeyPath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Registers an object mapping as being rooted at a specific keyPath. The keyPath will be registered
+and an inverse mapping for the object will be generated and used for serialization.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)registerObjectMapping:(RKObjectMapping *)<em>objectMapping</em> withRootKeyPath:(NSString *)<em>keyPath</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectMapping</em></dt>
+			<dd><p>An object mapping we wish to register on the provider</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>keyPath</em></dt>
+			<dd><p>The keyPath we wish to register for the mapping and use as the rootKeyPath for serialization</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Registers an object mapping as being rooted at a specific keyPath. The keyPath will be registered
+and an inverse mapping for the object will be generated and used for serialization.</p>
+
+<p>This is a shortcut for configuring a pair of object mappings that model a simple resource the same
+way when going to and from the server.</p>
+
+<p>For example, if we have a simple resource called &lsquo;person&rsquo; that returns JSON in the following
+format:</p>
+
+<pre><code>{ "person": { "first_name": "Blake", "last_name": "Watters" } }
+</code></pre>
+
+<p>We might configure a mapping like so:</p>
+
+<pre><code>RKObjectMapping *mapping = [RKObjectMapping mappingForClass:[Person class]];
+[mapping mapAttributes:@"first_name", @"last_name", nil];
+</code></pre>
+
+<p>If we want to parse the above JSON and serialize it such that using postObject: or putObject: use the same format,
+we can auto-generate the serialization mapping and set the whole thing up in one shot:</p>
+
+<pre><code>[[RKObjectManager sharedManager].mappingProvider registerMapping:mapping withRootKeyPath:@"person"];
+</code></pre>
+
+<p>This will call <a href="#//api/name/setMapping:forKeyPath:">setMapping:forKeyPath:</a> for you, then generate a serialization mapping and set the root
+keyPath as well.</p>
+
+<p>If you want to manipulate the serialization mapping yourself, you can work with the mapping directly:</p>
+
+<pre><code>RKObjectMapping *serializationMappingForPerson = [personMapping inverseMapping];
+// NOTE: Serialization mapping default to a nil root keyPath and will serialize to a flat dictionary
+[[RKObjectManager sharedManager].mappingProvider setSerializationMapping:serializationMappingForPerson forClass:[Person class]];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectMappingProvider.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeMapping:context:" title="removeMapping:context:"></a>
+	<h3 class="subsubtitle method-title">removeMapping:context:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)removeMapping:(RKObjectMappingDefinition *)<em>mapping</em> context:(RKObjectMappingProviderContext)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeMappingForKeyPath:" title="removeMappingForKeyPath:"></a>
+	<h3 class="subsubtitle method-title">removeMappingForKeyPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)removeMappingForKeyPath:(NSString *)<em>keyPath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeMappingForKeyPath:context:" title="removeMappingForKeyPath:context:"></a>
+	<h3 class="subsubtitle method-title">removeMappingForKeyPath:context:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)removeMappingForKeyPath:(NSString *)<em>keyPath</em> context:(RKObjectMappingProviderContext)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeObjectMappingForKeyPath:" title="removeObjectMappingForKeyPath:"></a>
+	<h3 class="subsubtitle method-title">removeObjectMappingForKeyPath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes the <a href="../Classes/RKObjectMapping.html">RKObjectMapping</a> or <a href="../Classes/RKDynamicObjectMapping.html">RKDynamicObjectMapping</a> registered at the specified keyPath
+from the provider.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeObjectMappingForKeyPath:(NSString *)<em>keyPath</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>keyPath</em></dt>
+			<dd><p>The keyPath to remove the corresponding mapping for</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Removes the <a href="../Classes/RKObjectMapping.html">RKObjectMapping</a> or <a href="../Classes/RKDynamicObjectMapping.html">RKDynamicObjectMapping</a> registered at the specified keyPath
+from the provider.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectMappingProvider.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/serializationMappingForClass:" title="serializationMappingForClass:"></a>
+	<h3 class="subsubtitle method-title">serializationMappingForClass:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the serialization mapping for a specific object class
+which has been previously registered.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RKObjectMapping *)serializationMappingForClass:(Class)<em>objectClass</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectClass</em></dt>
+			<dd><p>The class we wish to obtain the serialization mapping for</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="../Classes/RKObjectMapping.html">RKObjectMapping</a> instance used for mapping instances of objectClass for transport</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the serialization mapping for a specific object class
+which has been previously registered.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/setSerializationMapping:forClass:">&ndash; setSerializationMapping:forClass:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectMappingProvider.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setEntry:forPattern:context:" title="setEntry:forPattern:context:"></a>
+	<h3 class="subsubtitle method-title">setEntry:forPattern:context:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setEntry:(RKObjectMappingProviderContextEntry *)<em>entry</em> forPattern:(NSString *)<em>pattern</em> context:(RKObjectMappingProviderContext)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setEntry:forResourcePathPattern:" title="setEntry:forResourcePathPattern:"></a>
+	<h3 class="subsubtitle method-title">setEntry:forResourcePathPattern:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setEntry:(RKObjectMappingProviderContextEntry *)<em>entry</em> forResourcePathPattern:(NSString *)<em>resourcePath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setMapping:context:" title="setMapping:context:"></a>
+	<h3 class="subsubtitle method-title">setMapping:context:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stores a single object mapping for a given context. Useful when a component needs to enable
+configuration via one (and only one) object mapping.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setMapping:(RKObjectMappingDefinition *)<em>mapping</em> context:(RKObjectMappingProviderContext)<em>context</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Stores a single object mapping for a given context. Useful when a component needs to enable
+configuration via one (and only one) object mapping.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectMappingProvider+Contexts.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setMapping:forKeyPath:" title="setMapping:forKeyPath:"></a>
+	<h3 class="subsubtitle method-title">setMapping:forKeyPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setMapping:(RKObjectMappingDefinition *)<em>objectOrDynamicMapping</em> forKeyPath:(NSString *)<em>keyPath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setMapping:forKeyPath:context:" title="setMapping:forKeyPath:context:"></a>
+	<h3 class="subsubtitle method-title">setMapping:forKeyPath:context:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setMapping:(RKObjectMappingDefinition *)<em>mapping</em> forKeyPath:(NSString *)<em>keyPath</em> context:(RKObjectMappingProviderContext)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setMapping:forPattern:atIndex:context:" title="setMapping:forPattern:atIndex:context:"></a>
+	<h3 class="subsubtitle method-title">setMapping:forPattern:atIndex:context:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setMapping:(RKObjectMappingDefinition *)<em>mapping</em> forPattern:(NSString *)<em>pattern</em> atIndex:(NSUInteger)<em>index</em> context:(RKObjectMappingProviderContext)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setMapping:forPattern:context:" title="setMapping:forPattern:context:"></a>
+	<h3 class="subsubtitle method-title">setMapping:forPattern:context:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setMapping:(RKObjectMappingDefinition *)<em>mapping</em> forPattern:(NSString *)<em>pattern</em> context:(RKObjectMappingProviderContext)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setObjectMapping:forKeyPath:" title="setObjectMapping:forKeyPath:"></a>
+	<h3 class="subsubtitle method-title">setObjectMapping:forKeyPath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Configures the mapping provider to use the <a href="../Classes/RKObjectMapping.html">RKObjectMapping</a> or <a href="../Classes/RKDynamicObjectMapping.html">RKDynamicObjectMapping</a> provided when
+content is encountered at the specified keyPath.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setObjectMapping:(RKObjectMappingDefinition *)<em>objectOrDynamicMapping</em> forKeyPath:(NSString *)<em>keyPath</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectOrDynamicMapping</em></dt>
+			<dd><p>An <a href="../Classes/RKObjectMapping.html">RKObjectMapping</a> or <a href="../Classes/RKDynamicObjectMapping.html">RKDynamicObjectMapping</a> to register for keyPath based mapping.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>keyPath</em></dt>
+			<dd><p>The keyPath to register the mapping as being responsible for mapping.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Configures the mapping provider to use the <a href="../Classes/RKObjectMapping.html">RKObjectMapping</a> or <a href="../Classes/RKDynamicObjectMapping.html">RKDynamicObjectMapping</a> provided when
+content is encountered at the specified keyPath.</p>
+
+<p>When an <a href="../Classes/RKObjectMapper.html">RKObjectMapper</a> is performing its work, each registered keyPath within the mapping provider will
+be searched for content in the parsed payload. If mappable content is found, the object mapping configured
+for the keyPath will be used to perform an <a href="../Classes/RKObjectMappingOperation.html">RKObjectMappingOperation</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/RKObjectMapper.html">RKObjectMapper</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/RKObjectMappingOperation.html">RKObjectMappingOperation</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectMappingProvider.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setObjectMapping:forResourcePathPattern:" title="setObjectMapping:forResourcePathPattern:"></a>
+	<h3 class="subsubtitle method-title">setObjectMapping:forResourcePathPattern:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Configures an object mapping to be used when during a load event where the resourcePath of
+the <a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> instance matches resourcePathPattern.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setObjectMapping:(RKObjectMappingDefinition *)<em>objectMapping</em> forResourcePathPattern:(NSString *)<em>resourcePathPattern</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectMapping</em></dt>
+			<dd><p>The object mapping to use when the resourcePath matches the specified</p>
+
+<pre><code>resourcePathPattern.
+</code></pre></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resourcePathPattern</em></dt>
+			<dd><p>A pattern to be evaluated using an <a href="../Classes/RKPathMatcher.html">RKPathMatcher</a> against a resourcePath</p>
+
+<pre><code>to determine if objectMapping is the appropriate mapping.
+</code></pre></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Configures an object mapping to be used when during a load event where the resourcePath of
+the <a href="../Classes/RKObjectLoader.html">RKObjectLoader</a> instance matches resourcePathPattern.</p>
+
+<p>The resourcePathPattern is a SOCKit pattern matching property names preceded by colons within
+a path. For example, if a collection of reviews for a product were loaded from a remote system
+at the resourcePath @&ldquo;/products/1234/reviews&rdquo;, object mapping could be configured to handle
+this request with a resourcePathPattern of @&ldquo;/products/:productID/reviews&rdquo;.</p>
+
+<p><strong>NOTE</strong> that care must be taken when configuring patterns within the provider. The patterns
+will be evaluated in the order they are added to the provider, so more specific patterns must
+precede more general patterns where either would generate a match.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/RKPathMatcher.html">RKPathMatcher</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/RKURL.html">RKURL</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/RKObjectLoader.html">RKObjectLoader</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectMappingProvider.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSerializationMapping:forClass:" title="setSerializationMapping:forClass:"></a>
+	<h3 class="subsubtitle method-title">setSerializationMapping:forClass:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Registers an object mapping for use when serializing instances of objectClass for transport
+over HTTP. Used by the object manager during postObject: and putObject:.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setSerializationMapping:(RKObjectMapping *)<em>objectMapping</em> forClass:(Class)<em>objectClass</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectMapping</em></dt>
+			<dd><p>The serialization mapping to register for use when serializing objectClass</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectClass</em></dt>
+			<dd><p>The class of the object type we are registering a serialization for</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Registers an object mapping for use when serializing instances of objectClass for transport
+over HTTP. Used by the object manager during postObject: and putObject:.</p>
+
+<p>Serialization mappings are simply instances of <a href="../Classes/RKObjectMapping.html">RKObjectMapping</a> that target NSMutableDictionary
+as the target object class. After the object is mapped into an NSMutableDictionary, it can be
+encoded to form encoded string, JSON, XML, etc.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/RKObjectMapping.html#//api/name/serializationMapping">[RKObjectMapping serializationMapping]</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKObjectMappingProvider.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setValue:forContext:" title="setValue:forContext:"></a>
+	<h3 class="subsubtitle method-title">setValue:forContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setValue:(id)<em>value</em> forContext:(RKObjectMappingProviderContext)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/valueForContext:" title="valueForContext:"></a>
+	<h3 class="subsubtitle method-title">valueForContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)valueForContext:(RKObjectMappingProviderContext)<em>context</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Blake Watters. All rights reserved. (Last updated: 2012-11-16)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

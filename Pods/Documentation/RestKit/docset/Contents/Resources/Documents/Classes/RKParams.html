@@ -1,0 +1,1240 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>RKParams Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">RestKit 0.10.3 </a></h1>
+				<a id="developerHome" href="../index.html">Blake Watters</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">RKParams Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/attachments">&nbsp;&nbsp;&nbsp;&nbsp;attachments</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/params">&nbsp;&nbsp;&nbsp;&nbsp;+ params</option>
+	
+	<option value="//api/name/paramsWithDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;+ paramsWithDictionary:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/MD5">&nbsp;&nbsp;&nbsp;&nbsp;- MD5</option>
+	
+	<option value="//api/name/dictionaryOfPlainTextParams">&nbsp;&nbsp;&nbsp;&nbsp;- dictionaryOfPlainTextParams</option>
+	
+	<option value="//api/name/initWithDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDictionary:</option>
+	
+	<option value="//api/name/reset">&nbsp;&nbsp;&nbsp;&nbsp;- reset</option>
+	
+	<option value="//api/name/setData:MIMEType:fileName:forParam:">&nbsp;&nbsp;&nbsp;&nbsp;- setData:MIMEType:fileName:forParam:</option>
+	
+	<option value="//api/name/setData:MIMEType:forParam:">&nbsp;&nbsp;&nbsp;&nbsp;- setData:MIMEType:forParam:</option>
+	
+	<option value="//api/name/setData:forParam:">&nbsp;&nbsp;&nbsp;&nbsp;- setData:forParam:</option>
+	
+	<option value="//api/name/setFile:MIMEType:fileName:forParam:">&nbsp;&nbsp;&nbsp;&nbsp;- setFile:MIMEType:fileName:forParam:</option>
+	
+	<option value="//api/name/setFile:forParam:">&nbsp;&nbsp;&nbsp;&nbsp;- setFile:forParam:</option>
+	
+	<option value="//api/name/setValue:forParam:">&nbsp;&nbsp;&nbsp;&nbsp;- setValue:forParam:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating an RKParams object">Creating an RKParams object</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Working with attachments">Working with attachments</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Resetting and checking states">Resetting and checking states</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attachments">attachments</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/params">params</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/paramsWithDictionary:">paramsWithDictionary:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MD5">MD5</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dictionaryOfPlainTextParams">dictionaryOfPlainTextParams</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDictionary:">initWithDictionary:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reset">reset</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setData:MIMEType:fileName:forParam:">setData:MIMEType:fileName:forParam:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setData:MIMEType:forParam:">setData:MIMEType:forParam:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setData:forParam:">setData:forParam:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setFile:MIMEType:fileName:forParam:">setFile:MIMEType:fileName:forParam:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setFile:forParam:">setFile:forParam:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setValue:forParam:">setValue:forParam:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="RKParams Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">RKParams Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSInputStream</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/RKRequestSerializable.html">RKRequestSerializable</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">RKParams.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This helper class implements the RKRequestSerializable protocol to provide
+support for creating the multi-part request body for RKRequest objects.</p>
+
+<p>RKParams enables simple support for file uploading from NSData objects and
+files stored locally. RKParams will serialize these objects into a multi-part
+form representation that is suitable for submission to a remote web server for
+processing. After creating the RKParams object, use
+<a href="../Classes/RKClient.html#//api/name/post:params:delegate:">[RKClient post:params:delegate:]</a> as the example below does.</p>
+
+<p><strong>Example</strong>:</p>
+
+<pre><code>RKParams *params = [RKParams params];
+NSData *imageData = UIImagePNGRepresentation([_imageView image]);
+[params setData:imageData MIMEType:@"image/png" forParam:@"image1"];
+
+UIImage *image = [UIImage imageNamed:@"RestKit.png"];
+imageData = UIImagePNGRepresentation(image);
+[params setData:imageData MIMEType:@"image/png" forParam:@"image2"];
+
+[_client post:@"/RKParamsExample" params:params delegate:self];
+</code></pre>
+
+<p>It is also used internally by <a href="../Classes/RKRequest.html">RKRequest</a> for its OAuth1 implementation.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating an RKParams object" name="task_Creating an RKParams object"></a>
+						<h3 class="subsubtitle task-title">Creating an RKParams object</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/params">+&nbsp;params</a></code>
+		<span class="tooltip"><p>Creates and returns an RKParams object that is ready for population.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/paramsWithDictionary:">+&nbsp;paramsWithDictionary:</a></code>
+		<span class="tooltip"><p>Creates and returns an RKParams object created from a dictionary of key/value
+pairs.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithDictionary:">&ndash;&nbsp;initWithDictionary:</a></code>
+		<span class="tooltip"><p>Initalize an RKParams object from a dictionary of key/value pairs</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Working with attachments" name="task_Working with attachments"></a>
+						<h3 class="subsubtitle task-title">Working with attachments</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attachments">&nbsp;&nbsp;attachments</a></code>
+		<span class="tooltip"><p>Array of all <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> attachments</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setValue:forParam:">&ndash;&nbsp;setValue:forParam:</a></code>
+		<span class="tooltip"><p>Creates a new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> from the key/value pair passed in and adds it
+to the <a href="#//api/name/attachments">attachments</a> array.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setFile:forParam:">&ndash;&nbsp;setFile:forParam:</a></code>
+		<span class="tooltip"><p>Creates a new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> for a named parameter with the data contained
+in the file at the given path and adds it to the <a href="#//api/name/attachments">attachments</a> array.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setData:forParam:">&ndash;&nbsp;setData:forParam:</a></code>
+		<span class="tooltip"><p>Creates a new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> for a named parameter with the data given and
+adds it to the <a href="#//api/name/attachments">attachments</a> array.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setData:MIMEType:forParam:">&ndash;&nbsp;setData:MIMEType:forParam:</a></code>
+		<span class="tooltip"><p>Creates a new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> for a named parameter with the data given and
+the MIME type specified and adds it to the <a href="#//api/name/attachments">attachments</a> array.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setData:MIMEType:fileName:forParam:">&ndash;&nbsp;setData:MIMEType:fileName:forParam:</a></code>
+		<span class="tooltip"><p>Creates a new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> and sets the value for a named parameter to a
+data object with the specified MIME Type and attachment file name.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setFile:MIMEType:fileName:forParam:">&ndash;&nbsp;setFile:MIMEType:fileName:forParam:</a></code>
+		<span class="tooltip"><p>Creates a new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> and sets the value for a named parameter to
+the data contained in a file at the given path with the specified MIME Type and
+attachment file name.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dictionaryOfPlainTextParams">&ndash;&nbsp;dictionaryOfPlainTextParams</a></code>
+		<span class="tooltip"><p>Get the dictionary of <a href="#//api/name/params">params</a> which are plain text as specified by
+<a href="http://tools.ietf.org/html/rfc5849#section-3.4.1.3">RFC 5849</a>.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Resetting and checking states" name="task_Resetting and checking states"></a>
+						<h3 class="subsubtitle task-title">Resetting and checking states</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reset">&ndash;&nbsp;reset</a></code>
+		<span class="tooltip"><p>Resets the state of the RKParams stream.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/MD5">&ndash;&nbsp;MD5</a></code>
+		<span class="tooltip"><p>Return a composite MD5 checksum value for all <a href="#//api/name/attachments">attachments</a>.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/attachments" title="attachments"></a>
+	<h3 class="subsubtitle method-title">attachments</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Array of all <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> attachments</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSMutableArray *attachments</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Array of all <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> attachments</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKParams.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/params" title="params"></a>
+	<h3 class="subsubtitle method-title">params</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns an RKParams object that is ready for population.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (RKParams *)params</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An RKParams object to be populated.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates and returns an RKParams object that is ready for population.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKParams.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/paramsWithDictionary:" title="paramsWithDictionary:"></a>
+	<h3 class="subsubtitle method-title">paramsWithDictionary:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns an RKParams object created from a dictionary of key/value
+pairs.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (RKParams *)paramsWithDictionary:(NSDictionary *)<em>dictionary</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dictionary</em></dt>
+			<dd><p>NSDictionary of key/value pairs to add as <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a>
+objects.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An RKParams object with the key/value pairs of the dictionary.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates and returns an RKParams object created from a dictionary of key/value
+pairs.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKParams.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/MD5" title="MD5"></a>
+	<h3 class="subsubtitle method-title">MD5</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Return a composite MD5 checksum value for all <a href="#//api/name/attachments">attachments</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)MD5</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Return a composite MD5 checksum value for all <a href="#//api/name/attachments">attachments</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKParams.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dictionaryOfPlainTextParams" title="dictionaryOfPlainTextParams"></a>
+	<h3 class="subsubtitle method-title">dictionaryOfPlainTextParams</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the dictionary of <a href="#//api/name/params">params</a> which are plain text as specified by
+<a href="http://tools.ietf.org/html/rfc5849#section-3.4.1.3">RFC 5849</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)dictionaryOfPlainTextParams</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NSDictionary of key/values extracting from the <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a>
+objects that meet the plain text criteria</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the dictionary of <a href="#//api/name/params">params</a> which are plain text as specified by
+<a href="http://tools.ietf.org/html/rfc5849#section-3.4.1.3">RFC 5849</a>.</p>
+
+<p>This is largely used for RKClient&rsquo;s OAuth1 implementation.</p>
+
+<p>The <a href="#//api/name/params">params</a> in this dictionary include those where:</p>
+
+<ul>
+<li>The entity-body is single-part.</li>
+<li>The entity-body follows the encoding requirements of the
+&ldquo;application/x-www-form-urlencoded&rdquo; content-type as defined by
+[W3C.REC-html40-19980424].</li>
+<li>The HTTP request entity-header includes the &ldquo;Content-Type&rdquo; header field set
+to &ldquo;application/x-www-form-urlencoded&rdquo;.</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKParams.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithDictionary:" title="initWithDictionary:"></a>
+	<h3 class="subsubtitle method-title">initWithDictionary:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initalize an RKParams object from a dictionary of key/value pairs</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RKParams *)initWithDictionary:(NSDictionary *)<em>dictionary</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dictionary</em></dt>
+			<dd><p>NSDictionary of key/value pairs to add as <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a>
+objects.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An RKParams object with the key/value pairs of the dictionary.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initalize an RKParams object from a dictionary of key/value pairs</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKParams.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reset" title="reset"></a>
+	<h3 class="subsubtitle method-title">reset</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Resets the state of the RKParams stream.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)reset</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Resets the state of the RKParams stream.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKParams.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setData:MIMEType:fileName:forParam:" title="setData:MIMEType:fileName:forParam:"></a>
+	<h3 class="subsubtitle method-title">setData:MIMEType:fileName:forParam:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> and sets the value for a named parameter to a
+data object with the specified MIME Type and attachment file name.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RKParamsAttachment *)setData:(NSData *)<em>data</em> MIMEType:(NSString *)<em>MIMEType</em> fileName:(NSString *)<em>fileName</em> forParam:(NSString *)<em>param</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>NSData object of the data to be attached</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>MIMEType</em></dt>
+			<dd><p>String of the MIME type of the data</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fileName</em></dt>
+			<dd><p>String of the attachment file name</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>param</em></dt>
+			<dd><p>Key name of the attachment to add</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> that was added to the <a href="#//api/name/attachments">attachments</a> array</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> and sets the value for a named parameter to a
+data object with the specified MIME Type and attachment file name.</p><div class="bug"><p><strong>Bug:</strong> <strong>DEPRECATED</strong>: Use <a href="#//api/name/setData:MIMEType:forParam:">[RKParams setData:MIMEType:forParam:]</a> and set the
+fileName on the returned <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> instead.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKParams.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setData:MIMEType:forParam:" title="setData:MIMEType:forParam:"></a>
+	<h3 class="subsubtitle method-title">setData:MIMEType:forParam:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> for a named parameter with the data given and
+the MIME type specified and adds it to the <a href="#//api/name/attachments">attachments</a> array.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RKParamsAttachment *)setData:(NSData *)<em>data</em> MIMEType:(NSString *)<em>MIMEType</em> forParam:(NSString *)<em>param</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>NSData object of the data to be attached</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>MIMEType</em></dt>
+			<dd><p>String of the MIME type of the data</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>param</em></dt>
+			<dd><p>Key name of the attachment to add</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> that was added to the <a href="#//api/name/attachments">attachments</a> array</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> for a named parameter with the data given and
+the MIME type specified and adds it to the <a href="#//api/name/attachments">attachments</a> array.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKParams.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setData:forParam:" title="setData:forParam:"></a>
+	<h3 class="subsubtitle method-title">setData:forParam:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> for a named parameter with the data given and
+adds it to the <a href="#//api/name/attachments">attachments</a> array.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RKParamsAttachment *)setData:(NSData *)<em>data</em> forParam:(NSString *)<em>param</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>NSData object of the data to be attached</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>param</em></dt>
+			<dd><p>Key name of the attachment to add</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> that was added to the <a href="#//api/name/attachments">attachments</a> array</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> for a named parameter with the data given and
+adds it to the <a href="#//api/name/attachments">attachments</a> array.</p>
+
+<p>A default MIME type of application/octet-stream will be used.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKParams.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setFile:MIMEType:fileName:forParam:" title="setFile:MIMEType:fileName:forParam:"></a>
+	<h3 class="subsubtitle method-title">setFile:MIMEType:fileName:forParam:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> and sets the value for a named parameter to
+the data contained in a file at the given path with the specified MIME Type and
+attachment file name.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RKParamsAttachment *)setFile:(NSString *)<em>filePath</em> MIMEType:(NSString *)<em>MIMEType</em> fileName:(NSString *)<em>fileName</em> forParam:(NSString *)<em>param</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePath</em></dt>
+			<dd><p>String of the path to the file to be attached</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>MIMEType</em></dt>
+			<dd><p>String of the MIME type of the data</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fileName</em></dt>
+			<dd><p>String of the attachment file name</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>param</em></dt>
+			<dd><p>Key name of the attachment to add</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> that was added to the <a href="#//api/name/attachments">attachments</a> array</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> and sets the value for a named parameter to
+the data contained in a file at the given path with the specified MIME Type and
+attachment file name.</p><div class="bug"><p><strong>Bug:</strong> <strong>DEPRECATED</strong>: Use <a href="#//api/name/setFile:forParam:">[RKParams setFile:forParam:]</a> and set the MIMEType and
+fileName on the returned <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> instead.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKParams.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setFile:forParam:" title="setFile:forParam:"></a>
+	<h3 class="subsubtitle method-title">setFile:forParam:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> for a named parameter with the data contained
+in the file at the given path and adds it to the <a href="#//api/name/attachments">attachments</a> array.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RKParamsAttachment *)setFile:(NSString *)<em>filePath</em> forParam:(NSString *)<em>param</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePath</em></dt>
+			<dd><p>String of the path to the file to be attached</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>param</em></dt>
+			<dd><p>Key name of the attachment to add</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> that was added to the <a href="#//api/name/attachments">attachments</a> array</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> for a named parameter with the data contained
+in the file at the given path and adds it to the <a href="#//api/name/attachments">attachments</a> array.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKParams.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setValue:forParam:" title="setValue:forParam:"></a>
+	<h3 class="subsubtitle method-title">setValue:forParam:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> from the key/value pair passed in and adds it
+to the <a href="#//api/name/attachments">attachments</a> array.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RKParamsAttachment *)setValue:(id&lt;NSObject&gt;)<em>value</em> forParam:(NSString *)<em>param</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>Value of the attachment to add</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>param</em></dt>
+			<dd><p>Key name of the attachment to add</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> that was added to the <a href="#//api/name/attachments">attachments</a> array</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a new <a href="../Classes/RKParamsAttachment.html">RKParamsAttachment</a> from the key/value pair passed in and adds it
+to the <a href="#//api/name/attachments">attachments</a> array.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RKParams.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Blake Watters. All rights reserved. (Last updated: 2012-11-16)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
