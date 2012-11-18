@@ -47,11 +47,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CZShopper/ListItemsTableViewController.m"
-         timestampString = "374903552.983909"
+         timestampString = "374955799.256109"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "76"
-         endingLineNumber = "76"
+         startingLineNumber = "88"
+         endingLineNumber = "88"
          landmarkName = "-prepareForSegue:sender:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -60,11 +60,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CZShopper/ListItemsTableViewController.m"
-         timestampString = "374903552.983909"
+         timestampString = "374956146.826666"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "91"
-         endingLineNumber = "91"
+         startingLineNumber = "104"
+         endingLineNumber = "104"
          landmarkName = "-returnToListView"
          landmarkType = "5">
       </FileBreakpoint>
@@ -86,11 +86,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CZShopper/ListItemsTableViewController.m"
-         timestampString = "374903720.748795"
+         timestampString = "374956146.826666"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "115"
-         endingLineNumber = "115"
+         startingLineNumber = "132"
+         endingLineNumber = "132"
          landmarkName = "-didSave:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -177,11 +177,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CZShopper/ListItemsTableViewController.m"
-         timestampString = "374903924.544116"
+         timestampString = "374956146.826666"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "143"
-         endingLineNumber = "143"
+         startingLineNumber = "160"
+         endingLineNumber = "160"
          landmarkName = "-didSave:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -190,11 +190,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CZShopper/ListItemsTableViewController.m"
-         timestampString = "374903998.44334"
+         timestampString = "374956146.826666"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "142"
-         endingLineNumber = "142"
+         startingLineNumber = "159"
+         endingLineNumber = "159"
          landmarkName = "-didSave:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -203,12 +203,25 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CZShopper/ListItemsTableViewController.m"
-         timestampString = "374904000.152087"
+         timestampString = "374956146.826666"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "144"
-         endingLineNumber = "144"
+         startingLineNumber = "161"
+         endingLineNumber = "161"
          landmarkName = "-didSave:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Pods/RestKit/Code/UI/RKFetchedResultsTableController.m"
+         timestampString = "374952986.04459"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "452"
+         endingLineNumber = "452"
+         landmarkName = "-tableView:commitEditingStyle:forRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

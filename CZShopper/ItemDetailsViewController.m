@@ -80,15 +80,19 @@
 
 // Button actions pretty much just invoke appropriate delegate methods
 - (IBAction)cancelPressed:(id)sender {
-    [self.delegate didCancel];
+    [self.delegate didCancelEdit:self.item];
 }
 
 - (IBAction)savePressed:(id)sender {
-    if (!self.item)
-        self.item = [ShoppingListItem object];
-    self.item.name = self.itemName.text;
-    self.item.category = self.itemCategory.text;
-    [self.delegate didSave:self.item];
+    if ([self.item.name isEqualToString:self.itemName.text] && [self.item.category isEqualToString:self.itemCategory.text]) {
+        // If nothing has been modified treat save the same as cancel to avoid unnecessary network traffic.
+        [self.delegate didCancelEdit:self.item];
+    }
+    else {
+        self.item.name = self.itemName.text;
+        self.item.category = self.itemCategory.text;
+        [self.delegate didSave:self.item];
+    }
 }
 
 - (IBAction)deletePressed:(id)sender {

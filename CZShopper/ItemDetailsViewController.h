@@ -11,7 +11,7 @@
 
 @protocol ItemDetailsControllerDelegate <NSObject>
 @required
-- (void)didCancel;
+- (void)didCancelEdit:(ShoppingListItem *)item;
 - (void)didSave:(ShoppingListItem *)item;
 - (void)didDelete:(ShoppingListItem *)item;
 @end

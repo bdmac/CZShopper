@@ -46,6 +46,10 @@
     self.tableController.autoRefreshFromNetwork = YES;
     self.tableController.resourcePath = @"/items.json";
     
+    self.tableController.imageForOffline = [UIImage imageNamed:@"Offline.png"];
+    self.tableController.imageForError = [UIImage imageNamed:@"Error.png"];
+    self.tableController.imageForEmpty = [UIImage imageNamed:@"Empty.png"];
+    
     // This bit handles sorting our items into sections and alphabetizes them by item.name.
     NSSortDescriptor *categoryDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"category" ascending:YES];
     NSSortDescriptor *nameDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES];
@@ -90,6 +94,7 @@
     }
     else if ([segue.identifier isEqualToString:@"AddItemSegue"]) {
         _isEditing = NO;
+        [[[[segue destinationViewController] viewControllers] objectAtIndex:0] setItem:[ShoppingListItem object]];
         [[[[segue destinationViewController] viewControllers] objectAtIndex:0] setDelegate:self];
     }
 }
@@ -114,7 +119,11 @@
 
 #pragma mark - ItemDetailsControllerDelegate methods
 
-- (void)didCancel {
+- (void)didCancelEdit:(ShoppingListItem *)item {
+    if (!_isEditing) {
+        // If we canceled adding this item we need to clean it up locally
+        [item deleteEntity];
+    }
     [self returnToListView];
 }
 
